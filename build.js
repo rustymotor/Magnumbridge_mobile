@@ -14,7 +14,13 @@ const ensureDirExists = dir => {
 
 // EJS 파일을 HTML로 변환하는 함수
 const renderEJS = (filePath, outputPath, depth = 0) => {
-    const basePath = depth > 0 ? "../".repeat(depth) : "./";
+    let basePath = depth > 0 ? "../".repeat(depth) : "./";
+    if (basePath === "./") {
+        basePath = "";
+    }
+
+    const htmlExt = ".html";
+    const htmlPagePath = "pages/main" + htmlExt; // main → pages/main.html
 
     fs.readFile(filePath, "utf8", (err, fileContent) => {
         if (err) {
@@ -25,7 +31,9 @@ const renderEJS = (filePath, outputPath, depth = 0) => {
         const isLayoutUsed = fileContent.includes("<%- body %>") || fileContent.includes("<%- content %>");
 
         const renderData = {
-            basePath, // EJS에서 상대 경로로 사용
+            basePath,
+            htmlExt,
+            htmlPagePath, // /pages/main.html 경로 추가
             content: isLayoutUsed ? fileContent : ""
         };
 
