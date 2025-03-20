@@ -1,31 +1,30 @@
-# 소스코드 위치(송치국선임)
+# 프로젝트 설명
 
--   HTML/JS, CSS 파일명은 동일
+-   매그넘브릿지 홈페이지(PC/MO)입니다.
 
 ## CSS
 
 -   public/css/sample.css
 
-## HTML, JS
+## HTML
 
--   views/pages/sample.ejs (ejs안에 JS 포함 시킴)
+-   views/pages/sample.ejs
 
 ---
 
-### 작업환경(최인혁전임)
+### 작업환경(팀원)
 
 #### SCSS
 
 -   src/scss/sample.scss
 
-#### HTML, JS
+#### HTML
 
--   views/pages/sample.ejs (ejs안에 JS 포함 시킴)
-    .
+-   views/pages/sample.ejs
 
 ---
 
-# 화면 개발 규칙(퍼블 작업시 참고)
+# 화면 개발 규칙
 
 ## HTML 주석
 
