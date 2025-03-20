@@ -13,22 +13,20 @@ const ensureDirExists = dir => {
 };
 
 // EJS 파일을 HTML로 변환하는 함수
-const renderEJS = (filePath, outputPath, depth) => {
-    const basePath = "../".repeat(depth);
+const renderEJS = (filePath, outputPath, depth = 0) => {
+    const basePath = depth > 0 ? "../".repeat(depth) : "./";
 
-    // 파일 내용을 읽어와서 변환
     fs.readFile(filePath, "utf8", (err, fileContent) => {
         if (err) {
             console.error(`❌ Error reading ${filePath}:`, err);
             return;
         }
 
-        // EJS 파일이 main.ejs를 포함하는지 확인 (layout 적용 여부 판단)
         const isLayoutUsed = fileContent.includes("<%- body %>") || fileContent.includes("<%- content %>");
 
         const renderData = {
-            basePath,
-            content: isLayoutUsed ? fileContent : "" // 레이아웃이 필요한 경우 content로 전달
+            basePath, // EJS에서 상대 경로로 사용
+            content: isLayoutUsed ? fileContent : ""
         };
 
         ejs.renderFile(filePath, renderData, { filename: filePath }, (err, str) => {
@@ -43,18 +41,16 @@ const renderEJS = (filePath, outputPath, depth) => {
 };
 
 // 디렉토리 내부의 모든 EJS 파일을 찾아 변환하는 함수 (재귀적 탐색)
-const processEJSFiles = (srcFolder, distFolder) => {
+const processEJSFiles = (srcFolder, distFolder, depth = 0) => {
     fs.readdirSync(srcFolder, { withFileTypes: true }).forEach(entry => {
         const srcPath = path.join(srcFolder, entry.name);
         const distPath = path.join(distFolder, entry.name.replace(".ejs", ".html"));
 
         if (entry.isDirectory()) {
-            // 하위 폴더 처리
             ensureDirExists(distPath);
-            processEJSFiles(srcPath, distPath);
+            processEJSFiles(srcPath, distPath, depth + 1);
         } else if (entry.isFile() && entry.name.endsWith(".ejs")) {
-            // EJS 파일 변환
-            renderEJS(srcPath, distPath);
+            renderEJS(srcPath, distPath, depth);
         }
     });
 };
