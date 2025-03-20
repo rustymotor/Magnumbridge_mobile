@@ -1,92 +1,188 @@
-# magnumbridge-homepage2
+# 소스코드 위치(송치국선임)
 
+-   HTML/JS, CSS 파일명은 동일
 
+## CSS
 
-## Getting started
+-   public/css/sample.css
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## HTML, JS
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+-   views/pages/sample.ejs (ejs안에 JS 포함 시킴)
 
-## Add your files
+---
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+### 작업환경(최인혁전임)
 
-```
-cd existing_repo
-git remote add origin https://gitlab.magnum.i234.me/dw.jo/magnumbridge-homepage2.git
-git branch -M main
-git push -uf origin main
-```
+#### SCSS
 
-## Integrate with your tools
+-   src/scss/sample.scss
 
-- [ ] [Set up project integrations](http://gitlab.magnum.i234.me/dw.jo/magnumbridge-homepage2/-/settings/integrations)
+#### HTML, JS
 
-## Collaborate with your team
+-   views/pages/sample.ejs (ejs안에 JS 포함 시킴)
+    .
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+---
 
-## Test and Deploy
+# 화면 개발 규칙(퍼블 작업시 참고)
 
-Use the built-in continuous integration in GitLab.
+## HTML 주석
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+-   기본형식
 
-***
+<!— 주석내용 —><!— //주석내용—>
 
-# Editing this README
+-   수정
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+<!— 210401 수정내용—><!— //210401 수정내용—>
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+## CSS 세미콜론
 
-## Name
-Choose a self-explaining name for your project.
+-   마지막 선언된 속성에도 세미콜론(;)을 사용한다.
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+## CSS 단위
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+-   모바일과 같이 유동적인 레이아웃 구현 시 상대단위(rem, %)를 사용한다.
+-   1px과 text-indent:-9999em, border 단위는 예외로 한다.
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+-   z-index
+    -   z-index값은 최소 10부터 시작하며 최고 9999이며 10 단위로 증감한다. 단, 중간에 변수가 생기면 예외로 1단위 값을 지정할 수 있다.
+-   구분 단위 설명
+    -   인라인 1 우선순위 1씩 증가, 기본요소 0
+    -   그룹 10 우선순위 1씩 증가, 기본요소 10
+    -   구조 100 우선순위 1씩 증가, 기본요소 100
+    -   팝업 1000 우선순위 1씩 증가, 기본요소 1000
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+## 속성선언순서
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+-   밴더속성과 해당 속성은 해당 속성 뒤에 선언한다.
+    -   예) .btn {border:1px solid #f60; \*border:2px solid #f60; border-radius:20x; -webkit-border-radius:2px}
+-   !important 사용은 지양한다.
+-   순서 구분 속성
+    1. Layout display, visibility, overflow
+    2. 위치 position, float, clear, z-index
+    3. 크기/간격 width, height,
+       margin, padding
+    4. 모양/배경 border
+       bakcground
+    5. 폰트/정렬 font, color, text-align, vertcal-align
+    6. 기타 언급되지 않는 속성들은 후순위로 적용한다.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+## 약속어
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+# CSS 레이아웃 약속어
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+-   레이아웃(무시해도 됩니다.)
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+    -   #wrap 페이지 전체영역
+    -   #skipNav 바로가기영역
+    -   #header 머리글 영역
+    -   #contain 본문영역
+    -   #content 주요 콘텐츠 영역
+    -   #footer 바닥글영역
+    -   #popXXX 레이어팝업 페이지별 ID
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+-   팝업(무시해도 됩니다.)
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+    -   .pop_wrap 팝업 전체영역
+    -   .pop_header 팝업 머리글
+    -   .pop_contain 팝업 본문 영역
+    -   .pop_content 팝업 콘텐츠 영역
+    -   .pop_footer 팝업 바닥글
 
-## License
-For open source projects, say how it is licensed.
+## CSS 영역
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+| 구분 | 예약어 | 설명 |
+
+-   컨텐츠 안의 그룹핑 | section | 타이틀이 있는 컨텐츠 영역 |
+-   독립적으로 재사용 가능한 영역 | article | 타이틀이 있는 컨텐츠 영역 |
+-   사이드 영역 | aside | 타이틀이 있는 컨텐츠 영역 |
+-   전체 영역 | \_wrap | 컨텐츠 전체 영역 |
+-   바깥 영역 | \_area | UI 영역단위로 그룹화한다. |
+-   반복 영역 | \_group | 역속적인 엘리먼트를 그룹화한다. |
+-   안쪽 영역 | \_inner | 내부영역 2중 처리 |
+
+## CSS 요소별
+
+-   버튼 btn\_
+-   아이콘 ico\_
+-   화살표 arr\_
+-   블릿 bul\_
+-   배경 bg\_
+-   비주얼 visual\_
+-   썸네일 thumb\_
+-   배너 bnn\_
+-   검색 sch\_
+-   텍스트 txt\_
+
+## CSS 요소별
+
+-   긍정 \_positive
+-   부정 \_negative
+-   성공 \_success
+-   실패 \_fail
+-   주의 \_warning
+-   위험 \_danger
+-   오류 \_error
+-   경고 \_alert
+-   안내 \_info
+
+## CSS 크기단위
+
+-   더크게 \_xl
+-   크게 \_lg
+-   보통 \_md
+-   작게 \_sm
+-   더작게 \_xs
+
+## 네이밍규칙
+
+## 공통규칙
+
+-   naming은 영문 소문자, 숫자, 언더바(\_)로 작성한다.
+-   단어조합시, [형태+의미+숫자+상태]의 형태로 작성한다.
+-   숫자가 없으면 ‘1’이라는 숫자가 생략된 것으로 간주한다.
+-   약속어를 기본으로 작성하나, 없으면 종류와 특성을 나타내도록 naming한다.
+-   종류 구분 번호 예시
+-   ID selector 카멜표기법
+-   (camelCase) 한 자리수
+-   (생략가능, 2, 3) errorMesage, controlCenter, controlCenter2
+-   Class Selector 스네이크표기법
+-   (snake_case) 한 자리수
+-   (생략가능, 2, 3) tab_page, tbl_type1, tbl_type2
+-   Image 스네이크표기법
+-   (snake_case) 두 자리수
+-   (01, 02, 03) btn_cancle01_off.gif
+-   파일 및 폴더 스네이크표기법
+-   (snake_case) cyber_center
+
+## ID 선택자
+
+-   id는 카멜표기법을 사용한다. 예)tabType1
+-   최상위, 레이아웃, 폼 요소, 책갈피를 제외하고 id를 사용하지 않는다.
+-   동일한 이름의 id는 문서에서 한번만 사용이 가능하다.
+
+## CLASS 선택자
+
+-   class는 언더바(*)방식을 사용한다. 예)tab*type1
+-   다중의 클래스 지정을 허용하며 최대 3개 이상 사용하지 않도록 주의한다.
+
+## 이미지 Naming
+
+-   네이밍 공통 규칙에 따른다.
+-   분류 파일명 설명
+-   버튼 btn\*
+-   아이콘 ico\*
+-   화살표 arr\*
+-   블릿 bul\*
+-   배경 bg\*
+-   비주얼 visual\*
+-   썸네일 thumb\*
+-   배너 bnn\*
+-   일반 이미지 img\_
+-   임시 @ 모든 임시파일은 temp폴더에 넣는다.
+
+## 파일 Naming
+
+-   HTML파일은 화면ID로 작업한다. 예)화면ID.html

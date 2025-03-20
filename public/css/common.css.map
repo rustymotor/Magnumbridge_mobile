@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "common.css",
+	"sources": [
+		"../../src/scss/common.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

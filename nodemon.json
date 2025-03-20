@@ -1,0 +1,6 @@
+{
+    "watch": ["src/scss", "views", "public/css", "app.js"],
+    "ext": "js,scss,ejs",
+    "exec": "node app.js",
+    "quiet": true
+}
