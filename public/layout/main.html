@@ -19,26 +19,30 @@
 
     </head>
     <body>
-        <header><ul>
+        <div class="container main">
+            <header><ul>
     <li><a href="main.html">홈</a></li>
-    <li><a href="bussiness.html">사업소개</a></li>
+    <li><a href="business.html">사업소개</a></li>
     <li><a href="company.html">회사소개</a></li>
     <li><a href="recrurit.html">리크루트</a></li>
 </ul>
 </header>
-        <main><!DOCTYPE html>
+            <main><!DOCTYPE html>
 <html lang="ko">
     <head>
         <%- include('../partials/head') %>
     </head>
     <body>
-        <header><%- include('../partials/header') %></header>
-        <main><%- content %></main>
-        <footer><%- include('../partials/footer') %></footer>
+        <div class="container main">
+            <header><%- include('../partials/header') %></header>
+            <main><%- content %></main>
+            <footer><%- include('../partials/footer') %></footer>
+        </div>
     </body>
 </html>
 </main>
-        <footer><div>footer입니다.</div>
+            <footer><div>footer입니다.</div>
 </footer>
+        </div>
     </body>
 </html>
