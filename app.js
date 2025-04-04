@@ -75,7 +75,7 @@ app.get("/", (req, res) => {
 /* 페이지생성 */
 
 app.get("/main", (req, res) => {
-    res.render("pages/main", { title: "메인페이지입니다." });
+    res.render("pages/main", { title: "메인페이지입니다.", htmlExt: "" });
 });
 /* //페이지생성 */
 
