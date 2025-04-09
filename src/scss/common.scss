@@ -1,0 +1,44 @@
+// 색상
+$mainColor: #4376fb;
+$subColor: #2f60df;
+$grey02: #868a92;
+$grey03: #afb3bb;
+$grey04: #b5b9c6;
+$grey05: #d2d5de;
+
+body {
+    font-family: "Pretendard-Regular";
+    letter-spacing: -0.7px;
+    font-size: 1.6rem;
+    -webkit-tap-highlight-color: transparent;
+}
+
+// 타이틀
+.h1 {
+    font-size: 2.4rem;
+    font-family: "Pretendard-Medium";
+}
+.h2 {
+    font-size: 2rem;
+    font-family: "Pretendard-Medium";
+}
+.h3 {
+    font-size: 1.8rem;
+    font-family: "Pretendard-Medium";
+}
+.h4 {
+    font-size: 1.6rem;
+    font-family: "Pretendard-Medium";
+}
+
+.h5 {
+    font-family: "Pretendard-Medium";
+    font-size: 1.4rem;
+}
+.h6 {
+    font-family: "Pretendard-Medium";
+    font-size: 1.2rem;
+}
+a:visited {
+    color: $grey02;
+}
