@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Pretendard-Regular";
+    src: url("../font/Pretendard-Regular.woff") format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "MinSans-Light";
+    src: url(./MinSans-Light.woff) format("woff");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "MinSans-Regular";
+    src: url(./MinSans-Regular.woff) format("woff");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Lexend";
+    src: url("/fonts/Lexend-Regular.woff2") format("woff2"), url("/fonts/Lexend-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
