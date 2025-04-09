@@ -61,20 +61,20 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // 라우팅
 app.get("/", (req, res) => {
-    res.render("index", { title: "My Page test" });
+    res.render("index", { basePath: "./" });
 });
 
 app.get("/pages/main", (req, res) => {
-    res.render("pages/main", { basePath: "/", htmlExt: "" });
+    res.render("pages/main", { basePath: "../", htmlExt: "" });
 });
 app.get("/pages/business", (req, res) => {
-    res.render("pages/business", { basePath: "/", htmlExt: "" });
+    res.render("pages/business", { basePath: "../", htmlExt: "" });
 });
 app.get("/pages/company", (req, res) => {
-    res.render("pages/company", { basePath: "/", htmlExt: "" });
+    res.render("pages/company", { basePath: "../", htmlExt: "" });
 });
 app.get("/pages/recrurit", (req, res) => {
-    res.render("pages/recrurit", { basePath: "/", htmlExt: "" });
+    res.render("pages/recrurit", { basePath: "../", htmlExt: "" });
 });
 
 const watcher = chokidar.watch("views/**/*.ejs", {
