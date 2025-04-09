@@ -6,8 +6,8 @@ import postcss from "postcss";
 import autoprefixer from "autoprefixer";
 import fs from "fs";
 import browserSync from "browser-sync";
-import chokidar from "chokidar"; // ✅ 추가
-
+import connectBrowserSync from "connect-browser-sync";
+import chokidar from "chokidar";
 const app = express();
 const PORT = 1227;
 const bs = browserSync.create();
@@ -64,11 +64,19 @@ app.get("/", (req, res) => {
     res.render("index", { title: "My Page test" });
 });
 
-app.get("/main", (req, res) => {
-    res.render("pages/main", { title: "메인페이지입니다.", htmlExt: "" });
+app.get("/pages/main", (req, res) => {
+    res.render("pages/main", { basePath: "/", htmlExt: "" });
+});
+app.get("/pages/business", (req, res) => {
+    res.render("pages/business", { basePath: "/", htmlExt: "" });
+});
+app.get("/pages/company", (req, res) => {
+    res.render("pages/company", { basePath: "/", htmlExt: "" });
+});
+app.get("/pages/recrurit", (req, res) => {
+    res.render("pages/recrurit", { basePath: "/", htmlExt: "" });
 });
 
-// ✅ EJS 변경 감지 후 새로고침 (핵심 추가)
 const watcher = chokidar.watch("views/**/*.ejs", {
     ignoreInitial: true
 });
@@ -81,7 +89,7 @@ watcher.on("change", path => {
 // 브라우저 싱크
 bs.init({
     proxy: `http://localhost:${PORT}`,
-    files: ["src/scss/**/*.scss"], // SCSS만 파일 감지, EJS는 chokidar가 따로 처리
+    files: ["src/scss/**/*.scss", "views/**/*.ejs"], // EJS 파일 변경 감지 추가
     open: false,
     reloadOnRestart: false,
     notify: false,
@@ -92,3 +100,4 @@ bs.init({
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
+app.use(connectBrowserSync(bs));
