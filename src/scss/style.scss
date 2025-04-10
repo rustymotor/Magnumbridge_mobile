@@ -1,17 +1,22 @@
 @charset "UTF-8";
 @use "./common";
 @forward "./common_head_foot";
-@forward "./business_1";
+@forward "./sub_business_1";
 
 // 전체 레이아웃
 .container {
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     main {
         flex: 1;
     }
 }
+main,
+footer {
+    width: 100%;
+}
+
 // 폰트테스트(사용금지)
 .pretendard {
     font-family: "Pretendard-Medium";

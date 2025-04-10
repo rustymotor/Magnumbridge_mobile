@@ -32,28 +32,92 @@ a:visited {
   color: #868a92;
 }
 
-.logo_header {
-  margin: 0;
-  border: 1px solid red;
-}
-
 header {
-  border: 1px solid red;
-  background-color: transparent;
   display: flex;
+  width: 100%;
+  height: 9rem;
+  justify-content: center;
+}
+header .contain {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+  border: 1px solid red;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1280px;
+  height: 9rem;
+  border: 1px solid blue;
+}
+header nav .gnb {
+  display: flex;
+  width: 100%;
+}
+header nav .gnb a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 16rem;
+  height: 9rem;
+  padding: 0 1.4rem;
+  font-size: 2rem;
+  font-family: "Pretendard-bold";
+  border: 1px solid red;
+}
+header nav .gnb .spacer {
+  flex: 1;
+  visibility: hidden;
+  pointer-events: none;
+  border: none;
+}
+header nav .gnb .lnb {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header nav .gnb .lnb a {
+  display: flex;
+  align-items: center;
+  width: 22rem;
+  height: 6rem;
+}
+header .logo_header {
+  margin: 0;
+  position: absolute;
 }
 
-.test {
-  font-size: inherit;
+.spacer_lnb {
+  display: block;
+  height: 6rem;
+}
+
+.business main {
+  height: 110vh !important;
 }
 
 .container {
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 .container main {
   flex: 1;
+}
+
+main,
+footer {
+  width: 100%;
 }
 
 .pretendard {

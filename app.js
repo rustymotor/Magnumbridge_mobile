@@ -1,7 +1,6 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
-// import sassMiddleware from "node-sass-middleware";
 import postcss from "postcss";
 import autoprefixer from "autoprefixer";
 import fs from "fs";
@@ -17,21 +16,6 @@ const __dirname = path.dirname(__filename);
 
 // EJS 설정
 app.set("view engine", "ejs");
-
-// SASS 및 PostCSS 미들웨어 설정
-// app.use(
-//     sassMiddleware({
-//         src: path.join(__dirname, "src/scss"),
-//         dest: path.join(__dirname, "public/css"),
-//         prefix: "/css",
-//         indentedSyntax: false,
-//         sourceMap: true,
-//         debug: false,
-//         outputStyle: "compressed",
-//         force: true,
-//         response: false
-//     })
-// );
 
 // PostCSS 및 Autoprefixer 적용
 app.use("/css", (req, res) => {
