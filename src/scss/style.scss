@@ -1,8 +1,9 @@
-// 레이아웃
-html,
-body {
-    height: 100%;
-}
+@charset "UTF-8";
+@use "./common";
+@forward "./common_head_foot";
+@forward "./business_1";
+
+// 전체 레이아웃
 .container {
     height: 100%;
     display: flex;
@@ -11,12 +12,13 @@ body {
         flex: 1;
     }
 }
-.font_test1 {
+// 폰트테스트(사용금지)
+.pretendard {
     font-family: "Pretendard-Medium";
-    font-size: 16px;
+    color: common.$mainColor;
 }
-.font_test2 {
+.lexend {
     font-family: "Lexend-Bold";
-    font-size: 16px;
     letter-spacing: -0.5px;
+    color: common.$subColor;
 }

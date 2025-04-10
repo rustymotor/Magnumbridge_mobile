@@ -1,18 +1,10 @@
-// 색상
+// common.scss
 $mainColor: #4376fb;
 $subColor: #2f60df;
 $grey02: #868a92;
 $grey03: #afb3bb;
 $grey04: #b5b9c6;
 $grey05: #d2d5de;
-
-body {
-    font-family: "Pretendard-Regular";
-    letter-spacing: -0.7px;
-    font-size: 1.6rem;
-    -webkit-tap-highlight-color: transparent;
-}
-
 // 타이틀
 .h1 {
     font-size: 2.4rem;

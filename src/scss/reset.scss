@@ -142,6 +142,21 @@ body {
 }
 
 body {
+    font-family: "Pretendard-Regular";
+    letter-spacing: -0.7px;
+    font-size: 1.6rem;
+    -webkit-tap-highlight-color: transparent;
     -webkit-text-size-adjust: none;
     word-break: break-all; /* 상황 따라 조절 */
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    height: auto;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    line-height: 0;
 }

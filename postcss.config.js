@@ -5,6 +5,6 @@ module.exports = {
             console.log(json); // JSON 파일로 클래스 매핑 확인 가능
         }
     },
-    plugins: [require("autoprefixer")],
+    // plugins: [require("autoprefixer")],
     browserslist: "> 1%, last 2 versions, Firefox ESR, Safari >= 9"
 };

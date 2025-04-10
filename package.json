@@ -1,7 +1,7 @@
 {
     "type": "module",
     "scripts": {
-        "start": "node app.js",
+        "start": "concurrently \"node app.js\" \"npm run sass\"",
         "sass": "sass src/scss:public/css --watch",
         "build": "node build.js"
     },
@@ -12,16 +12,15 @@
         "chokidar": "^4.0.3",
         "ejs": "^3.1.10",
         "express": "^4.21.2",
-        "node-sass": "^9.0.0",
-        "node-sass-middleware": "^1.1.0",
         "swiper": "^11.2.1"
     },
     "devDependencies": {
+        "concurrently": "^9.1.2",
         "connect-browser-sync": "^2.1.0",
         "nodemon": "^3.1.9",
         "postcss": "^8.5.2",
         "postcss-modules": "^6.0.1",
-        "sass": "^1.83.1"
+        "sass": "^1.86.3"
     },
     "browserslist": [
         "> 1%",

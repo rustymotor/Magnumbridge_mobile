@@ -1,7 +1,7 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
-import sassMiddleware from "node-sass-middleware";
+// import sassMiddleware from "node-sass-middleware";
 import postcss from "postcss";
 import autoprefixer from "autoprefixer";
 import fs from "fs";
@@ -19,19 +19,19 @@ const __dirname = path.dirname(__filename);
 app.set("view engine", "ejs");
 
 // SASS 및 PostCSS 미들웨어 설정
-app.use(
-    sassMiddleware({
-        src: path.join(__dirname, "src/scss"),
-        dest: path.join(__dirname, "public/css"),
-        indentedSyntax: false,
-        sourceMap: true,
-        prefix: "/css",
-        debug: false,
-        outputStyle: "compressed",
-        force: true,
-        response: false
-    })
-);
+// app.use(
+//     sassMiddleware({
+//         src: path.join(__dirname, "src/scss"),
+//         dest: path.join(__dirname, "public/css"),
+//         prefix: "/css",
+//         indentedSyntax: false,
+//         sourceMap: true,
+//         debug: false,
+//         outputStyle: "compressed",
+//         force: true,
+//         response: false
+//     })
+// );
 
 // PostCSS 및 Autoprefixer 적용
 app.use("/css", (req, res) => {
@@ -42,7 +42,6 @@ app.use("/css", (req, res) => {
             console.error("파일 읽기 오류:", err);
             return res.status(500).send("Server Error");
         }
-
         postcss([autoprefixer])
             .process(css, { from: undefined })
             .then(result => {
@@ -70,11 +69,38 @@ app.get("/pages/main", (req, res) => {
 app.get("/pages/business", (req, res) => {
     res.render("pages/business", { basePath: "../", htmlExt: "" });
 });
+app.get("/pages/business_1", (req, res) => {
+    res.render("pages/business_1", { basePath: "../", htmlExt: "" });
+});
+app.get("/pages/business_2", (req, res) => {
+    res.render("pages/business_2", { basePath: "../", htmlExt: "" });
+});
+app.get("/pages/business_3", (req, res) => {
+    res.render("pages/business_3", { basePath: "../", htmlExt: "" });
+});
 app.get("/pages/company", (req, res) => {
     res.render("pages/company", { basePath: "../", htmlExt: "" });
 });
-app.get("/pages/recrurit", (req, res) => {
-    res.render("pages/recrurit", { basePath: "../", htmlExt: "" });
+app.get("/pages/company_1", (req, res) => {
+    res.render("pages/company_1", { basePath: "../", htmlExt: "" });
+});
+app.get("/pages/company_2", (req, res) => {
+    res.render("pages/company_2", { basePath: "../", htmlExt: "" });
+});
+app.get("/pages/company_3", (req, res) => {
+    res.render("pages/company_3", { basePath: "../", htmlExt: "" });
+});
+app.get("/pages/company_4", (req, res) => {
+    res.render("pages/company_4", { basePath: "../", htmlExt: "" });
+});
+app.get("/pages/recruit", (req, res) => {
+    res.render("pages/recruit", { basePath: "../", htmlExt: "" });
+});
+app.get("/pages/recruit_1", (req, res) => {
+    res.render("pages/recruit_1", { basePath: "../", htmlExt: "" });
+});
+app.get("/pages/recruit_2", (req, res) => {
+    res.render("pages/recruit_2", { basePath: "../", htmlExt: "" });
 });
 
 const watcher = chokidar.watch("views/**/*.ejs", {

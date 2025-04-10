@@ -1,3 +1,70 @@
-html,body{height:100%}.container{height:100%;display:flex;flex-direction:column}.container main{flex:1}.font_test1{font-family:"Pretendard-Medium";font-size:16px}.font_test2{font-family:"Lexend-Bold";font-size:16px;letter-spacing:-0.5px}
+.h1 {
+  font-size: 2.4rem;
+  font-family: "Pretendard-Medium";
+}
+
+.h2 {
+  font-size: 2rem;
+  font-family: "Pretendard-Medium";
+}
+
+.h3 {
+  font-size: 1.8rem;
+  font-family: "Pretendard-Medium";
+}
+
+.h4 {
+  font-size: 1.6rem;
+  font-family: "Pretendard-Medium";
+}
+
+.h5 {
+  font-family: "Pretendard-Medium";
+  font-size: 1.4rem;
+}
+
+.h6 {
+  font-family: "Pretendard-Medium";
+  font-size: 1.2rem;
+}
+
+a:visited {
+  color: #868a92;
+}
+
+.logo_header {
+  margin: 0;
+  border: 1px solid red;
+}
+
+header {
+  border: 1px solid red;
+  background-color: transparent;
+  display: flex;
+}
+
+.test {
+  font-size: inherit;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container main {
+  flex: 1;
+}
+
+.pretendard {
+  font-family: "Pretendard-Medium";
+  color: #4376fb;
+}
+
+.lexend {
+  font-family: "Lexend-Bold";
+  letter-spacing: -0.5px;
+  color: #2f60df;
+}
 
 /*# sourceMappingURL=style.css.map */
