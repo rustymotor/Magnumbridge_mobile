@@ -37,6 +37,8 @@ header {
   width: 100%;
   height: 9rem;
   justify-content: center;
+  position: fixed;
+  z-index: 3;
 }
 header .contain {
   display: flex;
@@ -44,7 +46,6 @@ header .contain {
   justify-content: space-between;
   align-items: center;
   width: 1280px;
-  border: 1px solid red;
 }
 header nav {
   display: flex;
@@ -52,32 +53,42 @@ header nav {
   position: absolute;
   right: 0;
   left: 0;
+  z-index: 2;
   margin: 0 auto;
   max-width: 1280px;
   height: 9rem;
-  border: 1px solid blue;
 }
 header nav .gnb {
   display: flex;
   width: 100%;
 }
-header nav .gnb a {
+header nav .gnb > li {
+  overflow: hidden;
+}
+header nav .gnb > li a {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   width: 16rem;
-  height: 9rem;
+  height: 5rem;
   padding: 0 1.4rem;
+  margin: 1.4rem 0;
   font-size: 2rem;
   font-family: "Pretendard-bold";
-  border: 1px solid red;
 }
-header nav .gnb .spacer {
+header nav .gnb > li a.active {
+  background-color: #d2282f;
+  border-radius: 4rem;
+  color: white;
+}
+header nav .gnb .spacer_gnb {
   flex: 1;
   visibility: hidden;
   pointer-events: none;
   border: none;
+  position: relative;
+  z-index: 1;
 }
 header nav .gnb .lnb {
   display: flex;
@@ -85,21 +96,67 @@ header nav .gnb .lnb {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  top: 8.8rem;
+  width: 100%;
+  height: 6rem;
+}
+header nav .gnb .lnb::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  margin-left: -0.1vw;
+  margin-right: -0.1vw;
+  height: 6rem;
+  border-bottom: 1px solid #d2d5de;
+  background-color: white;
 }
 header nav .gnb .lnb a {
   display: flex;
   align-items: center;
   width: 22rem;
   height: 6rem;
+  margin: 0;
 }
 header .logo_header {
-  margin: 0;
   position: absolute;
+  z-index: 3;
+  width: 14.2rem;
+  height: 7.2rem;
 }
 
-.spacer_lnb {
+main {
+  position: relative;
+  z-index: 1;
+}
+
+.spacer_top_visual {
   display: block;
-  height: 6rem;
+  position: relative;
+  z-index: 1;
+  height: 59.6rem;
+  background: url("/images/vusual_top_bussiness_1.jpg") no-repeat center center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.spacer_top_visual .visual_gradient {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180rem;
+  height: 23.6rem;
+  background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 50px 50px 0 0;
+  border: 1px solid rgba(205, 205, 205, 0.7);
+  border-bottom: none !important;
+}
+@media (max-width: 1800px) {
+  .spacer_top_visual .visual_gradient {
+    width: 100%;
+  }
 }
 
 .business main {
@@ -122,7 +179,7 @@ footer {
 
 .pretendard {
   font-family: "Pretendard-Medium";
-  color: #4376fb;
+  color: #d2282f;
 }
 
 .lexend {

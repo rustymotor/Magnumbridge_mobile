@@ -1,15 +1,17 @@
+@use "common";
 header {
     display: flex;
     width: 100%;
     height: 9rem;
     justify-content: center;
+    position: fixed;
+    z-index: 3;
     .contain {
         display: flex;
         position: relative;
         justify-content: space-between;
         align-items: center;
         width: 1280px;
-        border: 1px solid red;
     }
     nav {
         display: flex;
@@ -17,30 +19,40 @@ header {
         position: absolute;
         right: 0;
         left: 0;
+        z-index: 2;
         margin: 0 auto;
         max-width: 1280px;
         height: 9rem;
-        border: 1px solid blue;
         .gnb {
             display: flex;
             width: 100%;
-            a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-decoration: none;
-                width: 16rem;
-                height: 9rem;
-                padding: 0 1.4rem;
-                font-size: 2rem;
-                font-family: "Pretendard-bold";
-                border: 1px solid red;
+            > li {
+                overflow: hidden;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    width: 16rem;
+                    height: 5rem;
+                    padding: 0 1.4rem;
+                    margin: 1.4rem 0;
+                    font-size: 2rem;
+                    font-family: "Pretendard-bold";
+                }
+                a.active {
+                    background-color: common.$mainColor;
+                    border-radius: 4rem;
+                    color: white;
+                }
             }
-            .spacer {
+            .spacer_gnb {
                 flex: 1;
                 visibility: hidden;
                 pointer-events: none; // 클릭도 방지
                 border: none;
+                position: relative;
+                z-index: 1;
             }
             .lnb {
                 display: flex;
@@ -48,22 +60,70 @@ header {
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
+                top: 8.8rem;
+                width: 100%;
+                height: 6rem;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 100vw;
+                    margin-left: -0.1vw;
+                    margin-right: -0.1vw;
+                    height: 6rem;
+                    border-bottom: 1px solid common.$grey05;
+                    background-color: white;
+                }
                 a {
                     display: flex;
                     align-items: center;
                     width: 22rem;
                     height: 6rem;
+                    margin: 0;
                 }
             }
         }
     }
     .logo_header {
-        margin: 0;
         position: absolute;
+        z-index: 3;
+        width: 14.2rem;
+        height: 7.2rem;
     }
 }
 
-.spacer_lnb {
+main {
+    position: relative;
+    z-index: 1;
+}
+.spacer_top_visual {
     display: block;
-    height: 6rem;
+    position: relative;
+    z-index: 1;
+    height: 59.6rem;
+    background: url("/images/vusual_top_bussiness_1.jpg") no-repeat center center;
+    background-size: cover;
+    box-sizing: border-box;
+    .visual_gradient {
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 180rem;
+        height: 23.6rem;
+        background: linear-gradient(
+            to top,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 0.3) 75%,
+            rgba(255, 255, 255, 0) 100%
+        );
+        border-radius: 50px 50px 0 0;
+        border: 1px solid rgba(205, 205, 205, 0.7);
+        border-bottom: none !important;
+        @media (max-width: 1800px) {
+            width: 100%;
+        }
+    }
 }
