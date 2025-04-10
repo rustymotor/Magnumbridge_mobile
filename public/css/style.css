@@ -159,6 +159,28 @@ main {
   }
 }
 
+#footer {
+  background-color: #191919;
+}
+#footer .footer_menu {
+  display: flex;
+  justify-content: center;
+}
+#footer .footer_menu ul .h3 {
+  color: #feffff;
+  font-family: "pretendard-bold";
+}
+#footer .footer_menu ul li a {
+  color: #8c8c8c;
+  font-size: 1.6rem;
+}
+#footer .footer_info {
+  display: flex;
+}
+#footer .footer_info * {
+  color: #8c8c8c;
+}
+
 .business main {
   height: 110vh !important;
 }

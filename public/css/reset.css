@@ -126,6 +126,11 @@ table {
   border-spacing: 0;
 }
 
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
 :root {
   font-size: 10px;
   --sab: calc(env(safe-area-inset-bottom) / 2);
@@ -145,7 +150,7 @@ body {
 
 body {
   font-family: "Pretendard-Regular";
-  letter-spacing: -0.7px;
+  letter-spacing: -0.4px;
   font-size: 1.6rem;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: none;

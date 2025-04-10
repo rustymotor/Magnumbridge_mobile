@@ -2,7 +2,7 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 import postcss from "postcss";
-// import postcssUrl from "postcss-url";
+import postcssUrl from "postcss-url";
 import autoprefixer from "autoprefixer";
 import fs from "fs";
 import browserSync from "browser-sync";
@@ -27,8 +27,17 @@ app.use("/css", (req, res) => {
             console.error("파일 읽기 오류:", err);
             return res.status(500).send("Server Error");
         }
-        postcss([autoprefixer])
-            .process(css, { from: undefined })
+
+        postcss([
+            autoprefixer,
+            postcssUrl({
+                url: "rebase"
+            })
+        ])
+            .process(css, {
+                from: cssFilePath, // ✅ 여기서 기준 경로를 명확히
+                map: false
+            })
             .then(result => {
                 res.setHeader("Content-Type", "text/css");
                 res.send(result.css);

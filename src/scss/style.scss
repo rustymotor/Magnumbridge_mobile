@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @use "./common";
-@forward "./common_head_foot";
+@forward "./_common_header";
+@forward "./_common_footer";
 @forward "./sub_business_1";
 
 // 전체 레이아웃
