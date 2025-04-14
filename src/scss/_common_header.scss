@@ -2,10 +2,10 @@
 header {
     display: flex;
     width: 100%;
-    height: 9rem;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     z-index: 3;
+    height: 9rem;
     .contain {
         display: flex;
         position: relative;
@@ -40,7 +40,7 @@ header {
                     font-size: 2rem;
                     font-family: "Pretendard-bold";
                 }
-                a.active {
+                > a.active {
                     background-color: common.$mainColor;
                     border-radius: 4rem;
                     color: white;
@@ -55,14 +55,6 @@ header {
                 z-index: 1;
             }
             .lnb {
-                display: flex;
-                justify-content: center;
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                top: 8.8rem;
-                width: 100%;
-                height: 6rem;
                 &::before {
                     content: "";
                     position: absolute;
@@ -70,18 +62,43 @@ header {
                     left: 50%;
                     transform: translateX(-50%);
                     width: 100vw;
-                    margin-left: -0.1vw;
-                    margin-right: -0.1vw;
+                    margin-left: -0.6vw;
+                    margin-right: -0.6vw;
+
                     height: 6rem;
                     border-bottom: 1px solid common.$grey05;
                     background-color: white;
+                    // transition: top 0.1s ease, position 0s linear 0.1s;
                 }
-                a {
+                &.is-fixed {
+                    position: fixed;
+                    top: 0;
+                    width: 1280px;
+                    // transition: top 0.1s ease, position 0s;
+                }
+                &.is-show {
                     display: flex;
-                    align-items: center;
-                    width: 22rem;
-                    height: 6rem;
-                    margin: 0;
+                }
+                display: none;
+                justify-content: flex-end;
+                position: absolute;
+                top: 9rem;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                height: 6rem;
+                li {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        width: 22rem;
+                        height: 6rem;
+                        margin: 0;
+                    }
+                    > a.active {
+                        color: common.$mainColor;
+                        border-radius: 4rem;
+                    }
                 }
             }
         }

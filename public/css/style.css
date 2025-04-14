@@ -35,10 +35,10 @@ a:visited {
 header {
   display: flex;
   width: 100%;
-  height: 9rem;
   justify-content: center;
-  position: fixed;
+  position: absolute;
   z-index: 3;
+  height: 9rem;
 }
 header .contain {
   display: flex;
@@ -77,7 +77,7 @@ header nav .gnb > li a {
   font-size: 2rem;
   font-family: "Pretendard-bold";
 }
-header nav .gnb > li a.active {
+header nav .gnb > li > a.active {
   background-color: #d2282f;
   border-radius: 4rem;
   color: white;
@@ -91,12 +91,12 @@ header nav .gnb .spacer_gnb {
   z-index: 1;
 }
 header nav .gnb .lnb {
-  display: flex;
-  justify-content: center;
+  display: none;
+  justify-content: flex-end;
   position: absolute;
+  top: 9rem;
   left: 50%;
   transform: translateX(-50%);
-  top: 8.8rem;
   width: 100%;
   height: 6rem;
 }
@@ -107,18 +107,30 @@ header nav .gnb .lnb::before {
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
-  margin-left: -0.1vw;
-  margin-right: -0.1vw;
+  margin-left: -0.6vw;
+  margin-right: -0.6vw;
   height: 6rem;
   border-bottom: 1px solid #d2d5de;
   background-color: white;
 }
-header nav .gnb .lnb a {
+header nav .gnb .lnb.is-fixed {
+  position: fixed;
+  top: 0;
+  width: 1280px;
+}
+header nav .gnb .lnb.is-show {
+  display: flex;
+}
+header nav .gnb .lnb li a {
   display: flex;
   align-items: center;
   width: 22rem;
   height: 6rem;
   margin: 0;
+}
+header nav .gnb .lnb li > a.active {
+  color: #d2282f;
+  border-radius: 4rem;
 }
 header .logo_header {
   position: absolute;
