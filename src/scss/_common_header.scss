@@ -6,6 +6,13 @@ header {
     position: absolute;
     z-index: 3;
     height: 9rem;
+    &:hover {
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+    &.has-bg {
+        background-color: white;
+    }
     .contain {
         display: flex;
         position: relative;
@@ -14,6 +21,29 @@ header {
         width: 1280px;
     }
     nav {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100vw;
+            margin-left: -0.6vw;
+            margin-right: -0.6vw;
+            height: 9rem;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+            z-index: -1;
+        }
+        &.is-fixed {
+            position: fixed;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            &::before {
+                content: "";
+                background-color: white;
+            }
+        }
         display: flex;
         justify-content: center;
         position: absolute;
@@ -23,6 +53,8 @@ header {
         margin: 0 auto;
         max-width: 1280px;
         height: 9rem;
+        transition: all 0.3s ease;
+        background-color: transparent;
         .gnb {
             display: flex;
             width: 100%;
@@ -62,9 +94,6 @@ header {
                     left: 50%;
                     transform: translateX(-50%);
                     width: 100vw;
-                    margin-left: -0.6vw;
-                    margin-right: -0.6vw;
-
                     height: 6rem;
                     border-bottom: 1px solid common.$grey05;
                     background-color: white;
@@ -91,7 +120,7 @@ header {
                     a {
                         display: flex;
                         align-items: center;
-                        width: 22rem;
+                        width: 23rem;
                         height: 6rem;
                         margin: 0;
                     }
