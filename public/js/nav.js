@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // ⬅️ 이 부분은 main 페이지에서만 실행
+    //  이 부분은 main 페이지에서만 실행
     if (isMain) {
         nav.addEventListener("mouseleave", function () {
             document.querySelectorAll(".lnb").forEach(lnb => lnb.classList.remove("is-show"));
