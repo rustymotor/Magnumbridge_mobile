@@ -183,7 +183,7 @@ header {
   justify-content: center;
   position: absolute;
   z-index: 3;
-  height: 9rem;
+  height: 8rem;
 }
 header:hover {
   background-color: white;
@@ -208,7 +208,7 @@ header nav {
   z-index: 2;
   margin: 0 auto;
   max-width: 1280px;
-  height: 9rem;
+  height: 8rem;
   transition: all 0.3s ease;
   background-color: transparent;
 }
@@ -221,7 +221,7 @@ header nav::before {
   width: 100vw;
   margin-left: -0.6vw;
   margin-right: -0.6vw;
-  height: 9rem;
+  height: 8rem;
   background-color: transparent;
   transition: background-color 0.3s ease;
   z-index: -1;
@@ -237,6 +237,7 @@ header nav.is-fixed::before {
 }
 header nav .gnb {
   display: flex;
+  align-items: center;
   width: 100%;
 }
 header nav .gnb > li {
@@ -250,14 +251,15 @@ header nav .gnb > li a {
   width: 16rem;
   height: 5rem;
   padding: 0 1.4rem;
-  margin: 1.4rem 0;
+  margin: 1rem 0;
   font-size: 2rem;
-  font-family: "Pretendard-bold";
+  font-family: "Pretendard-Semibold";
 }
 header nav .gnb > li > a.active {
   background-color: #d2282f;
   border-radius: 4rem;
   color: white;
+  font-family: "Pretendard-bold";
 }
 header nav .gnb .spacer_gnb {
   flex: 1;
@@ -271,11 +273,11 @@ header nav .gnb .lnb {
   display: none;
   justify-content: flex-end;
   position: absolute;
-  top: 9rem;
+  top: 8rem;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  height: 6rem;
+  height: 5rem;
 }
 header nav .gnb .lnb::before {
   content: "";
@@ -284,7 +286,7 @@ header nav .gnb .lnb::before {
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
-  height: 6rem;
+  height: 4rem;
   border-bottom: 1px solid #d2d5de;
   background-color: white;
 }
@@ -295,17 +297,21 @@ header nav .gnb .lnb.is-fixed {
 }
 header nav .gnb .lnb.is-show {
   display: flex;
+  align-items: flex-start;
 }
 header nav .gnb .lnb li a {
   display: flex;
   align-items: center;
-  width: 23rem;
-  height: 6rem;
+  width: 22rem;
+  height: 3rem;
   margin: 0;
+  font-family: "Pretendard-Medium";
+  font-size: 1.8rem;
 }
 header nav .gnb .lnb li > a.active {
   color: #d2282f;
   border-radius: 4rem;
+  font-family: "Pretendard-SemiBold";
 }
 header .logo_header {
   position: absolute;
@@ -373,17 +379,36 @@ main {
   color: #d2282f;
 }
 
-.pretendard_400 {
+.pretendard {
+  font-family: "Pretendard-Regular";
+}
+
+.pretendard_600 {
   font-family: "Pretendard-SemiBold";
 }
 
-.pretendard {
-  font-family: "Pretendard-SemiBold";
+.pretendard_700 {
+  font-family: "Pretendard-Bold";
 }
 
 .lexend {
+  font-family: "Lexend-Regular";
+  letter-spacing: -0.25px;
+}
+
+.lexend_300 {
+  font-family: "Lexend-Light";
+  letter-spacing: -0.25px;
+}
+
+.lexend_600 {
+  font-family: "Lexend-SemiBold";
+  letter-spacing: -0.25px;
+}
+
+.lexend_700 {
   font-family: "Lexend-Bold";
-  letter-spacing: -0.5px;
+  letter-spacing: -0.25px;
 }
 
 .container {

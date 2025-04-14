@@ -5,7 +5,7 @@ header {
     justify-content: center;
     position: absolute;
     z-index: 3;
-    height: 9rem;
+    height: 8rem;
     &:hover {
         background-color: white;
         transition: all 0.3s ease;
@@ -30,7 +30,7 @@ header {
             width: 100vw;
             margin-left: -0.6vw;
             margin-right: -0.6vw;
-            height: 9rem;
+            height: 8rem;
             background-color: transparent;
             transition: background-color 0.3s ease;
             z-index: -1;
@@ -52,11 +52,12 @@ header {
         z-index: 2;
         margin: 0 auto;
         max-width: 1280px;
-        height: 9rem;
+        height: 8rem;
         transition: all 0.3s ease;
         background-color: transparent;
         .gnb {
             display: flex;
+            align-items: center;
             width: 100%;
             > li {
                 overflow: hidden;
@@ -68,14 +69,15 @@ header {
                     width: 16rem;
                     height: 5rem;
                     padding: 0 1.4rem;
-                    margin: 1.4rem 0;
+                    margin: 1rem 0;
                     font-size: 2rem;
-                    font-family: "Pretendard-bold";
+                    font-family: "Pretendard-Semibold";
                 }
                 > a.active {
                     background-color: common.$mainColor;
                     border-radius: 4rem;
                     color: white;
+                    font-family: "Pretendard-bold";
                 }
             }
             .spacer_gnb {
@@ -94,7 +96,7 @@ header {
                     left: 50%;
                     transform: translateX(-50%);
                     width: 100vw;
-                    height: 6rem;
+                    height: 4rem;
                     border-bottom: 1px solid common.$grey05;
                     background-color: white;
                     // transition: top 0.1s ease, position 0s linear 0.1s;
@@ -107,26 +109,30 @@ header {
                 }
                 &.is-show {
                     display: flex;
+                    align-items: flex-start;
                 }
                 display: none;
                 justify-content: flex-end;
                 position: absolute;
-                top: 9rem;
+                top: 8rem;
                 left: 50%;
                 transform: translateX(-50%);
                 width: 100%;
-                height: 6rem;
+                height: 5rem;
                 li {
                     a {
                         display: flex;
                         align-items: center;
-                        width: 23rem;
-                        height: 6rem;
+                        width: 22rem;
+                        height: 3rem;
                         margin: 0;
+                        font-family: "Pretendard-Medium";
+                        font-size: 1.8rem;
                     }
                     > a.active {
                         color: common.$mainColor;
                         border-radius: 4rem;
+                        font-family: "Pretendard-SemiBold";
                     }
                 }
             }

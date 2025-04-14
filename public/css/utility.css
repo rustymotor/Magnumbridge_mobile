@@ -177,17 +177,36 @@ div > ul > li ul > li {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.pretendard_400 {
+.pretendard {
+  font-family: "Pretendard-Regular";
+}
+
+.pretendard_600 {
   font-family: "Pretendard-SemiBold";
 }
 
-.pretendard {
-  font-family: "Pretendard-SemiBold";
+.pretendard_700 {
+  font-family: "Pretendard-Bold";
 }
 
 .lexend {
+  font-family: "Lexend-Regular";
+  letter-spacing: -0.25px;
+}
+
+.lexend_300 {
+  font-family: "Lexend-Light";
+  letter-spacing: -0.25px;
+}
+
+.lexend_600 {
+  font-family: "Lexend-SemiBold";
+  letter-spacing: -0.25px;
+}
+
+.lexend_700 {
   font-family: "Lexend-Bold";
-  letter-spacing: -0.5px;
+  letter-spacing: -0.25px;
 }
 
 /*# sourceMappingURL=utility.css.map */
