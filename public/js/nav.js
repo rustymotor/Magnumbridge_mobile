@@ -3,6 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const lnb = document.querySelector(".lnb");
     const triggerOffset = 9 * 10; // 9rem = 90px (root rem 기준)
 
+    // 현재 페이지 경로 확인
+    const isMainPage = window.location.pathname.endsWith("/") || window.location.pathname.includes("main");
+
+    // 메인 페이지일 경우 기능 실행 안 함
+    if (isMainPage || !lnb) return;
+
     let ticking = false;
 
     function onScroll() {
@@ -105,13 +111,14 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const path = window.location.pathname;
     const isMainOrGnbRelated = /(main|business|company|recruit)/.test(path);
+    const isMain = /main/.test(path);
 
     const gnbLinks = document.querySelectorAll(".gnb > li > a");
+    const nav = document.querySelector("nav");
 
     gnbLinks.forEach(gnbLink => {
         const href = gnbLink.getAttribute("href")?.replace(".html", "");
 
-        // 현재 페이지 경로에 따라 active 및 is-show 설정
         if (href && path.includes(href)) {
             gnbLink.classList.add("active");
 
@@ -129,25 +136,30 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        // GNB 클릭 이벤트: main, business, company, recruit 에서만 작동
         if (isMainOrGnbRelated) {
             gnbLink.addEventListener("click", function (e) {
                 const nextEl = gnbLink.nextElementSibling;
 
                 if (nextEl && nextEl.classList.contains("lnb")) {
-                    e.preventDefault(); // 페이지 이동 막기
+                    e.preventDefault();
 
-                    // 모든 LNB 닫고 GNB 비활성화
                     document.querySelectorAll(".lnb").forEach(lnb => lnb.classList.remove("is-show"));
                     gnbLinks.forEach(link => link.classList.remove("active"));
 
-                    // 현재 것만 열기
                     gnbLink.classList.add("active");
                     nextEl.classList.add("is-show");
                 }
             });
         }
     });
+
+    // ⬅️ 이 부분은 main 페이지에서만 실행
+    if (isMain) {
+        nav.addEventListener("mouseleave", function () {
+            document.querySelectorAll(".lnb").forEach(lnb => lnb.classList.remove("is-show"));
+            gnbLinks.forEach(link => link.classList.remove("active"));
+        });
+    }
 });
 
 // header 서브페이지만 배경 흰색 적용 (디자인 요소)
