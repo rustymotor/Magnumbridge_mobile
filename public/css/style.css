@@ -32,6 +32,151 @@ a:visited {
   color: #868a92;
 }
 
+.fc-white {
+  color: white;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-200 {
+  margin-top: 200px;
+}
+
+.spacer_top_visual .visual_gradient .title {
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+  text-align: center;
+  color: black;
+  font-size: 3.6rem;
+}
+
+.spacer_top_visual .visual_gradient::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8rem;
+  left: 87rem;
+  width: 52px;
+  height: 6px;
+  background-color: #d2282f;
+}
+
+.spacer_top_visual p {
+  position: absolute;
+  top: 17.4rem;
+  left: 50%;
+  height: 16rem;
+  transform: translateX(-50%);
+  width: 1280px;
+}
+
+.spacer_top_visual p .subject {
+  font-size: 5rem;
+  color: white;
+}
+
+.spacer_top_visual .subtitle {
+  display: block;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  color: #aaaaaa;
+}
+
+.container .subtxt {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 4rem 0 7rem 0;
+}
+
+.fullback.history {
+  background: url("/images/company/history_back.jpg") no-repeat left top;
+  background-size: 100%;
+  box-sizing: border-box;
+  padding: 10rem;
+}
+
+.container .box-list-area {
+  display: flex;
+  justify-content: center;
+}
+
+.list .title_dot {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.list .title_dot::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  right: -10px;
+  width: 8px;
+  height: 8px;
+  background-color: #FF403E;
+  border-radius: 100%;
+}
+
+div > ul > li ul {
+  display: grid;
+}
+
+div > ul > li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+div > ul > li ul > li {
+  line-height: 160%;
+}
+
+.container .bullet-list {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.container .bullet-list span.b-tit {
+  float: left;
+  width: 6rem;
+  line-height: 160%;
+}
+
+.container .bullet-list .b-tit .sub {
+  font-size: 0.875rem;
+  color: #989797;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.container .box-list-area > .list {
+  width: 100%;
+  max-width: 1280px;
+  display: grid;
+  grid-gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+.container .box-list-area > .list div.photo {
+  margin-top: 10rem;
+}
+
+.container .box-list-area > .list.type-size1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.container .box-list-area > .list.type-size2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 12rem 5rem;
+}
+
+.container .box-list-area > .list.type-size3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container .box-list-area > .list.type-size4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 header {
   display: flex;
   width: 100%;
@@ -151,7 +296,6 @@ main {
   background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0) 100%);
   border-radius: 50px 50px 0 0;
   border: 1px solid rgba(205, 205, 205, 0.7);
-  box-shadow:  -2px 10px 0 rgba(0, 0, 0, 0.1);
   border-bottom: none !important;
 }
 @media (max-width: 1800px) {
@@ -159,47 +303,6 @@ main {
     width: 100%;
   }
 }
-
-
-
-.spacer_top_visual .visual_gradient .title{
-  position: absolute;
-  width: 100%;
-  bottom: 5px;
-  text-align: center;
-  color: black;
-  font-size: 3.6rem;
-}
-.spacer_top_visual .visual_gradient::after{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 8rem;
-  left: 87rem;
-  width: 60px;
-  height: 6px;
-  background-color: #D2282F;
-}
-.spacer_top_visual p{
-  position: absolute;
-  top: 17.4rem;
-  left: 50%;
-  height: 16rem;
-  transform: translateX(-50%);
-  width: 1280px;
-}
-.spacer_top_visual p .subject {
-  font-size: 5rem; 
-  color: white;
-}
-.spacer_top_visual .subtitle {
-  display: block;
-  margin-top: 1.5rem;
-  font-size: 1.6rem; 
-  color: #aaaaaa;  
-}
-
-
 
 #footer {
   background-color: #191919;
@@ -225,6 +328,7 @@ main {
 
 .business main {
   height: 110vh !important;
+  color: #d2282f;
 }
 
 .container {
@@ -243,13 +347,11 @@ footer {
 
 .pretendard {
   font-family: "Pretendard-Medium";
-  color: #d2282f;
 }
 
 .lexend {
   font-family: "Lexend-Bold";
   letter-spacing: -0.5px;
-  color: #2f60df;
 }
 
 /*# sourceMappingURL=style.css.map */
