@@ -151,6 +151,7 @@ main {
   background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0) 100%);
   border-radius: 50px 50px 0 0;
   border: 1px solid rgba(205, 205, 205, 0.7);
+  box-shadow:  -2px 10px 0 rgba(0, 0, 0, 0.1);
   border-bottom: none !important;
 }
 @media (max-width: 1800px) {
@@ -158,6 +159,47 @@ main {
     width: 100%;
   }
 }
+
+
+
+.spacer_top_visual .visual_gradient .title{
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+  text-align: center;
+  color: black;
+  font-size: 3.6rem;
+}
+.spacer_top_visual .visual_gradient::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8rem;
+  left: 87rem;
+  width: 60px;
+  height: 6px;
+  background-color: #D2282F;
+}
+.spacer_top_visual p{
+  position: absolute;
+  top: 17.4rem;
+  left: 50%;
+  height: 16rem;
+  transform: translateX(-50%);
+  width: 1280px;
+}
+.spacer_top_visual p .subject {
+  font-size: 5rem; 
+  color: white;
+}
+.spacer_top_visual .subtitle {
+  display: block;
+  margin-top: 1.5rem;
+  font-size: 1.6rem; 
+  color: #aaaaaa;  
+}
+
+
 
 #footer {
   background-color: #191919;
