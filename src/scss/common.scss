@@ -5,6 +5,11 @@ $grey02: #868a92;
 $grey03: #afb3bb;
 $grey04: #b5b9c6;
 $grey05: #d2d5de;
+
+// 폰트 굵기
+
+$pretendard_400: "Pretendard-Regular";
+
 // 타이틀
 .h1 {
     font-size: 2.4rem;
@@ -37,15 +42,15 @@ a:visited {
 
 // han 작업
 .fc-white {
-    color:white; 
+    color: white;
 }
 .mt-50 {
-    margin-top: 50px;
+    margin-top: 5rem;
 }
 .mt-200 {
     margin-top: 200px;
 }
-.spacer_top_visual .visual_gradient .title{
+.spacer_top_visual .visual_gradient .title {
     position: absolute;
     width: 100%;
     bottom: 5px;
@@ -53,7 +58,7 @@ a:visited {
     color: black;
     font-size: 3.6rem;
 }
-.spacer_top_visual .visual_gradient::after{
+.spacer_top_visual .visual_gradient::after {
     content: "";
     display: block;
     position: absolute;
@@ -63,7 +68,7 @@ a:visited {
     height: 6px;
     background-color: $mainColor;
 }
-.spacer_top_visual p{
+.spacer_top_visual p {
     position: absolute;
     top: 17.4rem;
     left: 50%;
@@ -72,14 +77,14 @@ a:visited {
     width: 1280px;
 }
 .spacer_top_visual p .subject {
-    font-size: 5rem; 
+    font-size: 5rem;
     color: white;
 }
 .spacer_top_visual .subtitle {
     display: block;
     margin-top: 1.5rem;
-    font-size: 1.6rem; 
-    color: #aaaaaa;  
+    font-size: 1.6rem;
+    color: #aaaaaa;
 }
 
 .container .subtxt {
@@ -87,7 +92,7 @@ a:visited {
     text-align: center;
     margin: 4rem 0 7rem 0;
 }
-.fullback.history{
+.fullback.history {
     background: url("/images/company/history_back.jpg") no-repeat left top;
     background-size: 100%;
     box-sizing: border-box;
@@ -97,7 +102,6 @@ a:visited {
 .container .box-list-area {
     display: flex;
     justify-content: center;
-    
 }
 .list .title_dot {
     font-size: 4rem;
@@ -112,31 +116,29 @@ a:visited {
     right: -10px;
     width: 8px;
     height: 8px;
-    background-color: #FF403E;
+    background-color: #ff403e;
     border-radius: 100%;
 }
 
 div > ul > li ul {
     display: grid;
-    
 }
 
-
 div > ul > li:not(:last-child) {
-    margin-bottom: 2.4rem;    
+    margin-bottom: 2.4rem;
 }
 
 div > ul > li ul > li {
     line-height: 160%;
 }
-.container .bullet-list {  
-        font-size: 1.8rem;
-        font-weight: 400;  
-        & span.b-tit{
-            float:left; 
-            width: 6rem;
-            line-height: 160%;
-        }        
+.container .bullet-list {
+    font-size: 1.8rem;
+    font-weight: 400;
+    & span.b-tit {
+        float: left;
+        width: 6rem;
+        line-height: 160%;
+    }
 }
 
 .container .bullet-list .b-tit .sub {
@@ -154,7 +156,7 @@ div > ul > li ul > li {
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     & div.photo {
         margin-top: 10rem;
-        }
+    }
 }
 
 .container .box-list-area > .list.type-size1 {
@@ -171,5 +173,3 @@ div > ul > li ul > li {
 .container .box-list-area > .list.type-size4 {
     grid-template-columns: repeat(4, 1fr);
 }
-
-

@@ -33,7 +33,7 @@
 }
 @font-face {
     font-family: "Lexend-SemiBold";
-    src: url("../font/Lexend-Regular.woff2") format("woff2"), url("../font/Lexend-SemiBold.woff") format("woff"),
+    src: url("../font/Lexend-SemiBold.woff2") format("woff2"), url("../font/Lexend-SemiBold.woff") format("woff"),
         url("../font/Lexend-SemiBold.ttf") format("truetype");
     font-weight: 600;
 }

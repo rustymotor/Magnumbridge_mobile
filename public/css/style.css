@@ -37,7 +37,7 @@ a:visited {
 }
 
 .mt-50 {
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 
 .mt-200 {
@@ -116,7 +116,7 @@ a:visited {
   right: -10px;
   width: 8px;
   height: 8px;
-  background-color: #FF403E;
+  background-color: #ff403e;
   border-radius: 100%;
 }
 
@@ -373,6 +373,19 @@ main {
   color: #d2282f;
 }
 
+.pretendard_400 {
+  font-family: "Pretendard-SemiBold";
+}
+
+.pretendard {
+  font-family: "Pretendard-SemiBold";
+}
+
+.lexend {
+  font-family: "Lexend-Bold";
+  letter-spacing: -0.5px;
+}
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -385,15 +398,6 @@ main {
 main,
 footer {
   width: 100%;
-}
-
-.pretendard {
-  font-family: "Pretendard-Medium";
-}
-
-.lexend {
-  font-family: "Lexend-Bold";
-  letter-spacing: -0.5px;
 }
 
 /*# sourceMappingURL=style.css.map */

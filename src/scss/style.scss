@@ -3,6 +3,7 @@
 @forward "./_common_header";
 @forward "./_common_footer";
 @forward "./sub_business_1";
+@forward "./utility";
 
 // 전체 레이아웃
 .container {
@@ -16,13 +17,4 @@
 main,
 footer {
     width: 100%;
-}
-
-// 폰트테스트(사용금지)
-.pretendard {
-    font-family: "Pretendard-Medium";
-}
-.lexend {
-    font-family: "Lexend-Bold";
-    letter-spacing: -0.5px;
 }
