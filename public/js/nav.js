@@ -179,3 +179,32 @@ document.addEventListener("DOMContentLoaded", () => {
         path.setAttribute("fill", isMain ? "white" : "black");
     });
 });
+
+// 사이트맵 여닫기
+document.addEventListener("DOMContentLoaded", function () {
+    const btnOpen = document.querySelector(".btn_sitemap");
+    const btnClose = document.querySelector(".btn_sitemap_close");
+    const sitemap = document.querySelector(".contain_sitemap");
+
+    btnOpen?.addEventListener("click", () => {
+        sitemap.classList.add("is-active");
+    });
+
+    btnClose?.addEventListener("click", () => {
+        sitemap.classList.remove("is-active");
+    });
+});
+
+// 푸터 active 자동화
+document.addEventListener("DOMContentLoaded", function () {
+    const path = window.location.pathname.replace(".html", "");
+
+    // .footer_menu 안의 모든 a 태그를 순회
+    document.querySelectorAll(".footer_menu a").forEach(footerLink => {
+        const href = footerLink.getAttribute("href")?.replace(".html", "");
+
+        if (href && path.includes(href)) {
+            footerLink.classList.add("active");
+        }
+    });
+});

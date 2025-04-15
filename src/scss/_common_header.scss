@@ -229,8 +229,16 @@ main {
 
 // 사이트맵
 .contain_sitemap {
+    &.is-active {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
     opacity: 0;
     visibility: hidden;
+    transform: scale(2);
+    transition: opacity 0.15s ease, transform 0.3s ease, visibility 0s linear 0.3s; // 닫힐 때만 딜레이되게
+    transform-origin: center;
     position: fixed;
     z-index: 3;
     background-color: white;
