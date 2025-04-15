@@ -30,7 +30,7 @@
 }
 
 a:visited {
-  color: #868a92;
+  color: black;
 }
 
 .spacer_top_visual .visual_gradient .h2 {
@@ -176,6 +176,7 @@ div > ul > li ul > li {
 .container .box-list-area > .list .type2 + .type2 {
   margin-top: 20rem;
 }
+<<<<<<< HEAD
 @media (max-width: 690px) {
   .container .box-list-area > .list .type2 + .type2 {
     margin-top: 10rem;
@@ -188,6 +189,20 @@ div > ul > li ul > li {
 
 .pretendard_600 {
   font-family: "Pretendard-SemiBold";
+=======
+
+<<<<<<< HEAD
+.pretendard {
+  font-family: "Pretendard-Regular";
+}
+
+.pretendard_600 {
+  font-family: "Pretendard-SemiBold";
+}
+
+.pretendard_700 {
+  font-family: "Pretendard-Bold";
+>>>>>>> main
 }
 
 .pretendard_700 {
@@ -197,6 +212,7 @@ div > ul > li ul > li {
 .lexend {
   font-family: "Lexend-Regular";
   letter-spacing: -0.25px;
+<<<<<<< HEAD
 }
 
 .lexend_300 {
@@ -228,6 +244,25 @@ div > ul > li ul > li {
 
 .mt-200 {
   margin-top: 200px;
+=======
+>>>>>>> main
 }
 
+.lexend_300 {
+  font-family: "Lexend-Light";
+  letter-spacing: -0.25px;
+}
+
+.lexend_600 {
+  font-family: "Lexend-SemiBold";
+  letter-spacing: -0.25px;
+}
+
+.lexend_700 {
+  font-family: "Lexend-Bold";
+  letter-spacing: -0.25px;
+}
+
+=======
+>>>>>>> 420fe5ac74293630fe5bedc2ea1301a89ddd48d2
 /*# sourceMappingURL=utility.css.map */

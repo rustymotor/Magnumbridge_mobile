@@ -133,6 +133,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!path.includes("main")) return;
 
     const nav = document.querySelector("nav");
+    const header = document.querySelector("header");
+    const sitemapPaths = document.querySelectorAll(".btn_sitemap svg path");
     let lastScrollY = window.scrollY;
 
     window.addEventListener("scroll", function () {
@@ -140,12 +142,69 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (currentScrollY === 0) {
             nav.classList.remove("is-fixed");
+            header.classList.remove("is-fixed");
+
+            // 원래 fill 색 (예: white로 되돌림)
+            sitemapPaths.forEach(path => {
+                path.setAttribute("fill", "white");
+            });
         } else if (currentScrollY < lastScrollY) {
             nav.classList.add("is-fixed");
+            header.classList.add("is-fixed");
+
+            // 스크롤 올릴 때 fill: black
+            sitemapPaths.forEach(path => {
+                path.setAttribute("fill", "black");
+            });
         } else {
             nav.classList.remove("is-fixed");
+            header.classList.remove("is-fixed");
+
+            // 스크롤 내릴 땐 다시 white로
+            sitemapPaths.forEach(path => {
+                path.setAttribute("fill", "white");
+            });
         }
 
         lastScrollY = currentScrollY;
+    });
+});
+
+// 햄버거버튼 (사이트맵) 디자인 요소
+document.addEventListener("DOMContentLoaded", () => {
+    const isMain = document.body.classList.contains("is-main");
+    const paths = document.querySelectorAll(".btn_sitemap svg path");
+
+    paths.forEach(path => {
+        path.setAttribute("fill", isMain ? "white" : "black");
+    });
+});
+
+// 사이트맵 여닫기
+document.addEventListener("DOMContentLoaded", function () {
+    const btnOpen = document.querySelector(".btn_sitemap");
+    const btnClose = document.querySelector(".btn_sitemap_close");
+    const sitemap = document.querySelector(".contain_sitemap");
+
+    btnOpen?.addEventListener("click", () => {
+        sitemap.classList.add("is-active");
+    });
+
+    btnClose?.addEventListener("click", () => {
+        sitemap.classList.remove("is-active");
+    });
+});
+
+// 푸터 active 자동화
+document.addEventListener("DOMContentLoaded", function () {
+    const path = window.location.pathname.replace(".html", "");
+
+    // .footer_menu 안의 모든 a 태그를 순회
+    document.querySelectorAll(".footer_menu a").forEach(footerLink => {
+        const href = footerLink.getAttribute("href")?.replace(".html", "");
+
+        if (href && path.includes(href)) {
+            footerLink.classList.add("active");
+        }
     });
 });

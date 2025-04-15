@@ -1,26 +1,86 @@
 @use "common";
 #footer {
     background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7rem;
     .footer_menu {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 1280px;
+        height: calc(28.6rem - 7rem);
+        border-bottom: 1px solid common.$grey02;
+        a.active {
+            color: common.$mainColor;
+        }
         ul {
+            @include common.common_menu; // 공통 스타일
+            gap: 0 16.4rem;
+
             .h3 {
                 color: #feffff;
                 font-family: "pretendard-bold";
             }
             li {
+                p {
+                    padding-bottom: 2.4rem;
+                }
                 a {
                     color: #8c8c8c;
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
+                    line-height: 1.8rem;
+                }
+                ul {
+                    li {
+                        a {
+                            font-size: 1.6rem;
+                            line-height: 3.2rem;
+                        }
+                    }
                 }
             }
         }
     }
     .footer_info {
-        display: flex;
+        width: 1280px;
+        article {
+            display: flex;
+            justify-content: space-between;
+            &:nth-child(even) {
+                justify-content: flex-start;
+            }
+            span,
+            p,
+            address,
+            span a {
+                font-size: 1.4rem;
+            }
+        }
+        .footer_info_1 {
+            margin-top: 3.6rem;
+            .company_name {
+                font-size: 1.8rem;
+                color: #d9d9d9;
+            }
+            .company_link_wrap {
+                display: flex;
+                gap: 4rem;
+            }
+        }
+        .footer_info_2 {
+            margin-top: 2.4rem;
+        }
+        .footer_info_3 {
+            margin-top: 2rem;
+            padding-bottom: 5rem;
+            p {
+            }
+        }
         * {
-            color: #8c8c8c;
+            color: #888;
         }
     }
 }
