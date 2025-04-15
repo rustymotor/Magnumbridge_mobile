@@ -1,27 +1,29 @@
 // common.scss
 $mainColor: #d2282f;
 $subColor: #2f60df;
+$grey01: #666666;
 $grey02: #868a92;
 $grey03: #afb3bb;
 $grey04: #b5b9c6;
 $grey05: #d2d5de;
-
+$line: #aaaaaa;
+$txt_violet: #8B7EC3;
 // 폰트 굵기
 
 $pretendard_400: "Pretendard-Regular";
 
 // 타이틀
 .h1 {
-    font-size: 2.4rem;
-    font-family: "Pretendard-Medium";
+    font-family: 'Lexend-Bold';
+    font-size: 5rem;
 }
 .h2 {
-    font-size: 2rem;
-    font-family: "Pretendard-Medium";
+    font-size: 3.6rem;
+    font-family: 'Lexend-Bold';
 }
 .h3 {
-    font-size: 1.8rem;
-    font-family: "Pretendard-Medium";
+    font-size: 3.2rem;
+    font-family: "Pretendard-Bold";
 }
 .h4 {
     font-size: 1.6rem;
@@ -41,62 +43,69 @@ a:visited {
 }
 
 // han 작업
-.fc-white {
-    color: white;
-}
-.mt-50 {
-    margin-top: 5rem;
-}
-.mt-200 {
-    margin-top: 200px;
-}
-.spacer_top_visual .visual_gradient .title {
+.spacer_top_visual .visual_gradient .h2 {
     position: absolute;
     width: 100%;
     bottom: 5px;
     text-align: center;
     color: black;
-    font-size: 3.6rem;
+    
 }
 .spacer_top_visual .visual_gradient::after {
     content: "";
     display: block;
     position: absolute;
     top: 8rem;
-    left: 87rem;
+    left: 49%;
     width: 52px;
     height: 6px;
     background-color: $mainColor;
 }
-.spacer_top_visual p {
+.spacer_top_visual h1 {
     position: absolute;
-    top: 17.4rem;
+    top: 20rem;  /*J 17.4 -> 20수정 */
     left: 50%;
     height: 16rem;
     transform: translateX(-50%);
-    width: 1280px;
-}
-.spacer_top_visual p .subject {
-    font-size: 5rem;
-    color: white;
-}
-.spacer_top_visual .subtitle {
-    display: block;
-    margin-top: 1.5rem;
-    font-size: 1.6rem;
-    color: #aaaaaa;
+    width: 1280px;    
+    color: white;    
+    & p.subtitle{
+        margin-top: 1.5rem;
+        font-size: 1.6rem;
+        color: $line;
+        font-family: 'Lexend-Light';
+    }
 }
 
-.container .subtxt {
+
+.container p.subtxt {
     font-size: 1.8rem;
     text-align: center;
     margin: 4rem 0 7rem 0;
 }
-.fullback.history {
-    background: url("/images/company/history_back.jpg") no-repeat left top;
-    background-size: 100%;
+
+/* Company_partner */
+.fullback.partner {
+    background: url("/images/company/bg_partner.jpg") left top;
+    height: 68rem;
+    background-size: cover;
     box-sizing: border-box;
     padding: 10rem;
+    @media (max-width: 690px) {
+        padding: 6rem 3rem;
+    }
+}
+
+/* Company_History */
+
+.fullback.history {
+    background: url("/images/company/bg_history.jpg") left top;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 10rem;
+    @media (max-width: 690px) {
+        padding: 6rem 3rem;
+    }
 }
 
 .container .box-list-area {
@@ -112,7 +121,6 @@ a:visited {
     content: "";
     display: inline-block;
     position: relative;
-    top: -3px;
     right: -10px;
     width: 8px;
     height: 8px;
@@ -138,6 +146,8 @@ div > ul > li ul > li {
         float: left;
         width: 6rem;
         line-height: 160%;
+        color: $txt_violet;
+        font-family: 'Pretendard-Semibold';
     }
 }
 
@@ -151,25 +161,28 @@ div > ul > li ul > li {
 .container .box-list-area > .list {
     width: 100%;
     max-width: 1280px;
-    display: grid;
-    grid-gap: 1.25rem;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     & div.photo {
-        margin-top: 10rem;
+        margin-top: 10rem; 
+        @media (max-width: 1280px) {
+            display: none;
+        }       
     }
-}
-
-.container .box-list-area > .list.type-size1 {
-    grid-template-columns: repeat(1, 1fr);
-}
-.container .box-list-area > .list.type-size2 {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 12rem 5rem;
-}
-.container .box-list-area > .list.type-size3 {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.container .box-list-area > .list.type-size4 {
-    grid-template-columns: repeat(4, 1fr);
+    & .type2 {
+        display: flex;
+        justify-content: space-around;
+        & div{
+            min-width: 50%;
+            width: 100%;
+        }
+        & .logo_line{
+            
+        }
+    }
+    & .type2 + .type2 {
+        margin-top: 20rem;
+        @media (max-width: 690px) {
+            margin-top: 10rem;
+        } 
+    }    
+    
 }
