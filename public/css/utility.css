@@ -29,7 +29,7 @@
 }
 
 a:visited {
-  color: #868a92;
+  color: black;
 }
 
 .fc-white {
@@ -177,6 +177,7 @@ div > ul > li ul > li {
   grid-template-columns: repeat(4, 1fr);
 }
 
+<<<<<<< HEAD
 .pretendard {
   font-family: "Pretendard-Regular";
 }
@@ -209,4 +210,6 @@ div > ul > li ul > li {
   letter-spacing: -0.25px;
 }
 
+=======
+>>>>>>> 420fe5ac74293630fe5bedc2ea1301a89ddd48d2
 /*# sourceMappingURL=utility.css.map */

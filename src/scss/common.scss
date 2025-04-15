@@ -37,7 +37,7 @@ $pretendard_400: "Pretendard-Regular";
     font-size: 1.2rem;
 }
 a:visited {
-    color: $grey02;
+    color: black;
 }
 
 // han 작업
@@ -172,4 +172,18 @@ div > ul > li ul > li {
 
 .container .box-list-area > .list.type-size4 {
     grid-template-columns: repeat(4, 1fr);
+}
+
+// 사이트맵, 푸터 IA구조 공통CSS
+@mixin common_menu {
+    display: flex;
+    li {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
