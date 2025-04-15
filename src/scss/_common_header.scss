@@ -18,7 +18,12 @@ body.is-main {
         &.is-fixed {
             background-color: white;
             transition: all 0.3s ease;
-
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            background-color: white;
             .gnb {
                 li {
                     a {
@@ -72,6 +77,7 @@ header {
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
             &::before {
                 content: "";
+                position: absolute;
                 background-color: white;
             }
         }
@@ -107,7 +113,7 @@ header {
                 > a.active {
                     background-color: common.$mainColor;
                     border-radius: 4rem;
-                    color: white;
+                    color: white !important; // active일때 글자색 임포트는 우선순위떄문
                 }
             }
             .spacer_gnb {
@@ -129,13 +135,12 @@ header {
                     height: 6rem;
                     border-bottom: 1px solid common.$grey05;
                     background-color: white;
-                    // transition: top 0.1s ease, position 0s linear 0.1s;
+                    border-top: 1px solid common.$grey05;
                 }
                 &.is-fixed {
                     position: fixed;
                     top: 0;
                     width: 1280px;
-                    // transition: top 0.1s ease, position 0s;
                 }
                 &.is-show {
                     display: flex;

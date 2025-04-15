@@ -191,6 +191,12 @@ body.is-main header .gnb li a {
 body.is-main header:hover, body.is-main header.is-fixed {
   background-color: white;
   transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
 }
 body.is-main header:hover .gnb li a, body.is-main header.is-fixed .gnb li a {
   color: black;
@@ -252,6 +258,7 @@ header nav.is-fixed {
 }
 header nav.is-fixed::before {
   content: "";
+  position: absolute;
   background-color: white;
 }
 header nav .gnb {
@@ -276,7 +283,7 @@ header nav .gnb > li a {
 header nav .gnb > li > a.active {
   background-color: #d2282f;
   border-radius: 4rem;
-  color: white;
+  color: white !important;
 }
 header nav .gnb .spacer_gnb {
   flex: 1;
@@ -306,6 +313,7 @@ header nav .gnb .lnb::before {
   height: 6rem;
   border-bottom: 1px solid #d2d5de;
   background-color: white;
+  border-top: 1px solid #d2d5de;
 }
 header nav .gnb .lnb.is-fixed {
   position: fixed;
