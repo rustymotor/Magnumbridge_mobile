@@ -134,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const nav = document.querySelector("nav");
     const header = document.querySelector("header");
+    const sitemapPaths = document.querySelectorAll(".btn_sitemap svg path");
     let lastScrollY = window.scrollY;
 
     window.addEventListener("scroll", function () {
@@ -142,14 +143,39 @@ document.addEventListener("DOMContentLoaded", function () {
         if (currentScrollY === 0) {
             nav.classList.remove("is-fixed");
             header.classList.remove("is-fixed");
+
+            // 원래 fill 색 (예: white로 되돌림)
+            sitemapPaths.forEach(path => {
+                path.setAttribute("fill", "white");
+            });
         } else if (currentScrollY < lastScrollY) {
             nav.classList.add("is-fixed");
             header.classList.add("is-fixed");
+
+            // 스크롤 올릴 때 fill: black
+            sitemapPaths.forEach(path => {
+                path.setAttribute("fill", "black");
+            });
         } else {
             nav.classList.remove("is-fixed");
             header.classList.remove("is-fixed");
+
+            // 스크롤 내릴 땐 다시 white로
+            sitemapPaths.forEach(path => {
+                path.setAttribute("fill", "white");
+            });
         }
 
         lastScrollY = currentScrollY;
+    });
+});
+
+// 햄버거버튼 (사이트맵) 디자인 요소
+document.addEventListener("DOMContentLoaded", () => {
+    const isMain = document.body.classList.contains("is-main");
+    const paths = document.querySelectorAll(".btn_sitemap svg path");
+
+    paths.forEach(path => {
+        path.setAttribute("fill", isMain ? "white" : "black");
     });
 });

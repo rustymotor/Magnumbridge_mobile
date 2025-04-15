@@ -45,6 +45,13 @@ header {
     &:hover {
         background-color: white;
         transition: all 0.3s ease;
+        .btn_sitemap {
+            svg {
+                path {
+                    fill: black;
+                }
+            }
+        }
     }
     &.has-bg {
         background-color: white;
@@ -92,10 +99,11 @@ header {
         height: 9rem;
         transition: all 0.3s ease;
         background-color: transparent;
+
         .gnb {
             display: flex;
+            align-items: center;
             width: 100%;
-
             > li {
                 overflow: hidden;
                 a {
@@ -105,7 +113,6 @@ header {
                     text-decoration: none;
                     width: 16rem;
                     height: 5rem;
-                    padding: 0 1.4rem;
                     margin: 1.4rem 0;
                     font-size: 2rem;
                     font-family: "Pretendard-bold";
@@ -154,12 +161,13 @@ header {
                 width: 100%;
                 height: 6rem;
                 li {
+                    display: inline-block;
+                    white-space: nowrap;
                     a {
-                        display: flex;
-                        align-items: center;
-                        width: 23rem;
+                        width: initial;
                         height: 6rem;
                         margin: 0;
+                        padding-left: 3.4em;
                     }
                     > a.active {
                         color: common.$mainColor;
@@ -209,6 +217,70 @@ main {
         border-bottom: none !important;
         @media (max-width: 1800px) {
             width: 100%;
+        }
+    }
+}
+.btn_sitemap {
+    margin-left: 7rem;
+    &.is-white path {
+        fill: white;
+    }
+}
+
+// 사이트맵
+.contain_sitemap {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 3;
+    background-color: white;
+    width: 100%;
+    height: 920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid common.$grey05;
+
+    .sitemap_header {
+        h1 {
+            font-family: "lexend-bold";
+            color: common.$mainColor;
+            font-size: 4.8rem;
+            text-align: center;
+            letter-spacing: -2px;
+        }
+        .btn_sitemap_close {
+            position: fixed;
+            top: 6rem;
+            right: 6rem;
+        }
+    }
+    .sitemap_body {
+        ul {
+            @include common.common_menu; // 공통 스타일
+            gap: 0 20rem;
+            li {
+                margin-top: 4.4rem;
+                p {
+                    margin-top: 12.4rem;
+                    margin-bottom: calc(12.4rem - 6.7rem);
+                    a {
+                        font-family: "lexend-semibold";
+                        font-size: 3.3rem;
+                        color: #041118;
+                    }
+                }
+            }
+            li {
+                ul {
+                    li {
+                        font-family: "lexend-regular";
+                        a {
+                            font-size: 2.6rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }

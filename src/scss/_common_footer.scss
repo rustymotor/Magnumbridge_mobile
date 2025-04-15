@@ -5,6 +5,7 @@
         display: flex;
         justify-content: center;
         ul {
+            @include common.common_menu; // 공통 스타일
             .h3 {
                 color: #feffff;
                 font-family: "pretendard-bold";
