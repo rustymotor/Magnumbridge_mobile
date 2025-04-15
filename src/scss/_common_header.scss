@@ -1,4 +1,35 @@
 @use "common";
+body.is-main {
+    header {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        z-index: 3;
+        height: 9rem;
+        .gnb {
+            li {
+                a {
+                    color: white;
+                }
+            }
+        }
+        &:hover,
+        &.is-fixed {
+            background-color: white;
+            transition: all 0.3s ease;
+
+            .gnb {
+                li {
+                    a {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
 header {
     display: flex;
     width: 100%;
@@ -58,6 +89,7 @@ header {
         .gnb {
             display: flex;
             width: 100%;
+
             > li {
                 overflow: hidden;
                 a {
@@ -144,6 +176,7 @@ main {
     position: relative;
     z-index: 1;
 }
+
 .spacer_top_visual {
     display: block;
     position: relative;
@@ -159,6 +192,7 @@ main {
         transform: translateX(-50%);
         width: 180rem;
         height: 23.6rem;
+
         background: linear-gradient(
             to top,
             rgba(255, 255, 255, 1) 0%,

@@ -177,6 +177,25 @@ div > ul > li ul > li {
   grid-template-columns: repeat(4, 1fr);
 }
 
+body.is-main header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  z-index: 3;
+  height: 9rem;
+}
+body.is-main header .gnb li a {
+  color: white;
+}
+body.is-main header:hover, body.is-main header.is-fixed {
+  background-color: white;
+  transition: all 0.3s ease;
+}
+body.is-main header:hover .gnb li a, body.is-main header.is-fixed .gnb li a {
+  color: black;
+}
+
 header {
   display: flex;
   width: 100%;
@@ -371,19 +390,6 @@ main {
 .business main {
   height: 110vh !important;
   color: #d2282f;
-}
-
-.pretendard_400 {
-  font-family: "Pretendard-SemiBold";
-}
-
-.pretendard {
-  font-family: "Pretendard-SemiBold";
-}
-
-.lexend {
-  font-family: "Lexend-Bold";
-  letter-spacing: -0.5px;
 }
 
 .container {

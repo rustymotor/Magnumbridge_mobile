@@ -133,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!path.includes("main")) return;
 
     const nav = document.querySelector("nav");
+    const header = document.querySelector("header");
     let lastScrollY = window.scrollY;
 
     window.addEventListener("scroll", function () {
@@ -140,10 +141,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (currentScrollY === 0) {
             nav.classList.remove("is-fixed");
+            header.classList.remove("is-fixed");
         } else if (currentScrollY < lastScrollY) {
             nav.classList.add("is-fixed");
+            header.classList.add("is-fixed");
         } else {
             nav.classList.remove("is-fixed");
+            header.classList.remove("is-fixed");
         }
 
         lastScrollY = currentScrollY;

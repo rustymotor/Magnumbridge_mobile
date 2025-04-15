@@ -177,17 +177,4 @@ div > ul > li ul > li {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.pretendard_400 {
-  font-family: "Pretendard-SemiBold";
-}
-
-.pretendard {
-  font-family: "Pretendard-SemiBold";
-}
-
-.lexend {
-  font-family: "Lexend-Bold";
-  letter-spacing: -0.5px;
-}
-
 /*# sourceMappingURL=utility.css.map */
