@@ -149,9 +149,10 @@ body {
 }
 
 body {
+  font-size: 1.6rem;
+  color: #444;
   font-family: "Pretendard-Regular";
   letter-spacing: -0.4px;
-  font-size: 1.6rem;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: none;
   word-break: break-all; /* 상황 따라 조절 */
