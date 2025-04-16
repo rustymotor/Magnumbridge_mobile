@@ -1,0 +1,34 @@
+@use "common";
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.visual_main {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    .text_wrap {
+        strong {
+            font-size: 6rem;
+            font-weight: 700;
+            color: white;
+        }
+        span {
+            font-size: 2rem;
+            display: block;
+        }
+    }
+}
+.swiper-pagination-bullet-active {
+    background-color: common.$mainColor !important;
+    width: 20px !important;
+    border-radius: 4px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    color: common.$mainColor !important;
+}

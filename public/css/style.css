@@ -540,6 +540,40 @@ main {
   color: #d2282f;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.visual_main {
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+}
+.visual_main .text_wrap strong {
+  font-size: 6rem;
+  font-weight: 700;
+  color: white;
+}
+.visual_main .text_wrap span {
+  font-size: 2rem;
+  display: block;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #d2282f !important;
+  width: 20px !important;
+  border-radius: 4px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #d2282f !important;
+}
+
 .container {
   min-height: 100vh;
   display: flex;
