@@ -9,61 +9,32 @@
             <header><%- include('../partials/header', { htmlExt: htmlExt }) %></header>
 
             <div class="spacer_top_visual" aria-hidden="true">
-                <div class="visual_gradient"></div>
-                <!-- Swiper -->
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide visual_main">
-                            <p class="text_wrap">
-                                <strong>Subject</strong>
-                                <span>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor velit mollitia,
-                                    error deleniti facere quam laudantium omnis fugit eveniet. Dolore.
-                                </span>
-                            </p>
-                            <img src="/images/vusual_top_bussiness_1.jpg" alt="" />
-                        </div>
-                        <div class="swiper-slide visual_main">Slide 2</div>
-                        <div class="swiper-slide visual_main">Slide 3</div>
-                        <div class="swiper-slide visual_main">Slide 4</div>
-                        <div class="swiper-slide visual_main">Slide 5</div>
-                        <div class="swiper-slide visual_main">Slide 6</div>
-                    </div>
-
-                    <!-- Add Pagination (선택사항) -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- Add Navigation Buttons (선택사항) -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
+                <!-- 스와이퍼1 -->
+                <%- include('../components/swiper_main_1', { htmlExt: htmlExt }) %>
+                <!-- /스와이퍼1 -->
             </div>
             <main>
                 <!-- 컨텐츠 영역 -->
-                <div>
+                <section>
                     <%- include('../components/sectionTop') %>
                     <div>페인페이지 내용</div>
-                </div>
+                </section>
+                <section class="visual_accordion">
+                    <!-- 아코디언 -->
+                    <%- include('../components/visaul_accordion') %>
+                    <!-- /아코디언 -->
+                </section>
+                <section>
+                    <!-- 스와이퍼2 -->
+                    <%- include('../components/swiper_main_2', { htmlExt: htmlExt }) %>
+                    <!-- /스와이퍼1 -->
+                </section>
                 <!-- // 컨텐츠 영역 -->
             </main>
             <footer id="footer"><%- include('../partials/footer') %></footer>
         </div>
         <script src="<%= basePath %>js/swiper/swiper-bundle.min.js"></script>
-        <script>
-            const mainSwiper = new Swiper(".swiper", {
-                slidesPerView: 1, // 한 화면에 4개 보임
-                // slidesPerGroup: 4,
-                // spaceBetween: 20,
-                loop: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev"
-                }
-            });
-        </script>
+        <script src="<%= basePath %>js/swiper_mainpage.js"></script>
+        <script src="<%= basePath %>js/visual_main_accordion.js"></script>
     </body>
 </html>

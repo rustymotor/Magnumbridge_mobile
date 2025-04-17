@@ -32,3 +32,42 @@
 .swiper-button-prev {
     color: common.$mainColor !important;
 }
+// 메인페이지 첫번째 스와이퍼
+.swiper_main_1 {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+}
+// 이하 메인페이지 두번째 스와이퍼
+.visual_swiper {
+    height: 400px;
+    .swiper_main_2 {
+        width: 1280px;
+    }
+}
+
+.swiper_main_2 .swiper-button-next:after,
+.swiper_main_2 .swiper-button-prev:after {
+    display: none;
+}
+
+// 이하 메인페이지 두번째 스와이퍼 탭버튼
+.visual_swiper_tabs {
+    display: flex;
+    gap: 8px;
+
+    button {
+        padding: 10px 16px;
+        border: 1px solid #000;
+        background: #fff;
+        color: #000;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &.active {
+            background: #000;
+            color: #fff;
+        }
+    }
+}
