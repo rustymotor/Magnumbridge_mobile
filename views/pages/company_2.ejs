@@ -11,13 +11,16 @@
             </div>
             <main>
                 <!-- 컨텐츠 영역 -->
-                <div>
-                    <%- include('../components/sectionTop') %>
+                <div class="slide_slow">
+                    <%- include('../components/swiper_sub_1') %>
                     <div>파트너사 test</div>
                 </div>
                 <!-- // 컨텐츠 영역 -->
             </main>
             <footer id="footer"><%- include('../partials/footer') %></footer>
         </div>
+
+        <script src="<%= basePath %>js/swiper/swiper-bundle.min.js"></script>
+        <script src="<%= basePath %>js/swiper_subpage.js"></script>
     </body>
 </html>
