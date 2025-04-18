@@ -3,7 +3,24 @@
     width: 100%;
     height: 100%;
 }
-
+section{
+    text-align: center; 
+    margin-bottom:200px;
+    .section_title{
+        font-size:36px;
+        font-weight:bold;
+        margin:200px 0 20px;
+        line-height:45px;
+        color:#000;
+        font-family:'lexend',sans-serif;
+    }
+    .section_description{
+        margin-bottom:70px;
+        font-size:18px;
+        line-height:1.8;
+    }
+  
+}
 .visual_main {
     background: #eee;
     display: flex;
@@ -41,10 +58,88 @@
 }
 // 이하 메인페이지 두번째 스와이퍼
 .visual_swiper {
-    height: 400px;
+    position:relative;
+    height: 640px;
+    padding-bottom:140px;
+    background-color: #f8f8f8;
     .swiper_main_2 {
         width: 1280px;
+        .swiper-wrapper{
+            .visual_main{
+                position:relative;
+                background-color: transparent;
+                
+                &:after{
+                    position:absolute;
+                    content:'';
+                    top:0;
+                    left:1px;
+                    width:calc(100% - 2px);
+                    height:calc(100% - 3px);
+                    border-radius:20px;
+                    background-color: #fff;
+                    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+                }
+                .text_wrap{
+                    position:relative;
+                    display:flex;
+                    flex-direction: column;
+                    color:#000;
+                    z-index:1;
+                    width:100%;
+                    height:100%;
+                    padding:120px 0 30px 40px;
+
+                    img{
+                        position:absolute;
+                        top:50px;
+                        left:50%;
+                        transform:translateX(-50%);
+                    }
+                    span{
+                        text-align: left;
+                        font-size:14px;
+                        line-height:30px;
+                        font-weight:bold;
+                        &:before{
+                            display:inline-block;
+                            content:'프로젝트명';
+                            color:common.$grey02;
+                            width:70px;
+                            font-size:12px;
+                        }
+                        &:nth-of-type(2):before{
+                            content:'제품/기술';
+                        }
+                        &:nth-of-type(3):before{
+                            content:'종료일';
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination{
+            display:none;
+        }
+
     }
+    .swiper-button-prev{
+        top:50%;
+        left:50%;
+        transform:translate(-692px,-72px);
+        &:after{
+            display:none;
+        }
+    }
+    .swiper-button-next{
+        top:50%;
+        left:50%;
+        transform:translate(678px,-72px);
+        &:after{
+            display:none;
+        }
+    }
+
 }
 
 .swiper_main_2 .swiper-button-next:after,
@@ -55,11 +150,16 @@
 // 이하 메인페이지 두번째 스와이퍼 탭버튼
 .visual_swiper_tabs {
     display: flex;
+    justify-content: center;
     gap: 18px;
-
+    background-color: #f8f8f8;
+    padding:100px 0 70px;
     button {
+        width:150px;
+        height:50px;
         padding: 10px 16px;
         border: 1px solid #000;
+        border-radius:50px;
         background: #fff;
         color: #000;
         cursor: pointer;
