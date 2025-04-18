@@ -479,6 +479,25 @@ main {
   font-family: "pretendard-Light";
 }
 
+.tmap_wrap {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  width: calc(1200px + 40px);
+  height: calc(550px + 40px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  overflow: hidden;
+}
+.tmap_wrap #map_div {
+  overflow: hidden;
+  width: 1200px;
+  height: 550px;
+  padding: 20px;
+}
+
 .business main {
   height: 110vh !important;
   color: #d2282f;
