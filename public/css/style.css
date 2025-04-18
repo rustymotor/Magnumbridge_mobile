@@ -653,57 +653,36 @@ section .section_description {
   width: 100%;
 }
 
-.swiper_sub_1,
-.swiper_sub_3 {
+.slider {
   width: 100%;
   height: 280px;
+  overflow: hidden;
+  position: relative;
 }
-.swiper_sub_1 .swiper-wrapper,
-.swiper_sub_3 .swiper-wrapper {
-  transition-timing-function: linear !important;
-  will-change: transform;
+.slider .slider-track {
   display: flex;
+  width: fit-content;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
-.swiper_sub_1 .swiper-slide,
-.swiper_sub_3 .swiper-slide {
+.slider .slide {
   width: 360px;
+  height: 280px;
   flex-shrink: 0;
-  height: 100%;
   background: #ddd;
+  border: 1px solid #ccc;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
-  border: 1px solid #ccc;
   margin-right: 4px;
 }
 
-.swiper_sub_2 {
-  direction: rtl;
-  width: 100%;
-  height: 280px;
-}
-.swiper_sub_2 .swiper-wrapper {
-  direction: ltr;
-}
-.swiper_sub_2 .swiper-wrapper {
-  transition-timing-function: linear !important;
-  will-change: transform;
-  display: flex;
-}
-.swiper_sub_2 .swiper-slide {
-  width: 360px;
-  flex-shrink: 0;
-  height: 100%;
-  background: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  border: 1px solid #ccc;
-  margin-left: 4px;
+.slider_1 .slider-track {
+  animation: scroll-left 80s linear infinite;
 }
 
+<<<<<<< HEAD
 .visual_accordion {
   padding: 70px 0 100px;
   background-color: #d2282f;
@@ -719,6 +698,33 @@ section .section_description {
   margin-top: 70px;
 }
 .accordion_contain .accordion_controller {
+=======
+.slider_2 .slider-track {
+  animation: scroll-right 80s linear infinite;
+}
+
+.slider_3 .slider-track {
+  animation: scroll-left 80s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.accordion_controller {
+>>>>>>> 94c39dfbe5207d79f3595ccbcbe2854467b31192
   display: flex;
   justify-content: center;
   gap: 24px;
