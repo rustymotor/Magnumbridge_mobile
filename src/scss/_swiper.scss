@@ -12,7 +12,7 @@ section{
         margin:200px 0 20px;
         line-height:45px;
         color:#000;
-        font-family:'lexend',sans-serif;
+        font-family:'lexend-regular',sans-serif;
     }
     .section_description{
         margin-bottom:70px;
@@ -28,22 +28,57 @@ section{
     align-items: center;
     font-size: 18px;
     color: #fff;
+    position:relative;
     .text_wrap {
         strong {
-            font-size: 6rem;
+            font-size: 7rem;
+            line-height:84px;
             font-weight: 700;
             color: white;
+            font-familY:'Lexend-regular',sans-serif;
+            &.normal{
+                font-size: 6rem;  
+                font-weight:normal;
+                line-height:75px;
+            }
         }
         span {
             font-size: 2rem;
+            line-height:1.4;
             display: block;
+            margin-top:4.3rem;
+        }
+        button{
+            position:absolute;
+            top:299px;
+            left:0;
+            display:block;
+            width: 150px;
+            height:60px;
+            border:1px solid #d9d9d9;
+            background-color: rgba(0, 0, 0, 0.2);
         }
     }
+    &>img{
+        width:100%;
+        height:100%;
+    }
+}
+.swiper-pagination-bullets{
+    bottom: 72px !important;
+}
+.swiper-horizontal .swiper-pagination-bullet{
+    width:14px;
+    height:14px;
+    background: common.$txt_gray;
+    opacity: 1;
+    border:1px solid #fff;
+    margin: 0px 7px !important;
 }
 .swiper-pagination-bullet-active {
-    background-color: common.$mainColor !important;
-    width: 20px !important;
-    border-radius: 4px;
+    background-color: #fff !important;
+    width: 40px !important;
+    border-radius: 14px;
 }
 .swiper-button-next,
 .swiper-button-prev {

@@ -67,7 +67,7 @@ a:visited {
 
 .spacer_top_visual p {
   position: absolute;
-  top: 17.4rem;
+  top: 30.4rem;
   left: 50%;
   height: 16rem;
   transform: translateX(-50%);
@@ -300,7 +300,6 @@ main {
   display: block;
   position: relative;
   z-index: 1;
-  height: 59.6rem;
   background: url("/images/vusual_top_bussiness_1.jpg") no-repeat center center;
   background-size: cover;
   box-sizing: border-box;
@@ -500,7 +499,7 @@ section .section_title {
   margin: 200px 0 20px;
   line-height: 45px;
   color: #000;
-  font-family: "lexend", sans-serif;
+  font-family: "lexend-regular", sans-serif;
 }
 section .section_description {
   margin-bottom: 70px;
@@ -515,21 +514,58 @@ section .section_description {
   align-items: center;
   font-size: 18px;
   color: #fff;
+  position: relative;
 }
 .visual_main .text_wrap strong {
-  font-size: 6rem;
+  font-size: 7rem;
+  line-height: 84px;
   font-weight: 700;
   color: white;
+  font-familY: "Lexend-regular", sans-serif;
+}
+.visual_main .text_wrap strong.normal {
+  font-size: 6rem;
+  font-weight: normal;
+  line-height: 75px;
 }
 .visual_main .text_wrap span {
   font-size: 2rem;
+  line-height: 1.4;
   display: block;
+  margin-top: 4.3rem;
+}
+.visual_main .text_wrap button {
+  position: absolute;
+  top: 299px;
+  left: 0;
+  display: block;
+  width: 150px;
+  height: 60px;
+  border: 1px solid #d9d9d9;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.visual_main > img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination-bullets {
+  bottom: 72px !important;
+}
+
+.swiper-horizontal .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background: #8f8f8f;
+  opacity: 1;
+  border: 1px solid #fff;
+  margin: 0px 7px !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #d2282f !important;
-  width: 20px !important;
-  border-radius: 4px;
+  background-color: #fff !important;
+  width: 40px !important;
+  border-radius: 14px;
 }
 
 .swiper-button-next,
@@ -682,23 +718,6 @@ section .section_description {
   animation: scroll-left 80s linear infinite;
 }
 
-<<<<<<< HEAD
-.visual_accordion {
-  padding: 70px 0 100px;
-  background-color: #d2282f;
-}
-.visual_accordion h3 {
-  font-size: 28px;
-  line-height: 1.8;
-  text-align: center;
-  color: #fff;
-}
-
-.accordion_contain {
-  margin-top: 70px;
-}
-.accordion_contain .accordion_controller {
-=======
 .slider_2 .slider-track {
   animation: scroll-right 80s linear infinite;
 }
@@ -723,8 +742,21 @@ section .section_description {
     transform: translateX(0);
   }
 }
-.accordion_controller {
->>>>>>> 94c39dfbe5207d79f3595ccbcbe2854467b31192
+.visual_accordion {
+  padding: 70px 0 100px;
+  background-color: #d2282f;
+}
+.visual_accordion h3 {
+  font-size: 28px;
+  line-height: 1.8;
+  text-align: center;
+  color: #fff;
+}
+
+.accordion_contain {
+  margin-top: 70px;
+}
+.accordion_contain .accordion_controller {
   display: flex;
   justify-content: center;
   gap: 24px;
