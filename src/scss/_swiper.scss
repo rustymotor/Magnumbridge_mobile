@@ -5,6 +5,7 @@
 }
 .container.main{
     section{
+        text-align:center;
         margin-bottom:200px;
         .section_title{
             font-size:36px;
@@ -90,14 +91,15 @@
         display: none;
     }
     .visual_main {
+        position:relative;
         background: #eee;
         display: flex;
-        justify-content: center;
         align-items: center;
         font-size: 18px;
         color: #fff;
-        position:relative;
         .text_wrap {
+            position:relative;
+            margin-left:320px;
             strong {
                 font-size: 7rem;
                 line-height:84px;
@@ -128,8 +130,10 @@
             }
         }
         &>img{
+            position:absolute;
             width:100%;
             height:100%;
+            z-index:-1;
         }
     }
 }
