@@ -33,7 +33,8 @@
     <article class="footer_info_1">
         <p class="company_name">(주)매그넘브릿지</p>
         <p class="company_link_wrap">
-            <a href="#none">회사소개서</a>|<a href="#none">오시는 길</a>|<a href="#none">문의하기</a>|<a href="#none"
+            <a href="#none">회사소개서</a>|<a href="#none" id="toggleMap">오시는 길</a>|<a href="#none">문의하기</a>|<a
+                href="#none"
                 >개인정보취급방침</a
             >
         </p>
@@ -47,4 +48,8 @@
     </article>
 </section>
 
+<div class="location_coperate"><%- include('../components/location_coperate', { htmlExt: htmlExt }) %></div>
+
+<script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=eXK3n08TZ64hKTzFsRqJsVaGckQctZJaXcsy9hQi"></script>
+<script src="<%= basePath %>js/location_coperate.js"></script>
 <script src="<%= basePath %>js/nav.js"></script>

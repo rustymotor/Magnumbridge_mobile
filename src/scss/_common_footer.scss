@@ -85,3 +85,27 @@
         }
     }
 }
+
+// 찾아오시는길
+$map-width: 1200px;
+$map-height: 550px;
+$padding: 20px;
+
+.tmap_wrap {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    width: calc(#{$map-width} + #{$padding * 2}); // 변수 활용
+    height: calc(#{$map-height} + #{$padding * 2}); // 변수 활용
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    overflow: hidden;
+    #map_div {
+        overflow: hidden;
+        width: $map-width;
+        height: $map-height;
+        padding: $padding;
+    }
+}
