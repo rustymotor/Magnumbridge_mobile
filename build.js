@@ -38,9 +38,8 @@ const renderEJS = (filePath, outputPath, depth = 0) => {
         };
 
         ejs.renderFile(filePath, renderData, { filename: filePath }, (err, str) => {
-            if (err) {
-                console.error(`❌ Error rendering ${filePath}:`, err);
-                return;
+            if (filePath.includes("slider_forward") || filePath.includes("slider_reverse")) {
+                renderData.styleType = "partnerLogo";
             }
             fs.writeFileSync(outputPath, str);
             console.log(`✔ Converted: ${filePath} → ${outputPath}`);

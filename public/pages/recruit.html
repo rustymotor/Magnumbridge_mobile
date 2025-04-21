@@ -45,7 +45,7 @@
                 </ul>
             </li>
             <li>
-                <a href="recruit.html">recruit</a>
+                <a href="recruit.html">Recruit</a>
                 <ul class="lnb">
                     <li><a href="recruit_1.html">Ideal employee</a></li>
                     <li><a href="recruit_2.html">Recruitment</a></li>
@@ -74,7 +74,7 @@
                 <li>
                     <p><a href="business.html" class="h3">business</a></p>
                     <ul>
-                        <li><a href="business_1.html">Platform & Solution </a></li>
+                        <li><a href="business_1.html">Platform & Solution</a></li>
                         <li><a href="business_2.html">Product</a></li>
                         <li><a href="business_3.html">IT Service</a></li>
                         <li><a href="#none">Consulting </a></li>
@@ -108,8 +108,6 @@
             <main>
                 <!-- 컨텐츠 영역 -->
                 <div>
-                    <div class="section_top">섹션슬라이드영역</div>
-
                     <div>리크루트 내용</div>
                 </div>
                 <!-- // 컨텐츠 영역 -->
@@ -122,7 +120,6 @@
                 <li><a href="business_1.html">Platform & Solution </a></li>
                 <li><a href="business_2.html">Product</a></li>
                 <li><a href="business_3.html">IT Service</a></li>
-                <li><a href="#none">Consulting </a></li>
             </ul>
         </li>
         <li>
@@ -138,8 +135,7 @@
             <p><a href="business.html" class="h3">Recruit</a></p>
             <ul>
                 <li><a href="recruit_1.html">Ideal employee</a></li>
-                <li><a href="recruit_2.html">Benefit</a></li>
-                <li><a href="#none">Recruitment</a></li>
+                <li><a href="recruit_2.html">Recruitment</a></li>
             </ul>
         </li>
     </ul>
@@ -149,7 +145,8 @@
     <article class="footer_info_1">
         <p class="company_name">(주)매그넘브릿지</p>
         <p class="company_link_wrap">
-            <a href="#none">회사소개서</a>|<a href="#none">오시는 길</a>|<a href="#none">문의하기</a>|<a href="#none"
+            <a href="#none">회사소개서</a>|<a href="#none" id="toggleMap">오시는 길</a>|<a href="#none">문의하기</a>|<a
+                href="#none"
                 >개인정보취급방침</a
             >
         </p>
@@ -163,6 +160,32 @@
     </article>
 </section>
 
+<div class="location_coperate"><!-- 지도 표시할 위치 -->
+<div class="tmap_wrap" id="mapContainer">
+    <div class="map_scroll">
+        <button class="btn_sitemap_close"><img src="/images/btn_sitemap_cancel.svg" alt="사이트맵 닫기"></button>
+        <strong class="strong">Location</strong>
+        <dl>
+            <dt><img src="/images/main/map_icon.svg" alt="오시는 길"></dt>
+            <dd>서울특별시 강남구 봉은사로 443, 8층 (삼성동, 로얄빌딩)</dd>
+            <dd>가까운 지하철 <span>: 9호선 선정릉역 (도보 5분)</span></dd>
+        </dl>
+        <div id="map_div" ref="mapDiv"></div>
+        <ul>
+            <li>
+                <p>㈜매그넘브릿지 (MAGNUM BRIDGE Co., Ltd.)</p>
+                <p>T. 02-6941-0828    F. 02-6941-0829</p>
+            </li>
+            <li>
+                <p>지도보기</p>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=eXK3n08TZ64hKTzFsRqJsVaGckQctZJaXcsy9hQi"></script>
+<script src="../js/location_coperate.js"></script>
 <script src="../js/nav.js"></script>
 </footer>
         </div>
