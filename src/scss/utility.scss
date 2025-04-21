@@ -1,1 +1,160 @@
-@use "./common";
+@use "common";
+.pretendard {
+    font-family: "Pretendard-Regular";
+}
+.pretendard_600 {
+    font-family: "Pretendard-SemiBold";
+}
+.pretendard_700 {
+    font-family: "Pretendard-Bold";
+}
+.lexend {
+    font-family: "Lexend-Regular";
+    letter-spacing: -0.25px;
+}
+.lexend_300 {
+    font-family: "Lexend-Light";
+    letter-spacing: -0.25px;
+}
+.lexend_600 {
+    font-family: "Lexend-SemiBold";
+    letter-spacing: -0.25px;
+}
+.lexend_700 {
+    font-family: "Lexend-Bold";
+    letter-spacing: -0.25px;
+}
+span.strong {
+    font-family: "Pretendard-bold";
+    margin-left: 5px;
+    word-break: keep-all;
+    display: inline-block;
+}
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flex_middle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 200%;
+    justify-content: center;
+    // align-items: center;
+}
+
+.flex_between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fc-white {
+    color: white;
+}
+
+.fc-primary {
+    color: common.$mainColor;
+}
+
+.fc-red {
+    color: common.$mainColorBright;
+}
+
+.fc-gray {
+    color: common.$gray500;
+}
+
+.fc-lgray {
+    color: common.$txt_gray;
+}
+
+.fc-darkblue {
+    color: common.$txt_dark-blue;
+}
+
+.bg_red {
+    background-color: common.$mainColor;
+    color: white;
+}
+.bg_white {
+    background-color: white;
+}
+.bg_gray {
+    background-color: common.$bgBase;
+}
+.bg_darkblue {
+    background-color: common.$darkblue;
+}
+.bg_darkgray {
+    background-color: common.$gray500;
+}
+.bg_black {
+    background-color: black;
+}
+.radius_4 {
+    border-radius: 4rem;
+}
+.tac {
+    text-align: center;
+}
+
+.mg-10 {
+    margin: 10rem 0 20rem 0;
+}
+.pt-8 {
+    padding-top: 8rem;
+}
+.pt-4 {
+    padding-top: 4rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.mt-4 {
+    margin-top: 4rem;
+}
+.mt-7 {
+    margin-top: 7rem;
+}
+.mt-10 {
+    margin-top: 10rem;
+}
+.mb-4 {
+    margin-bottom: 4rem;
+}
+.ml-3 {
+    margin-left: 3rem;
+}
+.ml-10 {
+    margin-left: 10rem;
+}
+.mt-200 {
+    margin-top: 20rem;
+}
+.fs-18 {
+    font-size: 1.8rem;
+    line-height: 180%;
+}
+
+.fs-20 {
+    font-size: 2rem;
+    line-height: 180%;
+}
+.mh-10 {
+    min-height: 10rem;
+}
+
+.mh-15 {
+    min-height: 15.2rem;
+}
+.fs-24 {
+    font-size: 2.4rem;
+    line-height: 180%;
+}
+
+.fs-60 {
+    font-size: 6rem;
+}

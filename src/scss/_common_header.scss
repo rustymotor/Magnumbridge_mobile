@@ -292,3 +292,76 @@ main {
         }
     }
 }
+
+/* 한진아 추가*/
+.spacer_top_visual {
+    display: block;
+    position: relative;
+    z-index: 1;
+    height: 59.6rem;
+    background-size: cover;
+    box-sizing: border-box;
+    &.company_1 {
+        background: url("/images/visual_top_company_1.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    &.company_2 {
+        background: url("/images/visual_top_company_2.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    &.company_3 {
+        background: url("/images/visual_top_company_3.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    &.company_4 {
+        background: url("/images/visual_top_company_4.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
+    &.business_1 {
+        background: url("/images/visual_top_business_1.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    &.business_2 {
+        background: url("/images/visual_top_business_2.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    &.business_3 {
+        background: url("/images/visual_top_business_3.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    &.business_4 {
+        background: url("/images/visual_top_business_4.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
+    &.recruit_1 {
+        background: url("/images/visual_top_recruit_1.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    &.recruit_2 {
+        background: url("/images/visual_top_recruit_2.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
+    .visual_gradient {
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 180rem;
+        height: 22rem; /*J높이 조정 23.6 -> 22*/
+        background: linear-gradient(
+            to top,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 0.3) 75%,
+            rgba(255, 255, 255, 0) 100%
+        );
+        border-radius: 50px 50px 0 0;
+        border: 1px solid rgba(205, 205, 205, 0.7);
+        border-bottom: none !important;
+        @media (max-width: 1800px) {
+            width: 100%;
+        }
+    }
+}

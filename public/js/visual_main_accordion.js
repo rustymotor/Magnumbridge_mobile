@@ -37,6 +37,6 @@ cards.forEach(card => {
 });
 
 // ✅ 마우스가 카드 전체 영역에서 벗어나면 모두 닫기
-container.addEventListener("mouseleave", () => {
-    clearAll();
-});
+// container.addEventListener("mouseleave", () => {
+//     clearAll();
+// });
