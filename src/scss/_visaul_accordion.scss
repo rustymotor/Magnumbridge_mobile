@@ -3,7 +3,8 @@ $card-width: 160px;
 $card-height: 440px;
 $card-hover-width: 780px;
 $transition-duration: 0.5s;
-.visual_accordion{
+.container.main .visual_accordion{
+    margin-top:0;
     padding:70px 0 100px;
     background-color: common.$mainColor;
     h3{
