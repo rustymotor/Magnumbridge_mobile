@@ -1,0 +1,65 @@
+// 이하 서브페이지 company - Customer & Partner 페이지 // 스와이퍼 라이브러리 사용안함
+.slide_slow {
+    width: 100%;
+}
+.slider {
+    // overflow: hidden;
+    position: relative;
+    &:not(:first-child) {
+        margin-top: 2rem;
+    }
+    .slider-track {
+        display: flex;
+        width: fit-content;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    .slide {
+        &[class*="partnerLogo"] {
+            width: 280px;
+            height: 220px;
+            flex-shrink: 0;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.4rem;
+            margin-right: 2rem;
+        }
+        &[class*="devLogo"] {
+            width: 120px;
+            height: 60px;
+            flex-shrink: 0;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.4rem;
+            margin-right: 2rem;
+        }
+    }
+}
+
+// 각각 다르게 흐르도록 animation 부여
+.slider_forward .slider-track {
+    animation: scroll-left 80s linear infinite;
+}
+.slider_reverse .slider-track {
+    animation: scroll-right 80s linear infinite;
+}
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

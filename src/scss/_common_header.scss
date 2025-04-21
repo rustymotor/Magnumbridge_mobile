@@ -140,9 +140,9 @@ header {
                     transform: translateX(-50%);
                     width: 100vw;
                     height: 6rem;
-                    border-bottom: 1px solid common.$grey05;
+                    border-bottom: 1px solid common.$gray200;
                     background-color: white;
-                    border-top: 1px solid common.$grey05;
+                    border-top: 1px solid common.$gray200;
                 }
                 &.is-fixed {
                     position: fixed;
@@ -247,7 +247,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid common.$grey05;
+    border-bottom: 1px solid common.$gray200;
 
     .sitemap_header {
         h1 {
