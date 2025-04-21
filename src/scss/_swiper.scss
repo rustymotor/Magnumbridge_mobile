@@ -62,7 +62,7 @@
                 &:nth-of-type(4){
                     background: url(/images/main/company_overview_4.jpg) center no-repeat;
                     background-size: cover;
-                    border-radius:0 0 60px 0 ;
+                    border-radius:60px 0 0 0 ;
                 }
                 p{
                     font-size:26px;
@@ -75,7 +75,6 @@
         }
     }
 }
-
 .swiper-pagination-bullets{
     bottom: 72px !important;
 }
