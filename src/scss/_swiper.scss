@@ -3,30 +3,40 @@
     width: 100%;
     height: 100%;
 }
-
-.visual_main {
-    background: #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    color: #fff;
-    .text_wrap {
-        strong {
-            font-size: 6rem;
-            font-weight: 700;
-            color: white;
-        }
-        span {
-            font-size: 2rem;
-            display: block;
-        }
+section{
+    text-align: center; 
+    margin-bottom:200px;
+    .section_title{
+        font-size:36px;
+        font-weight:bold;
+        margin:200px 0 20px;
+        line-height:45px;
+        color:#000;
+        font-family:'lexend-regular',sans-serif;
     }
+    .section_description{
+        margin-bottom:70px;
+        font-size:18px;
+        line-height:1.8;
+    }
+  
+}
+
+.swiper-pagination-bullets{
+    bottom: 72px !important;
+}
+.swiper-horizontal .swiper-pagination-bullet{
+    width:14px;
+    height:14px;
+    background: common.$txt_gray;
+    opacity: 1;
+    border:1px solid #fff;
+    margin: 0px 7px !important;
 }
 .swiper-pagination-bullet-active {
-    background-color: common.$mainColor !important;
-    width: 20px !important;
-    border-radius: 4px;
+    background-color: #fff !important;
+    width: 40px !important;
+    border-radius: 14px;
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -38,13 +48,134 @@
     .swiper-button-next {
         display: none;
     }
+    .visual_main {
+        background: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: #fff;
+        position:relative;
+        .text_wrap {
+            strong {
+                font-size: 7rem;
+                line-height:84px;
+                font-weight: 700;
+                color: white;
+                font-familY:'Lexend-regular',sans-serif;
+                &.normal{
+                    font-size: 6rem;  
+                    font-weight:normal;
+                    line-height:75px;
+                }
+            }
+            span {
+                font-size: 2rem;
+                line-height:1.4;
+                display: block;
+                margin-top:4.3rem;
+            }
+            button{
+                position:absolute;
+                top:299px;
+                left:0;
+                display:block;
+                width: 150px;
+                height:60px;
+                border:1px solid #d9d9d9;
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+        }
+        &>img{
+            width:100%;
+            height:100%;
+        }
+    }
 }
 // 이하 메인페이지 두번째 스와이퍼
 .visual_swiper {
-    height: 400px;
+    position:relative;
+    height: 640px;
+    padding-bottom:140px;
+    background-color: #f8f8f8;
     .swiper_main_2 {
         width: 1280px;
+        .swiper-wrapper{
+            .visual_main{
+                position:relative;
+                background-color: transparent;
+                
+                &:after{
+                    position:absolute;
+                    content:'';
+                    top:0;
+                    left:1px;
+                    width:calc(100% - 2px);
+                    height:calc(100% - 3px);
+                    border-radius:20px;
+                    background-color: #fff;
+                    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+                }
+                .text_wrap{
+                    position:relative;
+                    display:flex;
+                    flex-direction: column;
+                    color:#000;
+                    z-index:1;
+                    width:100%;
+                    height:100%;
+                    padding:120px 0 30px 40px;
+
+                    img{
+                        position:absolute;
+                        top:50px;
+                        left:50%;
+                        transform:translateX(-50%);
+                    }
+                    span{
+                        text-align: left;
+                        font-size:14px;
+                        line-height:30px;
+                        font-weight:bold;
+                        &:before{
+                            display:inline-block;
+                            content:'프로젝트명';
+                            color:common.$gray200;
+                            width:70px;
+                            font-size:12px;
+                        }
+                        &:nth-of-type(2):before{
+                            content:'제품/기술';
+                        }
+                        &:nth-of-type(3):before{
+                            content:'종료일';
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination{
+            display:none;
+        }
+
     }
+    .swiper-button-prev{
+        top:50%;
+        left:50%;
+        transform:translate(-687px,-72px);
+        &:after{
+            display:none;
+        }
+    }
+    .swiper-button-next{
+        top:50%;
+        left:50%;
+        transform:translate(660px,-72px);
+        &:after{
+            display:none;
+        }
+    }
+
 }
 
 .swiper_main_2 .swiper-button-next:after,
@@ -55,11 +186,16 @@
 // 이하 메인페이지 두번째 스와이퍼 탭버튼
 .visual_swiper_tabs {
     display: flex;
+    justify-content: center;
     gap: 18px;
-
+    background-color: #f8f8f8;
+    padding:100px 0 70px;
     button {
+        width:150px;
+        height:50px;
         padding: 10px 16px;
         border: 1px solid #000;
+        border-radius:50px;
         background: #fff;
         color: #000;
         cursor: pointer;
