@@ -95,8 +95,6 @@ $padding: 20px;
     display: none;
     position: fixed;
     z-index: 10;
-    width: calc(#{$map-width} + #{$padding * 2}); // 변수 활용
-    height: calc(#{$map-height} + #{$padding * 2}); // 변수 활용
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -106,6 +104,99 @@ $padding: 20px;
         overflow: hidden;
         width: $map-width;
         height: $map-height;
-        padding: $padding;
+        padding-top: 0;
+    }
+}
+.location_coperate{
+    .btn_sitemap_close{
+        position:absolute;
+        top:56px;
+        right:56px;
+        width:27px;
+        height:27px;
+    }
+    strong{
+        display:block;
+        font-size:40px;
+        line-height:48px;
+        color:common.$mainColor;
+        font-weight:bold;
+        margin-bottom:70px;
+    }
+    dl{ 
+        display:block;
+        width:1280px;
+        height:250px;
+        background-color: common.$mainColor;
+        border-radius:20px;
+        background: url(/images/main/map.jpg) center no-repeat;
+        background-size: cover;
+        padding-top:40px;
+        margin-bottom:50px;
+        dt{
+            font-size:30px;
+            line-height:1.4;
+            margin-bottom:20px;
+        }
+        dd{
+            font-weight:bold;
+           color:#fff; 
+           &:nth-of-type(1){
+            font-size:30px;
+            line-height:1.4;
+            margin-bottom:20px;
+           }
+           &:nth-of-type(2){
+            font-size:18px;
+            line-height:1.4;
+           }
+           span{
+            font-weight:normal;
+           }
+        }
+    }
+    ul{
+        display:flex;
+        justify-content: space-between;
+        margin-top:26px;
+        li:nth-of-type(1){
+            display:flex;
+            flex-direction: column;
+            text-align: left;
+            p:nth-of-type(1){
+                font-size:24px;
+                line-height:2;
+                font-weight:bold;
+                color:#041118;
+            }
+            p:nth-of-type(2){
+                font-size:18px;
+                line-height:2;
+                font-weight:bold;
+                color:#807F7F;
+            }
+        }
+        li:nth-of-type(2){
+            width:80px;
+            height:80px;
+            background: url(/images/main/watch_map.svg);
+            p{
+                color:#fff;
+                margin-top:49px;
+            }
+        }
+    }
+    .tmap_wrap{
+        position:relative;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        width:1520px;
+        height:1340px;
+        border-radius:40px;
+        padding:120px;
+        #map_div{
+            width:1280px;
+        }
     }
 }

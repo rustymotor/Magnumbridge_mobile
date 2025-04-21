@@ -1,7 +1,7 @@
 function initTmap() {
     const map = new Tmapv2.Map("map_div", {
         center: new Tmapv2.LatLng(37.51183, 127.0482), // 지도 초기 좌표
-        width: "1200px",
+        width: "1280px",
         height: "550px",
         zoom: 15
     });
