@@ -119,11 +119,7 @@ ul li.type-dotg::before {
 
 .spacer_top_visual h1 {
   position: absolute;
-<<<<<<< HEAD
-  top: 20rem; /*J 17.4 -> 20수정 */
-=======
   top: 30.4rem;
->>>>>>> ih
   left: 50%;
   height: 16rem;
   transform: translateX(-50%);
@@ -246,7 +242,7 @@ ul li.type-dotg::before {
   display: inline-block;
 }
 .fullback.organization .tit .txt-gradation {
-  background: linear-gradient(to right, #FB0000 0%, #FB0000 60%, #B60000 70%, #B60000 120%);
+  background: linear-gradient(to right, #fb0000 0%, #fb0000 60%, #b60000 70%, #b60000 120%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -258,7 +254,7 @@ ul li.type-dotg::before {
   top: 8rem;
 }
 .fullback.gradation_gray {
-  background: linear-gradient(to left, #DDDDDD 0%, #DDDDDD 15%, #888888 90%);
+  background: linear-gradient(to left, #dddddd 0%, #dddddd 15%, #888888 90%);
   padding: 3rem 0;
   height: 90rem;
   box-sizing: border-box;
@@ -846,7 +842,7 @@ span.strong {
 }
 
 .bg_darkblue {
-  background-color: #292C39;
+  background-color: #292c39;
 }
 
 .bg_darkgray {

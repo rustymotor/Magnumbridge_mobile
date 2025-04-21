@@ -10,10 +10,10 @@ $gray500: #525252;
 $gray300: #8f8f8f;
 $gray200: #aaaaaa;
 
-$blueblack: #0A1324;
-$darkblue: #292C39;
+$blueblack: #0a1324;
+$darkblue: #292c39;
 
-$txt_sub: #525252;;
+$txt_sub: #525252;
 $txt_olive: #949452;
 $txt_violet: #8b7ec3;
 $txt_dark-blue: #575e7c;
@@ -24,29 +24,35 @@ $txt_gray: #8f8f8f;
 $pretendard_400: "Pretendard-Regular";
 
 // 타이틀
-.h1 { //GNB 타이틀
-    font-family: 'Lexend-Bold';
+.h1 {
+    //GNB 타이틀
+    font-family: "Lexend-Bold";
     font-size: 5rem;
 }
-.h2 { //본문 최상단 타이틀
+.h2 {
+    //본문 최상단 타이틀
     font-size: 3.6rem;
-    font-family: 'Lexend-Bold';
+    font-family: "Lexend-Bold";
 }
-.h3 { //본문 타이틀
+.h3 {
+    //본문 타이틀
     font-size: 3.2rem;
     font-family: "Pretendard-Bold";
 }
-.h4 { //본문 서브 타이틀
+.h4 {
+    //본문 서브 타이틀
     font-size: 2.8rem;
     font-family: "Pretendard-Bold";
 }
 
-.h5 {  //본문타이틀 설명
+.h5 {
+    //본문타이틀 설명
     font-size: 1.8rem;
     margin-top: 4rem;
     text-align: center;
 }
-.h6 { //All4 솔루션 예시
+.h6 {
+    //All4 솔루션 예시
     font-family: "Pretendard-SemiBold";
     font-size: 1.4rem;
 }
@@ -55,7 +61,7 @@ a:visited {
 }
 
 // han 작업
-button.btn_darkgray{
+button.btn_darkgray {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.6) 100%);
     border: 1px solid white;
     border-radius: 40px;
@@ -65,7 +71,7 @@ button.btn_darkgray{
     color: white;
 }
 
-ul li.type-dot{
+ul li.type-dot {
     position: relative;
     display: block;
     padding-left: 1rem;
@@ -74,51 +80,48 @@ ul li.type-dot{
 
     // color: $gray600;
     &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 0.3rem;
-    height: 0.3rem;
-    top: 1.6rem;
-    background-color: #fff;
-    border-radius: 50%;
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 0.3rem;
+        height: 0.3rem;
+        top: 1.6rem;
+        background-color: #fff;
+        border-radius: 50%;
     }
-    & .tit{
+    & .tit {
         width: 8rem;
         display: inline-block;
     }
-
 }
-ul li.type-dotg{
+ul li.type-dotg {
     position: relative;
     display: block;
-    font-size: 1.4rem;;
+    font-size: 1.4rem;
     padding-left: 1rem;
     line-height: 180%;
     width: 20rem;
 
     &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 0.3rem;
-    height: 0.3rem;
-    top: 1rem;
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 0.3rem;
+        height: 0.3rem;
+        top: 1rem;
 
-    background-color: $gray500;
-    border-radius: 50%;
+        background-color: $gray500;
+        border-radius: 50%;
     }
-
 }
 .circleline_red {
     position: relative;
     width: 26rem;
-    height: 26rem;;
+    height: 26rem;
     margin: 10px;
     border: 20px solid transparent;
     border-radius: 50%;
-    background-image: linear-gradient(#000, #000),
-    linear-gradient(to top, white 0%, $mainColor 30%, $mainColor 100%);
+    background-image: linear-gradient(#000, #000), linear-gradient(to top, white 0%, $mainColor 30%, $mainColor 100%);
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
@@ -128,7 +131,6 @@ ul li.type-dotg{
     bottom: 5px;
     text-align: center;
     color: black;
-
 }
 .spacer_top_visual .visual_gradient::after {
     content: "";
@@ -142,31 +144,26 @@ ul li.type-dotg{
 }
 .spacer_top_visual h1 {
     position: absolute;
-<<<<<<< HEAD
-    top: 20rem;  /*J 17.4 -> 20수정 */
-=======
     top: 30.4rem;
->>>>>>> ih
     left: 50%;
     height: 16rem;
     transform: translateX(-50%);
     width: 1280px;
     color: white;
-    & p.subtitle{
+    & p.subtitle {
         margin-top: 1.5rem;
         font-size: 1.6rem;
         color: $gray200;
-        font-family: 'Lexend-Light';
+        font-family: "Lexend-Light";
     }
 }
 
 .container main section {
     height: 100%;
     margin-top: 7rem;
-
 }
 
-.container main section:last-child{
+.container main section:last-child {
     margin-bottom: 20rem;
 }
 .container main section + section {
@@ -178,9 +175,8 @@ ul li.type-dotg{
     margin-top: 4rem;
 }
 
-
 /* Company_partner */
-.fullback{
+.fullback {
     width: 100%;
     height: 100%;
 
@@ -188,7 +184,7 @@ ul li.type-dotg{
         padding: 10rem 0;
     }
 
-    &.itservice{
+    &.itservice {
         background: url("/images/business/bg_service.png") right top;
         background-size: cover;
         box-sizing: border-box;
@@ -196,23 +192,23 @@ ul li.type-dotg{
         padding: 10rem 0;
         @media (max-width: 690px) {
             padding: 6rem 3rem;
-            }
+        }
     }
 
-
-    &.package{
-        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/business/bg_package.png");
+    &.package {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url("/images/business/bg_package.png");
         background-size: cover;
         padding: 10rem 0;
         height: 65rem;
         box-sizing: border-box;
         @media (max-width: 690px) {
             padding: 6rem 3rem;
-            }
+        }
         & div.circleline_red {
             margin: 0 4rem;
             font-size: 3rem;
-            font-family: 'Pretendard-Semibold';
+            font-family: "Pretendard-Semibold";
             line-height: 160%;
         }
     }
@@ -223,18 +219,19 @@ ul li.type-dotg{
         padding: 10rem 0;
         @media (max-width: 690px) {
             padding: 6rem 3rem;
-            }
         }
+    }
 
     &.certification {
-        background-image: linear-gradient(rgba(41,44,57,0.8), rgba(41,44,62,0.8)), url("/images/company/bg_certification.jpg");
+        background-image: linear-gradient(rgba(41, 44, 57, 0.8), rgba(41, 44, 62, 0.8)),
+            url("/images/company/bg_certification.jpg");
         background-size: cover;
         padding: 10rem 0;
         height: 60rem;
         box-sizing: border-box;
         @media (max-width: 690px) {
             padding: 6rem 3rem;
-            }
+        }
         & .img_certification {
             display: flex;
             justify-content: center;
@@ -243,29 +240,30 @@ ul li.type-dotg{
         }
     }
     &.organization {
-        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/company/bg_organization.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url("/images/company/bg_organization.png");
         background-size: cover;
         padding: 10rem 0;
         height: 78rem;
         box-sizing: border-box;
         @media (max-width: 690px) {
             padding: 6rem 3rem;
-            }
+        }
         & .tit {
             font-size: 7rem;
-            font-family: 'Lexend-bold';
+            font-family: "Lexend-bold";
             line-height: 1.2em;
             color: #000;
 
-            & .txt_shadow{
-            position: relative;
-            display: inline-block;
+            & .txt_shadow {
+                position: relative;
+                display: inline-block;
             }
             & .txt-gradation {
-            background: linear-gradient(to right, #FB0000 0%, #FB0000 60%, #B60000 70%, #B60000 120%);
-            color: transparent;
-            background-clip: text;
-            -webkit-background-clip: text;
+                background: linear-gradient(to right, #fb0000 0%, #fb0000 60%, #b60000 70%, #b60000 120%);
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
             }
         }
         & .img_certification {
@@ -274,20 +272,19 @@ ul li.type-dotg{
             position: relative;
             top: 8rem;
         }
-
     }
     &.gradation_gray {
-        background: linear-gradient(to left, #DDDDDD 0%, #DDDDDD 15%, #888888 90%);
+        background: linear-gradient(to left, #dddddd 0%, #dddddd 15%, #888888 90%);
         padding: 3rem 0;
         height: 90rem;
         box-sizing: border-box;
-        & .gra_topline{
-            background: linear-gradient(to left, white 0%,  #cccccc 100%);
+        & .gra_topline {
+            background: linear-gradient(to left, white 0%, #cccccc 100%);
             margin-top: 7rem;
-            height: 1px;}
+            height: 1px;
+        }
         & .summary_company {
             padding: 7rem 0;
-
         }
     }
     & > .devops {
@@ -297,14 +294,14 @@ ul li.type-dotg{
         box-sizing: border-box;
         @media (max-width: 690px) {
             padding: 6rem 3rem;
-            }
+        }
         & .img_devops {
             display: flex;
             justify-content: space-between;
             width: 45rem;
             margin-top: 12rem;
-            }
         }
+    }
     & > .strategy {
         background: url("/images/company/back_logo.png") no-repeat center center;
         background-size: contain;
@@ -312,7 +309,7 @@ ul li.type-dotg{
         box-sizing: border-box;
         @media (max-width: 690px) {
             padding: 6rem 3rem;
-            }
+        }
         & .img_certification {
             background: url("/images/company/img_strategy.png") no-repeat center center;
             height: 100%;
@@ -329,25 +326,22 @@ ul li.type-dotg{
                 padding: 2rem 4rem;
                 font-size: 1.6rem;
                 margin-top: 3rem;
-                &.top{
+                &.top {
                     position: relative;
                     top: -24rem;
                 }
-                &.left{
+                &.left {
                     position: relative;
                     top: 8rem;
                     left: -32rem;
-
                 }
-                &.right{
+                &.right {
                     position: relative;
                     top: 8rem;
                     left: 32rem;
-
                 }
             }
         }
-
     }
 }
 
@@ -357,9 +351,7 @@ ul li.type-dotg{
     height: 10rem;
     width: 35rem;
     text-align: center;
-
 }
-
 
 /* Vision */
 
@@ -384,7 +376,7 @@ ul li.type-dotg{
         padding: 0 0 10rem 0;
     }
 
-    & .all4block{
+    & .all4block {
         display: flex;
         align-items: flex-start;
         justify-content: space-around;
@@ -394,7 +386,7 @@ ul li.type-dotg{
         background-color: $mainColorBright;
         border-radius: 40px;
         z-index: 1;
-        & > div{
+        & > div {
             display: flex;
             flex-direction: column;
             position: relative;
@@ -404,39 +396,37 @@ ul li.type-dotg{
             border-radius: 40px;
             background-color: black;
             padding: 5rem 4rem;
-            &.block01{
-                background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url("/images/business/block_img01.png");
-                background-size: cover;
-                background-position-y: top;
-                width: 31%;
-                height: 38rem;
-
-            }
-            &.block02{
-                background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url("/images/business/block_img02.png");
+            &.block01 {
+                background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+                    url("/images/business/block_img01.png");
                 background-size: cover;
                 background-position-y: top;
                 width: 31%;
                 height: 38rem;
             }
-            &.block03{
-                background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.6),  rgba(0,0,0,0.2)), url("/images/business/block_img03.png");
+            &.block02 {
+                background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+                    url("/images/business/block_img02.png");
                 background-size: cover;
                 background-position-y: top;
                 width: 31%;
                 height: 38rem;
             }
-            & .block_contents{
+            &.block03 {
+                background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+                    url("/images/business/block_img03.png");
+                background-size: cover;
+                background-position-y: top;
+                width: 31%;
+                height: 38rem;
+            }
+            & .block_contents {
                 color: $bgBase;
                 border-top: 1px solid $gray500;
                 margin-top: 3.6rem;
                 padding: 3.6rem 0 0 0;
             }
-
         }
-
-
-
     }
     & .building {
         background: url("/images/company/backimg_building.png") no-repeat;
@@ -463,36 +453,34 @@ ul li.type-dotg{
             width: 1px;
             height: 22px;
             background-color: #cccccc;
-            opacity: .5;
+            opacity: 0.5;
         }
-        & span.strong{
-            font-family: 'Pretendard-bold';
+        & span.strong {
+            font-family: "Pretendard-bold";
             margin-left: 5px;
         }
         & p.tit {
             font-size: 2.4rem;
             width: 15.4rem;
             text-align: center;
-            font-family: 'Pretendard-bold';
+            font-family: "Pretendard-bold";
             margin-right: 3.4rem;
         }
-
     }
 }
-
 
 /* Customer 로고 스크롤 */
 
 .effect-data {
     transform: translate(0%, 50px);
     opacity: 0;
-    transition: transform 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940), opacity 0.4s ease;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.4s ease;
     will-change: transform;
 }
 .effect-data.actived {
-    transform:translate(0% , 0%);
-    opacity:1;
-    transition-delay:0s;
+    transform: translate(0%, 0%);
+    opacity: 1;
+    transition-delay: 0s;
 }
 .main-introduction-data {
     position: relative;
@@ -515,7 +503,7 @@ ul li.type-dotg{
 }
 
 .main-introduction-data .scroller-row.effect-data {
-    transform: translate(0px , 0px);
+    transform: translate(0px, 0px);
 }
 
 .main-introduction-data .scroller-group {
@@ -550,12 +538,12 @@ ul li.type-dotg{
     display: block;
     width: 325px;
     height: 113px;
-    transform: translate(0px , 0px);
-    transition: transform 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    transform: translate(0px, 0px);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .main-introduction-items .item-logo:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 100%;
     left: 50%;
@@ -570,7 +558,7 @@ ul li.type-dotg{
 }
 
 .main-introduction-items .item-logo:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 100%;
     left: 50%;
@@ -605,7 +593,7 @@ ul li.type-dotg{
         padding: 6rem 3rem;
     }
 }
-.container{
+.container {
     line-height: 180%;
 }
 .container .box-list-area {
@@ -629,7 +617,6 @@ ul li.type-dotg{
     border-radius: 100%;
 }
 
-
 .container .bullet-list {
     font-size: 1.8rem;
     & span.b-tit {
@@ -637,7 +624,7 @@ ul li.type-dotg{
         width: 6rem;
         line-height: 160%;
         color: $txt_violet;
-        font-family: 'Pretendard-Semibold';
+        font-family: "Pretendard-Semibold";
     }
 }
 
@@ -670,18 +657,18 @@ ul li.type-dotg{
     & .type2 {
         display: flex;
         justify-content: space-around;
-        & .list-small{
+        & .list-small {
             font-size: 1.4rem;
             color: $gray300;
             line-height: 200%;
         }
-        & div{
+        & div {
             min-width: 50%;
             width: 100%;
         }
-        & p.title{
+        & p.title {
             font-size: 1.8rem;
-            font-family: 'Pretendard-Semibold';
+            font-family: "Pretendard-Semibold";
         }
     }
 
@@ -698,7 +685,7 @@ ul li.type-dotg{
         max-width: 1280px;
         margin: 4rem 0m;
 
-        & > div{
+        & > div {
             width: 100%;
             padding: 5rem 0;
             max-width: 40rem;
@@ -707,31 +694,32 @@ ul li.type-dotg{
             }
         }
 
-        & .circle_icon{
+        & .circle_icon {
             display: flex;
             border-radius: 100px;
             width: 12rem;
             height: 12rem;
-            & img{
+            & img {
                 display: inline-block;
                 position: relative;
                 width: 5rem;
                 height: 5rem;
             }
         }
-        & p.icontit{
+        & p.icontit {
             font-size: 2.2rem;
-            margin:2rem 0;
-            font-family: 'Lexend-bold';
+            margin: 2rem 0;
+            font-family: "Lexend-bold";
         }
-        & .sub_txt {   // Compnay > vision
+        & .sub_txt {
+            // Compnay > vision
             min-height: 9.6rem;
         }
-        & .bottom_txt {  // IT서비스 > SI/sm
+        & .bottom_txt {
+            // IT서비스 > SI/sm
             color: $gray500;
             margin-top: 4rem;
         }
-
     }
     & .type4 {
         display: flex;
@@ -739,7 +727,7 @@ ul li.type-dotg{
         justify-content: flex-start;
         max-width: 1012px;
         margin: 3rem 0m;
-        & > div{
+        & > div {
             width: 100%;
             padding: 0 3rem 3rem 3rem;
             max-width: 32rem;
@@ -747,34 +735,32 @@ ul li.type-dotg{
                 margin-right: 3rem;
             }
         }
-        & .top_red{
+        & .top_red {
             border-top: 6rem solid $mainColor;
             border-radius: 20px;
             background: white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-
         }
-        & .top_gray{
+        & .top_gray {
             border-top: 6rem solid $gray200;
             border-radius: 20px;
             background: white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
-        & .red_tit{
+        & .red_tit {
             position: relative;
             top: -4.4rem;
             color: white;
             font-size: 1.8rem;
             // font-family: "Pretendard-Bold";
-
         }
 
-        & .body_txt{
+        & .body_txt {
             min-height: 9.6rem;
         }
         & .bottomline {
             border-top: 1px solid $gray200;
-            margin-top:3rem;
+            margin-top: 3rem;
             padding-top: 1.6rem;
             color: $mainColor;
         }

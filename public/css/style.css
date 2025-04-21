@@ -119,11 +119,7 @@ ul li.type-dotg::before {
 
 .spacer_top_visual h1 {
   position: absolute;
-<<<<<<< HEAD
-  top: 20rem; /*J 17.4 -> 20수정 */
-=======
   top: 30.4rem;
->>>>>>> ih
   left: 50%;
   height: 16rem;
   transform: translateX(-50%);
@@ -246,7 +242,7 @@ ul li.type-dotg::before {
   display: inline-block;
 }
 .fullback.organization .tit .txt-gradation {
-  background: linear-gradient(to right, #FB0000 0%, #FB0000 60%, #B60000 70%, #B60000 120%);
+  background: linear-gradient(to right, #fb0000 0%, #fb0000 60%, #b60000 70%, #b60000 120%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -258,7 +254,7 @@ ul li.type-dotg::before {
   top: 8rem;
 }
 .fullback.gradation_gray {
-  background: linear-gradient(to left, #DDDDDD 0%, #DDDDDD 15%, #888888 90%);
+  background: linear-gradient(to left, #dddddd 0%, #dddddd 15%, #888888 90%);
   padding: 3rem 0;
   height: 90rem;
   box-sizing: border-box;
@@ -1347,7 +1343,7 @@ main {
 
 .list .fullbg_darkblue {
   width: 1280px;
-  background-color: #0A1324;
+  background-color: #0a1324;
   border-radius: 24px;
   padding: 0;
   height: 80rem;
@@ -1564,7 +1560,6 @@ section .section_description {
   color: #fff;
 }
 
-<<<<<<< HEAD
 .pretendard {
   font-family: "Pretendard-Regular";
 }
@@ -1662,7 +1657,7 @@ span.strong {
 }
 
 .bg_darkblue {
-  background-color: #292C39;
+  background-color: #292c39;
 }
 
 .bg_darkgray {
@@ -1752,8 +1747,6 @@ span.strong {
   font-size: 6rem;
 }
 
-.accordion_controller {
-=======
 .visual_accordion {
   padding: 70px 0 100px;
   background-color: #d2282f;
@@ -1769,7 +1762,6 @@ span.strong {
   margin-top: 70px;
 }
 .accordion_contain .accordion_controller {
->>>>>>> ih
   display: flex;
   justify-content: center;
   gap: 24px;
