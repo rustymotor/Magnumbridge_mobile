@@ -77,9 +77,8 @@ span.strong {
 .fc-lgray {
     color: common.$txt_gray;
 }
-
-.fc-darkblue {
-    color: common.$txt_dark-blue;
+.fc_darkblue {
+    color: common.$darkblue;
 }
 
 .bg_red {
@@ -89,17 +88,26 @@ span.strong {
 .bg_white {
     background-color: white;
 }
+.bg_middleblue {
+    background-color: common.$txt_dark-blue;
+}
+.bg_darkred {
+    background-color: common.$mainColorDark;
+}
 .bg_gray {
     background-color: common.$bgBase;
-}
-.bg_darkblue {
-    background-color: common.$darkblue;
 }
 .bg_darkgray {
     background-color: common.$gray500;
 }
+.bg_darkblue {
+    background-color: common.$darkblue;
+}
 .bg_black {
     background-color: black;
+}
+.bg_line {
+    border: 1px solid common.$gray100;
 }
 .radius_4 {
     border-radius: 4rem;
@@ -107,7 +115,9 @@ span.strong {
 .tac {
     text-align: center;
 }
-
+.mg-0 {
+    margin: 0 !important;
+}
 .mg-10 {
     margin: 10rem 0 20rem 0;
 }
@@ -132,14 +142,20 @@ span.strong {
 .mb-4 {
     margin-bottom: 4rem;
 }
+.mt-200 {
+    margin-top: 20rem;
+}
 .ml-3 {
     margin-left: 3rem;
 }
 .ml-10 {
     margin-left: 10rem;
 }
-.mt-200 {
-    margin-top: 20rem;
+.mr-1 {
+    margin-right: 1rem;
+}
+.mr-2 {
+    margin-right: 2rem;
 }
 .fs-18 {
     font-size: 1.8rem;
@@ -150,13 +166,6 @@ span.strong {
     font-size: 2rem;
     line-height: 180%;
 }
-.mh-10 {
-    min-height: 10rem;
-}
-
-.mh-15 {
-    min-height: 15.2rem;
-}
 .fs-24 {
     font-size: 2.4rem;
     line-height: 180%;
@@ -164,4 +173,14 @@ span.strong {
 
 .fs-60 {
     font-size: 6rem;
+}
+.mh-10 {
+    min-height: 10rem;
+}
+
+.mh-15 {
+    min-height: 15.2rem;
+}
+.underline {
+    text-decoration: underline;
 }
