@@ -119,7 +119,7 @@ ul li.type-dotg::before {
 
 .spacer_top_visual h1 {
   position: absolute;
-  top: 30.4rem;
+  top: 17.4rem;
   left: 50%;
   height: 16rem;
   transform: translateX(-50%);
@@ -1365,10 +1365,13 @@ main {
   height: 100%;
 }
 
-.container.main section {
+.container.main .spacer_top_visual {
+  height: 88rem;
+}
+.container.main section:not(.footer_menu) {
   text-align: center;
 }
-.container.main section .section_title {
+.container.main section:not(.footer_menu) .section_title {
   font-size: 36px;
   font-weight: bold;
   margin: 100px 0 20px;
@@ -1376,7 +1379,7 @@ main {
   color: #000;
   font-family: "lexend-regular", sans-serif;
 }
-.container.main section .section_description {
+.container.main section:not(.footer_menu) .section_description {
   margin-bottom: 70px;
   font-size: 18px;
   line-height: 1.8;
@@ -1431,12 +1434,10 @@ main {
   color: #fff;
   margin-top: 320px;
 }
-
-.swiper-pagination-bullets {
-  bottom: 72px !important;
+.container.main .swiper-pagination-bullets {
+  bottom: 6.6rem !important;
 }
-
-.swiper-horizontal .swiper-pagination-bullet {
+.container.main .swiper-horizontal .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
   background: #8f8f8f;
@@ -1444,23 +1445,20 @@ main {
   border: 1px solid #fff;
   margin: 0px 7px !important;
 }
-
-.swiper-pagination-bullet-active {
+.container.main .swiper-pagination-bullet-active {
   background-color: #fff !important;
   width: 40px !important;
   border-radius: 14px;
 }
-
-.swiper-button-next,
-.swiper-button-prev {
+.container.main .swiper-button-next,
+.container.main .swiper-button-prev {
   color: #d2282f !important;
 }
-
-.swiper_main_1 .swiper-button-prev,
-.swiper_main_1 .swiper-button-next {
+.container.main .swiper_main_1 .swiper-button-prev,
+.container.main .swiper_main_1 .swiper-button-next {
   display: none;
 }
-.swiper_main_1 .visual_main {
+.container.main .swiper_main_1 .visual_main {
   position: relative;
   background: #eee;
   display: flex;
@@ -1468,29 +1466,29 @@ main {
   font-size: 18px;
   color: #fff;
 }
-.swiper_main_1 .visual_main .text_wrap {
+.container.main .swiper_main_1 .visual_main .text_wrap {
   position: relative;
   margin-left: 320px;
 }
-.swiper_main_1 .visual_main .text_wrap strong {
+.container.main .swiper_main_1 .visual_main .text_wrap strong {
   font-size: 7rem;
   line-height: 84px;
   font-weight: 700;
   color: white;
   font-familY: "Lexend-regular", sans-serif;
 }
-.swiper_main_1 .visual_main .text_wrap strong.normal {
+.container.main .swiper_main_1 .visual_main .text_wrap strong.normal {
   font-size: 6rem;
   font-weight: normal;
   line-height: 75px;
 }
-.swiper_main_1 .visual_main .text_wrap span {
+.container.main .swiper_main_1 .visual_main .text_wrap span {
   font-size: 2rem;
   line-height: 1.4;
   display: block;
   margin-top: 4.3rem;
 }
-.swiper_main_1 .visual_main .text_wrap button {
+.container.main .swiper_main_1 .visual_main .text_wrap button {
   position: absolute;
   top: 299px;
   left: 0;
@@ -1500,27 +1498,26 @@ main {
   border: 1px solid #d9d9d9;
   background-color: rgba(0, 0, 0, 0.2);
 }
-.swiper_main_1 .visual_main > img {
+.container.main .swiper_main_1 .visual_main > img {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
-
-.visual_swiper {
+.container.main .visual_swiper {
   position: relative;
   height: 640px;
   padding-bottom: 140px;
   background-color: #f8f8f8;
 }
-.visual_swiper .swiper_main_2 {
+.container.main .visual_swiper .swiper_main_2 {
   width: 1280px;
 }
-.visual_swiper .swiper_main_2 .swiper-wrapper .visual_main {
+.container.main .visual_swiper .swiper_main_2 .swiper-wrapper .visual_main {
   position: relative;
   background-color: transparent;
 }
-.visual_swiper .swiper_main_2 .swiper-wrapper .visual_main:after {
+.container.main .visual_swiper .swiper_main_2 .swiper-wrapper .visual_main:after {
   position: absolute;
   content: "";
   top: 0;
@@ -1531,7 +1528,7 @@ main {
   background-color: #fff;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
-.visual_swiper .swiper_main_2 .swiper-wrapper .visual_main .text_wrap {
+.container.main .visual_swiper .swiper_main_2 .swiper-wrapper .visual_main .text_wrap {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1541,64 +1538,62 @@ main {
   height: 100%;
   padding: 120px 0 30px 40px;
 }
-.visual_swiper .swiper_main_2 .swiper-wrapper .visual_main .text_wrap img {
+.container.main .visual_swiper .swiper_main_2 .swiper-wrapper .visual_main .text_wrap img {
   position: absolute;
   top: 50px;
   left: 50%;
   transform: translateX(-50%);
 }
-.visual_swiper .swiper_main_2 .swiper-wrapper .visual_main .text_wrap span {
+.container.main .visual_swiper .swiper_main_2 .swiper-wrapper .visual_main .text_wrap span {
   text-align: left;
   font-size: 14px;
   line-height: 30px;
   font-weight: bold;
 }
-.visual_swiper .swiper_main_2 .swiper-wrapper .visual_main .text_wrap span:before {
+.container.main .visual_swiper .swiper_main_2 .swiper-wrapper .visual_main .text_wrap span:before {
   display: inline-block;
   content: "프로젝트명";
   color: #aaaaaa;
   width: 70px;
   font-size: 12px;
 }
-.visual_swiper .swiper_main_2 .swiper-wrapper .visual_main .text_wrap span:nth-of-type(2):before {
+.container.main .visual_swiper .swiper_main_2 .swiper-wrapper .visual_main .text_wrap span:nth-of-type(2):before {
   content: "제품/기술";
 }
-.visual_swiper .swiper_main_2 .swiper-wrapper .visual_main .text_wrap span:nth-of-type(3):before {
+.container.main .visual_swiper .swiper_main_2 .swiper-wrapper .visual_main .text_wrap span:nth-of-type(3):before {
   content: "종료일";
 }
-.visual_swiper .swiper_main_2 .swiper-pagination {
+.container.main .visual_swiper .swiper_main_2 .swiper-pagination {
   display: none;
 }
-.visual_swiper .swiper-button-prev {
+.container.main .visual_swiper .swiper-button-prev {
   top: 50%;
   left: 50%;
   transform: translate(-687px, -72px);
 }
-.visual_swiper .swiper-button-prev:after {
+.container.main .visual_swiper .swiper-button-prev:after {
   display: none;
 }
-.visual_swiper .swiper-button-next {
+.container.main .visual_swiper .swiper-button-next {
   top: 50%;
   left: 50%;
   transform: translate(660px, -72px);
 }
-.visual_swiper .swiper-button-next:after {
+.container.main .visual_swiper .swiper-button-next:after {
   display: none;
 }
-
-.swiper_main_2 .swiper-button-next:after,
-.swiper_main_2 .swiper-button-prev:after {
+.container.main .swiper_main_2 .swiper-button-next:after,
+.container.main .swiper_main_2 .swiper-button-prev:after {
   display: none;
 }
-
-.visual_swiper_tabs {
+.container.main .visual_swiper_tabs {
   display: flex;
   justify-content: center;
   gap: 18px;
   background-color: #f8f8f8;
   padding: 100px 0 70px;
 }
-.visual_swiper_tabs button {
+.container.main .visual_swiper_tabs button {
   width: 150px;
   height: 50px;
   padding: 10px 16px;
@@ -1609,7 +1604,7 @@ main {
   cursor: pointer;
   transition: all 0.2s;
 }
-.visual_swiper_tabs button.active {
+.container.main .visual_swiper_tabs button.active {
   background: #000;
   color: #fff;
 }
