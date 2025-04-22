@@ -1,24 +1,24 @@
 // lnb 스크롤 상단 고정
 document.addEventListener("DOMContentLoaded", function () {
-    const lnb = document.querySelector(".lnb");
-    const triggerOffset = 9 * 10; // 9rem = 90px (root rem 기준)
+    const lnbList = document.querySelectorAll(".lnb");
+    const triggerOffset = 9 * 10; // 9rem = 90px
 
-    // 현재 페이지 경로 확인
+    // 현재 페이지가 메인이면 중단
     const isMainPage = window.location.pathname.endsWith("/") || window.location.pathname.includes("main");
-
-    // 메인 페이지일 경우 기능 실행 안 함
-    if (isMainPage || !lnb) return;
+    if (isMainPage || lnbList.length === 0) return;
 
     let ticking = false;
 
     function onScroll() {
         const scrollY = window.scrollY || window.pageYOffset;
 
-        if (scrollY >= triggerOffset) {
-            lnb.classList.add("is-fixed");
-        } else {
-            lnb.classList.remove("is-fixed");
-        }
+        lnbList.forEach(lnb => {
+            if (scrollY >= triggerOffset) {
+                lnb.classList.add("is-fixed");
+            } else {
+                lnb.classList.remove("is-fixed");
+            }
+        });
 
         ticking = false;
     }

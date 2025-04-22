@@ -1,0 +1,79 @@
+@use "common";
+
+.all4logo {
+    display: flex;
+    justify-content: space-around;
+    padding: 8rem 0 10rem 0;
+    align-items: center;
+}
+
+.logogray {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    align-items: center;
+}
+.solution {
+    background: url("/images/business/bg_solution.png") no-repeat;
+    width: 128rem;
+    height: 42rem;
+    padding-left: 12rem;
+    border-radius: 20px 20px 0 0;
+}
+.solution_block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1012px;
+}
+/*IT 서비스 */
+.list .fullbg_darkgray {
+    width: 1280px;
+    background-color: common.$gray600;
+    border-radius: 24px;
+    padding: 0;
+    height: 28rem;
+    align-items: center;
+    & .si {
+        background: url("/images/business/img_si.png") no-repeat;
+        background-position-x: right;
+        background-position-y: bottom;
+        border-radius: 2rem;
+        padding-left: 12rem;
+    }
+}
+
+.list .fullbg_red {
+    width: 1280px;
+    background-color: common.$mainColor;
+    border-radius: 24px;
+    padding: 0;
+    height: 28rem;
+    align-items: center;
+    & .sm {
+        background: url("/images/business/img_sm.png") no-repeat;
+        background-position-x: left;
+        background-position-y: bottom;
+        border-radius: 2rem;
+        padding-left: 84rem;
+    }
+}
+
+.list .fullbg_darkblue {
+    width: 1280px;
+    background-color: common.$blueblack;
+    border-radius: 24px;
+    padding: 0;
+    height: 80rem;
+    align-items: center;
+    & .txt_skill {
+        padding-left: 20rem;
+        margin-top: 7rem;
+    }
+}
+
+.list .fullbg_gra_gray {
+    background: linear-gradient(to bottom, #000000 0%, #000000 15%, #454545 90%);
+    height: 70rem;
+    border-radius: 4rem;
+}

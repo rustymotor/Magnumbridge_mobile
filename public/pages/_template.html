@@ -11,8 +11,9 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 <meta property="og:url" content="http://www.magnumbridge.co.kr/" />
 <meta property="og:type" content="website" />
-<link rel="shortcut icon" type="image/x-icon" href="/public/images/favicon.ico" />
+<link rel="icon" type="imagle/x-icon" href="/favicon-16x16.png" />
 <meta property="og:type" content="website" />
+<link rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
 <link rel="stylesheet" href="../css/reset.css" />
 <link rel="stylesheet" href="../css/common.css" />
 <link rel="stylesheet" href="../css/font.css" />
@@ -50,8 +51,54 @@
                 </ul>
             </li>
         </ul>
-        <button><img src="../images/ico_all_menu.svg" alt="전체메뉴 버튼" /></button>
+        <button class="btn_sitemap">
+            <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="ico_all_menu">
+                    <path d="M0.583984 0.257812H22.584V1.78162H0.583984V0.257812Z" fill="white" />
+                    <path d="M0.583984 7.115H22.584V8.63881H0.583984V7.115Z" fill="white" />
+                    <path d="M0.583984 14.734H22.584V16.2578H0.583984V14.734Z" fill="white" />
+                </g>
+            </svg>
+        </button>
     </nav>
+</div>
+<div class="contain_sitemap">
+    <div class="sitemap">
+        <div class="sitemap_header">
+            <button class="btn_sitemap_close"><img src="/images/btn_sitemap_cancel.svg" alt="사이트맵 닫기" /></button>
+            <h1>SITE MAP</h1>
+        </div>
+        <div class="sitemap_body">
+            <ul class="sitemap_list">
+                <li>
+                    <p><a href="business.html" class="h3">business</a></p>
+                    <ul>
+                        <li><a href="business_1.html">Platform & Solution </a></li>
+                        <li><a href="business_2.html">Product</a></li>
+                        <li><a href="business_3.html">IT Service</a></li>
+                        <li><a href="#none">Consulting </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><a href="company.html" class="h3">Company</a></p>
+                    <ul>
+                        <li><a href="company_1.html">About Magnumbridge</a></li>
+                        <li><a href="company_2.html">Customer & Partner</a></li>
+                        <li><a href="company_3.html">Vision & Mission</a></li>
+                        <li><a href="company_4.html">History</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><a href="business.html" class="h3">Recruit</a></p>
+                    <ul>
+                        <li><a href="recruit_1.html">Ideal employee</a></li>
+                        <li><a href="recruit_2.html">Benefit</a></li>
+                        <li><a href="#none">Recruitment</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 </header>
         <div class="spacer_top_visual"></div>
@@ -64,39 +111,54 @@
             </div>
             <!-- // 컨텐츠 영역 -->
         </main>
-        <footer id="footer"><div class="footer_menu">
+        <footer id="footer"><section class="footer_menu">
     <ul>
-        <p><a href="business.html" class="h3">business</a></p>
-        <li><a href="business_1.html">Platform & Solution </a></li>
-        <li><a href="business_2.html">Product</a></li>
-        <li><a href="business_3.html">IT Service</a></li>
-        <li><a href="#none">Consulting </a></li>
+        <li>
+            <p><a href="business.html" class="h3">business</a></p>
+            <ul>
+                <li><a href="business_1.html">Platform & Solution </a></li>
+                <li><a href="business_2.html">Product</a></li>
+                <li><a href="business_3.html">IT Service</a></li>
+                <li><a href="#none">Consulting </a></li>
+            </ul>
+        </li>
+        <li>
+            <p><a href="company.html" class="h3">Company</a></p>
+            <ul>
+                <li><a href="company_1.html">About Magnumbridge</a></li>
+                <li><a href="company_2.html">Customer & Partner</a></li>
+                <li><a href="company_3.html">Vision & Mission</a></li>
+                <li><a href="company_4.html">History</a></li>
+            </ul>
+        </li>
+        <li>
+            <p><a href="business.html" class="h3">Recruit</a></p>
+            <ul>
+                <li><a href="recruit_1.html">Ideal employee</a></li>
+                <li><a href="recruit_2.html">Benefit</a></li>
+                <li><a href="#none">Recruitment</a></li>
+            </ul>
+        </li>
     </ul>
-    <ul>
-        <p><a href="business.html" class="h3">Company</a></p>
-        <li><a href="business_1.html">Platform & Solution </a></li>
-        <li><a href="business_2.html">Product</a></li>
-        <li><a href="business_3.html">IT Service</a></li>
-        <li><a href="#none">Consulting </a></li>
-    </ul>
-    <ul>
-        <p><a href="business.html" class="h3">Recruit</a></p>
-        <li><a href="recruit_1.html">Ideal employee</a></li>
-        <li><a href="recruit_2.html">Benefit</a></li>
-        <li><a href="#none">Recruitment</a></li>
-    </ul>
-    <img src="/images/logo_footer.svg" alt="logo_footer" />
-</div>
-<div class="footer_info">
-    <div>
-        <p>(주)매그넘브릿지</p>
-        <p><a href="">회사소개서</a><a href="">오시는 길</a><a href="">문의하기</a><a href="">개인정보취급방침</a></p>
-    </div>
-    <div>
+    <img src="/images/logo_footer.svg" alt="logo_footer" class="logo_footer" />
+</section>
+<section class="footer_info">
+    <article class="footer_info_1">
+        <p class="company_name">(주)매그넘브릿지</p>
+        <p class="company_link_wrap">
+            <a href="#none">회사소개서</a>|<a href="#none">오시는 길</a>|<a href="#none">문의하기</a>|<a href="#none"
+                >개인정보취급방침</a
+            >
+        </p>
+    </article>
+    <article class="footer_info_2">
         <address>서울특별시 강남구 봉은사로 443, 8층 (삼성동, 로얄빌딩)</address>
         <span>TEL: <a href="tel:01012345678" class="tel-link">02-6941-0828</a> / FAX) 02-6941-0829</span>
-    </div>
-</div>
+    </article>
+    <article class="footer_info_3">
+        <p>Copyright &copy; 2023 MAGNUMBRIDGE. All rights reserved.</p>
+    </article>
+</section>
 
 <script src="../js/nav.js"></script>
 </footer>
