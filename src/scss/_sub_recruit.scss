@@ -1,0 +1,52 @@
+@use "common";
+.recruit main {
+    height: 110vh !important;
+}
+
+.list.employee {
+    width: 1280px;
+    background: url("/images/recruit/employee_back.png") no-repeat center bottom;
+    padding: 0;
+    height: 70rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-position-y: 5rem;
+    align-items: center; 
+    & .topfloor {
+        position: relative;
+        top: -6rem;
+        background-color: black;
+        width: 50rem;
+        padding: 3.5rem 7rem;
+        height: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 12rem;
+    }
+    & .bottomfloor {
+        margin-top: 56px;
+        display: flex;
+        width: 126rem;
+        align-items: center;
+        justify-content: space-around;
+        & div.circle {          
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            background-image: linear-gradient(to bottom, white 0%,  #f2f2f2 60%, #cccccc 94%);
+            color: white;
+            border-radius: 50%;             
+            width: 26rem;
+            height: 26rem; 
+            & .border {
+                color: white;           
+                // background-origin: border-box;
+                // background-clip: content-box, border-box;
+                border-radius: 50%; 
+                width: 22rem;
+                height: 22rem;   
+            }     
+        }
+    }
+}

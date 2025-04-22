@@ -46,6 +46,13 @@ span.strong {
     // align-items: center;
 }
 
+.flex_middle_wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
 .flex_between {
     display: flex;
     justify-content: space-between;
