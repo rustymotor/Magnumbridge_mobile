@@ -48,3 +48,6 @@ document.addEventListener("click", function (event) {
 document.getElementById("mapContainer").addEventListener("click", function (event) {
     event.stopPropagation(); // 이벤트 전파를 막음
 });
+function closeMap() {
+    document.getElementById("mapContainer").style.display = "none";
+}
