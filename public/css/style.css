@@ -1,10 +1,10 @@
 /* Error: expected "{".
- *   ,
- * 5 | $subColor: #2f60df;
- *   |                   ^
- *   '
- *   src\scss\common.scss 5:19  @use
- *   src\scss\style.scss 2:1    root stylesheet */
+ *     ,
+ * 117 |                     padding: 0 1.4rem;
+ *     |                                      ^
+ *     '
+ *   src\scss\_common_header.scss 117:38  @forward
+ *   src\scss\style.scss 3:1              root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 5 \2502  $subColor: #2f60df;\d\a   \2502                    ^\a   \2575 \a   src\\scss\\common.scss 5:19  @use\a   src\\scss\\style.scss 2:1    root stylesheet';
+  content: 'Error: expected "{".\a     \2577 \a 117 \2502                      padding: 0 1.4rem;\d\a     \2502                                       ^\a     \2575 \a   src\\scss\\_common_header.scss 117:38  @forward\a   src\\scss\\style.scss 3:1              root stylesheet';
 }

@@ -1,16 +1,6 @@
 // common.scss
 /* Color styles */
 $mainColor: #d2282f;
-<<<<<<< HEAD
-$subColor: #2f60df;
-$grey01: #666666;
-$grey02: #868a92;
-$grey03: #afb3bb;
-$grey04: #b5b9c6;
-$grey05: #d2d5de;
-$line: #aaaaaa;
-$txt_violet: #8B7EC3;
-=======
 $mainColorDark: #8a1818;
 $mainColorBright: #ff403e;
 $bgBase: #f2f2f2;
@@ -30,23 +20,12 @@ $txt_violet: #8b7ec3;
 $txt_dark-blue: #575e7c;
 $txt_gray: #8f8f8f;
 
->>>>>>> fe97d04fa67f2dd26aacf1aecad6e6da53069f74
 // 폰트 굵기
 
 $pretendard_400: "Pretendard-Regular";
 
 // 타이틀
 .h1 {
-<<<<<<< HEAD
-    font-family: 'Lexend-Bold';
-    font-size: 5rem;
-}
-.h2 {
-    font-size: 3.6rem;
-    font-family: 'Lexend-Bold';
-}
-.h3 {
-=======
     //GNB 타이틀
     font-family: "Lexend-Bold";
     font-size: 5rem;
@@ -58,7 +37,6 @@ $pretendard_400: "Pretendard-Regular";
 }
 .h3 {
     //본문 타이틀
->>>>>>> fe97d04fa67f2dd26aacf1aecad6e6da53069f74
     font-size: 3.2rem;
     font-family: "Pretendard-Bold";
 }
@@ -84,8 +62,6 @@ a:visited {
 }
 
 // han 작업
-<<<<<<< HEAD
-=======
 button.btn_darkgray {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.6) 100%);
     border: 1px solid white;
@@ -184,17 +160,12 @@ ul li.type-dotg {
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
->>>>>>> fe97d04fa67f2dd26aacf1aecad6e6da53069f74
 .spacer_top_visual .visual_gradient .h2 {
     position: absolute;
     width: 100%;
     bottom: 5px;
     text-align: center;
     color: black;
-<<<<<<< HEAD
-    
-=======
->>>>>>> fe97d04fa67f2dd26aacf1aecad6e6da53069f74
 }
 .spacer_top_visual .visual_gradient::after {
     content: "";
@@ -208,55 +179,10 @@ ul li.type-dotg {
 }
 .spacer_top_visual h1 {
     position: absolute;
-<<<<<<< HEAD
-    top: 20rem;  /*J 17.4 -> 20수정 */
-=======
     top: 20rem; /*J 17.4 -> 20수정 */
->>>>>>> 47a872a226fbefb1e76c9d84713a8aa9aa3cb8a7
     left: 50%;
     height: 16rem;
     transform: translateX(-50%);
-<<<<<<< HEAD
-    width: 1280px;    
-    color: white;    
-    & p.subtitle{
-        margin-top: 1.5rem;
-        font-size: 1.6rem;
-        color: $line;
-        font-family: 'Lexend-Light';
-    }
-}
-
-
-.container p.subtxt {
-    font-size: 1.8rem;
-    text-align: center;
-    margin: 4rem 0 7rem 0;
-}
-
-/* Company_partner */
-.fullback.partner {
-    background: url("/images/company/bg_partner.jpg") left top;
-    height: 68rem;
-    background-size: cover;
-    box-sizing: border-box;
-    padding: 10rem;
-    @media (max-width: 690px) {
-        padding: 6rem 3rem;
-    }
-}
-
-/* Company_History */
-
-.fullback.history {
-    background: url("/images/company/bg_history.jpg") left top;
-    background-size: cover;
-    box-sizing: border-box;
-    padding: 10rem;
-    @media (max-width: 690px) {
-        padding: 6rem 3rem;
-    }
-=======
     width: 1280px;
     color: white;
     & p.subtitle {
@@ -282,7 +208,6 @@ ul li.type-dotg {
     font-size: 1.8rem;
     text-align: center;
     margin-top: 4rem;
->>>>>>> fe97d04fa67f2dd26aacf1aecad6e6da53069f74
 }
 
 /* Company_partner */
@@ -741,11 +666,7 @@ div > ul > li ul > li {
         width: 6rem;
         line-height: 160%;
         color: $txt_violet;
-<<<<<<< HEAD
-        font-family: 'Pretendard-Semibold';
-=======
         font-family: "Pretendard-Semibold";
->>>>>>> fe97d04fa67f2dd26aacf1aecad6e6da53069f74
     }
 }
 
@@ -763,32 +684,6 @@ div > ul > li ul > li {
 .container .box-list-area > .list {
     width: 100%;
     max-width: 1280px;
-<<<<<<< HEAD
-    & div.photo {
-        margin-top: 10rem; 
-        @media (max-width: 1280px) {
-            display: none;
-        }       
-    }
-    & .type2 {
-        display: flex;
-        justify-content: space-around;
-        & div{
-            min-width: 50%;
-            width: 100%;
-        }
-        & .logo_line{
-            
-        }
-    }
-    & .type2 + .type2 {
-        margin-top: 20rem;
-        @media (max-width: 690px) {
-            margin-top: 10rem;
-        } 
-    }    
-    
-=======
     margin-top: 7rem;
     word-break: keep-all;
     &.nomargin {
@@ -914,7 +809,6 @@ div > ul > li ul > li {
             color: $mainColor;
         }
     }
->>>>>>> fe97d04fa67f2dd26aacf1aecad6e6da53069f74
 }
 
 // 사이트맵, 푸터 IA구조 공통CSS
