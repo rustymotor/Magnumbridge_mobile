@@ -161,7 +161,7 @@ ul li.type-dotg::before {
   padding: 10rem 0;
 }
 .fullback.itservice {
-  background: url("/images/business/bg_service.png") right top;
+  background: url("../images/business/bg_service.png") right top;
   background-size: cover;
   box-sizing: border-box;
   height: 44rem;
@@ -173,7 +173,7 @@ ul li.type-dotg::before {
   }
 }
 .fullback.package {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/business/bg_package.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/business/bg_package.png");
   background-size: cover;
   padding: 10rem 0;
   height: 65rem;
@@ -191,7 +191,7 @@ ul li.type-dotg::before {
   line-height: 160%;
 }
 .fullback.partner {
-  background: url("/images/company/bg_partner.jpg") left top;
+  background: url("../images/company/bg_partner.jpg") left top;
   background-size: cover;
   box-sizing: border-box;
   padding: 10rem 0;
@@ -202,7 +202,7 @@ ul li.type-dotg::before {
   }
 }
 .fullback.certification {
-  background-image: linear-gradient(rgba(41, 44, 57, 0.8), rgba(41, 44, 62, 0.8)), url("/images/company/bg_certification.jpg");
+  background-image: linear-gradient(rgba(41, 44, 57, 0.8), rgba(41, 44, 62, 0.8)), url("../images/company/bg_certification.jpg");
   background-size: cover;
   padding: 10rem 0;
   height: 60rem;
@@ -220,7 +220,7 @@ ul li.type-dotg::before {
   top: 8rem;
 }
 .fullback.organization {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/company/bg_organization.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/company/bg_organization.png");
   background-size: cover;
   padding: 10rem 0;
   height: 78rem;
@@ -268,7 +268,7 @@ ul li.type-dotg::before {
   padding: 7rem 0;
 }
 .fullback > .devops {
-  background: url("/images/business/img_devops.png") no-repeat center bottom;
+  background: url("../images/business/img_devops.png") no-repeat center bottom;
   height: 48rem;
   margin-bottom: 8rem;
   box-sizing: border-box;
@@ -285,7 +285,7 @@ ul li.type-dotg::before {
   margin-top: 12rem;
 }
 .fullback > .strategy {
-  background: url("/images/company/back_logo.png") no-repeat center center;
+  background: url("../images/company/back_logo.png") no-repeat center center;
   background-size: contain;
   height: 89rem;
   box-sizing: border-box;
@@ -296,7 +296,7 @@ ul li.type-dotg::before {
   }
 }
 .fullback > .strategy .img_certification {
-  background: url("/images/company/img_strategy.png") no-repeat center center;
+  background: url("../images/company/img_strategy.png") no-repeat center center;
   height: 100%;
   background-position-y: 20rem;
 }
@@ -338,7 +338,7 @@ ul li.type-dotg::before {
 
 /* Vision */
 .vision_circle {
-  background: url("/images/company/circle_magnum.png") left top;
+  background: url("../images/company/circle_magnum.png") left top;
   width: 38rem;
   height: 38rem;
   text-align: center;
@@ -380,21 +380,21 @@ ul li.type-dotg::before {
   padding: 5rem 4rem;
 }
 .list .fullbg_gray .all4block > div.block01 {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("/images/business/block_img01.png");
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/business/block_img01.png");
   background-size: cover;
   background-position-y: top;
   width: 31%;
   height: 38rem;
 }
 .list .fullbg_gray .all4block > div.block02 {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("/images/business/block_img02.png");
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/business/block_img02.png");
   background-size: cover;
   background-position-y: top;
   width: 31%;
   height: 38rem;
 }
 .list .fullbg_gray .all4block > div.block03 {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("/images/business/block_img03.png");
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/business/block_img03.png");
   background-size: cover;
   background-position-y: top;
   width: 31%;
@@ -407,7 +407,7 @@ ul li.type-dotg::before {
   padding: 3.6rem 0 0 0;
 }
 .list .fullbg_gray .building {
-  background: url("/images/company/backimg_building.png") no-repeat;
+  background: url("../images/company/backimg_building.png") no-repeat;
   width: 80rem;
   background-position-y: bottom;
   padding-bottom: 6rem;
@@ -562,7 +562,7 @@ ul li.type-dotg::before {
 
 /* Company_History */
 .fullback.history {
-  background: url("/images/company/bg_history.jpg") left top;
+  background: url("../images/company/bg_history.jpg") left top;
   background-size: cover;
   box-sizing: border-box;
   padding: 10rem;
@@ -884,7 +884,6 @@ header nav .gnb .lnb::before {
   height: 6rem;
   border-bottom: 1px solid #aaaaaa;
   background-color: white;
-  border-top: 1px solid #aaaaaa;
 }
 header nav .gnb .lnb.is-fixed {
   position: fixed;
@@ -924,7 +923,7 @@ main {
   display: block;
   position: relative;
   z-index: 1;
-  background: url("/images/vusual_top_bussiness_1.jpg") no-repeat center center;
+  background: url("../images/vusual_top_bussiness_1.jpg") no-repeat center center;
   background-size: cover;
   box-sizing: border-box;
 }
@@ -1027,43 +1026,43 @@ main {
   box-sizing: border-box;
 }
 .spacer_top_visual.company_1 {
-  background: url("/images/visual_top_company_1.jpg") no-repeat center center;
+  background: url("../images/visual_top_company_1.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.company_2 {
-  background: url("/images/visual_top_company_2.jpg") no-repeat center center;
+  background: url("../images/visual_top_company_2.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.company_3 {
-  background: url("/images/visual_top_company_3.jpg") no-repeat center center;
+  background: url("../images/visual_top_company_3.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.company_4 {
-  background: url("/images/visual_top_company_4.jpg") no-repeat center center;
+  background: url("../images/visual_top_company_4.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.business_1 {
-  background: url("/images/visual_top_business_1.jpg") no-repeat center center;
+  background: url("../images/visual_top_business_1.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.business_2 {
-  background: url("/images/visual_top_business_2.jpg") no-repeat center center;
+  background: url("../images/visual_top_business_2.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.business_3 {
-  background: url("/images/visual_top_business_3.jpg") no-repeat center center;
+  background: url("../images/visual_top_business_3.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.business_4 {
-  background: url("/images/visual_top_business_4.jpg") no-repeat center center;
+  background: url("../images/visual_top_business_4.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.recruit_1 {
-  background: url("/images/visual_top_recruit_1.jpg") no-repeat center center;
+  background: url("../images/visual_top_recruit_1.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.recruit_2 {
-  background: url("/images/visual_top_recruit_2.jpg") no-repeat center center;
+  background: url("../images/visual_top_recruit_2.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual .visual_gradient {
@@ -1221,7 +1220,7 @@ main {
   height: 250px;
   background-color: #d2282f;
   border-radius: 20px;
-  background: url(/images/main/map.jpg) center no-repeat;
+  background: url("../images/main/map.jpg") center no-repeat;
   background-size: cover;
   padding-top: 40px;
   margin-bottom: 50px;
@@ -1272,7 +1271,7 @@ main {
 .tmap_wrap ul li:nth-of-type(2) {
   width: 80px;
   height: 80px;
-  background: url(/images/main/watch_map.svg);
+  background: url("../images/main/watch_map.svg");
 }
 .tmap_wrap ul li:nth-of-type(2) p {
   color: #fff;
@@ -1294,7 +1293,7 @@ main {
 }
 
 .solution {
-  background: url("/images/business/bg_solution.png") no-repeat;
+  background: url("../images/business/bg_solution.png") no-repeat;
   width: 128rem;
   height: 42rem;
   padding-left: 12rem;
@@ -1318,7 +1317,7 @@ main {
   align-items: center;
 }
 .list .fullbg_darkgray .si {
-  background: url("/images/business/img_si.png") no-repeat;
+  background: url("../images/business/img_si.png") no-repeat;
   background-position-x: right;
   background-position-y: bottom;
   border-radius: 2rem;
@@ -1334,7 +1333,7 @@ main {
   align-items: center;
 }
 .list .fullbg_red .sm {
-  background: url("/images/business/img_sm.png") no-repeat;
+  background: url("../images/business/img_sm.png") no-repeat;
   background-position-x: left;
   background-position-y: bottom;
   border-radius: 2rem;
@@ -1408,22 +1407,22 @@ main {
   transform: translateY(-71px);
 }
 .container.main section.company ul li:nth-of-type(1) {
-  background: url(/images/main/company_overview_1.jpg) center no-repeat;
+  background: url("../images/main/company_overview_1.jpg") center no-repeat;
   background-size: cover;
   border-radius: 0 0 60px 0;
 }
 .container.main section.company ul li:nth-of-type(2) {
-  background: url(/images/main/company_overview_2.jpg) center no-repeat;
+  background: url("../images/main/company_overview_2.jpg") center no-repeat;
   background-size: cover;
   border-radius: 0 0 0 60px;
 }
 .container.main section.company ul li:nth-of-type(3) {
-  background: url(/images/main/company_overview_3.jpg) center no-repeat;
+  background: url("../images/main/company_overview_3.jpg") center no-repeat;
   background-size: cover;
   border-radius: 0 60px 0 0;
 }
 .container.main section.company ul li:nth-of-type(4) {
-  background: url(/images/main/company_overview_4.jpg) center no-repeat;
+  background: url("../images/main/company_overview_4.jpg") center no-repeat;
   background-size: cover;
   border-radius: 60px 0 0 0;
 }
@@ -1922,7 +1921,7 @@ span.strong {
   height: 30px;
   top: 0;
   left: 0;
-  background: url(/images/main/arrow.svg) center no-repeat;
+  background: url("../images/main/arrow.svg") center no-repeat;
 }
 .accordion_contain .card_container .card.is-hovered {
   width: 780px;
@@ -1948,22 +1947,22 @@ span.strong {
   opacity: 0.4;
 }
 .accordion_contain .card_container .card:nth-of-type(1):before {
-  background: url(/images/main/accordion_01.png) no-repeat center/cover;
+  background: url("../images/main/accordion_01.png") no-repeat center/cover;
 }
 .accordion_contain .card_container .card:nth-of-type(2):before {
-  background: url(/images/main/accordion_02.png) no-repeat center/cover;
+  background: url("../images/main/accordion_02.png") no-repeat center/cover;
 }
 .accordion_contain .card_container .card:nth-of-type(3):before {
-  background: url(/images/main/accordion_03.png) no-repeat center/cover;
+  background: url("../images/main/accordion_03.png") no-repeat center/cover;
 }
 .accordion_contain .card_container .card:nth-of-type(4):before {
-  background: url(/images/main/accordion_04.png) no-repeat center/cover;
+  background: url("../images/main/accordion_04.png") no-repeat center/cover;
 }
 .accordion_contain .card_container .card:nth-of-type(5):before {
-  background: url(/images/main/accordion_05.png) no-repeat center/cover;
+  background: url("../images/main/accordion_05.png") no-repeat center/cover;
 }
 .accordion_contain .card_container .card:nth-of-type(6):before {
-  background: url(/images/main/accordion_06.png) no-repeat center/cover;
+  background: url("../images/main/accordion_06.png") no-repeat center/cover;
 }
 
 .accordion_controller button {

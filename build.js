@@ -65,7 +65,23 @@ const processEJSFiles = (srcFolder, distFolder, depth = 0) => {
     });
 };
 
+// ✅ CSS 파일 후처리 함수 (url("/images/..") → url("../images/.."))
+const fixCSSPaths = cssDir => {
+    if (!fs.existsSync(cssDir)) return;
+
+    fs.readdirSync(cssDir).forEach(file => {
+        const filePath = path.join(cssDir, file);
+        if (fs.statSync(filePath).isFile() && file.endsWith(".css")) {
+            let content = fs.readFileSync(filePath, "utf8");
+            // 경로 수정
+            content = content.replace(/url\(["']?\/(images|fonts|icons)\/(.*?)["']?\)/g, 'url("../$1/$2")');
+            fs.writeFileSync(filePath, content);
+            console.log(`🔧 Fixed paths in: ${filePath}`);
+        }
+    });
+};
 // 변환 실행
 ensureDirExists(distDir);
 processEJSFiles(srcDir, distDir);
+fixCSSPaths(path.join(distDir, "css"));
 console.log("✅ All EJS files have been converted to HTML.");
