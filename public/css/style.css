@@ -1479,7 +1479,7 @@ section.product_set img {
   width: 246px;
   font-size: 20px;
   line-height: 1.6;
-  font-family: "lexend-Medium", sans-serif;
+  font-family: "lexend-regular", sans-serif;
 }
 .container section.product_function table tr:nth-of-type(1) th:nth-of-type(2) {
   color: #807F7F;
