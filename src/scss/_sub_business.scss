@@ -6,7 +6,19 @@
     padding: 8rem 0 10rem 0;
     align-items: center;
 }
-
+.container.business{
+    .slider.slider_forward{
+        .slide:nth-of-type(3n-2){
+            background: url(/images/business/logo/logo_git.png) center no-repeat;
+        }
+        .slide:nth-of-type(3n-1){
+            background: url(/images/business/logo/logo_jenkins.png) center no-repeat;
+        }
+        .slide:nth-of-type(3n){
+            background: url(/images/business/logo/logo_mq.png) center no-repeat;
+        }
+    }
+}
 .logogray {
     display: flex;
     justify-content: space-around;
