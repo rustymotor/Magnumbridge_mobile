@@ -4,7 +4,7 @@
     height: 100%;
 }
 .container.main{
-    section{
+    section:not(.footer_menu){
         text-align:center;
         .section_title{
             font-size:36px;

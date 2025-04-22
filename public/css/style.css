@@ -1365,10 +1365,10 @@ main {
   height: 100%;
 }
 
-.container.main section {
+.container.main section:not(.footer_menu) {
   text-align: center;
 }
-.container.main section .section_title {
+.container.main section:not(.footer_menu) .section_title {
   font-size: 36px;
   font-weight: bold;
   margin: 100px 0 20px;
@@ -1376,7 +1376,7 @@ main {
   color: #000;
   font-family: "lexend-regular", sans-serif;
 }
-.container.main section .section_description {
+.container.main section:not(.footer_menu) .section_description {
   margin-bottom: 70px;
   font-size: 18px;
   line-height: 1.8;
