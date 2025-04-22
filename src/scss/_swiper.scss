@@ -43,7 +43,7 @@
                 position:relative;
                 width:300px;
                 height:420px;
-
+                overflow:hidden;
                 &:nth-of-type(2n-1){
                     transform:translateY(-71px);
                 }
@@ -70,9 +70,12 @@
                 p{
                     font-size:26px;
                     font-weight:bold;
-                    line-height:7rem;
+                    line-height:12rem;
                     color:#fff;
-                    margin-top:320px;
+                    margin-top:300px;
+                    width:300px;
+                    height:120px;
+                    background: url(/images/main/company_opacity.svg);
                 }
             }
         }
