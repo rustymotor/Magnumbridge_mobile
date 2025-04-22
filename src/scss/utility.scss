@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-@use "./common";
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> main
-=======
 @use "common";
->>>>>>> fe97d04fa67f2dd26aacf1aecad6e6da53069f74
 .pretendard {
     font-family: "Pretendard-Regular";
 }
@@ -19,10 +11,6 @@
 .lexend {
     font-family: "Lexend-Regular";
     letter-spacing: -0.25px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fe97d04fa67f2dd26aacf1aecad6e6da53069f74
 }
 .lexend_300 {
     font-family: "Lexend-Light";
@@ -36,9 +24,6 @@
     font-family: "Lexend-Bold";
     letter-spacing: -0.25px;
 }
-<<<<<<< HEAD
-
-=======
 span.strong {
     font-family: "Pretendard-bold";
     margin-left: 5px;
@@ -72,39 +57,11 @@ span.strong {
     display: flex;
     justify-content: space-between;
 }
->>>>>>> fe97d04fa67f2dd26aacf1aecad6e6da53069f74
 
 .fc-white {
     color: white;
 }
 
-<<<<<<< HEAD
-.tac {
-    text-align: center;
-}
-.mt-50 {
-    margin-top: 5rem;
-}
-.mt-200 {
-    margin-top: 200px;
-=======
->>>>>>> main
-}
-.lexend_300 {
-    font-family: "Lexend-Light";
-    letter-spacing: -0.25px;
-}
-.lexend_600 {
-    font-family: "Lexend-SemiBold";
-    letter-spacing: -0.25px;
-}
-.lexend_700 {
-    font-family: "Lexend-Bold";
-    letter-spacing: -0.25px;
-}
-=======
->>>>>>> 420fe5ac74293630fe5bedc2ea1301a89ddd48d2
-=======
 .fc-primary {
     color: common.$mainColor;
 }
@@ -217,9 +174,6 @@ span.strong {
 .fs-60 {
     font-size: 6rem;
 }
-<<<<<<< HEAD
->>>>>>> fe97d04fa67f2dd26aacf1aecad6e6da53069f74
-=======
 .mh-10 {
     min-height: 10rem;
 }
@@ -230,4 +184,3 @@ span.strong {
 .underline {
     text-decoration: underline;
 }
->>>>>>> 47a872a226fbefb1e76c9d84713a8aa9aa3cb8a7
