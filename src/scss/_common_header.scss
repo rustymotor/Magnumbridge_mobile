@@ -41,7 +41,7 @@ header {
     justify-content: center;
     position: absolute;
     z-index: 3;
-    height: 8rem;
+    height: 9rem;
     &:hover {
         background-color: white;
         transition: all 0.3s ease;
@@ -73,7 +73,7 @@ header {
             width: 100vw;
             margin-left: -0.6vw;
             margin-right: -0.6vw;
-            height: 8rem;
+            height: 9rem;
             background-color: transparent;
             transition: background-color 0.3s ease;
             z-index: -1;
@@ -96,7 +96,7 @@ header {
         z-index: 2;
         margin: 0 auto;
         max-width: 1280px;
-        height: 8rem;
+        height: 9rem;
         transition: all 0.3s ease;
         background-color: transparent;
 
@@ -113,30 +113,14 @@ header {
                     text-decoration: none;
                     width: 16rem;
                     height: 5rem;
-<<<<<<< HEAD
-                    padding: 0 1.4rem;
-                    margin: 1rem 0;
-<<<<<<< HEAD
-=======
-=======
                     margin: 1.4rem 0;
->>>>>>> 420fe5ac74293630fe5bedc2ea1301a89ddd48d2
->>>>>>> main
                     font-size: 2rem;
-                    font-family: "Pretendard-Semibold";
+                    font-family: "Pretendard-bold";
                 }
                 > a.active {
                     background-color: common.$mainColor;
                     border-radius: 4rem;
-<<<<<<< HEAD
-                    color: white;
-                    font-family: "Pretendard-bold";
-<<<<<<< HEAD
-=======
-=======
                     color: white !important; // active일때 글자색 임포트는 우선순위떄문
->>>>>>> 420fe5ac74293630fe5bedc2ea1301a89ddd48d2
->>>>>>> main
                 }
             }
             .spacer_gnb {
@@ -155,13 +139,8 @@ header {
                     left: 50%;
                     transform: translateX(-50%);
                     width: 100vw;
-<<<<<<< HEAD
-                    height: 4rem;
-                    border-bottom: 1px solid common.$grey05;
-=======
                     height: 6rem;
                     border-bottom: 1px solid common.$gray200;
->>>>>>> fe97d04fa67f2dd26aacf1aecad6e6da53069f74
                     background-color: white;
                 }
                 &.is-fixed {
@@ -171,50 +150,27 @@ header {
                 }
                 &.is-show {
                     display: flex;
-                    align-items: flex-start;
                 }
                 display: none;
                 justify-content: flex-end;
                 position: absolute;
-                top: 8rem;
+                top: 9rem;
                 left: 50%;
                 transform: translateX(-50%);
                 width: 100%;
-<<<<<<< HEAD
-                height: 4rem;
-=======
-                height: 5rem;
->>>>>>> main
+                height: 6rem;
                 li {
                     display: inline-block;
                     white-space: nowrap;
                     a {
-<<<<<<< HEAD
-                        display: flex;
-                        align-items: center;
-                        width: 22rem;
-                        height: 3rem;
-<<<<<<< HEAD
-                        margin: 0;
-                        color: common.$grey02;
-                        font-family: "Pretendard-Medium";
-                        font-size: 1.8rem;
-=======
-                        margin: 0;
-                        font-family: "Pretendard-Medium";
-                        font-size: 1.8rem;
-=======
                         width: initial;
                         height: 6rem;
                         margin: 0;
                         padding-left: 3.4em;
->>>>>>> 420fe5ac74293630fe5bedc2ea1301a89ddd48d2
->>>>>>> main
                     }
                     > a.active {
                         color: common.$mainColor;
                         border-radius: 4rem;
-                        font-family: "Pretendard-SemiBold";
                     }
                 }
             }
@@ -237,70 +193,18 @@ main {
     display: block;
     position: relative;
     z-index: 1;
-<<<<<<< HEAD
-    height: 59.6rem;    
-=======
     // height: 88rem;
     background: url("/images/vusual_top_bussiness_1.jpg") no-repeat center center;
->>>>>>> fe97d04fa67f2dd26aacf1aecad6e6da53069f74
     background-size: cover;
     box-sizing: border-box;
-    &.company_1{
-        background: url("/images/visual_top_company_1.jpg") no-repeat center center;      
-        background-size: cover; 
-    } 
-    &.company_2{
-        background: url("/images/visual_top_company_2.jpg") no-repeat center center;
-        background-size: cover;
-    }
-    &.company_3{
-        background: url("/images/visual_top_company_3.jpg") no-repeat center center;
-        background-size: cover;
-    } 
-    &.company_4{
-        background: url("/images/visual_top_company_4.jpg") no-repeat center center;
-        background-size: cover;
-    }  
-
-    &.business_1{
-        background: url("/images/visual_top_business_1.jpg") no-repeat center center;
-        background-size: cover;
-    } 
-    &.business_2{
-        background: url("/images/visual_top_business_2.jpg") no-repeat center center;
-        background-size: cover;
-    }
-    &.business_3{
-        background: url("/images/visual_top_business_3.jpg") no-repeat center center;
-        background-size: cover;
-    } 
-    &.business_4{
-        background: url("/images/visual_top_business_4.jpg") no-repeat center center;
-        background-size: cover;
-    }  
-
-    &.recruit_1{
-        background: url("/images/visual_top_recruit_1.jpg") no-repeat center center;
-        background-size: cover;
-    } 
-    &.recruit_2{
-        background: url("/images/visual_top_recruit_2.jpg") no-repeat center center;
-        background-size: cover;
-    }
-
-    
     .visual_gradient {
         position: absolute;
         bottom: -1px;
         left: 50%;
         transform: translateX(-50%);
         width: 180rem;
-<<<<<<< HEAD
-        height: 22rem;  /*J높이 조정 23.6 -> 22*/
-=======
         height: 23.6rem;
 
->>>>>>> main
         background: linear-gradient(
             to top,
             rgba(255, 255, 255, 1) 0%,
@@ -315,12 +219,6 @@ main {
         }
     }
 }
-<<<<<<< HEAD
-
-.btn_sitemap {
-    margin-left: 7rem;
-}
-=======
 .btn_sitemap {
     margin-left: 7rem;
     &.is-white path {
@@ -393,9 +291,6 @@ main {
         }
     }
 }
-<<<<<<< HEAD
->>>>>>> main
-=======
 
 /* 한진아 추가*/
 .spacer_top_visual {
@@ -469,4 +364,3 @@ main {
         }
     }
 }
->>>>>>> fe97d04fa67f2dd26aacf1aecad6e6da53069f74
