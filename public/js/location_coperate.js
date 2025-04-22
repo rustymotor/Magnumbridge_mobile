@@ -1,53 +1,53 @@
 function initTmap() {
     const map = new Tmapv2.Map("map_div", {
-        center: new Tmapv2.LatLng(37.51183, 127.0482), // 지도 초기 좌표
+        center: new Tmapv2.LatLng(37.51183, 127.0482),
         width: "1280px",
         height: "550px",
         zoom: 15
     });
 
-    // 마커 추가
-    const marker = new Tmapv2.Marker({
-        position: new Tmapv2.LatLng(37.51183, 127.0482), // 마커 위치도 같은 좌표로 설정
+    new Tmapv2.Marker({
+        position: new Tmapv2.LatLng(37.51183, 127.0482),
         map: map
     });
 }
 
-// 페이지가 로드되면 initTmap 함수 호출
 window.onload = function () {
     initTmap();
 };
 
-// 클릭 시 지도 표시/숨기기
-document.getElementById("toggleMap").addEventListener("click", function (event) {
-    event.preventDefault(); // 기본 동작 방지 (링크 클릭시 페이지 이동 방지)
+// 두 개의 버튼 모두에 이벤트 연결
+["toggleMap", "toggleMapBtn"].forEach(id => {
+    document.getElementById(id).addEventListener("click", function (event) {
+        event.preventDefault();
 
-    const mapContainer = document.getElementById("mapContainer");
+        const mapContainer = document.getElementById("mapContainer");
 
-    // 현재 상태에 따라 표시/숨기기 토글
-    if (mapContainer.style.display === "none" || mapContainer.style.display === "") {
-        mapContainer.style.display = "block";
-        initTmap(); // 지도 초기화
-    } else {
-        mapContainer.style.display = "none";
-    }
+        if (mapContainer.style.display === "none" || mapContainer.style.display === "") {
+            mapContainer.style.display = "block";
+            initTmap(); // 항상 새로 초기화 (선택적으로 생략 가능)
+        } else {
+            mapContainer.style.display = "none";
+        }
+    });
 });
 
-// 맵 외부 클릭 시 맵 닫기
+// 외부 클릭 시 닫기
 document.addEventListener("click", function (event) {
     const mapContainer = document.getElementById("mapContainer");
-    const toggleButton = document.getElementById("toggleMap");
+    const toggleA = document.getElementById("toggleMap");
+    const toggleBtn = document.getElementById("toggleMapBtn");
 
-    // 클릭한 곳이 mapContainer 내부가 아니면 숨기기
-    if (!mapContainer.contains(event.target) && event.target !== toggleButton) {
+    if (!mapContainer.contains(event.target) && event.target !== toggleA && event.target !== toggleBtn) {
         mapContainer.style.display = "none";
     }
 });
 
-// mapContainer 내부에서 클릭이 발생하면 이벤트 전파를 막습니다.
+// 내부 클릭 이벤트 전파 방지
 document.getElementById("mapContainer").addEventListener("click", function (event) {
-    event.stopPropagation(); // 이벤트 전파를 막음
+    event.stopPropagation();
 });
+
 function closeMap() {
     document.getElementById("mapContainer").style.display = "none";
 }

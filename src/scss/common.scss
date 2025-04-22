@@ -19,9 +19,10 @@ $gray600: #444444;
 $gray500: #525252;
 $gray300: #8f8f8f;
 $gray200: #aaaaaa;
+$gray100: #dddddd;
 
 $blueblack: #0a1324;
-$darkblue: #292c39;
+$darkblue: #2e334b;
 
 $txt_sub: #525252;
 $txt_olive: #949452;
@@ -88,11 +89,45 @@ a:visited {
 button.btn_darkgray {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.6) 100%);
     border: 1px solid white;
-    border-radius: 40px;
+    border-radius: 4rem;
     margin-left: 2rem;
-    padding: 1.4rem 2rem;
+    padding: 1.4rem 2.4rem;
     min-height: 3.6rem;
     color: white;
+}
+
+button.btn_black {
+    background-color: black;
+    border-radius: 4rem;
+    margin-left: 2rem;
+    padding: 1.6rem 3rem;
+    min-height: 3.6rem;
+    color: white;
+    &:hover {
+        color: #000;
+        border: 1px solid $gray200;
+        background-color: #fff;
+    }
+}
+
+button.btn_normal {
+    background-color: white;
+    border: 1px solid $gray200;
+    border-radius: 40px;
+    margin-left: 2rem;
+    padding: 1.6rem 3rem;
+    min-height: 3.6rem;
+    color: black;
+    &:hover {
+        color: #fff;
+        background-color: black;
+        border: 1px solid black;
+    }
+    &.active {
+        color: #fff;
+        border: 1px solid black;
+        background-color: black;
+    }
 }
 
 ul li.type-dot {
@@ -173,7 +208,11 @@ ul li.type-dotg {
 }
 .spacer_top_visual h1 {
     position: absolute;
+<<<<<<< HEAD
     top: 20rem;  /*J 17.4 -> 20수정 */
+=======
+    top: 20rem; /*J 17.4 -> 20수정 */
+>>>>>>> 47a872a226fbefb1e76c9d84713a8aa9aa3cb8a7
     left: 50%;
     height: 16rem;
     transform: translateX(-50%);
@@ -259,8 +298,8 @@ ul li.type-dotg {
         background: url("/images/business/bg_service.png") right top;
         background-size: cover;
         box-sizing: border-box;
-        height: 44rem;
-        padding: 10rem 0;
+        height: 38rem;
+        padding: 7rem 0;
         @media (max-width: 690px) {
             padding: 6rem 3rem;
         }
@@ -688,6 +727,13 @@ ul li.type-dotg {
     border-radius: 100%;
 }
 
+div > ul > li ul {
+    display: grid;
+}
+
+div > ul > li ul > li {
+    line-height: 160%;
+}
 .container .bullet-list {
     font-size: 1.8rem;
     & span.b-tit {
@@ -784,12 +830,17 @@ ul li.type-dotg {
         flex-direction: row;
         justify-content: space-around;
         max-width: 1280px;
+        align-items: stretch;
         margin: 4rem 0m;
 
         & > div {
             width: 100%;
             padding: 5rem 0;
             max-width: 40rem;
+            flex-direction: column;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
             &:not(:last-child) {
                 margin-right: 3rem;
             }
@@ -812,10 +863,7 @@ ul li.type-dotg {
             margin: 2rem 0;
             font-family: "Lexend-bold";
         }
-        & .sub_txt {
-            // Compnay > vision
-            min-height: 9.6rem;
-        }
+
         & .bottom_txt {
             // IT서비스 > SI/sm
             color: $gray500;
