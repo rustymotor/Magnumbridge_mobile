@@ -89,6 +89,9 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- 아코디언 -->
+                        <%- include('../components/visaul_accordion_2') %>
+                        <!-- /아코디언 -->
                     </div>
                 </section>
 
@@ -112,14 +115,14 @@
                             걸쳐 작업하여 주도적 운영을 통한 신속하고 안정적인 비즈니스 성과를 제공합니다.
                         </h5>
                         <div class="all4logo">
-                            <img src="/images/business/logo/logo_git.png" />
-                            <img src="/images/business/logo/logo_jenkins.png" />
-                            <img src="/images/business/logo/logo_mq.png" />
-                            <img src="/images/business/logo/logo_git.png" />
-                            <img src="/images/business/logo/logo_jenkins.png" />
-                            <img src="/images/business/logo/logo_mq.png" />
-                            <img src="/images/business/logo/logo_git.png" />
-                            <img src="/images/business/logo/logo_jenkins.png" />
+                            <img src="<%= basePath %>/images/business/logo/logo_git.png" />
+                            <img src="<%= basePath %>/images/business/logo/logo_jenkins.png" />
+                            <img src="<%= basePath %>/images/business/logo/logo_mq.png" />
+                            <img src="<%= basePath %>/images/business/logo/logo_git.png" />
+                            <img src="<%= basePath %>/images/business/logo/logo_jenkins.png" />
+                            <img src="<%= basePath %>/images/business/logo/logo_mq.png" />
+                            <img src="<%= basePath %>/images/business/logo/logo_git.png" />
+                            <img src="<%= basePath %>/images/business/logo/logo_jenkins.png" />
                         </div>
                         <!-- 정방향 슬라이드 -->
                         <%- include('../components/slider_forward', { styleType: 'partnerLogo' }) %>
@@ -212,30 +215,30 @@
                                         <div class="top_gray">
                                             <p class="red_tit">All4 <span class="strong"></span></p>
                                             <div class="body_txt flex_middle tac fc-lgray mt-4">
-                                                <div><img src="/images/business/noimage.png" /></div>
+                                                <div><img src="<%= basePath %>/images/business/noimage.png" /></div>
                                                 <div>Comming Soon</div>
                                             </div>
                                         </div>
                                         <div class="top_gray">
                                             <p class="red_tit">All4 <span class="strong"></span></p>
                                             <div class="body_txt flex_middle tac fc-lgray mt-4">
-                                                <div><img src="/images/business/noimage.png" /></div>
+                                                <div><img src="<%= basePath %>/images/business/noimage.png" /></div>
                                                 <div>Comming Soon</div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="logogray">
-                                        <img src="/images/business/logo/logogray_01.png" />
-                                        <img src="/images/business/logo/logogray_02.png" />
-                                        <img src="/images/business/logo/logogray_01.png" />
-                                        <img src="/images/business/logo/logogray_02.png" />
+                                        <img src="<%= basePath %>/images/business/logo/logogray_01.png" />
+                                        <img src="<%= basePath %>/images/business/logo/logogray_02.png" />
+                                        <img src="<%= basePath %>/images/business/logo/logogray_01.png" />
+                                        <img src="<%= basePath %>/images/business/logo/logogray_02.png" />
                                     </div>
                                     <div class="logogray">
-                                        <img src="/images/business/logo/logogray_02.png" />
-                                        <img src="/images/business/logo/logogray_01.png" />
-                                        <img src="/images/business/logo/logogray_02.png" />
-                                        <img src="/images/business/logo/logogray_01.png" />
+                                        <img src="<%= basePath %>/images/business/logo/logogray_02.png" />
+                                        <img src="<%= basePath %>/images/business/logo/logogray_01.png" />
+                                        <img src="<%= basePath %>/images/business/logo/logogray_02.png" />
+                                        <img src="<%= basePath %>/images/business/logo/logogray_01.png" />
                                     </div>
                                 </div>
                             </div>
@@ -247,5 +250,6 @@
             <footer id="footer"><%- include('../partials/footer') %></footer>
         </div>
         <script src="<%= basePath %>js/slideSlow.js"></script>
+        <script src="<%= basePath %>js/visual_sub_accordion.js"></script>
     </body>
 </html>

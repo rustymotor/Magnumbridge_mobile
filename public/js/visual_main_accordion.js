@@ -29,10 +29,22 @@ buttons.forEach(button => {
 });
 
 // 카드 hover 시 해당 카드만 열기
+// 카드 hover 시 해당 카드만 열고 버튼도 활성화
 cards.forEach(card => {
     card.addEventListener("mouseenter", () => {
         const index = card.dataset.index;
+
+        // 카드 열기
         openCard(index);
+
+        // 버튼 상태 동기화
+        buttons.forEach(button => {
+            if (button.dataset.target === index) {
+                button.classList.add("active");
+            } else {
+                button.classList.remove("active");
+            }
+        });
     });
 });
 
@@ -40,3 +52,10 @@ cards.forEach(card => {
 // container.addEventListener("mouseleave", () => {
 //     clearAll();
 // });
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        buttons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+    });
+});
