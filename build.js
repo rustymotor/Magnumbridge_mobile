@@ -20,7 +20,7 @@ const renderEJS = (filePath, outputPath, depth = 0) => {
     }
 
     const htmlExt = ".html";
-    const htmlPagePath = "pages/main" + htmlExt; // main → pages/main.html
+    const htmlPagePath = "pages/main" + htmlExt;
 
     fs.readFile(filePath, "utf8", (err, fileContent) => {
         if (err) {
@@ -33,13 +33,16 @@ const renderEJS = (filePath, outputPath, depth = 0) => {
         const renderData = {
             basePath,
             htmlExt,
-            htmlPagePath, // /pages/main.html 경로 추가
-            content: isLayoutUsed ? fileContent : ""
+            htmlPagePath,
+            content: isLayoutUsed ? fileContent : "",
+            styleType: ""
         };
 
         ejs.renderFile(filePath, renderData, { filename: filePath }, (err, str) => {
-            if (filePath.includes("slider_forward") || filePath.includes("slider_reverse")) {
-                renderData.styleType = "partnerLogo";
+            if (err) {
+                console.error(`❌ EJS Render Error: ${filePath}`);
+                console.error(err);
+                return;
             }
             fs.writeFileSync(outputPath, str);
             console.log(`✔ Converted: ${filePath} → ${outputPath}`);
