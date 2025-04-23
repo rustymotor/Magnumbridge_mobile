@@ -1330,6 +1330,16 @@ main {
   align-items: center;
 }
 
+.container.business .slider.slider_forward .slide:nth-of-type(3n-2) {
+  background: url(/images/business/logo/logo_git.png) center no-repeat;
+}
+.container.business .slider.slider_forward .slide:nth-of-type(3n-1) {
+  background: url(/images/business/logo/logo_jenkins.png) center no-repeat;
+}
+.container.business .slider.slider_forward .slide:nth-of-type(3n) {
+  background: url(/images/business/logo/logo_mq.png) center no-repeat;
+}
+
 .logogray {
   display: flex;
   justify-content: space-around;
@@ -2508,60 +2518,136 @@ span.strong {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 853px;
+  height: 380px;
   gap: 16px;
-  height: 440px;
+  border-radius: 20px;
+  height: 380px;
   padding: 60px;
   background: #ff403e;
 }
+.accordion-area:before {
+  position: absolute;
+  content: "";
+}
 .accordion-area .card {
+  position: relative;
+  top: -2.2rem;
+  left: -2.1rem;
   width: 275px;
-  height: 440px;
-  background: #000;
+  height: 380px;
+  background-color: #000;
+  background-size: cover;
+  background-position-y: top;
   color: #fff;
   border-radius: 20px;
-  padding: 20px;
+  padding: 3.9rem 2.8rem;
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   flex-shrink: 0;
   cursor: pointer;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
 }
+.accordion-area .card:nth-of-type(1) {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(/images/business/card_1.png);
+}
+.accordion-area .card:nth-of-type(2) {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(/images/business/card_2.png);
+}
+.accordion-area .card:nth-of-type(3) {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(/images/business/card_3.png);
+}
+.accordion-area .card__summary {
+  display: block;
+  padding-top: 36px;
+  margin-top: 36px;
+  border-top: 1px solid #525252;
+}
 .accordion-area .card .card__title-horizontal {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-align: center;
+  font-size: 3.6rem;
+  line-height: 4.8rem;
+  font-family: "Lexend-Bold";
+  text-align: left;
   transition: opacity 0.4s ease;
   display: block;
+}
+.accordion-area .card .card__title-horizontal + span {
+  font-size: 16px;
+  line-height: 2;
+  color: #d2282f;
 }
 .accordion-area .card .card__title-vertical {
   display: none;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  font-size: 1.2rem;
-  letter-spacing: 0.05em;
-  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "lexend-bold", sans-serif;
+  letter-spacing: -0.08em;
+  text-align: left;
   white-space: nowrap;
   height: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+.accordion-area .card .card__detail {
+  display: none;
+  flex-direction: column;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.accordion-area .card .card__detail p.h1 {
+  font-size: 36px;
+  line-height: 48px;
+}
+.accordion-area .card .card__detail span {
+  color: #ff403e;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2;
+}
+.accordion-area .card .card__detail div {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  padding: 27px 0;
+  border-top: 1px solid #d9d9d9;
+  margin-top: 25px;
+}
+.accordion-area .card .card__detail div ul {
+  list-style: none;
+}
+.accordion-area .card .card__detail div ul li {
+  font-size: 16px;
+  line-height: 38px;
+  font-weight: bold;
+}
+.accordion-area .card .card__detail div ul li.type-dot:before {
+  background-color: #000;
+}
+.accordion-area .card .card__detail div dl dt, .accordion-area .card .card__detail div dl dd {
+  font-size: 14px;
+  line-height: 38px;
 }
 .accordion-area .card.is-hovered {
   width: 600px;
   background: #fff;
   color: #000;
+  padding: 3.9rem 4.8rem;
 }
 .accordion-area .card.is-hovered * {
   color: inherit;
 }
 .accordion-area .card.is-hovered .card__title-horizontal,
+.accordion-area .card.is-hovered .card__title-horizontal + span,
 .accordion-area .card.is-hovered .card__title-vertical,
 .accordion-area .card.is-hovered .card__summary {
-  opacity: 0;
+  display: none;
 }
 .accordion-area .card.is-hovered .card__detail {
   display: flex;
@@ -2570,7 +2656,8 @@ span.strong {
 .accordion-area .card.is-inactive {
   width: 112px;
 }
-.accordion-area .card.is-inactive .card__title-horizontal {
+.accordion-area .card.is-inactive .card__title-horizontal,
+.accordion-area .card.is-inactive .card__title-horizontal + span {
   display: none;
 }
 .accordion-area .card.is-inactive .card__title-vertical {
@@ -2580,21 +2667,6 @@ span.strong {
 .accordion-area .card.is-inactive .card__detail {
   display: none;
   opacity: 0;
-}
-.accordion-area .card .card__detail {
-  display: none;
-  flex-direction: column;
-  font-size: 1rem;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-.accordion-area .card .card__detail ul {
-  padding: 0;
-  margin-top: 20px;
-  list-style: none;
-}
-.accordion-area .card .card__detail ul li {
-  margin-bottom: 8px;
 }
 .accordion-area .card.is-hovered {
   width: 600px;
@@ -2624,8 +2696,22 @@ span.strong {
   opacity: 0;
 }
 
+.container.company .fullback.bg_gray {
+  padding-bottom: 129px;
+}
+
 .slide_slow {
   width: 100%;
+}
+.slide_slow .slider .slide[class*=partnerLogo] {
+  position: relative;
+  width: 360px;
+  height: 180px;
+  background-color: #fff;
+  border-radius: 24px;
+}
+.slide_slow .slider .slide[class*=partnerLogo] img {
+  zoom: 0.8;
 }
 
 .slider {
