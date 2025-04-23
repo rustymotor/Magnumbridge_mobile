@@ -3,7 +3,7 @@
 $card-width-default: 275px;
 $card-width-hovered: 600px;
 $card-width-inactive: 112px;
-$card-height: 440px;
+$card-height-sub: 440px;
 $transition: 0.4s ease;
 
 .accordion-area {
@@ -11,13 +11,13 @@ $transition: 0.4s ease;
     justify-content: center;
     align-items: center;
     gap: 16px;
-    height: $card-height;
+    height: $card-height-sub;
     padding: 60px;
     background: common.$mainColorBright;
 
     .card {
         width: $card-width-default;
-        height: $card-height;
+        height: $card-height-sub;
         background: #000;
         color: #fff;
         border-radius: 20px;

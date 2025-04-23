@@ -2327,6 +2327,182 @@ span.strong {
   text-decoration: underline;
 }
 
+.container.main .visual_accordion {
+  margin-top: 0;
+  padding: 70px 0 100px;
+  background-color: #d2282f;
+}
+.container.main .visual_accordion h3 {
+  font-size: 28px;
+  line-height: 1.8;
+  text-align: center;
+  color: #fff;
+}
+
+.accordion_contain {
+  margin-top: 70px;
+}
+.accordion_contain .accordion_controller {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+.accordion_contain .accordion_controller button {
+  width: 150px;
+  height: 40px;
+  border-radius: 40px;
+  padding: 8px 16px;
+  background: none;
+  color: white;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.accordion_contain .accordion_controller button:hover {
+  color: #000;
+  background: #fff;
+}
+.accordion_contain .card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 440px;
+}
+.accordion_contain .card_container .card {
+  width: 160px;
+  height: 440px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.5s ease;
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  margin: 0 5px;
+  flex-shrink: 0;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordion_contain .card_container .card__title {
+  font-size: 1.5rem;
+  transition: opacity 0.5s ease;
+}
+.accordion_contain .card_container .card__content {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 60px;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+.accordion_contain .card_container .card__content h2 {
+  position: relative;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 6rem;
+  margin-bottom: 40px;
+  z-index: 1;
+}
+.accordion_contain .card_container .card__content ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 24px;
+}
+.accordion_contain .card_container .card__content ul li {
+  position: relative;
+}
+.accordion_contain .card_container .card__content ul li:before {
+  position: absolute;
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 0.4rem;
+  top: 1.28rem;
+  left: 0;
+  transform: translate(-11px, 0);
+  font-size: 36px;
+  background-color: #fff;
+}
+.accordion_contain .card_container .card__content .btn {
+  position: absolute;
+  margin-top: auto;
+  align-self: flex-end;
+  width: 30px;
+  height: 30px;
+  right: 60px;
+  bottom: 60px;
+  border: none;
+  cursor: pointer;
+}
+.accordion_contain .card_container .card__content .btn:before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  background: url(/images/main/arrow.svg) center no-repeat;
+}
+.accordion_contain .card_container .card.is-hovered {
+  width: 780px;
+  opacity: 1;
+}
+.accordion_contain .card_container .card.is-hovered .card__title {
+  opacity: 0;
+  pointer-events: none;
+}
+.accordion_contain .card_container .card.is-hovered .card__content {
+  display: flex;
+}
+.accordion_contain .card_container .card.is-hovered:before {
+  opacity: 1;
+}
+.accordion_contain .card_container .card:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+}
+.accordion_contain .card_container .card:nth-of-type(1):before {
+  background: url(/images/main/accordion_01.png) no-repeat center/cover;
+}
+.accordion_contain .card_container .card:nth-of-type(2):before {
+  background: url(/images/main/accordion_02.png) no-repeat center/cover;
+}
+.accordion_contain .card_container .card:nth-of-type(3):before {
+  background: url(/images/main/accordion_03.png) no-repeat center/cover;
+}
+.accordion_contain .card_container .card:nth-of-type(4):before {
+  background: url(/images/main/accordion_04.png) no-repeat center/cover;
+}
+.accordion_contain .card_container .card:nth-of-type(5):before {
+  background: url(/images/main/accordion_05.png) no-repeat center/cover;
+}
+.accordion_contain .card_container .card:nth-of-type(6):before {
+  background: url(/images/main/accordion_06.png) no-repeat center/cover;
+}
+
+.accordion_controller button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion_controller button.active {
+  background-color: white;
+  color: black;
+}
+
 .accordion-area {
   display: flex;
   justify-content: center;
