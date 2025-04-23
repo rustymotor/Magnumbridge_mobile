@@ -77,6 +77,55 @@
                     width:300px;
                     height:120px;
                     background: url(/images/main/company_opacity.svg);
+                    opacity:1;
+                    transition:opacity 0.5s ease;
+                }
+                dl{
+                    position:absolute;
+                    width:300px;
+                    height:420px;
+                    top:0%;
+                    left:0;
+                    padding:53px 40px;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    z-index:10;
+                    text-align: left;
+                    opacity:0;
+                    transition:opacity 0.5s ease;
+                    dt{
+                        font-size:30px;
+                        font-weight:bold;
+                        line-height:1.4;
+                        color:common.$mainColorBright;
+                        margin-bottom:18px;
+                        height:100px;
+                    }
+                    dd{
+                        font-size:16px;
+                        font-weight:bold;
+                        line-height:1.4;
+                        height:44px;
+                        color:rgba(255, 255, 255, 0.5)
+                    }
+                    dd:nth-of-type(2){
+                        margin-top:110px;
+                        text-align: end;
+                        button{
+                            width:40px;
+                            height:40px;
+                            background: none;
+                            border:none;
+                        }
+                        
+                    }
+                }
+                &:hover{
+                    p{
+                        opacity:0;
+                    }
+                    dl{
+                        opacity:1;
+                    }
                 }
             }
         }
