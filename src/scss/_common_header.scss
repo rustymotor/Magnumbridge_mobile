@@ -6,7 +6,7 @@ body.is-main {
         justify-content: center;
         position: absolute;
         z-index: 3;
-        height: 9rem;
+        height: 8rem;
         .gnb {
             li {
                 a {
@@ -41,7 +41,7 @@ header {
     justify-content: center;
     position: absolute;
     z-index: 3;
-    height: 9rem;
+    height: 8rem;
     &:hover {
         background-color: white;
         transition: all 0.3s ease;
@@ -73,7 +73,7 @@ header {
             width: 100vw;
             margin-left: -0.6vw;
             margin-right: -0.6vw;
-            height: 9rem;
+            height: 8rem;
             background-color: transparent;
             transition: background-color 0.3s ease;
             z-index: -1;
@@ -96,7 +96,7 @@ header {
         z-index: 2;
         margin: 0 auto;
         max-width: 1280px;
-        height: 9rem;
+        height: 8rem;
         transition: all 0.3s ease;
         background-color: transparent;
 
@@ -113,9 +113,9 @@ header {
                     text-decoration: none;
                     width: 16rem;
                     height: 5rem;
-                    margin: 1.4rem 0;
+                    margin: 1.5rem 0;  //J수정 1.4rem -> 1.5rem
                     font-size: 2rem;
-                    font-family: "Pretendard-bold";
+                    font-family: "Pretendard-Semibold"; // J수정 bold->Semibold 
                 }
                 > a.active {
                     background-color: common.$mainColor;
@@ -139,13 +139,14 @@ header {
                     left: 50%;
                     transform: translateX(-50%);
                     width: 100vw;
-                    height: 6rem;
-                    border-bottom: 1px solid common.$gray200;
+                    height: 5.6rem; //j수정 6rem -> 5.6rem
+                    border-bottom: 1px solid common.$gray100; //j수정 $gray200 -> $gray100
+                    border-top: 1px solid common.$gray100; //j다시 추가
                     background-color: white;
                 }
                 &.is-fixed {
                     position: fixed;
-                    top: 0;
+                    top: -1px; //j수정 0 -> -1
                     width: 1280px;
                 }
                 &.is-show {
@@ -154,23 +155,28 @@ header {
                 display: none;
                 justify-content: flex-end;
                 position: absolute;
-                top: 9rem;
+                top: 8rem;
                 left: 50%;
                 transform: translateX(-50%);
                 width: 100%;
-                height: 6rem;
+                padding-right: 12rem; //j 추가
+                height: 5.8rem; //j수정 6rem -> 5.8rem
                 li {
                     display: inline-block;
                     white-space: nowrap;
                     a {
                         width: initial;
-                        height: 6rem;
+                        height: 5.8rem;  //j수정 6rem -> 5.8rem
+                        font-size: 1.8rem ;//j추가
+                        color: common.$gray600;  //j추가
+                        font-family: "Pretendard-Medium"; //j추가
                         margin: 0;
                         padding-left: 3.4em;
                     }
                     > a.active {
                         color: common.$mainColor;
                         border-radius: 4rem;
+                        font-family: "Pretendard-Semibold"; //j추가
                     }
                 }
             }
@@ -179,8 +185,9 @@ header {
     .logo_header {
         position: absolute;
         z-index: 3;
-        width: 14.2rem;
-        height: 7.2rem;
+        top: 4px;  //j추가
+        //width: 14.2rem;
+        //height: 7.2rem;
     }
 }
 
@@ -195,7 +202,7 @@ main {
     z-index: 1;
     // height: 88rem;
     background: url("/images/vusual_top_bussiness_1.jpg") no-repeat center center;
-    background-size: cover;
+    background-size: 100% auto;
     box-sizing: border-box;
     .visual_gradient {
         position: absolute;
@@ -203,7 +210,7 @@ main {
         left: 50%;
         transform: translateX(-50%);
         width: 180rem;
-        height: 23.6rem;
+        height: 21rem; //*J높이 재조정 23.6 -> 22 -> 21*/
 
         background: linear-gradient(
             to top,
@@ -214,6 +221,7 @@ main {
         border-radius: 50px 50px 0 0;
         border: 1px solid rgba(205, 205, 205, 0.7);
         border-bottom: none !important;
+        box-shadow: 0px -6px 3px 0 rgba(0, 0, 0, 0.05); //j추가
         @media (max-width: 1800px) {
             width: 100%;
         }
@@ -232,6 +240,7 @@ main {
         opacity: 1;
         visibility: visible;
         transform: scale(1);
+        box-shadow:  0 1px 15px rgba(50, 50, 50, 0.25);//j추가
     }
     opacity: 0;
     visibility: hidden;
@@ -242,7 +251,8 @@ main {
     z-index: 3;
     background-color: white;
     width: 100%;
-    height: 920px;
+    height: 80rem;  //j수정 920px -> 80rem
+    padding-bottom: 2rem; //j추가
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,14 +262,14 @@ main {
         h1 {
             font-family: "lexend-bold";
             color: common.$mainColor;
-            font-size: 4.8rem;
+            font-size: 4rem;  //j수정 4.8 -> 4
             text-align: center;
-            letter-spacing: -2px;
+            letter-spacing: -1px; //j수정 -2 -> -1
         }
         .btn_sitemap_close {
             position: fixed;
-            top: 6rem;
-            right: 6rem;
+            top: 4rem; //j수정 6 -> 4
+            right: 4rem; //j수정 6 -> 4
         }
     }
     .sitemap_body {
@@ -267,14 +277,14 @@ main {
             @include common.common_menu; // 공통 스타일
             gap: 0 20rem;
             li {
-                margin-top: 4.4rem;
+                margin-top: 3rem; //h수정 4.4 -> 3rem
                 p {
-                    margin-top: 12.4rem;
-                    margin-bottom: calc(12.4rem - 6.7rem);
+                    margin-top: 8rem; //j수정 12.4rem  -> 8rem
+                    margin-bottom: 4rem;//j수정  calc(12.4rem - 6.7rem) -> 4rem
                     a {
                         font-family: "lexend-semibold";
-                        font-size: 3.3rem;
-                        color: #041118;
+                        font-size: 2.8rem; //j수정 3.3 -> 2.8rem
+                        color: black;  //j수정 #041118 -> black
                     }
                 }
             }
@@ -283,7 +293,10 @@ main {
                     li {
                         font-family: "lexend-regular";
                         a {
-                            font-size: 2.6rem;
+                            font-size: 2.2rem; //j수정 2.6rem -> 2.2rem
+                            &:hover {
+                                color:common.$mainColor; //j추가
+                            }
                         }
                     }
                 }
@@ -297,70 +310,50 @@ main {
     display: block;
     position: relative;
     z-index: 1;
-    height: 59.6rem;
-    background-size: cover;
+    height: 58rem; //J수정 59.6 -> 58 ->
+    background-size: 100% auto;
     box-sizing: border-box;
     &.company_1 {
         background: url("/images/visual_top_company_1.jpg") no-repeat center center;
-        background-size: cover;
+        background-size: 100% auto;
     }
     &.company_2 {
         background: url("/images/visual_top_company_2.jpg") no-repeat center center;
-        background-size: cover;
+        background-size: 100% auto;
     }
     &.company_3 {
         background: url("/images/visual_top_company_3.jpg") no-repeat center center;
-        background-size: cover;
+        background-size: 100% auto;
     }
     &.company_4 {
         background: url("/images/visual_top_company_4.jpg") no-repeat center center;
-        background-size: cover;
+        background-size: 100% auto;
     }
 
     &.business_1 {
         background: url("/images/visual_top_business_1.jpg") no-repeat center center;
-        background-size: cover;
+        background-size: 100% auto;
     }
     &.business_2 {
         background: url("/images/visual_top_business_2.jpg") no-repeat center center;
-        background-size: cover;
+        background-size: 100% auto;
     }
     &.business_3 {
         background: url("/images/visual_top_business_3.jpg") no-repeat center center;
-        background-size: cover;
+        background-size: 100% auto;
     }
     &.business_4 {
         background: url("/images/visual_top_business_4.jpg") no-repeat center center;
-        background-size: cover;
+        background-size: 100% auto;
     }
 
     &.recruit_1 {
         background: url("/images/visual_top_recruit_1.jpg") no-repeat center center;
-        background-size: cover;
+        background-size: 100% auto;
     }
     &.recruit_2 {
         background: url("/images/visual_top_recruit_2.jpg") no-repeat center center;
-        background-size: cover;
+        background-size: 100% auto;
     }
-
-    .visual_gradient {
-        position: absolute;
-        bottom: -1px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 180rem;
-        height: 22rem; /*J높이 조정 23.6 -> 22*/
-        background: linear-gradient(
-            to top,
-            rgba(255, 255, 255, 1) 0%,
-            rgba(255, 255, 255, 0.3) 75%,
-            rgba(255, 255, 255, 0) 100%
-        );
-        border-radius: 50px 50px 0 0;
-        border: 1px solid rgba(205, 205, 205, 0.7);
-        border-bottom: none !important;
-        @media (max-width: 1800px) {
-            width: 100%;
-        }
-    }
+    
 }

@@ -144,16 +144,16 @@ ul li.type-dotg::before {
   content: "";
   display: block;
   position: absolute;
-  top: 8rem;
+  top: 6rem;
   left: 49%;
-  width: 52px;
+  width: 5rem;
   height: 6px;
   background-color: #d2282f;
 }
 
 .spacer_top_visual h1 {
   position: absolute;
-  top: 20rem; /*J 17.4 -> 20수정 */
+  top: 22rem;
   left: 50%;
   height: 16rem;
   transform: translateX(-50%);

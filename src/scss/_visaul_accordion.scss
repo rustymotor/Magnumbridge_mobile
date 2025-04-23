@@ -11,6 +11,7 @@ $transition-duration: 0.5s;
         font-size: 28px;
         line-height: 1.8;
         text-align: center;
+        font-family: "Pretendard-bold";  //J추가가
         color: #fff;
     }
 }
@@ -30,12 +31,14 @@ $transition-duration: 0.5s;
             padding: 8px 16px;
             background: none;
             color: white;
+            font-family: "Pretendard-Medium"; 
             border: 1px solid #fff;
             cursor: pointer;
             transition: background 0.3s;
 
             &:hover {
                 color: #000;
+                font-family: "Pretendard-Semibold"; 
                 background: #fff;
             }
         }
@@ -140,6 +143,17 @@ $transition-duration: 0.5s;
 
                 .card__content {
                     display: flex;
+                    justify-content: space-between; //J추가
+                }
+                & .block{   //J추가
+                    background-color: white;
+                    color: black;
+                    font-size: 3rem;
+                    position: relative;
+                    top: -3px;
+                    border-radius: 0.4rem;
+                    margin-left: 0.6rem;
+                    padding: 0.2rem 1.6rem;                   
                 }
                 &:before {
                     opacity: 1;
@@ -185,5 +199,6 @@ $transition-duration: 0.5s;
 
 .accordion_controller button.active {
     background-color: white;
+    font-family: "Pretendard-Semibold"; 
     color: black;
 }

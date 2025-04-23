@@ -144,16 +144,16 @@ ul li.type-dotg::before {
   content: "";
   display: block;
   position: absolute;
-  top: 8rem;
+  top: 6rem;
   left: 49%;
-  width: 52px;
+  width: 5rem;
   height: 6px;
   background-color: #d2282f;
 }
 
 .spacer_top_visual h1 {
   position: absolute;
-  top: 20rem; /*J 17.4 -> 20수정 */
+  top: 22rem;
   left: 50%;
   height: 16rem;
   transform: translateX(-50%);
@@ -795,7 +795,7 @@ body.is-main header {
   justify-content: center;
   position: absolute;
   z-index: 3;
-  height: 9rem;
+  height: 8rem;
 }
 body.is-main header .gnb li a {
   color: white;
@@ -820,7 +820,7 @@ header {
   justify-content: center;
   position: absolute;
   z-index: 3;
-  height: 9rem;
+  height: 8rem;
 }
 header:hover {
   background-color: white;
@@ -848,7 +848,7 @@ header nav {
   z-index: 2;
   margin: 0 auto;
   max-width: 1280px;
-  height: 9rem;
+  height: 8rem;
   transition: all 0.3s ease;
   background-color: transparent;
 }
@@ -861,7 +861,7 @@ header nav::before {
   width: 100vw;
   margin-left: -0.6vw;
   margin-right: -0.6vw;
-  height: 9rem;
+  height: 8rem;
   background-color: transparent;
   transition: background-color 0.3s ease;
   z-index: -1;
@@ -891,9 +891,9 @@ header nav .gnb > li a {
   text-decoration: none;
   width: 16rem;
   height: 5rem;
-  margin: 1.4rem 0;
+  margin: 1.5rem 0;
   font-size: 2rem;
-  font-family: "Pretendard-bold";
+  font-family: "Pretendard-Semibold";
 }
 header nav .gnb > li > a.active {
   background-color: #d2282f;
@@ -912,11 +912,12 @@ header nav .gnb .lnb {
   display: none;
   justify-content: flex-end;
   position: absolute;
-  top: 9rem;
+  top: 8rem;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  height: 6rem;
+  padding-right: 12rem;
+  height: 5.8rem;
 }
 header nav .gnb .lnb::before {
   content: "";
@@ -925,13 +926,14 @@ header nav .gnb .lnb::before {
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
-  height: 6rem;
-  border-bottom: 1px solid #aaaaaa;
+  height: 5.6rem;
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
   background-color: white;
 }
 header nav .gnb .lnb.is-fixed {
   position: fixed;
-  top: 0;
+  top: -1px;
   width: 1280px;
 }
 header nav .gnb .lnb.is-show {
@@ -943,19 +945,22 @@ header nav .gnb .lnb li {
 }
 header nav .gnb .lnb li a {
   width: initial;
-  height: 6rem;
+  height: 5.8rem;
+  font-size: 1.8rem;
+  color: #444444;
+  font-family: "Pretendard-Medium";
   margin: 0;
   padding-left: 3.4em;
 }
 header nav .gnb .lnb li > a.active {
   color: #d2282f;
   border-radius: 4rem;
+  font-family: "Pretendard-Semibold";
 }
 header .logo_header {
   position: absolute;
   z-index: 3;
-  width: 14.2rem;
-  height: 7.2rem;
+  top: 4px;
 }
 
 main {
@@ -968,7 +973,7 @@ main {
   position: relative;
   z-index: 1;
   background: url("/images/vusual_top_bussiness_1.jpg") no-repeat center center;
-  background-size: cover;
+  background-size: 100% auto;
   box-sizing: border-box;
 }
 .spacer_top_visual .visual_gradient {
@@ -977,11 +982,12 @@ main {
   left: 50%;
   transform: translateX(-50%);
   width: 180rem;
-  height: 23.6rem;
+  height: 21rem;
   background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0) 100%);
   border-radius: 50px 50px 0 0;
   border: 1px solid rgba(205, 205, 205, 0.7);
   border-bottom: none !important;
+  box-shadow: 0px -6px 3px 0 rgba(0, 0, 0, 0.05);
 }
 @media (max-width: 1800px) {
   .spacer_top_visual .visual_gradient {
@@ -1006,7 +1012,8 @@ main {
   z-index: 3;
   background-color: white;
   width: 100%;
-  height: 920px;
+  height: 80rem;
+  padding-bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1016,18 +1023,19 @@ main {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
+  box-shadow: 0 1px 15px rgba(50, 50, 50, 0.25);
 }
 .contain_sitemap .sitemap_header h1 {
   font-family: "lexend-bold";
   color: #d2282f;
-  font-size: 4.8rem;
+  font-size: 4rem;
   text-align: center;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 }
 .contain_sitemap .sitemap_header .btn_sitemap_close {
   position: fixed;
-  top: 6rem;
-  right: 6rem;
+  top: 4rem;
+  right: 4rem;
 }
 .contain_sitemap .sitemap_body ul {
   display: flex;
@@ -1042,22 +1050,25 @@ main {
   flex-direction: column;
 }
 .contain_sitemap .sitemap_body ul li {
-  margin-top: 4.4rem;
+  margin-top: 3rem;
 }
 .contain_sitemap .sitemap_body ul li p {
-  margin-top: 12.4rem;
-  margin-bottom: 5.7rem;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
 }
 .contain_sitemap .sitemap_body ul li p a {
   font-family: "lexend-semibold";
-  font-size: 3.3rem;
-  color: #041118;
+  font-size: 2.8rem;
+  color: black;
 }
 .contain_sitemap .sitemap_body ul li ul li {
   font-family: "lexend-regular";
 }
 .contain_sitemap .sitemap_body ul li ul li a {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
+}
+.contain_sitemap .sitemap_body ul li ul li a:hover {
+  color: #d2282f;
 }
 
 /* 한진아 추가*/
@@ -1065,66 +1076,49 @@ main {
   display: block;
   position: relative;
   z-index: 1;
-  height: 59.6rem;
-  background-size: cover;
+  height: 58rem;
+  background-size: 100% auto;
   box-sizing: border-box;
 }
 .spacer_top_visual.company_1 {
   background: url("/images/visual_top_company_1.jpg") no-repeat center center;
-  background-size: cover;
+  background-size: 100% auto;
 }
 .spacer_top_visual.company_2 {
   background: url("/images/visual_top_company_2.jpg") no-repeat center center;
-  background-size: cover;
+  background-size: 100% auto;
 }
 .spacer_top_visual.company_3 {
   background: url("/images/visual_top_company_3.jpg") no-repeat center center;
-  background-size: cover;
+  background-size: 100% auto;
 }
 .spacer_top_visual.company_4 {
   background: url("/images/visual_top_company_4.jpg") no-repeat center center;
-  background-size: cover;
+  background-size: 100% auto;
 }
 .spacer_top_visual.business_1 {
   background: url("/images/visual_top_business_1.jpg") no-repeat center center;
-  background-size: cover;
+  background-size: 100% auto;
 }
 .spacer_top_visual.business_2 {
   background: url("/images/visual_top_business_2.jpg") no-repeat center center;
-  background-size: cover;
+  background-size: 100% auto;
 }
 .spacer_top_visual.business_3 {
   background: url("/images/visual_top_business_3.jpg") no-repeat center center;
-  background-size: cover;
+  background-size: 100% auto;
 }
 .spacer_top_visual.business_4 {
   background: url("/images/visual_top_business_4.jpg") no-repeat center center;
-  background-size: cover;
+  background-size: 100% auto;
 }
 .spacer_top_visual.recruit_1 {
   background: url("/images/visual_top_recruit_1.jpg") no-repeat center center;
-  background-size: cover;
+  background-size: 100% auto;
 }
 .spacer_top_visual.recruit_2 {
   background: url("/images/visual_top_recruit_2.jpg") no-repeat center center;
-  background-size: cover;
-}
-.spacer_top_visual .visual_gradient {
-  position: absolute;
-  bottom: -1px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 180rem;
-  height: 22rem; /*J높이 조정 23.6 -> 22*/
-  background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0) 100%);
-  border-radius: 50px 50px 0 0;
-  border: 1px solid rgba(205, 205, 205, 0.7);
-  border-bottom: none !important;
-}
-@media (max-width: 1800px) {
-  .spacer_top_visual .visual_gradient {
-    width: 100%;
-  }
+  background-size: 100% auto;
 }
 
 #footer {
@@ -1134,6 +1128,7 @@ main {
   align-items: center;
   justify-content: center;
   padding-top: 7rem;
+  letter-spacing: 0;
 }
 #footer .footer_menu {
   display: flex;
@@ -1141,7 +1136,7 @@ main {
   align-items: flex-start;
   width: 1280px;
   height: 21.6rem;
-  border-bottom: 1px solid #aaaaaa;
+  border-bottom: 1px solid #444444;
 }
 #footer .footer_menu a.active {
   color: #d2282f;
@@ -1160,15 +1155,19 @@ main {
 }
 #footer .footer_menu ul .h3 {
   color: #feffff;
-  font-family: "pretendard-Light";
+  font-family: "Pretendard-Semibold";
 }
 #footer .footer_menu ul li p {
   padding-bottom: 2.4rem;
+  font-family: "pretendard-Medium";
 }
 #footer .footer_menu ul li a {
   color: #8c8c8c;
   font-size: 1.8rem;
   line-height: 1.8rem;
+}
+#footer .footer_menu ul li a:hover {
+  color: #d2282f;
 }
 #footer .footer_menu ul li ul li a {
   font-size: 1.6rem;
@@ -1176,6 +1175,7 @@ main {
 }
 #footer .footer_info {
   width: 1280px;
+  font-family: "Pretendard-Medium";
 }
 #footer .footer_info article {
   display: flex;
@@ -1196,21 +1196,23 @@ main {
 #footer .footer_info .footer_info_1 .company_name {
   font-size: 1.8rem;
   color: #d9d9d9;
+  font-family: "Pretendard-Semibold";
 }
 #footer .footer_info .footer_info_1 .company_link_wrap {
   display: flex;
-  gap: 4rem;
+  gap: 3rem;
 }
 #footer .footer_info .footer_info_2 {
-  margin-top: 2.4rem;
+  margin-top: 2rem;
 }
 #footer .footer_info .footer_info_3 {
-  margin-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
+}
+#footer .footer_info .footer_info_3 p {
+  color: #525252;
 }
 #footer .footer_info * {
-  color: #888;
-  font-family: "pretendard-Light";
+  color: #8f8f8f;
 }
 
 .tmap_wrap {
@@ -1225,15 +1227,16 @@ main {
   transform: translate(-50%, -50%);
   height: 790px;
   border-radius: 20px;
-  padding: 80px 0px;
+  padding: 4rem 0;
   background-color: white;
   overflow: hidden;
   text-align: center;
+  box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.1);
 }
 .tmap_wrap .map_scroll {
   display: block;
   overflow-y: auto;
-  padding: 40px 80px;
+  padding: 2rem 6rem;
   height: 100%;
 }
 .tmap_wrap #map_div {
@@ -1252,43 +1255,43 @@ main {
 }
 .tmap_wrap strong {
   display: block;
-  font-size: 40px;
+  font-size: 3.2rem;
   line-height: 48px;
+  font-family: "Pretendard-bold";
   color: #d2282f;
-  font-weight: bold;
-  margin-bottom: 70px;
+  margin-bottom: 4rem;
 }
 .tmap_wrap dl {
   display: block;
   width: 1280px;
-  height: 250px;
+  height: 22rem;
   background-color: #d2282f;
   border-radius: 20px;
   background: url(/images/main/map.jpg) center no-repeat;
-  background-size: cover;
-  padding-top: 40px;
-  margin-bottom: 50px;
-}
-.tmap_wrap dl dt {
-  font-size: 30px;
-  line-height: 1.4;
+  background-size: 100% auto;
+  padding-top: 30px;
   margin-bottom: 20px;
 }
+.tmap_wrap dl dt {
+  font-size: 2.6rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
 .tmap_wrap dl dd {
-  font-weight: bold;
+  font-family: "Pretendard-Semibold";
   color: #fff;
 }
 .tmap_wrap dl dd:nth-of-type(1) {
-  font-size: 30px;
+  font-size: 2.6rem;
   line-height: 1.4;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .tmap_wrap dl dd:nth-of-type(2) {
   font-size: 18px;
   line-height: 1.4;
 }
 .tmap_wrap dl dd span {
-  font-weight: normal;
+  font-family: "Pretendard-Meduim";
 }
 .tmap_wrap ul {
   display: flex;
@@ -1301,15 +1304,15 @@ main {
   text-align: left;
 }
 .tmap_wrap ul li:nth-of-type(1) p:nth-of-type(1) {
-  font-size: 24px;
+  font-size: 2rem;
   line-height: 2;
-  font-weight: bold;
+  font-family: "Pretendard-bold";
   color: #041118;
 }
 .tmap_wrap ul li:nth-of-type(1) p:nth-of-type(2) {
   font-size: 18px;
   line-height: 2;
-  font-weight: bold;
+  font-family: "Pretendard-Semibold";
   color: #807F7F;
 }
 .tmap_wrap ul li:nth-of-type(2) {
@@ -1858,18 +1861,18 @@ section.products .security ul img {
 }
 
 .container.main .spacer_top_visual {
-  height: 88rem;
+  height: 80rem;
 }
 .container.main section:not(.footer_menu) {
   text-align: center;
 }
 .container.main section:not(.footer_menu) .section_title {
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 3.6rem;
   margin: 100px 0 20px;
   line-height: 45px;
+  letter-spacing: -1px;
   color: #000;
-  font-family: "lexend-regular", sans-serif;
+  font-family: "Lexend-Bold";
 }
 .container.main section:not(.footer_menu) .section_description {
   margin-bottom: 70px;
@@ -1882,6 +1885,7 @@ section.products .security ul img {
   border-radius: 40px;
   color: #fff;
   border: 1px solid #ededed;
+  font-family: "Pretendard-Semibold";
   background-color: #d2282f;
 }
 .container.main section.company ul {
@@ -1931,14 +1935,15 @@ section.products .security ul img {
   background: url(/images/main/company_opacity.svg);
 }
 .container.main .swiper-pagination-bullets {
-  bottom: 6.6rem !important;
+  bottom: 3.5rem !important;
 }
 .container.main .swiper-horizontal .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
   background: #8f8f8f;
   opacity: 1;
-  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.05);
   margin: 0px 7px !important;
 }
 .container.main .swiper-pagination-bullet-active {
@@ -1958,35 +1963,35 @@ section.products .security ul img {
   position: relative;
   background: #eee;
   display: flex;
-  align-items: center;
   font-size: 18px;
   color: #fff;
 }
 .container.main .swiper_main_1 .visual_main .text_wrap {
   position: relative;
+  top: 23rem;
   margin-left: 320px;
 }
 .container.main .swiper_main_1 .visual_main .text_wrap strong {
-  font-size: 7rem;
+  font-size: 6rem;
   line-height: 84px;
   font-weight: 700;
   color: white;
-  font-familY: "Lexend-regular", sans-serif;
+  font-family: "Lexend-regular", sans-serif;
 }
 .container.main .swiper_main_1 .visual_main .text_wrap strong.normal {
   font-size: 6rem;
   font-weight: normal;
-  line-height: 75px;
+  line-height: 8rem;
 }
 .container.main .swiper_main_1 .visual_main .text_wrap span {
   font-size: 2rem;
-  line-height: 1.4;
+  line-height: 1.6;
   display: block;
-  margin-top: 4.3rem;
+  margin-top: 2rem;
 }
 .container.main .swiper_main_1 .visual_main .text_wrap button {
   position: absolute;
-  top: 299px;
+  bottom: 42rem;
   left: 0;
   display: block;
   width: 150px;
@@ -1994,10 +1999,14 @@ section.products .security ul img {
   border: 1px solid #d9d9d9;
   background-color: rgba(0, 0, 0, 0.2);
 }
+.container.main .swiper_main_1 .visual_main .text_wrap button:hover {
+  background-color: white;
+  color: black;
+  font-family: "Pretendard-Semibold";
+}
 .container.main .swiper_main_1 .visual_main > img {
   position: absolute;
   width: 100%;
-  height: 100%;
   z-index: -1;
 }
 .container.main .visual_swiper {
@@ -2336,6 +2345,7 @@ span.strong {
   font-size: 28px;
   line-height: 1.8;
   text-align: center;
+  font-family: "Pretendard-bold";
   color: #fff;
 }
 
@@ -2355,12 +2365,14 @@ span.strong {
   padding: 8px 16px;
   background: none;
   color: white;
+  font-family: "Pretendard-Medium";
   border: 1px solid #fff;
   cursor: pointer;
   transition: background 0.3s;
 }
 .accordion_contain .accordion_controller button:hover {
   color: #000;
+  font-family: "Pretendard-Semibold";
   background: #fff;
 }
 .accordion_contain .card_container {
@@ -2458,6 +2470,17 @@ span.strong {
 }
 .accordion_contain .card_container .card.is-hovered .card__content {
   display: flex;
+  justify-content: space-between;
+}
+.accordion_contain .card_container .card.is-hovered .block {
+  background-color: white;
+  color: black;
+  font-size: 3rem;
+  position: relative;
+  top: -3px;
+  border-radius: 0.4rem;
+  margin-left: 0.6rem;
+  padding: 0.2rem 1.6rem;
 }
 .accordion_contain .card_container .card.is-hovered:before {
   opacity: 1;
@@ -2500,6 +2523,7 @@ span.strong {
 
 .accordion_controller button.active {
   background-color: white;
+  font-family: "Pretendard-Semibold";
   color: black;
 }
 
