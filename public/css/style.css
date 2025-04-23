@@ -2513,8 +2513,22 @@ span.strong {
   color: black;
 }
 
+.container.company .fullback.bg_gray {
+  padding-bottom: 129px;
+}
+
 .slide_slow {
   width: 100%;
+}
+.slide_slow .slider .slide[class*=partnerLogo] {
+  position: relative;
+  width: 360px;
+  height: 180px;
+  background-color: #fff;
+  border-radius: 24px;
+}
+.slide_slow .slider .slide[class*=partnerLogo] img {
+  zoom: 0.8;
 }
 
 .slider {
