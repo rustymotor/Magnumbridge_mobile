@@ -1,7 +1,9 @@
 const mainSwiper = new Swiper(".swiper_main_1", {
     slidesPerView: 1,
-    // slidesPerGroup: 4,
-    // spaceBetween: 20,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+    },
     loop: true,
     pagination: {
         el: ".swiper-pagination",
@@ -49,4 +51,14 @@ tabButtons.forEach((button, i) => {
         const targetIndex = index * 3;
         mainSwiper2.slideTo(targetIndex, 500);
     });
+});
+// swiper가 슬라이드될 때 탭 버튼과 동기화
+mainSwiper2.on("slideChange", () => {
+    const currentIndex = mainSwiper2.realIndex; // 실제 인덱스
+    const tabIndex = Math.floor(currentIndex / 3); // 3개 단위로 묶음
+
+    tabButtons.forEach(btn => btn.classList.remove("active"));
+    if (tabButtons[tabIndex]) {
+        tabButtons[tabIndex].classList.add("active");
+    }
 });

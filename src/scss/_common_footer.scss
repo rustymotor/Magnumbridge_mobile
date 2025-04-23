@@ -23,6 +23,7 @@
             .h3 {
                 color: #feffff;
                 font-family: "pretendard-Light";
+                cursor: default;
             }
             li {
                 p {
@@ -90,7 +91,7 @@
 $map-width: 1200px;
 $map-height: 550px;
 $padding: 20px;
-.tmap_wrap{
+.tmap_wrap {
     display: none;
 }
 .tmap_wrap {
@@ -99,101 +100,101 @@ $padding: 20px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    height:790px;
-    border-radius:20px;
-    padding:80px 0px;
+    height: 790px;
+    border-radius: 20px;
+    padding: 80px 0px;
     background-color: white;
     overflow: hidden;
     text-align: center;
 
-    .map_scroll{
-        display:block;       
-        overflow-y:auto;
-        padding:40px 80px;
-        height:100%;
+    .map_scroll {
+        display: block;
+        overflow-y: auto;
+        padding: 40px 80px;
+        height: 100%;
     }
     #map_div {
-        height:auto;
+        height: auto;
         overflow: hidden;
         width: $map-width;
         height: $map-height;
         padding-top: 0;
     }
-    .btn_sitemap_close{
-        position:absolute;
-        top:40px;
-        right:40px;
-        width:27px;
-        height:27px;
+    .btn_sitemap_close {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        width: 27px;
+        height: 27px;
     }
-    strong{
-        display:block;
-        font-size:40px;
-        line-height:48px;
-        color:common.$mainColor;
-        font-weight:bold;
-        margin-bottom:70px;
+    strong {
+        display: block;
+        font-size: 40px;
+        line-height: 48px;
+        color: common.$mainColor;
+        font-weight: bold;
+        margin-bottom: 70px;
     }
-    dl{ 
-        display:block;
-        width:1280px;
-        height:250px;
+    dl {
+        display: block;
+        width: 1280px;
+        height: 250px;
         background-color: common.$mainColor;
-        border-radius:20px;
+        border-radius: 20px;
         background: url(/images/main/map.jpg) center no-repeat;
         background-size: cover;
-        padding-top:40px;
-        margin-bottom:50px;
-        dt{
-            font-size:30px;
-            line-height:1.4;
-            margin-bottom:20px;
+        padding-top: 40px;
+        margin-bottom: 50px;
+        dt {
+            font-size: 30px;
+            line-height: 1.4;
+            margin-bottom: 20px;
         }
-        dd{
-            font-weight:bold;
-           color:#fff; 
-           &:nth-of-type(1){
-            font-size:30px;
-            line-height:1.4;
-            margin-bottom:20px;
-           }
-           &:nth-of-type(2){
-            font-size:18px;
-            line-height:1.4;
-           }
-           span{
-            font-weight:normal;
-           }
+        dd {
+            font-weight: bold;
+            color: #fff;
+            &:nth-of-type(1) {
+                font-size: 30px;
+                line-height: 1.4;
+                margin-bottom: 20px;
+            }
+            &:nth-of-type(2) {
+                font-size: 18px;
+                line-height: 1.4;
+            }
+            span {
+                font-weight: normal;
+            }
         }
     }
-    ul{
-        display:flex;
+    ul {
+        display: flex;
         justify-content: space-between;
-        margin-top:26px;
-        li:nth-of-type(1){
-            display:flex;
+        margin-top: 26px;
+        li:nth-of-type(1) {
+            display: flex;
             flex-direction: column;
             text-align: left;
-            p:nth-of-type(1){
-                font-size:24px;
-                line-height:2;
-                font-weight:bold;
-                color:#041118;
+            p:nth-of-type(1) {
+                font-size: 24px;
+                line-height: 2;
+                font-weight: bold;
+                color: #041118;
             }
-            p:nth-of-type(2){
-                font-size:18px;
-                line-height:2;
-                font-weight:bold;
-                color:#807F7F;
+            p:nth-of-type(2) {
+                font-size: 18px;
+                line-height: 2;
+                font-weight: bold;
+                color: #807f7f;
             }
         }
-        li:nth-of-type(2){
-            width:80px;
-            height:80px;
+        li:nth-of-type(2) {
+            width: 80px;
+            height: 80px;
             background: url(/images/main/watch_map.svg);
-            p{
-                color:#fff;
-                margin-top:49px;
+            p {
+                color: #fff;
+                margin-top: 49px;
             }
         }
     }
