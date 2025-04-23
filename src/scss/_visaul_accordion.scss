@@ -1,8 +1,10 @@
 @use "common";
-$card-width: 220px;
-$card-hover-width: 760px;
+
+$card-width-default: 275px;
+$card-width-hovered: 600px;
+$card-width-inactive: 112px;
 $card-height: 440px;
-$transition: 0.5s;
+$transition: 0.4s ease;
 
 .accordion-area {
     display: flex;
@@ -11,16 +13,16 @@ $transition: 0.5s;
     gap: 16px;
     height: $card-height;
     padding: 60px;
-    background: #111;
+    background: common.$mainColorBright;
 
     .card {
-        width: $card-width;
+        width: $card-width-default;
         height: $card-height;
         background: #000;
         color: #fff;
         border-radius: 20px;
         padding: 20px;
-        transition: all $transition ease;
+        transition: all $transition;
         position: relative;
         overflow: hidden;
         display: flex;
@@ -28,18 +30,67 @@ $transition: 0.5s;
         justify-content: center;
         flex-shrink: 0;
         cursor: pointer;
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
 
-        .card__title {
-            font-size: 1.8rem;
+        .card__title-horizontal {
+            font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 10px;
+            text-align: center;
             transition: opacity $transition;
+            display: block;
         }
 
-        .card__summary {
-            font-size: 1rem;
-            opacity: 1;
-            transition: opacity $transition;
+        .card__title-vertical {
+            display: none;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            font-size: 1.2rem;
+            letter-spacing: 0.05em;
+            text-align: center;
+            white-space: nowrap;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &.is-hovered {
+            width: $card-width-hovered;
+            background: #fff;
+            color: #000;
+
+            * {
+                color: inherit;
+            }
+
+            .card__title-horizontal,
+            .card__title-vertical,
+            .card__summary {
+                opacity: 0;
+            }
+
+            .card__detail {
+                display: flex;
+                opacity: 1;
+            }
+        }
+
+        &.is-inactive {
+            width: $card-width-inactive;
+
+            .card__title-horizontal {
+                display: none;
+            }
+
+            .card__title-vertical {
+                display: flex;
+            }
+
+            .card__summary,
+            .card__detail {
+                display: none;
+                opacity: 0;
+            }
         }
 
         .card__detail {
@@ -48,14 +99,27 @@ $transition: 0.5s;
             font-size: 1rem;
             opacity: 0;
             transition: opacity $transition;
-            li {
-                margin-bottom: 8px;
+
+            ul {
+                padding: 0;
+                margin-top: 20px;
                 list-style: none;
+
+                li {
+                    margin-bottom: 8px;
+                }
             }
         }
 
         &.is-hovered {
-            width: $card-hover-width;
+            width: $card-width-hovered;
+            background: #fff;
+            color: #000;
+
+            * {
+                color: inherit;
+            }
+
             .card__title,
             .card__summary {
                 opacity: 0;
@@ -68,11 +132,13 @@ $transition: 0.5s;
         }
 
         &.is-inactive {
-            width: $card-width;
-            .card__summary {
-                opacity: 0;
+            width: $card-width-inactive;
+
+            .card__title {
+                font-size: 1.2rem;
             }
 
+            .card__summary,
             .card__detail {
                 display: none;
                 opacity: 0;

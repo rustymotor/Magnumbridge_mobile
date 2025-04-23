@@ -2334,16 +2334,16 @@ span.strong {
   gap: 16px;
   height: 440px;
   padding: 60px;
-  background: #111;
+  background: #ff403e;
 }
 .accordion-area .card {
-  width: 220px;
+  width: 275px;
   height: 440px;
   background: #000;
   color: #fff;
   border-radius: 20px;
   padding: 20px;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -2351,31 +2351,81 @@ span.strong {
   justify-content: center;
   flex-shrink: 0;
   cursor: pointer;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
 }
-.accordion-area .card .card__title {
-  font-size: 1.8rem;
+.accordion-area .card .card__title-horizontal {
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
-  transition: opacity 0.5s;
+  text-align: center;
+  transition: opacity 0.4s ease;
+  display: block;
 }
-.accordion-area .card .card__summary {
-  font-size: 1rem;
+.accordion-area .card .card__title-vertical {
+  display: none;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+  white-space: nowrap;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.accordion-area .card.is-hovered {
+  width: 600px;
+  background: #fff;
+  color: #000;
+}
+.accordion-area .card.is-hovered * {
+  color: inherit;
+}
+.accordion-area .card.is-hovered .card__title-horizontal,
+.accordion-area .card.is-hovered .card__title-vertical,
+.accordion-area .card.is-hovered .card__summary {
+  opacity: 0;
+}
+.accordion-area .card.is-hovered .card__detail {
+  display: flex;
   opacity: 1;
-  transition: opacity 0.5s;
+}
+.accordion-area .card.is-inactive {
+  width: 112px;
+}
+.accordion-area .card.is-inactive .card__title-horizontal {
+  display: none;
+}
+.accordion-area .card.is-inactive .card__title-vertical {
+  display: flex;
+}
+.accordion-area .card.is-inactive .card__summary,
+.accordion-area .card.is-inactive .card__detail {
+  display: none;
+  opacity: 0;
 }
 .accordion-area .card .card__detail {
   display: none;
   flex-direction: column;
   font-size: 1rem;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.4s ease;
 }
-.accordion-area .card .card__detail li {
-  margin-bottom: 8px;
+.accordion-area .card .card__detail ul {
+  padding: 0;
+  margin-top: 20px;
   list-style: none;
 }
+.accordion-area .card .card__detail ul li {
+  margin-bottom: 8px;
+}
 .accordion-area .card.is-hovered {
-  width: 760px;
+  width: 600px;
+  background: #fff;
+  color: #000;
+}
+.accordion-area .card.is-hovered * {
+  color: inherit;
 }
 .accordion-area .card.is-hovered .card__title,
 .accordion-area .card.is-hovered .card__summary {
@@ -2386,11 +2436,12 @@ span.strong {
   opacity: 1;
 }
 .accordion-area .card.is-inactive {
-  width: 220px;
+  width: 112px;
 }
-.accordion-area .card.is-inactive .card__summary {
-  opacity: 0;
+.accordion-area .card.is-inactive .card__title {
+  font-size: 1.2rem;
 }
+.accordion-area .card.is-inactive .card__summary,
 .accordion-area .card.is-inactive .card__detail {
   display: none;
   opacity: 0;
