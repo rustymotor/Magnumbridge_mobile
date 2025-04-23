@@ -5,7 +5,10 @@ const defaultIndex = 2; // 시작 시 펼칠 카드 index (0~5)
 
 // 전체 카드 초기화
 function clearAll() {
-    cards.forEach(card => card.classList.remove("is-hovered"));
+    cards.forEach(card => {
+        card.classList.remove("is-hovered");
+        card.classList.remove("is-expanded");
+    });
 }
 
 // 특정 카드 열기
@@ -13,6 +16,7 @@ function openCard(index) {
     clearAll();
     const card = document.querySelector(`.card[data-index="${index}"]`);
     if (card) {
+        card.classList.add("is-expanded");
         card.classList.add("is-hovered");
     }
 }
@@ -28,7 +32,6 @@ buttons.forEach(button => {
     });
 });
 
-// 카드 hover 시 해당 카드만 열기
 // 카드 hover 시 해당 카드만 열고 버튼도 활성화
 cards.forEach(card => {
     card.addEventListener("mouseenter", () => {
@@ -47,7 +50,15 @@ cards.forEach(card => {
         });
     });
 });
+cards.forEach(card => {
+    card.addEventListener("mouseenter", () => {
+        card.classList.add("is-hovered");
+    });
 
+    card.addEventListener("mouseleave", () => {
+        // card.classList.remove("is-hovered");
+    });
+});
 // ✅ 마우스가 카드 전체 영역에서 벗어나면 모두 닫기
 // container.addEventListener("mouseleave", () => {
 //     clearAll();

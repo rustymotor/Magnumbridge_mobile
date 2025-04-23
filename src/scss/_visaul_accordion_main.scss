@@ -11,7 +11,7 @@ $transition-duration: 0.5s;
         font-size: 28px;
         line-height: 1.8;
         text-align: center;
-        font-family: "Pretendard-bold";  //J추가가
+        font-family: "Pretendard-bold"; //J추가가
         color: #fff;
     }
 }
@@ -31,14 +31,14 @@ $transition-duration: 0.5s;
             padding: 8px 16px;
             background: none;
             color: white;
-            font-family: "Pretendard-Medium"; 
+            font-family: "Pretendard-Medium";
             border: 1px solid #fff;
             cursor: pointer;
             transition: background 0.3s;
 
             &:hover {
                 color: #000;
-                font-family: "Pretendard-Semibold"; 
+                font-family: "Pretendard-Semibold";
                 background: #fff;
             }
         }
@@ -51,6 +51,7 @@ $transition-duration: 0.5s;
         height: $card-height;
 
         .card {
+            // 기본 설정
             width: $card-width;
             height: $card-height;
             overflow: hidden;
@@ -72,93 +73,67 @@ $transition-duration: 0.5s;
             }
 
             &__content {
-                position: relative;
-                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 60px;
+                width: 100%;
+                height: 100%;
+                display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: flex-start;
-                padding: 60px;
-                height: 100%;
-                width: 100%;
-                color: #fff;
+
+                // 초기에는 안 보이게
+                opacity: 0;
+                transform: translateY(10px);
+                pointer-events: none;
+                transition: opacity 0.1s ease 0.1s, transform 0.1s ease 0.1s;
                 h2 {
-                    position: relative;
                     font-size: 4rem;
                     font-weight: bold;
                     line-height: 6rem;
                     margin-bottom: 40px;
                     z-index: 1;
                 }
+            }
+            &.is-hovered {
+                width: $card-hover-width;
 
-                ul {
-                    list-style: none;
-                    padding: 0;
-                    margin-left: 24px;
-                    li {
-                        position: relative;
-                        &:before {
-                            position: absolute;
-                            content: "";
-                            width: 0.4rem;
-                            height: 0.4rem;
-                            border-radius: 0.4rem;
-                            top: 1.28rem;
-                            left: 0;
-                            transform: translate(-11px, 0);
-                            font-size: 36px;
-                            background-color: #fff;
-                        }
-                    }
-                }
-
-                .btn {
-                    position: absolute;
-                    margin-top: auto;
-                    align-self: flex-end;
-                    width: 30px;
-                    height: 30px;
-                    right: 60px;
-                    bottom: 60px;
-                    border: none;
-                    cursor: pointer;
-                    &:before {
-                        position: absolute;
-                        content: "";
-                        width: 30px;
-                        height: 30px;
-                        top: 0;
-                        left: 0;
-                        background: url(/images/main/arrow.svg) center no-repeat;
-                    }
+                .card__content {
+                    opacity: 1;
+                    transform: translateY(0);
+                    pointer-events: auto;
+                    transition: opacity 0.3s ease 0.3s,
+                        // 더 늦게 열림
+                        transform 0.3s ease 0.3s;
                 }
             }
 
-            &.is-hovered {
+            // 카드 확장 (버튼 클릭)
+            &.is-expanded {
                 width: $card-hover-width;
-                opacity: 1;
+
                 .card__title {
                     opacity: 0;
                     pointer-events: none;
                 }
 
-                .card__content {
-                    display: flex;
-                    justify-content: space-between; //J추가
-                }
-                & .block{   //J추가
-                    background-color: white;
-                    color: black;
-                    font-size: 3rem;
-                    position: relative;
-                    top: -3px;
-                    border-radius: 0.4rem;
-                    margin-left: 0.6rem;
-                    padding: 0.2rem 1.6rem;                   
-                }
                 &:before {
                     opacity: 1;
                 }
             }
+
+            // 마우스 호버 시 내용 보여주기
+            &.is-hovered {
+                .card__content {
+                    opacity: 1;
+                    transform: translateY(0);
+                    pointer-events: auto;
+                }
+            }
+
+            // 배경 이미지 처리
             &:before {
                 position: absolute;
                 content: "";
@@ -167,7 +142,10 @@ $transition-duration: 0.5s;
                 top: 0;
                 left: 0;
                 opacity: 0.4;
+                transition: opacity 0.3s;
             }
+
+            // 이미지 배경 예시
             &:nth-of-type(1):before {
                 background: url(/images/main/accordion_01.png) no-repeat center / cover;
             }
@@ -199,6 +177,6 @@ $transition-duration: 0.5s;
 
 .accordion_controller button.active {
     background-color: white;
-    font-family: "Pretendard-Semibold"; 
+    font-family: "Pretendard-Semibold";
     color: black;
 }
