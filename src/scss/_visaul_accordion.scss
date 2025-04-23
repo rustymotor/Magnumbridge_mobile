@@ -1,189 +1,82 @@
 @use "common";
-$card-width: 160px;
+$card-width: 220px;
+$card-hover-width: 760px;
 $card-height: 440px;
-$card-hover-width: 780px;
-$transition-duration: 0.5s;
-.container.main .visual_accordion {
-    margin-top: 0;
-    padding: 70px 0 100px;
-    background-color: common.$mainColor;
-    h3 {
-        font-size: 28px;
-        line-height: 1.8;
-        text-align: center;
-        color: #fff;
-    }
-}
-.accordion_contain {
-    margin-top: 70px;
+$transition: 0.5s;
 
-    .accordion_controller {
-        display: flex;
-        justify-content: center;
-        gap: 24px;
-        margin-bottom: 50px;
+.accordion-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    height: $card-height;
+    padding: 60px;
+    background: #111;
 
-        button {
-            width: 150px;
-            height: 40px;
-            border-radius: 40px;
-            padding: 8px 16px;
-            background: none;
-            color: white;
-            border: 1px solid #fff;
-            cursor: pointer;
-            transition: background 0.3s;
-
-            &:hover {
-                color: #000;
-                background: #fff;
-            }
-        }
-    }
-
-    .card_container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .card {
+        width: $card-width;
         height: $card-height;
+        background: #000;
+        color: #fff;
+        border-radius: 20px;
+        padding: 20px;
+        transition: all $transition ease;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        cursor: pointer;
 
-        .card {
-            width: $card-width;
-            height: $card-height;
-            overflow: hidden;
-            position: relative;
-            transition: width $transition-duration ease;
-            background: #000;
-            color: #fff;
-            border-radius: 20px;
-            margin: 0 5px;
-            flex-shrink: 0;
-            text-align: left;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .card__title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            transition: opacity $transition;
+        }
 
-            &__title {
-                font-size: 1.5rem;
-                transition: opacity $transition-duration ease;
+        .card__summary {
+            font-size: 1rem;
+            opacity: 1;
+            transition: opacity $transition;
+        }
+
+        .card__detail {
+            display: none;
+            flex-direction: column;
+            font-size: 1rem;
+            opacity: 0;
+            transition: opacity $transition;
+            li {
+                margin-bottom: 8px;
+                list-style: none;
+            }
+        }
+
+        &.is-hovered {
+            width: $card-hover-width;
+            .card__title,
+            .card__summary {
+                opacity: 0;
             }
 
-            &__content {
-                position: relative;
-                display: none;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: flex-start;
-                padding: 60px;
-                height: 100%;
-                width: 100%;
-                color: #fff;
-                h2 {
-                    position: relative;
-                    font-size: 4rem;
-                    font-weight: bold;
-                    line-height: 6rem;
-                    margin-bottom: 40px;
-                    z-index: 1;
-                }
-
-                ul {
-                    list-style: none;
-                    padding: 0;
-                    margin-left: 24px;
-                    li {
-                        position: relative;
-                        &:before {
-                            position: absolute;
-                            content: "";
-                            width: 0.4rem;
-                            height: 0.4rem;
-                            border-radius: 0.4rem;
-                            top: 1.28rem;
-                            left: 0;
-                            transform: translate(-11px, 0);
-                            font-size: 36px;
-                            background-color: #fff;
-                        }
-                    }
-                }
-
-                .btn {
-                    position: absolute;
-                    margin-top: auto;
-                    align-self: flex-end;
-                    width: 30px;
-                    height: 30px;
-                    right: 60px;
-                    bottom: 60px;
-                    border: none;
-                    cursor: pointer;
-                    &:before {
-                        position: absolute;
-                        content: "";
-                        width: 30px;
-                        height: 30px;
-                        top: 0;
-                        left: 0;
-                        background: url(/images/main/arrow.svg) center no-repeat;
-                    }
-                }
-            }
-
-            &.is-hovered {
-                width: $card-hover-width;
+            .card__detail {
+                display: flex;
                 opacity: 1;
-                .card__title {
-                    opacity: 0;
-                    pointer-events: none;
-                }
+            }
+        }
 
-                .card__content {
-                    display: flex;
-                }
-                &:before {
-                    opacity: 1;
-                }
+        &.is-inactive {
+            width: $card-width;
+            .card__summary {
+                opacity: 0;
             }
-            &:before {
-                position: absolute;
-                content: "";
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                opacity: 0.4;
-            }
-            &:nth-of-type(1):before {
-                background: url(/images/main/accordion_01.png) no-repeat center / cover;
-            }
-            &:nth-of-type(2):before {
-                background: url(/images/main/accordion_02.png) no-repeat center / cover;
-            }
-            &:nth-of-type(3):before {
-                background: url(/images/main/accordion_03.png) no-repeat center / cover;
-            }
-            &:nth-of-type(4):before {
-                background: url(/images/main/accordion_04.png) no-repeat center / cover;
-            }
-            &:nth-of-type(5):before {
-                background: url(/images/main/accordion_05.png) no-repeat center / cover;
-            }
-            &:nth-of-type(6):before {
-                background: url(/images/main/accordion_06.png) no-repeat center / cover;
+
+            .card__detail {
+                display: none;
+                opacity: 0;
             }
         }
     }
-}
-.accordion_controller button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.accordion_controller button.active {
-    background-color: white;
-    color: black;
 }
