@@ -163,7 +163,7 @@ ul li.type-dotg {
 .spacer_top_visual .visual_gradient .h2 {
     position: absolute;
     width: 100%;
-    bottom: 5px;
+    bottom: 5px; //*J수정 52px -> 5rem */
     text-align: center;
     color: black;
 }
@@ -171,15 +171,15 @@ ul li.type-dotg {
     content: "";
     display: block;
     position: absolute;
-    top: 8rem;
+    top: 6rem; //*J수정 8 -> 6 */
     left: 49%;
-    width: 52px;
+    width: 5rem;  //*J수정 52px -> 5rem */
     height: 6px;
     background-color: $mainColor;
 }
 .spacer_top_visual h1 {
     position: absolute;
-    top: 20rem; /*J 17.4 -> 20수정 */
+    top: 22rem; //*J수정 17.4 -> 20 -> 22 */
     left: 50%;
     height: 16rem;
     transform: translateX(-50%);

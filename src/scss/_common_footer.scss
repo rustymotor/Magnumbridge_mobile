@@ -6,13 +6,14 @@
     align-items: center;
     justify-content: center;
     padding-top: 7rem;
+    letter-spacing: 0; //j추가
     .footer_menu {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         width: 1280px;
         height: calc(28.6rem - 7rem);
-        border-bottom: 1px solid common.$gray200;
+        border-bottom: 1px solid common.$gray600; //j수정
         a.active {
             color: common.$mainColor;
         }
@@ -22,16 +23,21 @@
 
             .h3 {
                 color: #feffff;
-                font-family: "pretendard-Light";
+                font-family: "Pretendard-Semibold"; //j수정
             }
             li {
                 p {
                     padding-bottom: 2.4rem;
+                    font-family: "pretendard-Medium";
                 }
                 a {
                     color: #8c8c8c;
                     font-size: 1.8rem;
                     line-height: 1.8rem;
+                    &:hover {
+                        //j추가
+                        color: common.$mainColor;
+                    }
                 }
                 ul {
                     li {
@@ -46,6 +52,7 @@
     }
     .footer_info {
         width: 1280px;
+        font-family: "Pretendard-Medium"; //j추가
         article {
             display: flex;
             justify-content: space-between;
@@ -64,24 +71,25 @@
             .company_name {
                 font-size: 1.8rem;
                 color: #d9d9d9;
+                font-family: "Pretendard-Semibold"; //j추가
             }
             .company_link_wrap {
                 display: flex;
-                gap: 4rem;
+                gap: 3rem; //j수정
             }
         }
         .footer_info_2 {
-            margin-top: 2.4rem;
+            margin-top: 2rem; //j수정
         }
         .footer_info_3 {
-            margin-top: 2rem;
-            padding-bottom: 5rem;
+            //margin-top: 1rem; j삭제
+            padding-bottom: 4rem; //j수정
             p {
+                color: common.$gray500; //j추가
             }
         }
         * {
-            color: #888;
-            font-family: "pretendard-Light";
+            color: common.$txt_gray; //j수정
         }
     }
 }
@@ -90,7 +98,7 @@
 $map-width: 1200px;
 $map-height: 550px;
 $padding: 20px;
-.tmap_wrap{
+.tmap_wrap {
     display: none;
 }
 .tmap_wrap {
@@ -99,101 +107,103 @@ $padding: 20px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    height:790px;
-    border-radius:20px;
-    padding:80px 0px;
+    height: 790px;
+    border-radius: 20px;
+    padding: 4rem 0; //j수정
     background-color: white;
     overflow: hidden;
     text-align: center;
+    box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.1); //j추가
 
-    .map_scroll{
-        display:block;       
-        overflow-y:auto;
-        padding:40px 80px;
-        height:100%;
+    .map_scroll {
+        display: block;
+        overflow-y: auto;
+        padding: 2rem 6rem; //j수정
+        height: 100%;
     }
     #map_div {
-        height:auto;
+        height: auto;
         overflow: hidden;
         width: $map-width;
         height: $map-height;
         padding-top: 0;
     }
-    .btn_sitemap_close{
-        position:absolute;
-        top:40px;
-        right:40px;
-        width:27px;
-        height:27px;
+    .btn_sitemap_close {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        width: 27px;
+        height: 27px;
     }
-    strong{
-        display:block;
-        font-size:40px;
-        line-height:48px;
-        color:common.$mainColor;
-        font-weight:bold;
-        margin-bottom:70px;
+    strong {
+        display: block;
+        font-size: 3.2rem; //J수정
+        line-height: 48px;
+        font-family: "Pretendard-bold"; //j추가
+        color: common.$mainColor;
+        margin-bottom: 4rem; //j수정
     }
-    dl{ 
-        display:block;
-        width:1280px;
-        height:250px;
+    dl {
+        display: block;
+        width: 1280px;
+        height: 22rem; //j수정
         background-color: common.$mainColor;
-        border-radius:20px;
+        border-radius: 20px;
         background: url(/images/main/map.jpg) center no-repeat;
-        background-size: cover;
-        padding-top:40px;
-        margin-bottom:50px;
-        dt{
-            font-size:30px;
-            line-height:1.4;
-            margin-bottom:20px;
+        background-size: 100% auto;
+        padding-top: 30px; //j수정
+        margin-bottom: 20px; //j수정
+        dt {
+            font-size: 2.6rem; //J수정
+            line-height: 1.4;
+            margin-bottom: 10px; //J수정
         }
-        dd{
-            font-weight:bold;
-           color:#fff; 
-           &:nth-of-type(1){
-            font-size:30px;
-            line-height:1.4;
-            margin-bottom:20px;
-           }
-           &:nth-of-type(2){
-            font-size:18px;
-            line-height:1.4;
-           }
-           span{
-            font-weight:normal;
-           }
+        dd {
+            //font-weight:bold;  J삭제
+            font-family: "Pretendard-Semibold"; //J추가
+            color: #fff;
+            &:nth-of-type(1) {
+                font-size: 2.6rem; //J수정
+                line-height: 1.4;
+                margin-bottom: 10px; //J수정
+            }
+            &:nth-of-type(2) {
+                font-size: 18px;
+                line-height: 1.4;
+            }
+            span {
+                font-family: "Pretendard-Meduim"; //J수정
+            }
         }
     }
-    ul{
-        display:flex;
+    ul {
+        display: flex;
         justify-content: space-between;
-        margin-top:26px;
-        li:nth-of-type(1){
-            display:flex;
+        margin-top: 26px;
+        li:nth-of-type(1) {
+            display: flex;
             flex-direction: column;
             text-align: left;
-            p:nth-of-type(1){
-                font-size:24px;
-                line-height:2;
-                font-weight:bold;
-                color:#041118;
+            p:nth-of-type(1) {
+                font-size: 2rem; //J 수정
+                line-height: 2;
+                font-family: "Pretendard-bold"; //J 수정
+                color: #041118;
             }
-            p:nth-of-type(2){
-                font-size:18px;
-                line-height:2;
-                font-weight:bold;
-                color:#807F7F;
+            p:nth-of-type(2) {
+                font-size: 18px;
+                line-height: 2;
+                font-family: "Pretendard-Semibold";
+                color: #807f7f;
             }
         }
-        li:nth-of-type(2){
-            width:80px;
-            height:80px;
+        li:nth-of-type(2) {
+            width: 80px;
+            height: 80px;
             background: url(/images/main/watch_map.svg);
-            p{
-                color:#fff;
-                margin-top:49px;
+            p {
+                color: #fff;
+                margin-top: 49px;
             }
         }
     }
