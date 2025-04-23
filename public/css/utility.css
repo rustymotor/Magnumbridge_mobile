@@ -144,16 +144,16 @@ ul li.type-dotg::before {
   content: "";
   display: block;
   position: absolute;
-  top: 8rem;
+  top: 6rem;
   left: 49%;
-  width: 52px;
+  width: 5rem;
   height: 6px;
   background-color: #d2282f;
 }
 
 .spacer_top_visual h1 {
   position: absolute;
-  top: 20rem; /*J 17.4 -> 20수정 */
+  top: 22rem;
   left: 50%;
   height: 16rem;
   transform: translateX(-50%);
@@ -195,7 +195,7 @@ ul li.type-dotg::before {
   padding: 10rem 0;
 }
 .fullback.itservice {
-  background: url("../images/business/bg_service.png") right top;
+  background: url("/images/business/bg_service.png") right top;
   background-size: cover;
   box-sizing: border-box;
   height: 38rem;
@@ -207,7 +207,7 @@ ul li.type-dotg::before {
   }
 }
 .fullback.package {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/business/bg_package.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/business/bg_package.png");
   background-size: cover;
   padding: 10rem 0;
   height: 65rem;
@@ -225,7 +225,7 @@ ul li.type-dotg::before {
   line-height: 160%;
 }
 .fullback.partner {
-  background: url("../images/company/bg_partner.jpg") left top;
+  background: url("/images/company/bg_partner.jpg") left top;
   background-size: cover;
   box-sizing: border-box;
   padding: 10rem 0;
@@ -236,7 +236,7 @@ ul li.type-dotg::before {
   }
 }
 .fullback.certification {
-  background-image: linear-gradient(rgba(41, 44, 57, 0.8), rgba(41, 44, 62, 0.8)), url("../images/company/bg_certification.jpg");
+  background-image: linear-gradient(rgba(41, 44, 57, 0.8), rgba(41, 44, 62, 0.8)), url("/images/company/bg_certification.jpg");
   background-size: cover;
   padding: 10rem 0;
   height: 60rem;
@@ -254,7 +254,7 @@ ul li.type-dotg::before {
   top: 8rem;
 }
 .fullback.organization {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/company/bg_organization.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/company/bg_organization.png");
   background-size: cover;
   padding: 10rem 0;
   height: 78rem;
@@ -302,7 +302,7 @@ ul li.type-dotg::before {
   padding: 7rem 0;
 }
 .fullback > .devops {
-  background: url("../images/business/img_devops.png") no-repeat center bottom;
+  background: url("/images/business/img_devops.png") no-repeat center bottom;
   height: 48rem;
   margin-bottom: 8rem;
   box-sizing: border-box;
@@ -319,7 +319,7 @@ ul li.type-dotg::before {
   margin-top: 12rem;
 }
 .fullback > .strategy {
-  background: url("../images/company/back_logo.png") no-repeat center center;
+  background: url("/images/company/back_logo.png") no-repeat center center;
   background-size: contain;
   height: 89rem;
   box-sizing: border-box;
@@ -330,7 +330,7 @@ ul li.type-dotg::before {
   }
 }
 .fullback > .strategy .img_certification {
-  background: url("../images/company/img_strategy.png") no-repeat center center;
+  background: url("/images/company/img_strategy.png") no-repeat center center;
   height: 100%;
   background-position-y: 20rem;
 }
@@ -372,7 +372,7 @@ ul li.type-dotg::before {
 
 /* Vision */
 .vision_circle {
-  background: url("../images/company/circle_magnum.png") left top;
+  background: url("/images/company/circle_magnum.png") left top;
   width: 38rem;
   height: 38rem;
   text-align: center;
@@ -414,21 +414,21 @@ ul li.type-dotg::before {
   padding: 5rem 4rem;
 }
 .list .fullbg_gray .all4block > div.block01 {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/business/block_img01.png");
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("/images/business/block_img01.png");
   background-size: cover;
   background-position-y: top;
   width: 31%;
   height: 38rem;
 }
 .list .fullbg_gray .all4block > div.block02 {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/business/block_img02.png");
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("/images/business/block_img02.png");
   background-size: cover;
   background-position-y: top;
   width: 31%;
   height: 38rem;
 }
 .list .fullbg_gray .all4block > div.block03 {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/business/block_img03.png");
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("/images/business/block_img03.png");
   background-size: cover;
   background-position-y: top;
   width: 31%;
@@ -441,7 +441,7 @@ ul li.type-dotg::before {
   padding: 3.6rem 0 0 0;
 }
 .list .fullbg_gray .building {
-  background: url("../images/company/backimg_building.png") no-repeat;
+  background: url("/images/company/backimg_building.png") no-repeat;
   width: 80rem;
   background-position-y: bottom;
   padding-bottom: 6rem;
@@ -596,7 +596,7 @@ ul li.type-dotg::before {
 
 /* Company_History */
 .fullback.history {
-  background: url("../images/company/bg_history.jpg") left top;
+  background: url("/images/company/bg_history.jpg") left top;
   background-size: cover;
   box-sizing: border-box;
   padding: 10rem;

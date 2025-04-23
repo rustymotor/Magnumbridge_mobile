@@ -6,13 +6,14 @@
     align-items: center;
     justify-content: center;
     padding-top: 7rem;
+    letter-spacing: 0; //j추가
     .footer_menu {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         width: 1280px;
         height: calc(28.6rem - 7rem);
-        border-bottom: 1px solid common.$gray200;
+        border-bottom: 1px solid common.$gray600; //j수정
         a.active {
             color: common.$mainColor;
         }
@@ -22,17 +23,25 @@
 
             .h3 {
                 color: #feffff;
+<<<<<<< HEAD
                 font-family: "pretendard-Light";
                 cursor: default;
+=======
+                font-family: "Pretendard-Semibold";  //j수정
+>>>>>>> han
             }
             li {
                 p {
                     padding-bottom: 2.4rem;
+                    font-family: "pretendard-Medium";
                 }
                 a {
                     color: #8c8c8c;
                     font-size: 1.8rem;
                     line-height: 1.8rem;
+                    &:hover{ //j추가
+                        color: common.$mainColor;
+                    }
                 }
                 ul {
                     li {
@@ -47,6 +56,7 @@
     }
     .footer_info {
         width: 1280px;
+        font-family: "Pretendard-Medium";   //j추가
         article {
             display: flex;
             justify-content: space-between;
@@ -65,24 +75,25 @@
             .company_name {
                 font-size: 1.8rem;
                 color: #d9d9d9;
+                font-family: "Pretendard-Semibold"; //j추가
             }
             .company_link_wrap {
                 display: flex;
-                gap: 4rem;
+                gap: 3rem; //j수정
             }
         }
         .footer_info_2 {
-            margin-top: 2.4rem;
+            margin-top: 2rem; //j수정
         }
         .footer_info_3 {
-            margin-top: 2rem;
-            padding-bottom: 5rem;
+            //margin-top: 1rem; j삭제
+            padding-bottom: 4rem; //j수정
             p {
+                color: common.$gray500; //j추가
             }
         }
         * {
-            color: #888;
-            font-family: "pretendard-Light";
+            color: common.$txt_gray;  //j수정            
         }
     }
 }
@@ -100,18 +111,33 @@ $padding: 20px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+<<<<<<< HEAD
     height: 790px;
     border-radius: 20px;
     padding: 80px 0px;
+=======
+    height:790px;
+    border-radius:20px;
+    padding: 4rem 0; //j수정
+>>>>>>> han
     background-color: white;
     overflow: hidden;
     text-align: center;
+    box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.1);  //j추가
 
+<<<<<<< HEAD
     .map_scroll {
         display: block;
         overflow-y: auto;
         padding: 40px 80px;
         height: 100%;
+=======
+    .map_scroll{
+        display:block;       
+        overflow-y:auto;
+        padding: 2rem 6rem; //j수정
+        height:100%;
+>>>>>>> han
     }
     #map_div {
         height: auto;
@@ -127,6 +153,7 @@ $padding: 20px;
         width: 27px;
         height: 27px;
     }
+<<<<<<< HEAD
     strong {
         display: block;
         font-size: 40px;
@@ -139,9 +166,24 @@ $padding: 20px;
         display: block;
         width: 1280px;
         height: 250px;
+=======
+    strong{
+        display:block;
+        font-size: 3.2rem;  //J수정
+        line-height:48px;
+        font-family: "Pretendard-bold"; //j추가
+        color:common.$mainColor;
+        margin-bottom: 4rem; //j수정
+    }
+    dl{ 
+        display:block;
+        width:1280px;
+        height:22rem; //j수정
+>>>>>>> han
         background-color: common.$mainColor;
         border-radius: 20px;
         background: url(/images/main/map.jpg) center no-repeat;
+<<<<<<< HEAD
         background-size: cover;
         padding-top: 40px;
         margin-bottom: 50px;
@@ -165,6 +207,32 @@ $padding: 20px;
             span {
                 font-weight: normal;
             }
+=======
+        background-size: 100% auto;
+        padding-top:30px; //j수정
+        margin-bottom:20px; //j수정
+        dt{
+            font-size: 2.6rem; //J수정
+            line-height: 1.4;
+            margin-bottom: 10px; //J수정
+        }
+        dd{
+           //font-weight:bold;  J삭제
+           font-family: "Pretendard-Semibold";  //J추가
+           color:#fff; 
+           &:nth-of-type(1){
+            font-size: 2.6rem;  //J수정
+            line-height:1.4;
+            margin-bottom:10px; //J수정
+           }
+           &:nth-of-type(2){
+            font-size:18px;
+            line-height:1.4;
+           }
+           span{
+            font-family: "Pretendard-Meduim";  //J수정
+           }
+>>>>>>> han
         }
     }
     ul {
@@ -175,6 +243,7 @@ $padding: 20px;
             display: flex;
             flex-direction: column;
             text-align: left;
+<<<<<<< HEAD
             p:nth-of-type(1) {
                 font-size: 24px;
                 line-height: 2;
@@ -186,6 +255,19 @@ $padding: 20px;
                 line-height: 2;
                 font-weight: bold;
                 color: #807f7f;
+=======
+            p:nth-of-type(1){
+                font-size: 2rem;  //J 수정
+                line-height:2;
+                font-family: "Pretendard-bold"; //J 수정
+                color:#041118;
+            }
+            p:nth-of-type(2){
+                font-size:18px;
+                line-height:2;
+                font-family: "Pretendard-Semibold"; 
+                color:#807F7F;
+>>>>>>> han
             }
         }
         li:nth-of-type(2) {

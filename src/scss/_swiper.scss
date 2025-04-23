@@ -5,17 +5,17 @@
 }
 .container.main{
     .spacer_top_visual{
-        height:88rem;
+        height: 80rem; //j수정 88-> 80rem
     }
     section:not(.footer_menu){
         text-align:center;
         .section_title{
-            font-size:36px;
-            font-weight:bold;
+            font-size: 3.6rem; //j수정 
             margin:100px 0 20px;
             line-height:45px;
+            letter-spacing: -1px; //j추가
             color:#000;
-            font-family:'lexend-regular',sans-serif;
+            font-family:"Lexend-Bold"; //j수정 
         }
         .section_description{
             margin-bottom:70px;
@@ -31,6 +31,7 @@
             border-radius:40px;
             color:#fff;
             border:1px solid #ededed;
+            font-family: "Pretendard-Semibold"; //j추가
             background-color: common.$mainColor;
         }
         ul{
@@ -81,14 +82,15 @@
         }
     }
     .swiper-pagination-bullets{
-        bottom: 6.6rem !important;
+        bottom: 3.5rem !important; //j수정 6.6 -> 3.5
     }
     .swiper-horizontal .swiper-pagination-bullet{
         width:14px;
         height:14px;
-        background: common.$txt_gray;
+        background: common.$txt_gray; 
         opacity: 1;
-        border:1px solid #fff;
+        border:1px solid rgba(255, 255, 255, 0.6); //j수정
+        box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.05); //j추가
         margin: 0px 7px !important;
     }
     .swiper-pagination-bullet-active {
@@ -110,45 +112,51 @@
             position:relative;
             background: #eee;
             display: flex;
-            align-items: center;
+            // align-items: center; j수정
             font-size: 18px;
             color: #fff;
             .text_wrap {
                 position:relative;
-                margin-left:320px;
-                strong {
-                    font-size: 7rem;
-                    line-height:84px;
+                top: 23rem; //J 추가
+                margin-left: 320px;
+                strong { 
+                    font-size: 6rem;  //J 수정 7rem -> 6rem;
+                    line-height: 84px;
                     font-weight: 700;
                     color: white;
-                    font-familY:'Lexend-regular',sans-serif;
+                    font-family:'Lexend-regular',sans-serif;
                     &.normal{
                         font-size: 6rem;  
                         font-weight:normal;
-                        line-height:75px;
+                        line-height: 8rem;  //J 수정 75px -> 8rem;
                     }
                 }
                 span {
                     font-size: 2rem;
-                    line-height:1.4;
+                    line-height: 1.6; //J 수정 1.4rem -> 1.6rem;
                     display: block;
-                    margin-top:4.3rem;
+                    margin-top: 2rem; //J 수정 4.3rem -> 2rem;
                 }
                 button{
                     position:absolute;
-                    top:299px;
+                    bottom: 42rem;  //J 수정 top:299px -> bottom: 42rem;
                     left:0;
                     display:block;
                     width: 150px;
                     height:60px;
                     border:1px solid #d9d9d9;
                     background-color: rgba(0, 0, 0, 0.2);
+                    &:hover { //J 추가
+                        background-color: white;
+                        color: black;                        
+                        font-family: "Pretendard-Semibold";
+                    }
                 }
             }
             &>img{
                 position:absolute;
                 width:100%;
-                height:100%;
+                //height:100%;  J수정
                 z-index:-1;
             }
         }
