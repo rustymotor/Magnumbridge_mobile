@@ -1,9 +1,10 @@
 @charset "UTF-8";
 @use "./common";
-@forward "./_common_header";
-@forward "./_common_footer";
+@forward "./common_header";
+@forward "./common_footer";
 @forward "./sub_business";
-@forward "./_sub_recruit";
+@forward "./sub_company";
+@forward "./sub_recruit";
 @forward "./swiper";
 @forward "./utility";
 @forward "./visaul_accordion_main";

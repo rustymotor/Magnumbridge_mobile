@@ -1,0 +1,173 @@
+@use "common";
+
+
+.fullback {
+    &.partner {
+        background: url("/images/company/bg_partner.jpg") left top;
+        background-size: cover;
+        box-sizing: border-box;
+        padding: 10rem 0;
+        @media (max-width: 690px) {
+            padding: 6rem 3rem;
+        }
+    }
+
+    &.certification {
+        background-image: linear-gradient(rgba(41, 44, 57, 0.8), rgba(41, 44, 62, 0.8)),
+            url("/images/company/bg_certification.jpg");
+        background-size: cover;
+        padding: 10rem 0;
+        height: 60rem;
+        box-sizing: border-box;
+        @media (max-width: 690px) {
+            padding: 6rem 3rem;
+        }
+        & .img_certification {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 8rem;
+        }
+    }
+    &.organization {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url("/images/company/bg_organization.png");
+        background-size: cover;
+        padding: 10rem 0;
+        height: 78rem;
+        box-sizing: border-box;
+        @media (max-width: 690px) {
+            padding: 6rem 3rem;
+        }
+        & .tit {
+            font-size: 7rem;
+            font-family: "Lexend-bold";
+            line-height: 1.2em;
+            color: #000;
+
+            & .txt_shadow {
+                position: relative;
+                display: inline-block;
+            }
+            & .txt-gradation {
+                background: linear-gradient(to right, #fb0000 0%, #fb0000 60%, #b60000 70%, #b60000 120%);
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+            }
+        }
+        & .img_certification {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 8rem;
+        }
+        & > .strategy {
+            background: url("/images/company/back_logo.png") no-repeat center center;
+            background-size: contain;
+            height: 89rem;
+            box-sizing: border-box;
+            @media (max-width: 690px) {
+                padding: 6rem 3rem;
+            }
+            & .img_certification {
+                background: url("/images/company/img_strategy.png") no-repeat center center;
+                height: 100%;
+                background-position-y: 20rem;
+                & .strategy_box {
+                    max-width: 56rem;
+                    background-color: #fff;
+                    border: 1px solid #eee;
+                    min-width: 32rem;
+                    max-height: 14rem;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+                    line-height: 160%;
+                    border-radius: 20rem;
+                    padding: 2rem 4rem;
+                    font-size: 1.6rem;
+                    margin-top: 3rem;
+                    &.top {
+                        position: relative;
+                        top: -24rem;
+                    }
+                    &.left {
+                        position: relative;
+                        top: 8rem;
+                        left: -32rem;
+                    }
+                    &.right {
+                        position: relative;
+                        top: 8rem;
+                        left: 32rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Vision */
+
+.vision_circle {
+    background: url("/images/company/circle_magnum.png") left top;
+    width: 38rem;
+    height: 38rem;
+    text-align: center;
+    & p {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+}
+
+.list {
+    .logo_line {
+    border: 1px solid common.$txt_gray;
+    border-radius: 8px;
+    height: 10rem;
+    width: 35rem;
+    text-align: center;
+    }
+    .fullbg_gray {
+        & .building {
+            background: url("/images/company/backimg_building.png") no-repeat;
+            width: 80rem;
+            background-position-y: bottom;
+            padding-bottom: 6rem;
+        }
+        & .vision {
+            width: 80rem;
+            display: flex;
+            min-height: 10rem;
+            flex-direction: row;
+            align-items: center;
+            border-radius: 6rem;
+            padding: 3rem;
+            font-size: 1.8rem;
+            margin-top: 3rem;
+            &::before {
+                content: "";
+                display: inline-block;
+                position: relative;
+                left: 16rem;
+                top: 2px;
+                width: 1px;
+                height: 22px;
+                background-color: #cccccc;
+                opacity: 0.5;
+            }
+            & span.strong {
+                font-family: "Pretendard-bold";
+                margin-left: 5px;
+            }
+            & p.tit {
+                font-size: 2.4rem;
+                width: 15.4rem;
+                text-align: center;
+                font-family: "Pretendard-bold";
+                margin-right: 3.4rem;
+            }
+        }
+    }
+
+    
+}

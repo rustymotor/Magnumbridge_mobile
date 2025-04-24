@@ -195,7 +195,7 @@ ul li.type-dotg::before {
   padding: 10rem 0;
 }
 .fullback.itservice {
-  background: url("../images/business/bg_service.png") right top;
+  background: url("/images/business/bg_service.png") right top;
   background-size: cover;
   box-sizing: border-box;
   height: 38rem;
@@ -207,7 +207,7 @@ ul li.type-dotg::before {
   }
 }
 .fullback.package {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/business/bg_package.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/business/bg_package.png");
   background-size: cover;
   padding: 10rem 0;
   height: 65rem;
@@ -224,69 +224,6 @@ ul li.type-dotg::before {
   font-family: "Pretendard-Semibold";
   line-height: 160%;
 }
-.fullback.partner {
-  background: url("../images/company/bg_partner.jpg") left top;
-  background-size: cover;
-  box-sizing: border-box;
-  padding: 10rem 0;
-}
-@media (max-width: 690px) {
-  .fullback.partner {
-    padding: 6rem 3rem;
-  }
-}
-.fullback.certification {
-  background-image: linear-gradient(rgba(41, 44, 57, 0.8), rgba(41, 44, 62, 0.8)), url("../images/company/bg_certification.jpg");
-  background-size: cover;
-  padding: 10rem 0;
-  height: 60rem;
-  box-sizing: border-box;
-}
-@media (max-width: 690px) {
-  .fullback.certification {
-    padding: 6rem 3rem;
-  }
-}
-.fullback.certification .img_certification {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 8rem;
-}
-.fullback.organization {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/company/bg_organization.png");
-  background-size: cover;
-  padding: 10rem 0;
-  height: 78rem;
-  box-sizing: border-box;
-}
-@media (max-width: 690px) {
-  .fullback.organization {
-    padding: 6rem 3rem;
-  }
-}
-.fullback.organization .tit {
-  font-size: 7rem;
-  font-family: "Lexend-bold";
-  line-height: 1.2em;
-  color: #000;
-}
-.fullback.organization .tit .txt_shadow {
-  position: relative;
-  display: inline-block;
-}
-.fullback.organization .tit .txt-gradation {
-  background: linear-gradient(to right, #fb0000 0%, #fb0000 60%, #b60000 70%, #b60000 120%);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-.fullback.organization .img_certification {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 8rem;
-}
 .fullback.gradation_gray {
   background: linear-gradient(to left, #dddddd 0%, #dddddd 15%, #888888 90%);
   padding: 3rem 0;
@@ -302,7 +239,7 @@ ul li.type-dotg::before {
   padding: 7rem 0;
 }
 .fullback > .devops {
-  background: url("../images/business/img_devops.png") no-repeat center bottom;
+  background: url("/images/business/img_devops.png") no-repeat center bottom;
   height: 48rem;
   margin-bottom: 8rem;
   box-sizing: border-box;
@@ -318,69 +255,6 @@ ul li.type-dotg::before {
   width: 45rem;
   margin-top: 12rem;
 }
-.fullback > .strategy {
-  background: url("../images/company/back_logo.png") no-repeat center center;
-  background-size: contain;
-  height: 89rem;
-  box-sizing: border-box;
-}
-@media (max-width: 690px) {
-  .fullback > .strategy {
-    padding: 6rem 3rem;
-  }
-}
-.fullback > .strategy .img_certification {
-  background: url("../images/company/img_strategy.png") no-repeat center center;
-  height: 100%;
-  background-position-y: 20rem;
-}
-.fullback > .strategy .img_certification .strategy_box {
-  max-width: 56rem;
-  background-color: #fff;
-  border: 1px solid #eee;
-  min-width: 32rem;
-  max-height: 14rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  line-height: 160%;
-  border-radius: 20rem;
-  padding: 2rem 4rem;
-  font-size: 1.6rem;
-  margin-top: 3rem;
-}
-.fullback > .strategy .img_certification .strategy_box.top {
-  position: relative;
-  top: -24rem;
-}
-.fullback > .strategy .img_certification .strategy_box.left {
-  position: relative;
-  top: 8rem;
-  left: -32rem;
-}
-.fullback > .strategy .img_certification .strategy_box.right {
-  position: relative;
-  top: 8rem;
-  left: 32rem;
-}
-
-.list .logo_line {
-  border: 1px solid #8f8f8f;
-  border-radius: 8px;
-  height: 10rem;
-  width: 35rem;
-  text-align: center;
-}
-
-/* Vision */
-.vision_circle {
-  background: url("../images/company/circle_magnum.png") left top;
-  width: 38rem;
-  height: 38rem;
-  text-align: center;
-}
-.vision_circle p {
-  font-size: 2rem;
-  margin-top: 1rem;
-}
 
 .list .fullbg_gray {
   width: 1280px;
@@ -391,93 +265,6 @@ ul li.type-dotg::before {
 }
 .list .fullbg_gray.nopadding {
   padding: 0 0 10rem 0;
-}
-.list .fullbg_gray .all4block {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  width: 88rem;
-  height: 38rem;
-  background-color: #ff403e;
-  border-radius: 40px;
-  z-index: 1;
-}
-.list .fullbg_gray .all4block > div {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 23rem;
-  top: -2rem;
-  left: -1.4rem;
-  border-radius: 40px;
-  background-color: black;
-  padding: 5rem 4rem;
-}
-.list .fullbg_gray .all4block > div.block01 {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/business/block_img01.png");
-  background-size: cover;
-  background-position-y: top;
-  width: 31%;
-  height: 38rem;
-}
-.list .fullbg_gray .all4block > div.block02 {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/business/block_img02.png");
-  background-size: cover;
-  background-position-y: top;
-  width: 31%;
-  height: 38rem;
-}
-.list .fullbg_gray .all4block > div.block03 {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/business/block_img03.png");
-  background-size: cover;
-  background-position-y: top;
-  width: 31%;
-  height: 38rem;
-}
-.list .fullbg_gray .all4block > div .block_contents {
-  color: #f2f2f2;
-  border-top: 1px solid #525252;
-  margin-top: 3.6rem;
-  padding: 3.6rem 0 0 0;
-}
-.list .fullbg_gray .building {
-  background: url("../images/company/backimg_building.png") no-repeat;
-  width: 80rem;
-  background-position-y: bottom;
-  padding-bottom: 6rem;
-}
-.list .fullbg_gray .vision {
-  width: 80rem;
-  display: flex;
-  min-height: 10rem;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 6rem;
-  padding: 3rem;
-  font-size: 1.8rem;
-  margin-top: 3rem;
-}
-.list .fullbg_gray .vision::before {
-  content: "";
-  display: inline-block;
-  position: relative;
-  left: 16rem;
-  top: 2px;
-  width: 1px;
-  height: 22px;
-  background-color: #cccccc;
-  opacity: 0.5;
-}
-.list .fullbg_gray .vision span.strong {
-  font-family: "Pretendard-bold";
-  margin-left: 5px;
-}
-.list .fullbg_gray .vision p.tit {
-  font-size: 2.4rem;
-  width: 15.4rem;
-  text-align: center;
-  font-family: "Pretendard-bold";
-  margin-right: 3.4rem;
 }
 
 /* Customer 로고 스크롤 */
@@ -596,7 +383,7 @@ ul li.type-dotg::before {
 
 /* Company_History */
 .fullback.history {
-  background: url("../images/company/bg_history.jpg") left top;
+  background: url("/images/company/bg_history.jpg") left top;
   background-size: cover;
   box-sizing: border-box;
   padding: 10rem;
