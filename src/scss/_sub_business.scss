@@ -60,7 +60,7 @@ section.product_set{
         margin-top:81px;
         padding:0 0 30px 62px;
         color:#fff;
-        background: url(/images/main/product_set.svg) center no-repeat;
+        background: url(/images/business/product_set.svg) center no-repeat;
         li{
             display:flex;
             flex-direction: column;
@@ -71,28 +71,26 @@ section.product_set{
             border-radius:160px;
             padding-top:57px;
             background-color: #000;
-            z-index:1;
+            z-index:1; 
             span{
                 color:#fff;
-                font-size:16px;
-                font-weight:bold;
+                font-size: 2rem;    
+                font-family: "Pretendard-Semibold";            
                 line-height:1.6;
                 margin-bottom:0.4rem;
             }
             p{
                 position:relative;
-                font-size:30px;
-                font-weight:bold;
+                font-size: 2.8rem;
+                font-family: "Pretendard-bold";
                 line-height: 1.6;
                 margin-bottom:2.1rem;
             }
             dl{
-                font-size:16px;
-                font-weight:bold;
-                line-height:1.6;
-                color:rgba(255,255,255,0.7);
-                text-align:center;
+                color: rgba(255,255,255, .7);
+                text-align: center;
             }
+            
             &:nth-of-type(1){
                 position:relative;
                 z-index:100;
@@ -100,7 +98,7 @@ section.product_set{
             &:nth-of-type(2){
                 position:relative;
                 z-index:0;
-                background-color: #525252;
+                background-color: common.$gray500;
             }
             &:nth-of-type(3){
                 position:relative;
@@ -111,18 +109,25 @@ section.product_set{
                     left:0;
                     width:100%;
                     height:100%;
-                    background: url(/images/main/product_set_3.svg) center no-repeat;
+                    background: url(/images/business/product_set_3.svg) center no-repeat;
                 }
                 color:#000;
                 background-color: #fff;
                 span{
-                    color:#000;
+                    font-size: 2rem;    
+                    font-family: "Pretendard-Semibold";            
+                    line-height:1.6;
+                    text-align: center;
+                    margin-bottom:0.4rem;
+                    color: black;
                 }
                 p{
                     margin-bottom:41px;
+                    
                 }
                 dl{
                     color:rgba(0,0,0,0.7);
+                    font-size: 1.6rem;  
                 }
             }
 
@@ -166,7 +171,7 @@ section.product_set{
     }
     img{
         margin-top:28px;
-        width:1075px;
+        width:1180px;
     }
 }
 .container section.product_function{
@@ -195,7 +200,7 @@ section.product_set{
                 border-top:2px solid #807f7f;
             }
             &:nth-of-type(n+3){
-                background: url(/images/main/table_line.svg) top no-repeat;
+                background: url(/images/business/table_line.svg) top no-repeat;
             }
             &:nth-of-type(1){
                 th:nth-of-type(1){
@@ -293,7 +298,7 @@ section.products{
             img{
                 width:676px;
                 height:414px;
-                border-radius:40px;
+                border-radius:20px;
             }
         }
         li{
@@ -330,15 +335,15 @@ section.products{
             gap:80px;
             width:1280px;
             height:521px;
-            border-radius:40px;
+            border-radius:20px;
             background-color: #191919;
             li{
                 img{
                     width:400px;
-                    height:374px;
+                    height:420px;
                 }
                 dl{
-                    width:674px;
+                    width:69rem;
                     height:384px;
                     color:#fff;
                     gap:0;
@@ -346,7 +351,7 @@ section.products{
                     dt,dd{
                         position:relative;
                         font-size:18px;
-                        line-height:1.8;
+                        line-height: 200%;
                     }
                     & dd:before,
                     & dt:before{
@@ -370,7 +375,7 @@ section.products{
             justify-content: center;
             align-items: center;
             gap:52px;
-            border-radius:40px;
+            border-radius:20px;
             background-color: #f2f2f2;
             dl{
                 width:491px;

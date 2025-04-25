@@ -1147,7 +1147,7 @@ section.product_set ul.image {
   margin-top: 81px;
   padding: 0 0 30px 62px;
   color: #fff;
-  background: url(/images/main/product_set.svg) center no-repeat;
+  background: url(/images/business/product_set.svg) center no-repeat;
 }
 section.product_set ul.image li {
   display: flex;
@@ -1163,22 +1163,19 @@ section.product_set ul.image li {
 }
 section.product_set ul.image li span {
   color: #fff;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Pretendard-Semibold";
   line-height: 1.6;
   margin-bottom: 0.4rem;
 }
 section.product_set ul.image li p {
   position: relative;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 2.8rem;
+  font-family: "Pretendard-bold";
   line-height: 1.6;
   margin-bottom: 2.1rem;
 }
 section.product_set ul.image li dl {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
 }
@@ -1203,16 +1200,22 @@ section.product_set ul.image li:nth-of-type(3):before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(/images/main/product_set_3.svg) center no-repeat;
+  background: url(/images/business/product_set_3.svg) center no-repeat;
 }
 section.product_set ul.image li:nth-of-type(3) span {
-  color: #000;
+  font-size: 2rem;
+  font-family: "Pretendard-Semibold";
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 0.4rem;
+  color: black;
 }
 section.product_set ul.image li:nth-of-type(3) p {
   margin-bottom: 41px;
 }
 section.product_set ul.image li:nth-of-type(3) dl {
   color: rgba(0, 0, 0, 0.7);
+  font-size: 1.6rem;
 }
 section.product_set ul.graphic_txt {
   display: flex;
@@ -1248,7 +1251,7 @@ section.product_set ul.graphic_txt li:nth-of-type(3) span {
 }
 section.product_set img {
   margin-top: 28px;
-  width: 1075px;
+  width: 1180px;
 }
 
 .container section.product_function {
@@ -1279,7 +1282,7 @@ section.product_set img {
   border-top: 2px solid #807f7f;
 }
 .container section.product_function table tr:nth-of-type(n+3) {
-  background: url(/images/main/table_line.svg) top no-repeat;
+  background: url(/images/business/table_line.svg) top no-repeat;
 }
 .container section.product_function table tr:nth-of-type(1) th:nth-of-type(1) {
   width: 586px;
@@ -1374,7 +1377,7 @@ section.products ul li {
 section.products ul li img {
   width: 676px;
   height: 414px;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 section.products ul li dl {
   display: flex;
@@ -1404,15 +1407,15 @@ section.products .repository ul {
   gap: 80px;
   width: 1280px;
   height: 521px;
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: #191919;
 }
 section.products .repository ul li img {
   width: 400px;
-  height: 374px;
+  height: 420px;
 }
 section.products .repository ul li dl {
-  width: 674px;
+  width: 69rem;
   height: 384px;
   color: #fff;
   gap: 0;
@@ -1421,7 +1424,7 @@ section.products .repository ul li dl {
 section.products .repository ul li dl dt, section.products .repository ul li dl dd {
   position: relative;
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 200%;
 }
 section.products .repository ul li dl dd:before, section.products .repository ul li dl dt:before {
   position: absolute;
@@ -1439,7 +1442,7 @@ section.products .security ul {
   justify-content: center;
   align-items: center;
   gap: 52px;
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: #f2f2f2;
 }
 section.products .security ul dl {
@@ -1734,14 +1737,18 @@ section.products .security ul img {
   display: flex;
   justify-content: space-around;
   align-items: stretch;
+  line-height: 200%;
+  color: #dddddd;
 }
 .list.summary_num > div {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: black;
   width: 30rem;
   height: 30rem;
   border-radius: 2rem;
-  padding: 10rem 0;
+  padding: 3rem;
   box-sizing: border-box;
   text-align: right;
 }
@@ -1761,15 +1768,9 @@ section.products .security ul img {
   background-image: url("/images/company/img_about04.png");
   background-size: cover;
 }
-.list.summary_num > div P {
-  color: #ff403e;
-}
-.list.summary_num > div P.fs50 {
+.list.summary_num > div .fs50 {
   font-family: "Pretendard-bold";
   font-size: 5rem;
-}
-.list.summary_num > div span {
-  color: white;
 }
 .list .logo_line {
   border: 1px solid #8f8f8f;
@@ -1995,6 +1996,7 @@ section.products .security ul img {
 }
 .container.main section.company ul li:nth-of-type(1):hover {
   box-shadow: 6px 6px 0 #d2282f;
+  background-size: scale(1.1);
 }
 .container.main section.company ul li:nth-of-type(2) {
   background: url(/images/main/company_overview_2.jpg) center no-repeat;
