@@ -130,6 +130,52 @@
 }
 
 .list {
+    /* Aboud 상단 */    
+    &.summary_num{
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+        
+        > div{
+            display: flex;
+            background-color: black;
+            width: 30rem;
+            height: 30rem;
+            border-radius: 2rem;
+            padding: 10rem 0;
+            box-sizing: border-box;
+            text-align: right;
+
+            &.founding{
+                background-image: url("/images/company/img_about01.png");
+                background-size: cover;
+            }
+            &.growth{
+                background-image: url("/images/company/img_about02.png");
+                background-size: cover;
+                
+            }
+            &.capavillity{
+                background-image: url("/images/company/img_about03.png");
+                background-size: cover;
+            }
+            &.revenue{
+                background-image: url("/images/company/img_about04.png");
+                background-size: cover;
+            }
+            & P{                
+                color: common.$mainColorBright;                
+                &.fs50{
+                    font-family: "Pretendard-bold";
+                    font-size: 5rem;
+                }
+            }
+            & span{
+                color: white;
+            }
+        }
+    }
+
     .logo_line {
     border: 1px solid common.$txt_gray;
     border-radius: 8px;
