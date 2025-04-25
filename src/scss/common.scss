@@ -81,12 +81,12 @@ a:visited {
         height: 48px;
         cursor: pointer;
         background: #212529 url(/images/btn_top.png) no-repeat 50% 50% / 16px auto;
-        & span{
+        & span {
             overflow: hidden;
             font-size: 0;
             text-indent: -9999px;
         }
-        &.active {    
+        &.active {
             display: block;
         }
     }
@@ -203,7 +203,7 @@ ul li.type-dotg {
     position: absolute;
     top: 6rem; //*J수정 8 -> 6 */
     left: 49%;
-    width: 5rem;  //*J수정 52px -> 5rem */
+    width: 5rem; //*J수정 52px -> 5rem */
     height: 6px;
     background-color: $mainColor;
 }
@@ -246,8 +246,7 @@ ul li.type-dotg {
 
     & > .pad-10 {
         padding: 10rem 0;
-    }     
-    
+    }
 }
 
 .list .fullbg_gray {
@@ -259,7 +258,7 @@ ul li.type-dotg {
 
     &.nopadding {
         padding: 0 0 10rem 0;
-    }       
+    }
 }
 
 /* Customer 로고 스크롤 */
@@ -410,13 +409,6 @@ ul li.type-dotg {
     border-radius: 100%;
 }
 
-div > ul > li ul {
-    display: grid;
-}
-
-div > ul > li ul > li {
-    line-height: 160%;
-}
 .container .bullet-list {
     font-size: 1.8rem;
     & span.b-tit {
@@ -490,18 +482,18 @@ div > ul > li ul > li {
             width: 100%;
             padding: 5rem 0;
             max-width: 40rem;
-            flex-direction: column;            
+            flex-direction: column;
             display: flex;
-            
+
             justify-content: flex-start;
             align-items: center;
             &:not(:last-child) {
                 margin-right: 3rem;
             }
-            &:not(.bg_line){
+            &:not(.bg_line) {
                 border: 1px solid transparent;
             }
-            &:hover{
+            &:hover {
                 border: 1px solid $gray100;
                 background-color: rgba(220, 220, 220, 0.2);
                 box-shadow: 0 1px 1px rgba(220, 220, 220, 0.08);
@@ -525,7 +517,7 @@ div > ul > li ul > li {
             margin: 2rem 0;
             font-family: "Lexend-bold";
         }
-        & span.sub_txt{
+        & span.sub_txt {
             flex: 1 1 100px;
         }
 
@@ -571,7 +563,7 @@ div > ul > li ul > li {
         }
 
         & .body_txt {
-            min-height: 9.6rem;            
+            min-height: 9.6rem;
         }
         & .bottomline {
             border-top: 1px solid $gray200;

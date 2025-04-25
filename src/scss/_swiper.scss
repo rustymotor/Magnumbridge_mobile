@@ -37,7 +37,6 @@
             display: flex;
             width: 100%;
             justify-content: center;
-<<<<<<< HEAD
             gap: 26px;
             margin-top: 127px;
             li {
@@ -45,98 +44,56 @@
                 width: 300px;
                 height: 420px;
                 overflow: hidden;
-                &:nth-of-type(2n-1) {
-                    transform: translateY(-71px);
-                }
+
                 &:nth-of-type(1) {
                     background: url(/images/main/company_overview_1.jpg) center no-repeat;
                     background-size: cover;
                     border-radius: 0 0 60px 0;
-=======
-            gap:26px;
-            margin-top:127px;
-            li{
-                position:relative;
-                width:300px;
-                height:420px;
-                overflow:hidden;
-                
-                &:nth-of-type(1){
-                    background: url(/images/main/company_overview_1.jpg) center no-repeat;
-                    background-size: cover;
-                    border-radius:0 0 60px 0;
                     top: -7rem;
-                    
-                    &:hover{
+
+                    &:hover {
                         box-shadow: 6px 6px 0 common.$mainColor;
                     }
-                    
->>>>>>> han
                 }
                 &:nth-of-type(2) {
                     background: url(/images/main/company_overview_2.jpg) center no-repeat;
                     background-size: cover;
-<<<<<<< HEAD
                     border-radius: 0 0 0 60px;
-=======
-                    border-radius:0 0 0 60px ;
-                    &:hover{
+                    &:hover {
                         box-shadow: 6px 6px 0 common.$mainColor;
                     }
-                    
->>>>>>> han
                 }
                 &:nth-of-type(3) {
                     background: url(/images/main/company_overview_3.jpg) center no-repeat;
                     background-size: cover;
-<<<<<<< HEAD
                     border-radius: 0 60px 0 0;
-=======
-                    border-radius:  0 60px 0 0;
                     top: -7rem;
                     //transform:translateY(-71px);
-                    &:hover{
+                    &:hover {
                         box-shadow: 6px 6px 0 common.$mainColor;
                     }
->>>>>>> han
                 }
                 &:nth-of-type(4) {
                     background: url(/images/main/company_overview_4.jpg) center no-repeat;
                     background-size: cover;
-<<<<<<< HEAD
                     border-radius: 60px 0 0 0;
-                }
-                p {
-                    font-size: 26px;
-                    font-weight: bold;
-                    line-height: 12rem;
-                    color: #fff;
-                    margin-top: 300px;
-                    width: 300px;
-                    height: 120px;
-                    background: url(/images/main/company_opacity.svg);
-                    opacity: 1;
-                    transition: opacity 0.5s ease;
-=======
-                    border-radius:60px 0 0 0 ;
-                    &:hover{
+                    &:hover {
                         box-shadow: 6px 6px 0 common.$mainColor;
                     }
                 }
 
-                p{
-                    font-size:26px;
+                p {
+                    font-size: 26px;
                     font-family: "Pretendard-Medium";
                     letter-spacing: 0;
-                    line-height:6rem;
-                    color:#fff;
-                    margin-top:340px;
-                    width:300px;
-                    height:80px;
+                    line-height: 6rem;
+                    color: #fff;
+                    margin-top: 340px;
+                    width: 300px;
+                    height: 80px;
                     background: url(/images/main/company_opacity.svg);
-                    opacity:1;
-                    transition:opacity 0.2s ease;
->>>>>>> han
+                    opacity: 1;
+                    transition: opacity 0.2s ease;
                 }
                 dl {
                     position: absolute;
@@ -148,12 +105,12 @@
                     background-color: rgba(0, 0, 0, 0.8);
                     z-index: 10;
                     text-align: left;
-<<<<<<< HEAD
                     opacity: 0;
                     transition: opacity 0.5s ease;
                     dt {
-                        font-size: 30px;
-                        font-weight: bold;
+                        font-size: 34px;
+                        font-family: "Pretendard-bold";
+                        letter-spacing: 0;
                         line-height: 1.4;
                         color: common.$mainColorBright;
                         margin-bottom: 18px;
@@ -161,30 +118,10 @@
                     }
                     dd {
                         font-size: 16px;
-                        font-weight: bold;
+                        font-family: "Pretendard-Semibold";
                         line-height: 1.4;
                         height: 44px;
-                        color: rgba(255, 255, 255, 0.5);
-=======
-                    opacity:0;
-                    transition:opacity 0.5s ease;
-                    dt{
-                        font-size:34px;
-                        font-family: "Pretendard-bold";
-                        letter-spacing: 0;
-                        line-height:1.4;
-                        color:common.$mainColorBright;
-                        margin-bottom:18px;
-                        height:100px;
-                        
-                    }
-                    dd{
-                        font-size:16px;
-                        font-family: "Pretendard-Semibold";
-                        line-height:1.4;
-                        height:44px;
-                        color:common.$gray100;
->>>>>>> han
+                        color: common.$gray100;
                     }
                     dd:nth-of-type(2) {
                         margin-top: 110px;
@@ -206,9 +143,7 @@
                     }
                 }
             }
-            
         }
-           
     }
     .swiper-pagination-bullets {
         bottom: 3.5rem !important; //j수정 6.6 -> 3.5
@@ -283,19 +218,11 @@
                     }
                 }
             }
-<<<<<<< HEAD
             & > img {
                 position: absolute;
                 width: 100%;
-                //height:100%;  J수정
+                height: 100%;
                 z-index: -1;
-=======
-            &>img{
-                position:absolute;
-                width:100%;
-                height:100%; 
-                z-index:-1;
->>>>>>> han
             }
         }
     }
@@ -341,27 +268,15 @@
                         }
                         span {
                             text-align: left;
-<<<<<<< HEAD
                             font-size: 14px;
                             line-height: 30px;
-                            font-weight: bold;
+                            font-family: "Pretendard-Semibold";
                             &:before {
                                 display: inline-block;
                                 content: "프로젝트명";
                                 color: common.$gray200;
                                 width: 70px;
-                                font-size: 12px;
-=======
-                            font-size:14px;
-                            line-height:30px;
-                            font-family: "Pretendard-Semibold";
-                            &:before{
-                                display:inline-block;
-                                content:'프로젝트명';
-                                color:common.$gray200;
-                                width:70px;
                                 font-family: "Pretendard-Medium";
->>>>>>> han
                             }
                             &:nth-of-type(2):before {
                                 content: "제품/기술";
@@ -408,13 +323,8 @@
         background-color: #f8f8f8;
         padding: 100px 0 70px;
         button {
-<<<<<<< HEAD
             width: 150px;
-            height: 50px;
-=======
-            width:150px;
-            height:40px;
->>>>>>> han
+            height: 40px;
             padding: 10px 16px;
             border: 1px solid #000;
             border-radius: 50px;
@@ -423,22 +333,17 @@
             font-family: "Pretendard-Semibold";
             cursor: pointer;
             transition: all 0.2s;
-<<<<<<< HEAD
 
-            &.active {
-=======
-    
-            &.active,:hover {
->>>>>>> han
-                background: #000;
-                color: #fff;
-            }
-        
-            &:hover{
+            &.active,
+            :hover {
                 background: #000;
                 color: #fff;
             }
 
+            &:hover {
+                background: #000;
+                color: #fff;
+            }
         }
     }
 }
@@ -457,22 +362,22 @@
     }
 }
 
-.visual_main .text_wrap strong,
-.visual_main .text_wrap span,
-.visual_main .text_wrap button {
+.swiper_main_1 .visual_main .text_wrap strong,
+.swiper_main_1 .visual_main .text_wrap span,
+.swiper_main_1 .visual_main .text_wrap button {
     opacity: 0;
     transform: translateY(30px);
     filter: blur(10px);
 }
 
-.visual_main.animate .text_wrap strong {
+.swiper_main_1 .visual_main.animate .text_wrap strong {
     animation: fadeInUpBlur 0.5s ease-out forwards;
 }
 
-.visual_main.animate .text_wrap span {
+.swiper_main_1 .visual_main.animate .text_wrap span {
     animation: fadeInUpBlur 0.5s ease-out 0.3s forwards;
 }
 
-.visual_main.animate .text_wrap button {
+.swiper_main_1 .visual_main.animate .text_wrap button {
     animation: fadeInUpBlur 0.5s ease-out 0.6s forwards;
 }

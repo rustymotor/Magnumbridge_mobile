@@ -387,14 +387,6 @@ ul li.type-dotg::before {
   border-radius: 100%;
 }
 
-div > ul > li ul {
-  display: grid;
-}
-
-div > ul > li ul > li {
-  line-height: 160%;
-}
-
 .container .bullet-list {
   font-size: 1.8rem;
 }
