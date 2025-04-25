@@ -96,6 +96,9 @@ app.get("/pages/recruit_1", (req, res) => {
 app.get("/pages/recruit_2", (req, res) => {
     res.render("pages/recruit_2", { basePath: "../", htmlExt: "" });
 });
+app.get("/pages/privacy_policy", (req, res) => {
+    res.render("pages/privacy_policy", { basePath: "../", htmlExt: "" });
+});
 
 const watcher = chokidar.watch("views/**/*.ejs", {
     ignoreInitial: true

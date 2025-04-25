@@ -2172,6 +2172,38 @@ section.products .security ul img {
   color: #fff;
 }
 
+@keyframes fadeInUpBlur {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+.visual_main .text_wrap strong,
+.visual_main .text_wrap span,
+.visual_main .text_wrap button {
+  opacity: 0;
+  transform: translateY(30px);
+  filter: blur(10px);
+}
+
+.visual_main.animate .text_wrap strong {
+  animation: fadeInUpBlur 0.5s ease-out forwards;
+}
+
+.visual_main.animate .text_wrap span {
+  animation: fadeInUpBlur 0.5s ease-out 0.3s forwards;
+}
+
+.visual_main.animate .text_wrap button {
+  animation: fadeInUpBlur 0.5s ease-out 0.6s forwards;
+}
+
 .pretendard {
   font-family: "Pretendard-Regular";
 }
