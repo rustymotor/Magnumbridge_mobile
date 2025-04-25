@@ -1,7 +1,8 @@
 const mainSwiper = new Swiper(".swiper_main_1", {
     slidesPerView: 1,
+    speed: 700,
     autoplay: {
-        delay: 3000,
+        delay: 4000,
         disableOnInteraction: false
     },
     loop: true,
@@ -12,8 +13,36 @@ const mainSwiper = new Swiper(".swiper_main_1", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
+    },
+    on: {
+        init: function () {
+            animateCurrentSlide(this);
+        },
+        slideChangeTransitionStart: function () {
+            resetAllAnimations(this);
+        },
+        slideChangeTransitionEnd: function () {
+            animateCurrentSlide(this);
+        }
     }
 });
+// 애니메이션 초기화
+function resetAllAnimations(swiper) {
+    swiper.slides.forEach(slide => {
+        slide.classList.remove("animate");
+    });
+}
+
+// 현재 활성 슬라이드에 애니메이션 부여
+function animateCurrentSlide(swiper) {
+    const activeSlide = swiper.slides[swiper.activeIndex];
+
+    // 살짝 딜레이 후 animate 클래스 추가 (전환 감안해서 300ms 추천)
+    setTimeout(() => {
+        activeSlide.classList.add("animate");
+    }, 300);
+}
+
 const mainSwiper2 = new Swiper(".swiper_main_2", {
     slidesPerView: 3,
     grid: {

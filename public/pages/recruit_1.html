@@ -301,10 +301,15 @@
     <article class="footer_info_1">
         <p class="company_name">(주)매그넘브릿지</p>
         <p class="company_link_wrap">
-            <a href="#none">회사소개서</a>|<a href="#none" id="toggleMap">오시는 길</a>|<a href="#none">문의하기</a>|<a
-                href="#none"
-                ><span class="strong">개인정보취급방침</span></a
-            >
+            <a href="#none" onclick="alert('준비중입니다.'); event.preventDefault();">회사소개서</a>|
+            <a href="#none" id="toggleMap">오시는 길</a>|
+            <a
+                href="mailto:hk.jung@magnumbridge.co.kr?subject=문의 제목&body=안녕하세요,%0D%0A문의 내용을 적어주세요.%0D%0A%0D%0A감사합니다."
+                >문의하기</a
+            >|
+            <a href="privacy_policy.html">
+                <span class="strong">개인정보취급방침</span>
+            </a>
         </p>
     </article>
     <article class="footer_info_2">
@@ -316,6 +321,17 @@
         <p>COPYRIGHT (C) 2025 MAGNUM BRIDGE CO., LTD. ALL RIGHTS RESERVED.</p>
     </article>
 </section>
+<!--Top버튼-->
+<div class="floating-menu">
+    <button
+        type="button"
+        class="btn-floating-top active"
+        id="scrollToTopBtn"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+    >
+        <span>TOP</span>
+    </button>
+</div>
 
 <div class="location_coperate"><!-- 지도 표시할 위치 -->
 <div class="tmap_wrap" id="mapContainer">
@@ -333,10 +349,10 @@
         <ul>
             <li>
                 <p>㈜매그넘브릿지 (MAGNUM BRIDGE Co., Ltd.)</p>
-                <p>T. 02-6941-0828    F. 02-6941-0829</p>
+                <p>T. 02-6941-0828 F. 02-6941-0829</p>
             </li>
             <li>
-                <p>지도보기</p>
+                <a href="https://naver.me/xX72e2Xs" target="_blank"><p>지도보기</p></a>
             </li>
         </ul>
     </div>
@@ -346,6 +362,10 @@
 <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=eXK3n08TZ64hKTzFsRqJsVaGckQctZJaXcsy9hQi"></script>
 <script src="../js/location_coperate.js"></script>
 <script src="../js/nav.js"></script>
+<script src="../js/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </footer>
         </div>
     </body>

@@ -208,3 +208,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+// 버튼 요소를 가져옵니다.
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// 사용자가 페이지를 스크롤할 때마다 이 함수가 실행됩니다.
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+}
