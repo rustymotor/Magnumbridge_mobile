@@ -62,6 +62,36 @@ a:visited {
 }
 
 // han 작업
+.floating-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    z-index: 101;
+
+    & .btn-floating-top {
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 100%;
+        display: none;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        background: #212529 url(/images/btn_top.png) no-repeat 50% 50% / 16px auto;
+        & span{
+            overflow: hidden;
+            font-size: 0;
+            text-indent: -9999px;
+        }
+        &.active {    
+            display: block;
+        }
+    }
+}
+
 button.btn_darkgray {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.6) 100%);
     border: 1px solid white;
@@ -210,73 +240,13 @@ ul li.type-dotg {
     margin-top: 4rem;
 }
 
-/* Company_partner */
 .fullback {
     width: 100%;
     height: 100%;
 
     & > .pad-10 {
         padding: 10rem 0;
-    }
-
-    &.itservice {
-        background: url("/images/business/bg_service.png") right top;
-        background-size: cover;
-        box-sizing: border-box;
-        height: 38rem;
-        padding: 7rem 0;
-        @media (max-width: 690px) {
-            padding: 6rem 3rem;
-        }
-    }
-
-    &.package {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-            url("/images/business/bg_package.png");
-        background-size: cover;
-        padding: 10rem 0;
-        height: 65rem;
-        box-sizing: border-box;
-        @media (max-width: 690px) {
-            padding: 6rem 3rem;
-        }
-        & div.circleline_red {
-            margin: 0 4rem;
-            font-size: 3rem;
-            font-family: "Pretendard-Semibold";
-            line-height: 160%;
-        }
-    }
-    
-    &.gradation_gray {
-        background: linear-gradient(to left, #dddddd 0%, #dddddd 15%, #888888 90%);
-        padding: 3rem 0;
-        height: 90rem;
-        box-sizing: border-box;
-        & .gra_topline {
-            background: linear-gradient(to left, white 0%, #cccccc 100%);
-            margin-top: 7rem;
-            height: 1px;
-        }
-        & .summary_company {
-            padding: 7rem 0;
-        }
-    }
-    & > .devops {
-        background: url("/images/business/img_devops.png") no-repeat center bottom;
-        height: 48rem;
-        margin-bottom: 8rem;
-        box-sizing: border-box;
-        @media (max-width: 690px) {
-            padding: 6rem 3rem;
-        }
-        & .img_devops {
-            display: flex;
-            justify-content: space-between;
-            width: 45rem;
-            margin-top: 12rem;
-        }
-    }
+    }     
     
 }
 
@@ -520,12 +490,21 @@ div > ul > li ul > li {
             width: 100%;
             padding: 5rem 0;
             max-width: 40rem;
-            flex-direction: column;
+            flex-direction: column;            
             display: flex;
+            
             justify-content: flex-start;
             align-items: center;
             &:not(:last-child) {
                 margin-right: 3rem;
+            }
+            &:not(.bg_line){
+                border: 1px solid transparent;
+            }
+            &:hover{
+                border: 1px solid $gray100;
+                background-color: rgba(220, 220, 220, 0.2);
+                box-shadow: 0 1px 1px rgba(220, 220, 220, 0.08);
             }
         }
 
@@ -546,6 +525,9 @@ div > ul > li ul > li {
             margin: 2rem 0;
             font-family: "Lexend-bold";
         }
+        & span.sub_txt{
+            flex: 1 1 100px;
+        }
 
         & .bottom_txt {
             // IT서비스 > SI/sm
@@ -553,6 +535,7 @@ div > ul > li ul > li {
             margin-top: 4rem;
         }
     }
+    //최대 넓이 1012용
     & .type4 {
         display: flex;
         flex-direction: row;
@@ -588,7 +571,7 @@ div > ul > li ul > li {
         }
 
         & .body_txt {
-            min-height: 9.6rem;
+            min-height: 9.6rem;            
         }
         & .bottomline {
             border-top: 1px solid $gray200;

@@ -202,7 +202,7 @@ main {
     z-index: 1;
     // height: 88rem;
     background: url("/images/vusual_top_bussiness_1.jpg") no-repeat center center;
-    background-size: 100% auto;
+    background-size: cover;
     box-sizing: border-box;
     .visual_gradient {
         position: absolute;
@@ -311,49 +311,49 @@ main {
     position: relative;
     z-index: 1;
     height: 58rem; //J수정 59.6 -> 58 ->
-    background-size: 100% auto;
+    background-size: cover;
     box-sizing: border-box;
     &.company_1 {
         background: url("/images/visual_top_company_1.jpg") no-repeat center center;
-        background-size: 100% auto;
+        background-size: cover;
     }
     &.company_2 {
         background: url("/images/visual_top_company_2.jpg") no-repeat center center;
-        background-size: 100% auto;
+        background-size: cover;
     }
     &.company_3 {
         background: url("/images/visual_top_company_3.jpg") no-repeat center center;
-        background-size: 100% auto;
+        background-size: cover;
     }
     &.company_4 {
         background: url("/images/visual_top_company_4.jpg") no-repeat center center;
-        background-size: 100% auto;
+        background-size: cover;
     }
 
     &.business_1 {
         background: url("/images/visual_top_business_1.jpg") no-repeat center center;
-        background-size: 100% auto;
+        background-size: cover;
     }
     &.business_2 {
         background: url("/images/visual_top_business_2.jpg") no-repeat center center;
-        background-size: 100% auto;
+        background-size: cover;
     }
     &.business_3 {
         background: url("/images/visual_top_business_3.jpg") no-repeat center center;
-        background-size: 100% auto;
+        background-size: cover;
     }
     &.business_4 {
         background: url("/images/visual_top_business_4.jpg") no-repeat center center;
-        background-size: 100% auto;
+        background-size: cover;
     }
 
     &.recruit_1 {
         background: url("/images/visual_top_recruit_1.jpg") no-repeat center center;
-        background-size: 100% auto;
+        background-size: cover;
     }
     &.recruit_2 {
         background: url("/images/visual_top_recruit_2.jpg") no-repeat center center;
-        background-size: 100% auto;
+        background-size: cover;
     }
     
 }

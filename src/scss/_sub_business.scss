@@ -491,3 +491,49 @@ section.products{
         }
     }
 }
+.fullback {
+    & > .devops {
+        background: url("/images/business/img_devops.png") no-repeat center bottom;
+        height: 48rem;
+        margin-bottom: 8rem;
+        box-sizing: border-box;
+        @media (max-width: 690px) {
+            padding: 6rem 3rem;
+        }
+        & .img_devops {
+            display: flex;
+            justify-content: space-between;
+            width: 45rem;
+            margin-top: 12rem;
+        }
+    }
+    &.itservice {
+        background: url("/images/business/bg_service.png") right top;
+        background-size: cover;
+        box-sizing: border-box;
+        height: 38rem;
+        padding: 7rem 0;
+        @media (max-width: 690px) {
+            padding: 6rem 3rem;
+        }
+    }
+
+    &.package {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url("/images/business/bg_package.png");
+        background-size: cover;
+        padding: 10rem 0;
+        height: 65rem;
+        box-sizing: border-box;
+        @media (max-width: 690px) {
+            padding: 6rem 3rem;
+        }
+        & div.circleline_red {
+            margin: 0 4rem;
+            font-size: 3rem;
+            font-family: "Pretendard-Semibold";
+            line-height: 160%;
+        }
+    }
+}
+
