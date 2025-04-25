@@ -53,6 +53,7 @@
 
                     &:hover {
                         box-shadow: 6px 6px 0 common.$mainColor;
+                        background-size: scale(1.1);                        
                     }
                 }
                 &:nth-of-type(2) {

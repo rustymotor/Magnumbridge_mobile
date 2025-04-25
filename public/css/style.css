@@ -53,7 +53,7 @@ a:visited {
   width: 48px;
   height: 48px;
   cursor: pointer;
-  background: #212529 url("../images/btn_top.png") no-repeat 50% 50%/16px auto;
+  background: #212529 url(/images/btn_top.png) no-repeat 50% 50%/16px auto;
 }
 .floating-menu .btn-floating-top span {
   overflow: hidden;
@@ -350,7 +350,7 @@ ul li.type-dotg::before {
 
 /* Company_History */
 .fullback.history {
-  background: url("../images/company/bg_history.jpg") left top;
+  background: url("/images/company/bg_history.jpg") left top;
   background-size: cover;
   box-sizing: border-box;
   padding: 10rem;
@@ -729,7 +729,7 @@ main {
   display: block;
   position: relative;
   z-index: 1;
-  background: url("../images/vusual_top_bussiness_1.jpg") no-repeat center center;
+  background: url("/images/vusual_top_bussiness_1.jpg") no-repeat center center;
   background-size: cover;
   box-sizing: border-box;
 }
@@ -838,43 +838,43 @@ main {
   box-sizing: border-box;
 }
 .spacer_top_visual.company_1 {
-  background: url("../images/visual_top_company_1.jpg") no-repeat center center;
+  background: url("/images/visual_top_company_1.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.company_2 {
-  background: url("../images/visual_top_company_2.jpg") no-repeat center center;
+  background: url("/images/visual_top_company_2.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.company_3 {
-  background: url("../images/visual_top_company_3.jpg") no-repeat center center;
+  background: url("/images/visual_top_company_3.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.company_4 {
-  background: url("../images/visual_top_company_4.jpg") no-repeat center center;
+  background: url("/images/visual_top_company_4.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.business_1 {
-  background: url("../images/visual_top_business_1.jpg") no-repeat center center;
+  background: url("/images/visual_top_business_1.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.business_2 {
-  background: url("../images/visual_top_business_2.jpg") no-repeat center center;
+  background: url("/images/visual_top_business_2.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.business_3 {
-  background: url("../images/visual_top_business_3.jpg") no-repeat center center;
+  background: url("/images/visual_top_business_3.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.business_4 {
-  background: url("../images/visual_top_business_4.jpg") no-repeat center center;
+  background: url("/images/visual_top_business_4.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.recruit_1 {
-  background: url("../images/visual_top_recruit_1.jpg") no-repeat center center;
+  background: url("/images/visual_top_recruit_1.jpg") no-repeat center center;
   background-size: cover;
 }
 .spacer_top_visual.recruit_2 {
-  background: url("../images/visual_top_recruit_2.jpg") no-repeat center center;
+  background: url("/images/visual_top_recruit_2.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -1024,7 +1024,7 @@ main {
   height: 21rem;
   background-color: #d2282f;
   border-radius: 20px;
-  background: url("../images/main/map.jpg") center no-repeat;
+  background: url(/images/main/map.jpg) center no-repeat;
   background-size: cover;
   padding-top: 30px;
   margin-bottom: 20px;
@@ -1075,7 +1075,7 @@ main {
 .tmap_wrap ul li:nth-of-type(2) {
   width: 80px;
   height: 80px;
-  background: url("../images/main/watch_map.svg");
+  background: url(/images/main/watch_map.svg);
 }
 .tmap_wrap ul li:nth-of-type(2) p {
   color: #fff;
@@ -1094,13 +1094,13 @@ main {
 }
 
 .container.business .slider.slider_forward .slide:nth-of-type(3n-2) {
-  background: url("../images/business/logo/logo_git.png") center no-repeat;
+  background: url(/images/business/logo/logo_git.png) center no-repeat;
 }
 .container.business .slider.slider_forward .slide:nth-of-type(3n-1) {
-  background: url("../images/business/logo/logo_jenkins.png") center no-repeat;
+  background: url(/images/business/logo/logo_jenkins.png) center no-repeat;
 }
 .container.business .slider.slider_forward .slide:nth-of-type(3n) {
-  background: url("../images/business/logo/logo_mq.png") center no-repeat;
+  background: url(/images/business/logo/logo_mq.png) center no-repeat;
 }
 
 .logogray {
@@ -1111,7 +1111,7 @@ main {
 }
 
 .solution {
-  background: url("../images/business/bg_solution.png") no-repeat;
+  background: url("/images/business/bg_solution.png") no-repeat;
   width: 128rem;
   height: 42rem;
   padding-left: 12rem;
@@ -1147,7 +1147,7 @@ section.product_set ul.image {
   margin-top: 81px;
   padding: 0 0 30px 62px;
   color: #fff;
-  background: url("../images/main/product_set.svg") center no-repeat;
+  background: url(/images/business/product_set.svg) center no-repeat;
 }
 section.product_set ul.image li {
   display: flex;
@@ -1163,22 +1163,19 @@ section.product_set ul.image li {
 }
 section.product_set ul.image li span {
   color: #fff;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Pretendard-Semibold";
   line-height: 1.6;
   margin-bottom: 0.4rem;
 }
 section.product_set ul.image li p {
   position: relative;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 2.8rem;
+  font-family: "Pretendard-bold";
   line-height: 1.6;
   margin-bottom: 2.1rem;
 }
 section.product_set ul.image li dl {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
 }
@@ -1203,16 +1200,22 @@ section.product_set ul.image li:nth-of-type(3):before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/main/product_set_3.svg") center no-repeat;
+  background: url(/images/business/product_set_3.svg) center no-repeat;
 }
 section.product_set ul.image li:nth-of-type(3) span {
-  color: #000;
+  font-size: 2rem;
+  font-family: "Pretendard-Semibold";
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 0.4rem;
+  color: black;
 }
 section.product_set ul.image li:nth-of-type(3) p {
   margin-bottom: 41px;
 }
 section.product_set ul.image li:nth-of-type(3) dl {
   color: rgba(0, 0, 0, 0.7);
+  font-size: 1.6rem;
 }
 section.product_set ul.graphic_txt {
   display: flex;
@@ -1248,7 +1251,7 @@ section.product_set ul.graphic_txt li:nth-of-type(3) span {
 }
 section.product_set img {
   margin-top: 28px;
-  width: 1075px;
+  width: 1180px;
 }
 
 .container section.product_function {
@@ -1279,7 +1282,7 @@ section.product_set img {
   border-top: 2px solid #807f7f;
 }
 .container section.product_function table tr:nth-of-type(n+3) {
-  background: url("../images/main/table_line.svg") top no-repeat;
+  background: url(/images/business/table_line.svg) top no-repeat;
 }
 .container section.product_function table tr:nth-of-type(1) th:nth-of-type(1) {
   width: 586px;
@@ -1374,7 +1377,7 @@ section.products ul li {
 section.products ul li img {
   width: 676px;
   height: 414px;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 section.products ul li dl {
   display: flex;
@@ -1404,15 +1407,15 @@ section.products .repository ul {
   gap: 80px;
   width: 1280px;
   height: 521px;
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: #191919;
 }
 section.products .repository ul li img {
   width: 400px;
-  height: 374px;
+  height: 420px;
 }
 section.products .repository ul li dl {
-  width: 674px;
+  width: 69rem;
   height: 384px;
   color: #fff;
   gap: 0;
@@ -1421,7 +1424,7 @@ section.products .repository ul li dl {
 section.products .repository ul li dl dt, section.products .repository ul li dl dd {
   position: relative;
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 200%;
 }
 section.products .repository ul li dl dd:before, section.products .repository ul li dl dt:before {
   position: absolute;
@@ -1439,7 +1442,7 @@ section.products .security ul {
   justify-content: center;
   align-items: center;
   gap: 52px;
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: #f2f2f2;
 }
 section.products .security ul dl {
@@ -1461,7 +1464,7 @@ section.products .security ul img {
   align-items: center;
 }
 .list .fullbg_darkgray .si {
-  background: url("../images/business/img_si.png") no-repeat;
+  background: url("/images/business/img_si.png") no-repeat;
   background-position-x: right;
   background-position-y: bottom;
   border-radius: 2rem;
@@ -1477,7 +1480,7 @@ section.products .security ul img {
   align-items: center;
 }
 .list .fullbg_red .sm {
-  background: url("../images/business/img_sm.png") no-repeat;
+  background: url("/images/business/img_sm.png") no-repeat;
   background-position-x: left;
   background-position-y: bottom;
   border-radius: 2rem;
@@ -1525,21 +1528,21 @@ section.products .security ul img {
   padding: 5rem 4rem;
 }
 .list .fullbg_gray .all4block > div.block01 {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/business/block_img01.png");
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("/images/business/block_img01.png");
   background-size: cover;
   background-position-y: top;
   width: 31%;
   height: 38rem;
 }
 .list .fullbg_gray .all4block > div.block02 {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/business/block_img02.png");
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("/images/business/block_img02.png");
   background-size: cover;
   background-position-y: top;
   width: 31%;
   height: 38rem;
 }
 .list .fullbg_gray .all4block > div.block03 {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/business/block_img03.png");
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("/images/business/block_img03.png");
   background-size: cover;
   background-position-y: top;
   width: 31%;
@@ -1553,7 +1556,7 @@ section.products .security ul img {
 }
 
 .fullback > .devops {
-  background: url("../images/business/img_devops.png") no-repeat center bottom;
+  background: url("/images/business/img_devops.png") no-repeat center bottom;
   height: 48rem;
   margin-bottom: 8rem;
   box-sizing: border-box;
@@ -1570,7 +1573,7 @@ section.products .security ul img {
   margin-top: 12rem;
 }
 .fullback.itservice {
-  background: url("../images/business/bg_service.png") right top;
+  background: url("/images/business/bg_service.png") right top;
   background-size: cover;
   box-sizing: border-box;
   height: 38rem;
@@ -1582,7 +1585,7 @@ section.products .security ul img {
   }
 }
 .fullback.package {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/business/bg_package.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/business/bg_package.png");
   background-size: cover;
   padding: 10rem 0;
   height: 65rem;
@@ -1615,7 +1618,7 @@ section.products .security ul img {
   padding: 7rem 0;
 }
 .fullback.partner {
-  background: url("../images/company/bg_partner.jpg") left top;
+  background: url("/images/company/bg_partner.jpg") left top;
   background-size: cover;
   box-sizing: border-box;
   padding: 10rem 0;
@@ -1626,7 +1629,7 @@ section.products .security ul img {
   }
 }
 .fullback.certification {
-  background-image: linear-gradient(rgba(41, 44, 57, 0.8), rgba(41, 44, 62, 0.8)), url("../images/company/bg_certification.jpg");
+  background-image: linear-gradient(rgba(41, 44, 57, 0.8), rgba(41, 44, 62, 0.8)), url("/images/company/bg_certification.jpg");
   background-size: cover;
   padding: 10rem 0;
   height: 60rem;
@@ -1644,7 +1647,7 @@ section.products .security ul img {
   top: 8rem;
 }
 .fullback.organization {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/company/bg_organization.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/company/bg_organization.png");
   background-size: cover;
   padding: 10rem 0;
   height: 78rem;
@@ -1672,7 +1675,7 @@ section.products .security ul img {
   -webkit-background-clip: text;
 }
 .fullback > .strategy {
-  background: url("../images/company/back_logo.png") no-repeat center center;
+  background: url("/images/company/back_logo.png") no-repeat center center;
   background-size: contain;
   height: 89rem;
   box-sizing: border-box;
@@ -1683,7 +1686,7 @@ section.products .security ul img {
   }
 }
 .fullback > .strategy .img_certification {
-  background: url("../images/company/img_strategy.png") no-repeat center center;
+  background: url("/images/company/img_strategy.png") no-repeat center center;
   height: 100%;
   background-position-y: 22rem;
 }
@@ -1717,7 +1720,7 @@ section.products .security ul img {
 
 /* Vision */
 .vision_circle {
-  background: url("../images/company/circle_magnum.png") left top;
+  background: url("/images/company/circle_magnum.png") left top;
   width: 38rem;
   height: 38rem;
   text-align: center;
@@ -1727,6 +1730,48 @@ section.products .security ul img {
   margin-top: 1rem;
 }
 
+.list {
+  /* Aboud 상단 */
+}
+.list.summary_num {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  line-height: 200%;
+  color: #dddddd;
+}
+.list.summary_num > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 2rem;
+  padding: 3rem;
+  box-sizing: border-box;
+  text-align: right;
+}
+.list.summary_num > div.founding {
+  background-image: url("/images/company/img_about01.png");
+  background-size: cover;
+}
+.list.summary_num > div.growth {
+  background-image: url("/images/company/img_about02.png");
+  background-size: cover;
+}
+.list.summary_num > div.capavillity {
+  background-image: url("/images/company/img_about03.png");
+  background-size: cover;
+}
+.list.summary_num > div.revenue {
+  background-image: url("/images/company/img_about04.png");
+  background-size: cover;
+}
+.list.summary_num > div .fs50 {
+  font-family: "Pretendard-bold";
+  font-size: 5rem;
+}
 .list .logo_line {
   border: 1px solid #8f8f8f;
   border-radius: 8px;
@@ -1735,7 +1780,7 @@ section.products .security ul img {
   text-align: center;
 }
 .list .fullbg_gray .building {
-  background: url("../images/company/backimg_building.png") no-repeat;
+  background: url("/images/company/backimg_building.png") no-repeat;
   width: 80rem;
   background-position-y: bottom;
   padding-bottom: 6rem;
@@ -1787,7 +1832,7 @@ section.products .security ul img {
   justify-content: center;
 }
 .fullbg_black .ideal {
-  background: url("../images/recruit/graph.png") no-repeat center bottom;
+  background: url("/images/recruit/graph.png") no-repeat center bottom;
   width: 1280px;
   background-position-x: 520px;
   height: 78rem;
@@ -1796,7 +1841,7 @@ section.products .security ul img {
 
 .list .employee {
   width: 1280px;
-  background: url("../images/recruit/employee_back.png") no-repeat center bottom;
+  background: url("/images/recruit/employee_back.png") no-repeat center bottom;
   padding: 0;
   height: 70rem;
   display: flex;
@@ -1850,7 +1895,7 @@ section.products .security ul img {
 }
 .fullbg_gra_black .position {
   width: 35%;
-  background: url("../images/recruit/text.png") no-repeat right center;
+  background: url("/images/recruit/text.png") no-repeat right center;
   padding: 0;
   background-position-x: 37rem;
   height: 114rem;
@@ -1944,16 +1989,17 @@ section.products .security ul img {
   overflow: hidden;
 }
 .container.main section.company ul li:nth-of-type(1) {
-  background: url("../images/main/company_overview_1.jpg") center no-repeat;
+  background: url(/images/main/company_overview_1.jpg) center no-repeat;
   background-size: cover;
   border-radius: 0 0 60px 0;
   top: -7rem;
 }
 .container.main section.company ul li:nth-of-type(1):hover {
   box-shadow: 6px 6px 0 #d2282f;
+  background-size: scale(1.1);
 }
 .container.main section.company ul li:nth-of-type(2) {
-  background: url("../images/main/company_overview_2.jpg") center no-repeat;
+  background: url(/images/main/company_overview_2.jpg) center no-repeat;
   background-size: cover;
   border-radius: 0 0 0 60px;
 }
@@ -1961,7 +2007,7 @@ section.products .security ul img {
   box-shadow: 6px 6px 0 #d2282f;
 }
 .container.main section.company ul li:nth-of-type(3) {
-  background: url("../images/main/company_overview_3.jpg") center no-repeat;
+  background: url(/images/main/company_overview_3.jpg) center no-repeat;
   background-size: cover;
   border-radius: 0 60px 0 0;
   top: -7rem;
@@ -1970,7 +2016,7 @@ section.products .security ul img {
   box-shadow: 6px 6px 0 #d2282f;
 }
 .container.main section.company ul li:nth-of-type(4) {
-  background: url("../images/main/company_overview_4.jpg") center no-repeat;
+  background: url(/images/main/company_overview_4.jpg) center no-repeat;
   background-size: cover;
   border-radius: 60px 0 0 0;
 }
@@ -1986,7 +2032,7 @@ section.products .security ul img {
   margin-top: 340px;
   width: 300px;
   height: 80px;
-  background: url("../images/main/company_opacity.svg");
+  background: url(/images/main/company_opacity.svg);
   opacity: 1;
   transition: opacity 0.2s ease;
 }
@@ -2602,7 +2648,7 @@ span.strong {
   height: 30px;
   top: 0;
   left: 0;
-  background: url("../images/main/arrow.svg") center no-repeat;
+  background: url(/images/main/arrow.svg) center no-repeat;
 }
 .accordion_contain .card_container .card.is-hovered {
   width: 780px;
@@ -2646,22 +2692,22 @@ span.strong {
   transition: opacity 0.3s;
 }
 .accordion_contain .card_container .card:nth-of-type(1):before {
-  background: url("../images/main/accordion_01.png") no-repeat center/cover;
+  background: url(/images/main/accordion_01.png) no-repeat center/cover;
 }
 .accordion_contain .card_container .card:nth-of-type(2):before {
-  background: url("../images/main/accordion_02.png") no-repeat center/cover;
+  background: url(/images/main/accordion_02.png) no-repeat center/cover;
 }
 .accordion_contain .card_container .card:nth-of-type(3):before {
-  background: url("../images/main/accordion_03.png") no-repeat center/cover;
+  background: url(/images/main/accordion_03.png) no-repeat center/cover;
 }
 .accordion_contain .card_container .card:nth-of-type(4):before {
-  background: url("../images/main/accordion_04.png") no-repeat center/cover;
+  background: url(/images/main/accordion_04.png) no-repeat center/cover;
 }
 .accordion_contain .card_container .card:nth-of-type(5):before {
-  background: url("../images/main/accordion_05.png") no-repeat center/cover;
+  background: url(/images/main/accordion_05.png) no-repeat center/cover;
 }
 .accordion_contain .card_container .card:nth-of-type(6):before {
-  background: url("../images/main/accordion_06.png") no-repeat center/cover;
+  background: url(/images/main/accordion_06.png) no-repeat center/cover;
 }
 
 .accordion_controller button {
@@ -2717,13 +2763,13 @@ span.strong {
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
 }
 .accordion-area .card:nth-of-type(1) {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/business/card_1.png");
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(/images/business/card_1.png);
 }
 .accordion-area .card:nth-of-type(2) {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/business/card_2.png");
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(/images/business/card_2.png);
 }
 .accordion-area .card:nth-of-type(3) {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/business/card_3.png");
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(/images/business/card_3.png);
 }
 .accordion-area .card__summary {
   display: block;
