@@ -117,10 +117,10 @@
                 <p class="subtxt">“매그넘브릿지”와 함께하는 고객과 파트너를 소개합니다.</p>
                 <section class="fullback partner">
                     <div class="box-list-area fc-white">
-                        <div class="list">
+                        <div class="list nomargin">
                             <h3 class="h3 tac">Partner</h3>
                             <div class="type2 mt-10">
-                                <div class="type2">
+                                <div class="type2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                                     <div class="logo_line">
                                         <span class="flex_center"
                                             ><img src="..//images/company/logo_tmax.png"
@@ -139,7 +139,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="type2">
+                                    <div class="type2"data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                                         <div class="logo_line">
                                             <span class="flex_center"
                                                 ><img src="..//images/company/logo_webare.png"
@@ -160,7 +160,7 @@
                                 </div>
                             </div>
                             <div class="type2">
-                                <div class="type2">
+                                <div class="type2"data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                                     <div class="logo_line">
                                         <span class="flex_center"
                                             ><img src="..//images/company/logo_synap.png"
@@ -179,7 +179,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="type2">
+                                    <div class="type2"data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
                                         <div class="logo_line">
                                             <span class="flex_center"
                                                 ><img src="..//images/company/logo_applied.png"
@@ -203,13 +203,11 @@
                     </div>
                 </section>
 
-                <section class="fullback bg_gray">
-                    <div class="pad-10">
-                        <div class="list">
+                <section class="list">
+                    <div class="fullback bg_gray">
+                        <div class="pad-10">
                             <h3 class="h3 tac fc-primary">Customer</h3>
-                        </div>
-                    </div>
-                    <div class="slide_slow"><!-- 정방향 슬라이드 -->
+                            <div class="slide_slow mt-7"><!-- 정방향 슬라이드 -->
 <div class="slider slider_forward">
     <div class="slider-track">
         <div class="slide partnerLogo">
@@ -272,17 +270,19 @@
         <div class="slide partnerLogo">
             <img src="../images/company/logo/hanwha.png" alt="hanwha logo" />
         </div>
-        <div class="slide partnerLogo"><img src="../images/company/logo/nh.png" alt="nh logo" /></div>
+        <div class="slide partnerLogo">
+            <img src="../images/company/logo/nh.png" alt="nh logo" />
+        </div>
         <div class="slide partnerLogo">
             <img src="../images/company/logo/hanwhaa.png" alt="hanwhaa logo" />
-        </div>
-        <div class="slide partnerLogo">
-            <img src="../images/company/logo/skcnc.png" alt="sk logo" />
-        </div>
+        </div>        
     </div>
 </div>
 
 </div>
+                        </div>
+                        
+                    </div>                    
                 </section>
                 <!-- // 컨텐츠 영역 -->
             </main>
@@ -319,10 +319,15 @@
     <article class="footer_info_1">
         <p class="company_name">(주)매그넘브릿지</p>
         <p class="company_link_wrap">
-            <a href="#none">회사소개서</a>|<a href="#none" id="toggleMap">오시는 길</a>|<a href="#none">문의하기</a>|<a
-                href="#none"
-                ><span class="strong">개인정보취급방침</span></a
-            >
+            <a href="#none" onclick="alert('준비중입니다.'); event.preventDefault();">회사소개서</a>|
+            <a href="#none" id="toggleMap">오시는 길</a>|
+            <a
+                href="mailto:hk.jung@magnumbridge.co.kr?subject=문의 제목&body=안녕하세요,%0D%0A문의 내용을 적어주세요.%0D%0A%0D%0A감사합니다."
+                >문의하기</a
+            >|
+            <a href="privacy_policy.html">
+                <span class="strong">개인정보취급방침</span>
+            </a>
         </p>
     </article>
     <article class="footer_info_2">
@@ -334,6 +339,17 @@
         <p>COPYRIGHT (C) 2025 MAGNUM BRIDGE CO., LTD. ALL RIGHTS RESERVED.</p>
     </article>
 </section>
+<!--Top버튼-->
+<div class="floating-menu">
+    <button
+        type="button"
+        class="btn-floating-top active"
+        id="scrollToTopBtn"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+    >
+        <span>TOP</span>
+    </button>
+</div>
 
 <div class="location_coperate"><!-- 지도 표시할 위치 -->
 <div class="tmap_wrap" id="mapContainer">
@@ -351,10 +367,10 @@
         <ul>
             <li>
                 <p>㈜매그넘브릿지 (MAGNUM BRIDGE Co., Ltd.)</p>
-                <p>T. 02-6941-0828    F. 02-6941-0829</p>
+                <p>T. 02-6941-0828 F. 02-6941-0829</p>
             </li>
             <li>
-                <p>지도보기</p>
+                <a href="https://naver.me/xX72e2Xs" target="_blank"><p>지도보기</p></a>
             </li>
         </ul>
     </div>
@@ -364,6 +380,10 @@
 <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=eXK3n08TZ64hKTzFsRqJsVaGckQctZJaXcsy9hQi"></script>
 <script src="../js/location_coperate.js"></script>
 <script src="../js/nav.js"></script>
+<script src="../js/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </footer>
         </div>
         <script src="../js/slideSlow.js"></script>
