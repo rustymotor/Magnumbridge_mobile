@@ -2,6 +2,20 @@
 
 
 .fullback {
+    &.gradation_gray {
+        background: linear-gradient(to left, #dddddd 0%, #dddddd 15%, #888888 90%);
+        padding: 3rem 0;
+        height: 90rem;
+        box-sizing: border-box;
+        & .gra_topline {
+            background: linear-gradient(to left, white 0%, #cccccc 100%);
+            margin-top: 7rem;
+            height: 1px;
+        }
+        & .summary_company {
+            padding: 7rem 0;
+        }
+    }
     &.partner {
         background: url("/images/company/bg_partner.jpg") left top;
         background-size: cover;
@@ -56,50 +70,46 @@
                 -webkit-background-clip: text;
             }
         }
-        & .img_certification {
-            display: flex;
-            justify-content: center;
-            position: relative;
-            top: 8rem;
+    }
+    
+    & > .strategy {
+        background: url("/images/company/back_logo.png") no-repeat center center;
+        background-size: contain;
+        height: 89rem;
+        box-sizing: border-box;
+        @media (max-width: 690px) {
+            padding: 6rem 3rem;
         }
-        & > .strategy {
-            background: url("/images/company/back_logo.png") no-repeat center center;
-            background-size: contain;
-            height: 89rem;
-            box-sizing: border-box;
-            @media (max-width: 690px) {
-                padding: 6rem 3rem;
-            }
-            & .img_certification {
-                background: url("/images/company/img_strategy.png") no-repeat center center;
-                height: 100%;
-                background-position-y: 20rem;
-                & .strategy_box {
-                    max-width: 56rem;
-                    background-color: #fff;
-                    border: 1px solid #eee;
-                    min-width: 32rem;
-                    max-height: 14rem;
-                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-                    line-height: 160%;
-                    border-radius: 20rem;
-                    padding: 2rem 4rem;
-                    font-size: 1.6rem;
-                    margin-top: 3rem;
-                    &.top {
-                        position: relative;
-                        top: -24rem;
-                    }
-                    &.left {
-                        position: relative;
-                        top: 8rem;
-                        left: -32rem;
-                    }
-                    &.right {
-                        position: relative;
-                        top: 8rem;
-                        left: 32rem;
-                    }
+        
+        & .img_certification {
+            background: url("/images/company/img_strategy.png") no-repeat center center;
+            height: 100%;
+            background-position-y: 22rem;
+            & .strategy_box {
+                max-width: 56rem;
+                background-color: #fff;
+                border: 1px solid #eee;
+                min-width: 32rem;
+                max-height: 14rem;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+                line-height: 160%;
+                border-radius: 20rem;
+                padding: 2rem 4rem;
+                font-size: 1.6rem;
+                margin-top: 3rem;
+                &.top {
+                    position: relative;
+                    top: -22rem;
+                }
+                &.left {
+                    position: relative;
+                    top: 10rem;
+                    left: -32rem;
+                }
+                &.right {
+                    position: relative;
+                    top: 10rem;
+                    left: 32rem;
                 }
             }
         }
