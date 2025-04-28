@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const options = {
         animationDuration: 1500,
-        scrollAnimateY: 150
+        scrollAnimateY: 100
     };
 
     const area = document.querySelector(".box-list-area");
@@ -9,67 +9,53 @@ document.addEventListener("DOMContentLoaded", function () {
     let animated = false;
     let lastScrollY = window.scrollY || window.pageYOffset;
 
-    // 원본 저장
+    // 처음에 모든 숫자들을 0으로 설정
     numbers.forEach(el => {
-        el.dataset.originalText = el.innerText.trim();
+        const originalText = el.innerText.trim();
+        // 숫자와 단위 분리
+        const numberMatch = originalText.match(/^([\d,.]+)(.*)$/);
+        if (numberMatch) {
+            el.innerText = "0"; // 숫자는 0으로 초기화
+            el.dataset.originalNumber = numberMatch[1]; // 숫자 부분
+            el.dataset.unit = numberMatch[2]; // 단위 부분
+        }
     });
 
     function animateNumbers() {
         numbers.forEach(el => {
-            const originalText = el.dataset.originalText;
-            const isDateFormat = /^\d{1,2}\.\d{1,2}\.\d{1,2}$/.test(originalText);
+            const numberPart = el.dataset.originalNumber;
+            const unit = el.dataset.unit;
+            const targetNumber = parseFloat(numberPart.replace(/,/g, ""));
+            if (isNaN(targetNumber)) return;
 
-            if (isDateFormat) {
-                const parts = originalText.split(".").map(Number);
-                const startTime = performance.now();
+            const isInteger = Number.isInteger(targetNumber);
+            const startTime = performance.now();
 
-                el.innerText = "0.0.0"; // 초기화
+            // 초기값을 0으로 설정
+            el.innerText = "0" + unit;
 
-                function updateDate(now) {
-                    const elapsed = now - startTime;
-                    const progress = Math.min(elapsed / options.animationDuration, 1);
-                    const currentParts = parts.map(target => Math.floor(progress * target));
+            function updateNumber(now) {
+                const elapsed = now - startTime;
+                const progress = Math.min(elapsed / options.animationDuration, 1);
+                const currentNumber = progress * targetNumber;
 
-                    el.innerText = currentParts.join(".");
-                    if (progress < 1) {
-                        requestAnimationFrame(updateDate);
-                    } else {
-                        el.innerText = parts.join(".");
-                    }
+                // 정수 또는 소수로 표시
+                el.innerText = (isInteger ? Math.floor(currentNumber) : currentNumber.toFixed(1)) + unit;
+                if (progress < 1) {
+                    requestAnimationFrame(updateNumber);
+                } else {
+                    el.innerText = numberPart + unit; // 애니메이션 끝나면 최종값으로 설정
                 }
-
-                requestAnimationFrame(updateDate);
-            } else {
-                const text = originalText.replace(/[^0-9.]/g, "");
-                const unit = originalText.replace(/[0-9.\s]/g, "");
-
-                const targetNumber = parseFloat(text);
-                if (isNaN(targetNumber)) return;
-
-                const startTime = performance.now();
-
-                el.innerText = "0" + unit; // 초기화
-
-                function updateNumber(now) {
-                    const elapsed = now - startTime;
-                    const progress = Math.min(elapsed / options.animationDuration, 1);
-                    const currentNumber = Math.floor(progress * targetNumber);
-                    el.innerText = currentNumber + unit;
-                    if (progress < 1) {
-                        requestAnimationFrame(updateNumber);
-                    } else {
-                        el.innerText = (Number.isInteger(targetNumber) ? targetNumber : targetNumber) + unit;
-                    }
-                }
-
-                requestAnimationFrame(updateNumber);
             }
+
+            requestAnimationFrame(updateNumber);
         });
     }
 
     function handleScroll() {
         const currentScrollY = window.scrollY || window.pageYOffset;
 
+        // 스크롤이 특정 지점에 도달하면 애니메이션 시작
         if (!animated && currentScrollY >= options.scrollAnimateY) {
             animateNumbers();
             animated = true;
