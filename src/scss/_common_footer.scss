@@ -7,6 +7,9 @@
     justify-content: center;
     padding-top: 7rem;
     letter-spacing: 0; //j추가
+    @media (max-width: 1280px) {
+        padding: 7rem 20px 0;
+    }
     .footer_menu {
         display: flex;
         justify-content: space-between;
@@ -15,7 +18,7 @@
         height: calc(28.6rem - 7rem);
         border-bottom: 1px solid common.$gray600; //j수정
         @media (max-width: 1280px) {
-            min-width: 1280px;
+            width: 100%;
         }
         a.active {
             color: common.$mainColor;
@@ -56,6 +59,10 @@
     .footer_info {
         width: 1280px;
         font-family: "Pretendard-Medium"; //j추가
+        @media (max-width: 1280px) {
+            width: 100%;
+            padding: inherit 2rem;
+        }
         article {
             display: flex;
             justify-content: space-between;

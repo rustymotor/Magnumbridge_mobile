@@ -7,6 +7,9 @@ body.is-main {
         position: absolute;
         z-index: 3;
         height: 8rem;
+        @media screen and (max-width: 1280px) {
+            padding: 4px 20px;
+        }
         .gnb {
             li {
                 a {
@@ -62,6 +65,9 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 1280px;
+        @media (max-width: 1280px) {
+            width: 100%;
+        }
     }
     nav {
         &::before {
@@ -113,9 +119,9 @@ header {
                     text-decoration: none;
                     width: 16rem;
                     height: 5rem;
-                    margin: 1.5rem 0;  //J수정 1.4rem -> 1.5rem
+                    margin: 1.5rem 0; //J수정 1.4rem -> 1.5rem
                     font-size: 2rem;
-                    font-family: "Pretendard-Semibold"; // J수정 bold->Semibold 
+                    font-family: "Pretendard-Semibold"; // J수정 bold->Semibold
                 }
                 > a.active {
                     background-color: common.$mainColor;
@@ -166,9 +172,9 @@ header {
                     white-space: nowrap;
                     a {
                         width: initial;
-                        height: 5.8rem;  //j수정 6rem -> 5.8rem
-                        font-size: 1.8rem ;//j추가
-                        color: common.$gray600;  //j추가
+                        height: 5.8rem; //j수정 6rem -> 5.8rem
+                        font-size: 1.8rem; //j추가
+                        color: common.$gray600; //j추가
                         font-family: "Pretendard-Medium"; //j추가
                         margin: 0;
                         padding-left: 3.4em;
@@ -185,7 +191,7 @@ header {
     .logo_header {
         position: absolute;
         z-index: 3;
-        top: 4px;  //j추가
+        top: 4px; //j추가
         //width: 14.2rem;
         //height: 7.2rem;
     }
@@ -240,7 +246,7 @@ main {
         opacity: 1;
         visibility: visible;
         transform: scale(1);
-        box-shadow:  0 1px 15px rgba(50, 50, 50, 0.25);//j추가
+        box-shadow: 0 1px 15px rgba(50, 50, 50, 0.25); //j추가
     }
     opacity: 0;
     visibility: hidden;
@@ -251,7 +257,7 @@ main {
     z-index: 3;
     background-color: white;
     width: 100%;
-    height: 80rem;  //j수정 920px -> 80rem
+    height: 80rem; //j수정 920px -> 80rem
     padding-bottom: 2rem; //j추가
     display: flex;
     justify-content: center;
@@ -262,7 +268,7 @@ main {
         h1 {
             font-family: "lexend-bold";
             color: common.$mainColor;
-            font-size: 4rem;  //j수정 4.8 -> 4
+            font-size: 4rem; //j수정 4.8 -> 4
             text-align: center;
             letter-spacing: -1px; //j수정 -2 -> -1
         }
@@ -280,11 +286,11 @@ main {
                 margin-top: 3rem; //h수정 4.4 -> 3rem
                 p {
                     margin-top: 8rem; //j수정 12.4rem  -> 8rem
-                    margin-bottom: 4rem;//j수정  calc(12.4rem - 6.7rem) -> 4rem
+                    margin-bottom: 4rem; //j수정  calc(12.4rem - 6.7rem) -> 4rem
                     a {
                         font-family: "lexend-semibold";
                         font-size: 2.8rem; //j수정 3.3 -> 2.8rem
-                        color: black;  //j수정 #041118 -> black
+                        color: black; //j수정 #041118 -> black
                     }
                 }
             }
@@ -295,7 +301,7 @@ main {
                         a {
                             font-size: 2.2rem; //j수정 2.6rem -> 2.2rem
                             &:hover {
-                                color:common.$mainColor; //j추가
+                                color: common.$mainColor; //j추가
                             }
                         }
                     }
@@ -355,5 +361,4 @@ main {
         background: url("/images/visual_top_recruit_2.jpg") no-repeat center center;
         background-size: cover;
     }
-    
 }
