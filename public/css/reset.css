@@ -158,6 +158,11 @@ body {
   word-break: break-all; /* 상황 따라 조절 */
   overflow-x: hidden;
 }
+@media (max-width: 1280px) {
+  body {
+    overflow-x: auto;
+  }
+}
 body * {
   box-sizing: border-box;
 }
