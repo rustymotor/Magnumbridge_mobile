@@ -6,19 +6,46 @@
     padding: 8rem 0 10rem 0;
     align-items: center;
 }
-.container.business{
-    .slider.slider_forward{
-        .slide:nth-of-type(3n-2){
-            background: url(/images/business/logo/logo_git.png) center no-repeat;
-        }
-        .slide:nth-of-type(3n-1){
-            background: url(/images/business/logo/logo_jenkins.png) center no-repeat;
-        }
-        .slide:nth-of-type(3n){
-            background: url(/images/business/logo/logo_mq.png) center no-repeat;
-        }
-    }
-}
+// .container.business{
+//     .slider.slider_forward{
+//         .slide:nth-of-type(12n-11){
+//             background: url(/images/business/logo/logo_git.png) center no-repeat;
+//         }
+//         .slide:nth-of-type(12n-10){
+//             background: url(/images/business/logo/logo_jenkins.png) center no-repeat;
+//         }
+//         .slide:nth-of-type(12n-9){
+//             background: url(/images/business/logo/logo_circle_ci.png) center no-repeat;
+//         }
+//         .slide:nth-of-type(12n-8){
+//             background: url(/images/business/logo/logo_mq.png) center no-repeat;
+//         }
+//         .slide:nth-of-type(12n-7){
+//             background: url(/images/business/logo/logo_grafana.png) center no-repeat;
+//         }
+//         .slide:nth-of-type(12n-6){
+//             background: url(/images/business/logo/logo_prometheus.png) center no-repeat;
+//         }
+//         .slide:nth-of-type(12n-5){
+//             background: url(/images/business/logo/logo_tc.png) center no-repeat;
+//         }
+//         .slide:nth-of-type(12n-4){
+//             background: url(/images/business/logo/logo_beats.png) center no-repeat;
+//         }
+//         .slide:nth-of-type(12n-3){
+//             background: url(/images/business/logo/logo_kibana.png) center no-repeat;
+//         }
+//         .slide:nth-of-type(12n-2){
+//             background: url(/images/business/logo/logo_cicd.png) center no-repeat;
+//         }
+//         .slide:nth-of-type(12n-1){
+//             background: url(/images/business/logo/logo_argo.png) center no-repeat;
+//         }   
+//         .slide:nth-of-type(12n){
+//             background: url(/images/business/logo/logo_github.png) center no-repeat;
+//         }     
+//     }
+// }
 .logogray {
     display: flex;
     justify-content: space-around;

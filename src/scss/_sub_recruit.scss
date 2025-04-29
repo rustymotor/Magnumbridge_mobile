@@ -83,9 +83,12 @@
         width: 65%;
         background: linear-gradient(to bottom, #000000 0%, #000000 15%, #333333 95%);
         padding: 8rem 10rem;
-        display: flex;
-        align-content: flex-start;
-        flex-direction: column;
+        display: none;
+        &.active{
+            display: flex;
+            align-content: flex-start;
+            flex-direction: column;            
+        }
         & .topline{
             border-bottom: 1px solid common.$gray500;
             width: 82rem;

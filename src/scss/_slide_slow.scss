@@ -26,37 +26,38 @@
         animation-iteration-count: infinite;
     }
     .slide {
-        &[class*="partnerLogo"] {
-            width: 280px;
-            height: 220px;
-            flex-shrink: 0;
-            background: #ddd;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.4rem;
-            margin-right: 2rem;
-        }
+        // &[class*="partnerLogo"] {
+        //     width: 280px;
+        //     height: 220px;
+        //     flex-shrink: 0;
+        //     background: transparent;
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     font-size: 2.4rem;
+        //     margin-right: 2rem;
+        // }
         &[class*="devLogo"] {
-            width: 120px;
-            height: 60px;
+            width: 28rem;
+            height: 20rem;
             flex-shrink: 0;
-            background: #eee;
+            background: transparent;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 2.4rem;
             margin-right: 2rem;
         }
+        
     }
 }
 
 // 각각 다르게 흐르도록 animation 부여
 .slider_forward .slider-track {
-    animation: scroll-left 80s linear infinite;
+    animation: scroll-left 60s linear infinite;
 }
 .slider_reverse .slider-track {
-    animation: scroll-right 80s linear infinite;
+    animation: scroll-right 60s linear infinite;
 }
 @keyframes scroll-left {
     0% {
