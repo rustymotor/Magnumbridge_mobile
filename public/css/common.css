@@ -551,4 +551,61 @@ ul li.type-dotg::before {
   color: #d2282f;
 }
 
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+  margin-bottom: 24px;
+  width: 100%;
+  color: #444;
+}
+
+thead, .light-content .light-section thead {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+
+.light-content thead, .dark-section thead {
+  background-color: rgb(255, 255, 255);
+}
+
+thead tr, .light-content .light-section thead tr {
+  color: #fff;
+}
+
+.light-content thead tr, .dark-section thead tr {
+  color: #000;
+}
+
+tr, .light-content .light-section tr {
+  color: #444;
+}
+
+.light-content tr, .dark-section tr {
+  color: #CCC;
+}
+
+tr:nth-child(2n), .light-content .light-section tr:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.light-content tr:nth-child(2n), .dark-section tr:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+caption, th, td {
+  font-weight: normal;
+  text-align: left;
+}
+
+th {
+  border-width: 0 1px 1px 0;
+  padding: 10px;
+}
+
+td {
+  border-width: 0 1px 1px 0;
+  padding: 10px;
+}
+
 /*# sourceMappingURL=common.css.map */

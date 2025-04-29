@@ -26,17 +26,17 @@
         animation-iteration-count: infinite;
     }
     .slide {
-        // &[class*="partnerLogo"] {
-        //     width: 280px;
-        //     height: 220px;
-        //     flex-shrink: 0;
-        //     background: transparent;
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: center;
-        //     font-size: 2.4rem;
-        //     margin-right: 2rem;
-        // }
+        &[class*="partnerLogo"] {
+            width: 280px;
+            height: 220px;
+            flex-shrink: 0;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.4rem;
+            margin-right: 2rem;
+        }
         &[class*="devLogo"] {
             width: 28rem;
             height: 20rem;
