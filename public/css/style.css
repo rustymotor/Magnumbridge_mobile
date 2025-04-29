@@ -2907,13 +2907,6 @@ span.strong {
 .slide_slow {
   width: 100%;
 }
-.slide_slow .slider .slide[class*=partnerLogo] {
-  position: relative;
-  width: 360px;
-  height: 180px;
-  background-color: #fff;
-  border-radius: 24px;
-}
 .slide_slow .slider .slide[class*=partnerLogo] img {
   zoom: 0.8;
 }
@@ -2929,6 +2922,19 @@ span.strong {
   width: fit-content;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+.slider .slide[class*=partnerLogo] {
+  border-radius: 24px;
+  background-color: #fff;
+  position: relative;
+  width: 360px;
+  height: 180px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  margin-right: 2rem;
 }
 .slider .slide[class*=devLogo] {
   width: 28rem;
