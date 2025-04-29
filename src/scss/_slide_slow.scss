@@ -22,19 +22,12 @@
     }
     .slide {
         &[class*="partnerLogo"] {
-<<<<<<< HEAD
-            width: 280px;
-            height: 220px;
-            flex-shrink: 0;
-            background: transparent;
-=======
             border-radius: 24px;
             background-color: #fff;
             position: relative;
             width: 360px;
             height: 180px;
             flex-shrink: 0;
->>>>>>> 02bddbc79735b57f46f947a195d2e70b6a681ffb
             display: flex;
             align-items: center;
             justify-content: center;

@@ -53,7 +53,7 @@ a:visited {
   width: 48px;
   height: 48px;
   cursor: pointer;
-  background: #212529 url("../images/btn_top.png") no-repeat 50% 50%/16px auto;
+  background: #212529 url(/images/btn_top.png) no-repeat 50% 50%/16px auto;
 }
 .floating-menu .btn-floating-top span {
   overflow: hidden;
@@ -111,6 +111,10 @@ button.btn_normal.active {
   color: #fff;
   border: 1px solid black;
   background-color: black;
+}
+
+ul.bullet-list li {
+  display: flex;
 }
 
 ul li.type-dot {
@@ -355,7 +359,7 @@ ul li.type-dotg::before {
 
 /* Company_History */
 .fullback.history {
-  background: url("../images/company/bg_history.jpg") left top;
+  background: url("/images/company/bg_history.jpg") left top;
   background-size: cover;
   box-sizing: border-box;
   padding: 10rem;
@@ -551,61 +555,77 @@ ul li.type-dotg::before {
   color: #d2282f;
 }
 
-table {
+.container.privacy {
+  width: 100%;
+  padding: 0 15%;
+}
+.container.privacy .la_tit {
+  font-size: 10rem;
+  line-height: 10rem;
+  color: #222222;
+  font-family: "Pretendard-Bold";
+}
+.container.privacy .la_tit::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  right: -10px;
+  bottom: -10px;
+  width: 16px;
+  height: 16px;
+  background-color: #d2282f;
+  border-radius: 100%;
+}
+.container.privacy .b_copyright {
+  padding-top: 15rem;
+  color: #8f8f8f;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.container.privacy ul .type-Ladot {
+  position: relative;
+  display: block;
+  font-size: 1.8rem;
+  padding-left: 1rem;
+  line-height: 180%;
+}
+.container.privacy ul .type-Ladot:first-child {
+  margin-top: 2rem;
+}
+.container.privacy ul .type-Ladot::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0.3rem;
+  height: 0.3rem;
+  top: 1.5rem;
+  background-color: #525252;
+  border-radius: 50%;
+}
+
+.container.privacy table {
   border-collapse: separate;
   border-spacing: 0;
-  border-width: 1px 0 0 1px;
-  margin-bottom: 24px;
+  margin: 1.2rem 0 2.4rem 0;
   width: 100%;
-  color: #444;
 }
-
-thead, .light-content .light-section thead {
-  background-color: rgb(0, 0, 0);
-  color: #fff;
+.container.privacy table tr {
+  color: #222222;
 }
-
-.light-content thead, .dark-section thead {
-  background-color: rgb(255, 255, 255);
+.container.privacy table th {
+  padding: 6px;
+  text-align: center;
+  background-color: #222222;
+  border-right: 1px solid #8f8f8f;
+  color: white;
 }
-
-thead tr, .light-content .light-section thead tr {
-  color: #fff;
+.container.privacy table td {
+  padding: 6px 20px;
+  border-bottom: 1px solid #dddddd;
 }
-
-.light-content thead tr, .dark-section thead tr {
-  color: #000;
-}
-
-tr, .light-content .light-section tr {
-  color: #444;
-}
-
-.light-content tr, .dark-section tr {
-  color: #CCC;
-}
-
-tr:nth-child(2n), .light-content .light-section tr:nth-child(2n) {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.light-content tr:nth-child(2n), .dark-section tr:nth-child(2n) {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-caption, th, td {
-  font-weight: normal;
-  text-align: left;
-}
-
-th {
-  border-width: 0 1px 1px 0;
-  padding: 10px;
-}
-
-td {
-  border-width: 0 1px 1px 0;
-  padding: 10px;
+.container.privacy table td:first-child {
+  border-right: 1px solid #dddddd;
 }
 
 .pretendard {
@@ -800,7 +820,7 @@ span.strong {
 }
 
 .fs-18 {
-  font-size: 1.8rem;
+  font-size: 1.8rem !important;
   line-height: 180%;
 }
 
