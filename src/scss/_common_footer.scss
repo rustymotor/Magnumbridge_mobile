@@ -14,6 +14,9 @@
         width: 1280px;
         height: calc(28.6rem - 7rem);
         border-bottom: 1px solid common.$gray600; //j수정
+        @media (max-width: 1280px) {
+            min-width: 1280px;
+        }
         a.active {
             color: common.$mainColor;
         }
