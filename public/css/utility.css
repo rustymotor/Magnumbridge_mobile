@@ -195,7 +195,8 @@ ul li.type-dotg::before {
   left: 50%;
   height: 16rem;
   transform: translateX(-50%);
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   color: white;
 }
 .spacer_top_visual h1 p.subtitle {

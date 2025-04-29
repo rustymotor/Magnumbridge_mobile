@@ -195,7 +195,8 @@ ul li.type-dotg::before {
   left: 50%;
   height: 16rem;
   transform: translateX(-50%);
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   color: white;
 }
 .spacer_top_visual h1 p.subtitle {
@@ -958,6 +959,15 @@ main {
 .spacer_top_visual.recruit_2 {
   background: url("/images/visual_top_recruit_2.jpg") no-repeat center center;
   background-size: cover;
+}
+.spacer_top_visual .guide_width {
+  max-width: 1280px;
+}
+@media (max-width: 690px) {
+  .spacer_top_visual .guide_width {
+    width: 100%;
+    padding: 0 5rem;
+  }
 }
 
 #footer {

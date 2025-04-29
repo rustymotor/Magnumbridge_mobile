@@ -355,5 +355,12 @@ main {
         background: url("/images/visual_top_recruit_2.jpg") no-repeat center center;
         background-size: cover;
     }
+    & .guide_width {
+        max-width: 1280px;
+        @media (max-width: 690px) {
+            width: 100%;
+            padding: 0 5rem;
+        }
+    }
     
 }

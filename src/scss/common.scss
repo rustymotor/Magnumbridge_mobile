@@ -222,7 +222,8 @@ ul li.type-dotg {
     left: 50%;
     height: 16rem;
     transform: translateX(-50%);
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     color: white;
     & p.subtitle {
         margin-top: 1.5rem;
