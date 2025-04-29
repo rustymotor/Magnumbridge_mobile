@@ -263,7 +263,8 @@ main {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid common.$gray200;
-
+    padding-left: 2rem;
+    padding-right: 2rem;
     .sitemap_header {
         h1 {
             font-family: "lexend-bold";
