@@ -1455,7 +1455,7 @@ section.product_set ul.graphic_txt li span {
   font-weight: bold;
 }
 section.product_set ul.graphic_txt li span:nth-of-type(1) {
-  color: #8F8F8F;
+  color: #8f8f8f;
 }
 section.product_set ul.graphic_txt li span:before {
   display: inline-block;
@@ -1508,7 +1508,7 @@ section.product_set img {
 .container section.product_function table tr:nth-of-type(2) {
   border-top: 2px solid #807f7f;
 }
-.container section.product_function table tr:nth-of-type(n+3) {
+.container section.product_function table tr:nth-of-type(n + 3) {
   background: url(/images/business/table_line.svg) top no-repeat;
 }
 .container section.product_function table tr:nth-of-type(1) th:nth-of-type(1) {
@@ -1529,7 +1529,7 @@ section.product_set img {
   font-family: "lexend-regular", sans-serif;
 }
 .container section.product_function table tr:nth-of-type(1) th:nth-of-type(2) {
-  color: #807F7F;
+  color: #807f7f;
 }
 .container section.product_function table tr:nth-of-type(1) th:nth-of-type(3) {
   color: #949452;
@@ -1588,7 +1588,7 @@ section.products .title_box span {
   height: 40px;
   line-height: 40px;
   font-weight: 400;
-  color: #807F7F;
+  color: #807f7f;
 }
 @media (max-width: 1280px) {
   section.products {
@@ -1619,7 +1619,8 @@ section.products ul li dl {
   margin-top: 27px;
   gap: 30px;
 }
-section.products ul li dl dt, section.products ul li dl dd {
+section.products ul li dl dt,
+section.products ul li dl dd {
   position: relative;
   font-size: 18px;
 }
