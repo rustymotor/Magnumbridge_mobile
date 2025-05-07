@@ -30,7 +30,7 @@
             <li class="spacer_gnb" aria-hidden="true"></li>
             <li>
                 <a href="business.html">Business</a>
-                <ul class="lnb">
+                <ul class="lnb f_left">
                     <li><a href="business_1.html">Platform & Solution</a></li>
                     <li><a href="business_2.html">Product</a></li>
                     <li><a href="business_3.html">IT Service</a></li>
@@ -47,7 +47,7 @@
             </li>
             <li>
                 <a href="recruit.html">Recruit</a>
-                <ul class="lnb">
+                <ul class="lnb f_right">
                     <li><a href="recruit_1.html">Ideal employee</a></li>
                     <li><a href="recruit_2.html">Recruitment</a></li>
                 </ul>
@@ -105,12 +105,14 @@
 </div>
 </header>
             <div class="spacer_top_visual business_1">
-                <h1 class="h1">
-                    business
-                    <p class="subtitle">We are talking about trust, creativity, and innovation through technology.</p>
-                </h1>
-                <div class="visual_gradient">
-                    <h2 class="h2">Platform & Solution</h2>
+                <div class="guide_width">
+                    <h1 class="h1">
+                        business
+                        <p class="subtitle">We are talking about trust, creativity, and innovation through technology.</p>
+                    </h1>
+                    <div class="visual_gradient">
+                        <h2 class="h2">Platform & Solution</h2>
+                    </div>
                 </div>
             </div>
             <main>
@@ -125,12 +127,11 @@
                 <section class="fullback package fc-white">
                     <h3 class="h3 tac">All4 FRAME + All4 DevOps <span class="fc-red">Package</span></h3>
                     <h5 class="h5 fc-lgray">
-                        풍부한 경험과 전문성으로 바탕으로 고객의 요구사항을 정확하게 이해하고, 최적의 펌웨어 솔루션을
-                        제공합니다.
+                        풍부한 경험과 전문성으로 바탕으로 고객의 요구사항에 유연하게 맞춤형 솔루션을 제공합니다.
                     </h5>
                     <div class="box-list-area">
                         <div class="list">
-                            <div class="flex_center">
+                            <div class="all4package">
                                 <div class="circleline_red flex_middle tac" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">플랫폼<br />공급</div>
                                 <span class="fs-60">+</span>
                                 <div class="circleline_red flex_middle tac" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">컨설팅<br />/구축</div>
@@ -145,18 +146,17 @@
                     <div class="list nomargin">
                         <h3 class="h3 tac fc-primary">All4 FRAME</h3>
                         <h5 class="h5">
-                            “매그넘브릿지”의 All4Frame은 자사 Java 또는 Node.js 기반 솔루션 개발 시 사용할 표준
-                            Framework 를 의미하며,<br />
-                            내부 뿐만 아니라 외부 ITO 사업 분야에서도 유연하게 적용 가능하도록 기능을 제공합니다.
+                            “매그넘브릿지”의 All4Frame은 내부 뿐만 아니라 외부 ITO 사업 분야에서도 <br />
+                            솔루션 개발 시 필요한 각종 모듈/도메인의 프로젝트에 유연하게 적용되는 기능을 제공합니다.
                         </h5>
                         <div class="box-list-area fullbg_gray mt-7" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
                         <!-- 아코디언 -->
                         <div class="accordion-area">
     <div class="card">
-        <div class="card__title-horizontal">GUI</div>
-        <span>Generator GUI</span>
+        <div class="card__title-horizontal">IDE</div>
+        <span>VSCode, Theia, Cursor 지원</span>
         <div class="card__title-vertical">
-            GUI <span><img src="../images/business/card_arrow.svg" alt="card_arrow" /></span>
+            IDE
         </div>
 
         <div class="card__summary">
@@ -168,8 +168,8 @@
             </ul>
         </div>
         <div class="card__detail">
-            <p class="h1">GUI</p>
-            <span>Generator GUI</span>
+            <p class="h1">IDE</p>
+            <span>VSCode, Theia, Cursor 지원</span>
             <div>
                 <ul>
                     <li class="type-dot">RestController Generator</li>
@@ -187,10 +187,10 @@
         </div>
     </div>
     <div class="card">
-        <div class="card__title-horizontal">Console</div>
-        <span>Web Admin Console</span>
+        <div class="card__title-horizontal">Manage</div>
+        <span>프로젝트 환경 중앙 관리</span>
         <div class="card__title-vertical">
-            Console<span><img src="../images/business/card_arrow.svg" alt="card_arrow" /></span>
+            Manage
         </div>
 
         <div class="card__summary">
@@ -202,8 +202,8 @@
             </ul>
         </div>
         <div class="card__detail">
-            <p class="h1">Console</p>
-            <span>Web Admin Console</span>
+            <p class="h1">Manage</p>
+            <span>프로젝트 환경 중앙 관리</span>
             <div>
                 <ul>
                     <li class="type-dot">권한관리</li>
@@ -221,29 +221,38 @@
         </div>
     </div>
     <div class="card">
-        <div class="card__title-horizontal">MSA</div>
-        <span>Monolithic Architecture</span>
+        <div class="card__title-horizontal">Expand</div>
+        <span>프로젝트 환경 중앙 관리</span>
         <div class="card__title-vertical">
-            MSA<span><img src="../images/business/card_arrow.svg" alt="card_arrow" /></span>
+            Expand<!-- <span><img src="../images/business/card_arrow.svg" alt="card_arrow" /></span> -->
         </div>
 
         <div class="card__summary">
             <ul>
-                <li class="type-dot">분산 트랜잭션 관리</li>
-                <li class="type-dot">API GW</li>
+                <li class="type-dot">Security</li>
+                <li class="type-dot">GateWay</li>
+                <li class="type-dot">Automation</li>
+                <li class="type-dot">IoT</li>
+                <li class="type-dot">Ai</li>
             </ul>
         </div>
         <div class="card__detail">
-            <p class="h1">MSA</p>
-            <span>Monolithic Architecture</span>
+            <p class="h1">Expand</p>
+            <span>도메인 특성 및 요건 적용</span>
             <div>
                 <ul>
-                    <li class="type-dot">분산 트랜잭션 관리</li>
-                    <li class="type-dot">API GW</li>
+                    <li class="type-dot">Security</li>
+                    <li class="type-dot">GateWay</li>
+                    <li class="type-dot">Automation</li>
+                    <li class="type-dot">IoT</li>
+                    <li class="type-dot">Ai</li>
                 </ul>
                 <dl>
-                    <dt>SAGA, MQ ..</dt>
-                    <dd>API 버전 관리, 인증/인가..</dd>
+                    <dt>2단계 인증, 전문위변조감지, XSS 방어 </dt>
+                    <dd>API 중앙관리, API 전문변환</dd>
+                    <dd>웹 크롤링, 업로드 자동화</dd>
+                    <dd>Clova, Google Home, SmartThings</dd>
+                    <dd>OpenAI, Azure, Bedrock 등 AI 모델 연동</dd>
                 </dl>
             </div>
         </div>
@@ -259,8 +268,8 @@
                     <div class="list">
                         <h3 class="h3 tac fc-primary">All4 DevOps</h3>
                         <h5 class="h5">
-                            All4 DevOps 는 개발 문화의 일종으로 DevOps 문화를 적용하기 위해 <br />
-                            필요한 제반 기능들을 솔루션화 한 것으로, 다음과 같은 기능을 포함합니다.
+                            All4 DevOps 는 개발과 운영부서가 유기적으로 협업해 더 빠르고 안정적으로 서비스를 제공할 수 있도록<br />
+                            이에 필요한 제반 기능들을 솔루션화 한 것으로, 속도와 안정성의 동시구현이 가능합니다. 
                         </h5>
                     </div>
                     <div class="fullback bg_gray mt-7">
@@ -273,18 +282,7 @@
                         <h5 class="h5 fc-lgray pt-4">
                             엔지니어가 개발과 운영을 전담하여 애플리케이션의 전체 수명 주기에<br />
                             걸쳐 작업하여 주도적 운영을 통한 신속하고 안정적인 비즈니스 성과를 제공합니다.
-                        </h5>
-                        <!-- <div class="all4logo">
-                            <img src="..//images/business/logo/logo_git.png" />
-                            <img src="..//images/business/logo/logo_jenkins.png" />
-                            <img src="..//images/business/logo/logo_mq.png" />
-                            <img src="..//images/business/logo/logo_circle_ci.png" />
-                            <img src="..//images/business/logo/logo_tc.png" />
-                            <img src="..//images/business/logo/logo_argo.png" />
-                            <img src="..//images/business/logo/logo_cicd.png" />
-                            <img src="..//images/business/logo/logo_grafana.png" />
-                            <img src="..//images/business/logo/logo_promrtheis.png" />
-                        </div> -->
+                        </h5>                        
                         <!-- 정방향 슬라이드 -->
                         <div class="slider slider_forward">
     <div class="slider-track">
@@ -334,9 +332,8 @@
                     <div class="list nomargin">
                         <h3 class="h3 tac fc-primary">All4 Solution</h3>
                         <h5 class="h5">
-                            금융/제조/물류/건설/유통/제약 등 핵심 Biz분야 개발 경험을 바탕으로 고객의 요구사항을
-                            정확하게 이해하고, <br />
-                            최적의 펌웨어 솔루션을 제공합니다.
+                            금융/제조/물류/건설/유통/제약 등 핵심  Biz분야 개발 경험을 바탕으로 <br />
+                            고객의 요구사항을 정확하게 이해한 기업솔루션을 제공합니다.
                         </h5>
                         <div class="fullbg_gray nopadding flex_middle mt-7">
                             <div class="solution fc-white flex_middle">
@@ -356,18 +353,17 @@
                                 </div>
                             </div>
                             <div class="solution_block">
-                                <h5 class="h5 fc-lgray pt-4">
-                                    지속적인 제품 개발중에 있으며 계속 확장해 나갈 계획입니다.
+                                <h5 class="h5 tac mt-7">
+                                    "솔루션 개발 시 필요한 각종 모듈이나 각각의 도메인에 맞춰 <span class="fc-primary strong">유연하게 적용</span> 가능합니다"
+
                                 </h5>
                                 <div class="list">
-                                    <div class="type4 mt-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                                    <div class="type4 mt-7" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
                                         <div class="top_red">
                                             <p class="red_tit">All4 <span class="strong">IOT</span></p>
                                             <div class="body_txt">
-                                                AOS, IOS 기반 모바일 <br />어플리케이션 및 관리 콘솔 <Br /><span
-                                                    class="strong"
-                                                    >웹어플리케이션 구축</span
-                                                >
+                                                AOS, IOS 기반 모바일 <br />어플리케이션 및 관리 콘솔 <Br />
+                                                <span class="strong">웹어플리케이션 구축</span>
                                             </div>
                                             <div class="bottomline">
                                                 <h6 class="h6">아파트 홈 오토메이션</h6>
@@ -376,60 +372,55 @@
                                         <div class="top_red">
                                             <p class="red_tit">All4 <span class="strong">QMS</span></p>
                                             <div class="body_txt">
-                                                현장에서의 신속한 대응과 <br />관리 콘솔을 위한 <br /><span
-                                                    class="strong"
-                                                    >웹 어플리케이션 구축사업</span
-                                                >
+                                                현장에서의 신속한 대응과 <br />관리 콘솔을 위한 <br />
+                                                <span class="strong">웹 어플리케이션 구축사업</span>
                                             </div>
                                             <div class="bottomline">
-                                                <h6 class="h6">래미콘 품질관리 모바일 앱 솔루션</h6>
+                                                <h6 class="h6">건설 품질관리 모바일 앱 솔루션</h6>
                                             </div>
                                         </div>
                                         <div class="top_red">
                                             <p class="red_tit">All4 <span class="strong">e-commerce</span></p>
                                             <div class="body_txt">
-                                                <span class="strong">Backend</span> 서비스 구축와 <br /><span
-                                                    class="strong"
-                                                    >React</span
-                                                >
-                                                기반 화면개발
+                                                <span class="strong">Backend</span> 서비스 구축와 <br />
+                                                <span class="strong">React</span>기반 화면개발
                                             </div>
                                             <div class="bottomline">
                                                 <h6 class="h6">식품유통 플랫폼</h6>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="type4 mt-4"data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                                    <div class="type4 mt-4"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                                         <div class="top_red">
-                                            <p class="red_tit">All4 <span class="strong">OOO</span></p>
+                                            <p class="red_tit">All4 <span class="strong">Edu</span></p>
                                             <div class="body_txt">
-                                                <span class="strong">Backend</span> 서비스 구축와 <br /><span
-                                                    class="strong"
-                                                    >Vue</span
-                                                >
-                                                기반 화면개발
+                                                <span class="strong">직원교육 </span> 및 일정관리<br />
+                                                <span class="strong">QR코드 </span>기반의 대출관리
                                             </div>
                                             <div class="bottomline">
                                                 <h6 class="h6">직원 교육관리 솔루션, 서고/도서 관리 솔루션</h6>
                                             </div>
                                         </div>
-                                        <div class="top_gray">
-                                            <p class="red_tit">All4 <span class="strong"></span></p>
-                                            <div class="body_txt flex_middle tac fc-lgray mt-4">
-                                                <div><img src="..//images/business/noimage.png" /></div>
-                                                <div>Comming Soon</div>
+                                        <div class="top_red">
+                                            <p class="red_tit">All4 <span class="strong">Automation</span></p>
+                                            <div class="body_txt">
+                                                RPA 솔루션 도입 없이 <span class="strong">웹자동화</span> 구성<br />
+                                                <span class="strong mg-0">DSL</span>(Domain Specific Language) 기반 동적 작업구성
+                                            </div>
+                                            <div class="bottomline">
+                                                <h6 class="h6">웹 자동화/크롤링 솔루션</h6>
                                             </div>
                                         </div>
                                         <div class="top_gray">
-                                            <p class="red_tit">All4 <span class="strong"></span></p>
+                                            <p class="red_tit"><span class="strong"></span></p>
                                             <div class="body_txt flex_middle tac fc-lgray mt-4">
                                                 <div><img src="..//images/business/noimage.png" /></div>
-                                                <div>Comming Soon</div>
+                                                <div>Expanding..</div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="logogray">
+                                    <!-- <div class="logogray">
                                         <img src="..//images/business/logo/logogray_01.png" />
                                         <img src="..//images/business/logo/logogray_02.png" />
                                         <img src="..//images/business/logo/logogray_01.png" />
@@ -440,7 +431,7 @@
                                         <img src="..//images/business/logo/logogray_01.png" />
                                         <img src="..//images/business/logo/logogray_02.png" />
                                         <img src="..//images/business/logo/logogray_01.png" />
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
