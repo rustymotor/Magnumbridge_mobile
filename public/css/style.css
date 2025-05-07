@@ -913,8 +913,6 @@ main {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #aaaaaa;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 .contain_sitemap.is-active {
   opacity: 1;

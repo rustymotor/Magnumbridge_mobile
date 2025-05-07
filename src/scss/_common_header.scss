@@ -173,11 +173,10 @@ header {
                     padding: 0 2rem 0 20rem;
                 }
 
-                
-                &.f_left{
+                &.f_left {
                     justify-content: flex-start;
                 }
-                &.f_right{
+                &.f_right {
                     justify-content: flex-end;
                 }
                 li {
@@ -277,15 +276,10 @@ main {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid common.$gray200;
-<<<<<<< HEAD
-    padding-left: 2rem;
-    padding-right: 2rem;
-=======
     @media (max-width: 1280px) {
         padding: 0 6rem;
     }
 
->>>>>>> han
     .sitemap_header {
         h1 {
             font-family: "lexend-bold";
