@@ -17,12 +17,16 @@ $transition-duration: 0.5s;
 }
 .accordion_contain {
     margin-top: 70px;
+    overflow: hidden;
 
     .accordion_controller {
         display: flex;
         justify-content: center;
         gap: 24px;
         margin-bottom: 50px;
+        @media (max-width: 1280px) {
+            gap: 12px;
+        }
 
         button {
             width: 150px;
@@ -35,6 +39,9 @@ $transition-duration: 0.5s;
             border: 1px solid #fff;
             cursor: pointer;
             transition: background 0.3s;
+            @media (max-width: 1280px) {
+                width: 142px;
+            }
 
             &:hover {
                 color: #000;
@@ -49,6 +56,9 @@ $transition-duration: 0.5s;
         justify-content: center;
         align-items: center;
         height: $card-height;
+        @media (max-width: 1280px) {
+            width: 100%;
+        }
 
         .card {
             // 기본 설정
@@ -66,6 +76,9 @@ $transition-duration: 0.5s;
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (max-width: 1280px) {
+                display: none;                
+            }
 
             &__title {
                 font-size: 1.5rem;
@@ -140,6 +153,10 @@ $transition-duration: 0.5s;
             }
             &.is-hovered {
                 width: $card-hover-width;
+                display: block;
+                @media (max-width: 1280px) {
+                    width: 92rem !important;                
+                }
 
                 .card__content {
                     display: flex; //J
@@ -187,7 +204,7 @@ $transition-duration: 0.5s;
                 top: 0;
                 left: 0;
                 opacity: 0.4;
-                transition: opacity 0.3s;
+                transition: opacity 0.3s;                
             }
 
             // 이미지 배경 예시

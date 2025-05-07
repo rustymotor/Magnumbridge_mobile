@@ -2,6 +2,8 @@
 
 .slide_slow {
     width: 100%;
+    overflow: hidden; //04.29 추가
+
     .slider .slide[class*="partnerLogo"] {
         & img {
             zoom: 0.8;
@@ -9,7 +11,7 @@
     }
 }
 .slider {
-    // overflow: hidden;
+    overflow: hidden; //04.30 추가
     position: relative;
     &:not(:first-child) {
         margin-top: 2rem;

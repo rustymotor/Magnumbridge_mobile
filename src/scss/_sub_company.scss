@@ -5,7 +5,7 @@
     &.gradation_gray {
         background: linear-gradient(to left, #dddddd 0%, #dddddd 15%, #888888 90%);
         padding: 3rem 0;
-        height: 90rem;
+        height: auto;
         box-sizing: border-box;
         & .gra_topline {
             background: linear-gradient(to left, white 0%, #cccccc 100%);
@@ -41,6 +41,11 @@
             justify-content: center;
             position: relative;
             top: 8rem;
+            @media (max-width: 1280px) {
+                scale: 0.7;
+                transform-origin: center;
+                top: 12rem;
+            }
         }
     }
     &.organization {
@@ -74,17 +79,25 @@
     
     & > .strategy {
         background: url("/images/company/back_logo.png") no-repeat center center;
-        background-size: contain;
+        // background-size: contain;
         height: 89rem;
         box-sizing: border-box;
-        @media (max-width: 690px) {
-            padding: 6rem 3rem;
+        @media (max-width: 1280px) {
+            height: 59rem;
+            background-size: contain;
         }
         
         & .img_certification {
             background: url("/images/company/img_strategy.png") no-repeat center center;
             height: 100%;
+            width: 100%;
+            max-width: 1280px;
             background-position-y: 22rem;
+            @media (max-width: 1280px) {
+                background-size: 40% auto;
+                background-position-y: 12rem;
+            }
+            
             & .strategy_box {
                 max-width: 56rem;
                 background-color: #fff;
@@ -110,6 +123,23 @@
                     position: relative;
                     top: 10rem;
                     left: 32rem;
+                }
+                @media (max-width: 1280px) {
+                    min-width: 30rem;
+                    &.top {
+                        position: relative;
+                        top: -14rem;
+                    }
+                    &.left {
+                        position: relative;
+                        top: 0;
+                        left: -16rem;
+                    }
+                    &.right {
+                        position: relative;
+                        top: 0;
+                        left: 16rem;
+                    }
                 }
             }
         }
@@ -143,7 +173,8 @@
             flex-direction: column;
             justify-content: space-between;
             background-color: black;
-            width: 30rem;
+            max-width: 30rem;
+            width: 24%;
             height: 30rem;
             border-radius: 2rem;
             padding: 3rem;

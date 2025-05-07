@@ -16,11 +16,17 @@
         background-position-x: 520px;
         height: 78rem;
         padding: 15rem 6rem ;
+        @media (max-width: 1280px) {
+            background-size: 440px;
+            height: 64rem;
+            padding: 6rem;
+        }
     }
 }
 
 .list .employee {
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     background: url("/images/recruit/employee_back.png") no-repeat center bottom;
     padding: 0;
     height: 70rem;
@@ -45,7 +51,8 @@
     & .bottomfloor {
         margin-top: 56px;
         display: flex;
-        width: 126rem;
+        width: 100%;
+        max-width: 126rem;
         align-items: center;
         justify-content: space-around;
         & div.circle {
@@ -78,12 +85,19 @@
         background-position-x: 37rem;
         height: 114rem;
         opacity: .7;
+        @media (max-width: 1280px) {
+            width: 0%;
+        }
     }
     & .notice {
         width: 65%;
         background: linear-gradient(to bottom, #000000 0%, #000000 15%, #333333 95%);
         padding: 8rem 10rem;
         display: none;
+
+        @media (max-width: 1280px) {
+            width: 100%;
+        }
         &.active{
             display: flex;
             align-content: flex-start;
@@ -93,6 +107,9 @@
             border-bottom: 1px solid common.$gray500;
             width: 82rem;
             padding: 2rem 0 4rem 0;
+            @media (max-width: 1280px) {
+                width: 100%;    
+            }
         }
         & .notice_body{
             display: flex;
@@ -120,6 +137,12 @@
             border-top: 1px solid common.$gray500;
             width: 82rem;
             padding: 6rem 0 0 0;
+            @media (max-width: 1280px) {
+                width: 100%;    
+                & img{
+                    zoom:.95;
+                }
+            }
         }
     }
 

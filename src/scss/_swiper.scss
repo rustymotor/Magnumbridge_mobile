@@ -1,11 +1,14 @@
 @use "common";
 .swiper {
     width: 100%;
-    height: 100%;
+    height: 100%;    
 }
 .container.main {
     .spacer_top_visual {
         height: 80rem; //j수정 88-> 80rem
+        @media (max-width: 1280px) {
+            height: 60rem; 
+        }
     }
     section:not(.footer_menu) {
         text-align: center;
@@ -39,11 +42,19 @@
             justify-content: center;
             gap: 26px;
             margin-top: 127px;
+            @media (max-width: 1280px) {
+                padding: 0 2rem;   
+                gap: 16px;             
+            }
             li {
                 position: relative;
-                width: 300px;
+                width: 24%;
+                max-width: 300px;
                 height: 420px;
                 overflow: hidden;
+                @media (max-width: 1280px) {
+                    padding: 0 2rem;            
+                }
 
                 &:nth-of-type(1) {
                     background: url(/images/main/company_overview_1.jpg) center no-repeat;
@@ -90,15 +101,19 @@
                     line-height: 6rem;
                     color: #fff;
                     margin-top: 340px;
-                    width: 300px;
                     height: 80px;
                     background: url(/images/main/company_opacity.svg);
                     opacity: 1;
                     transition: opacity 0.2s ease;
+                    @media (max-width: 1280px) {
+                        font-size: 2rem;
+                        background: none;
+                    }
                 }
                 dl {
                     position: absolute;
-                    width: 300px;
+                    width: 100%;
+                    max-width: 300px;
                     height: 420px;
                     top: 0%;
                     left: 0;
@@ -108,6 +123,9 @@
                     text-align: left;
                     opacity: 0;
                     transition: opacity 0.5s ease;
+                    @media (max-width: 1280px) {
+                        padding: 53px 20px;
+                    }
                     dt {
                         font-size: 34px;
                         font-family: "Pretendard-bold";
@@ -116,6 +134,9 @@
                         color: common.$mainColorBright;
                         margin-bottom: 18px;
                         height: 100px;
+                        @media (max-width: 1280px) {
+                            font-size: 3rem;
+                        }
                     }
                     dd {
                         font-size: 16px;
@@ -184,6 +205,10 @@
                 position: relative;
                 top: 23rem; //J 추가
                 margin-left: 320px;
+                @media (max-width: 1280px) {
+                    margin-left: 120px;
+                    top: 18rem; 
+                }
                 strong {
                     font-size: 6rem; //J 수정 7rem -> 6rem;
                     line-height: 84px;
@@ -211,6 +236,9 @@
                     height: 60px;
                     border: 1px solid #d9d9d9;
                     background-color: rgba(0, 0, 0, 0.2);
+                    @media (max-width: 1280px) {
+                        display: none;
+                    }
                     &:hover {
                         //J 추가
                         background-color: white;
@@ -233,8 +261,12 @@
         height: 640px;
         padding-bottom: 140px;
         background-color: #f8f8f8;
+        @media (max-width: 1280px) {
+            padding: 0 2rem 10rem 0 ;
+        }
         .swiper_main_2 {
-            width: 1280px;
+            width: 100%;
+            max-width: 1280px;
             .swiper-wrapper {
                 .visual_main {
                     position: relative;
@@ -260,6 +292,9 @@
                         width: 100%;
                         height: 100%;
                         padding: 120px 0 30px 40px;
+                        @media (max-width: 1280px) {
+                            padding: 120px 0 20px 30px;
+                        }
 
                         img {
                             position: absolute;
