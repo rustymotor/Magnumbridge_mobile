@@ -19,6 +19,9 @@
         border-bottom: 1px solid common.$gray600; //j수정
         @media (max-width: 1280px) {
             width: 100%;
+            & img{
+                zoom:.9;
+            }
         }
         a.active {
             color: common.$mainColor;
@@ -26,6 +29,9 @@
         ul {
             @include common.common_menu; // 공통 스타일
             gap: 0 16.4rem;
+            @media (max-width: 1280px) {
+                gap: 0 12rem;     
+            } 
 
             .h3 {
                 color: #feffff;
@@ -57,7 +63,8 @@
         }
     }
     .footer_info {
-        width: 1280px;
+        max-width: 1280px;
+        width: 100%;
         font-family: "Pretendard-Medium"; //j추가
         @media (max-width: 1280px) {
             width: 100%;
@@ -125,6 +132,9 @@ $padding: 20px;
     overflow: hidden;
     text-align: center;
     box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.1); //j추가
+    @media (max-width: 1280px) {
+        width: 96%;    
+    }
 
     .map_scroll {
         display: block;
@@ -138,7 +148,10 @@ $padding: 20px;
         width: $map-width;
         height: $map-height;
         border-radius: 2rem;
-        padding-top: 0;
+        padding-top: 0; 
+        @media (max-width: 1280px) {
+            width: 860px !important;    
+        }       
     }
     .btn_sitemap_close {
         position: absolute;
@@ -157,7 +170,8 @@ $padding: 20px;
     }
     dl {
         display: block;
-        width: 1280px;
+        width: 100%;
+        max-width: 1280px;
         height: 21rem; //j수정
         background-color: common.$mainColor;
         border-radius: 20px;
@@ -165,6 +179,7 @@ $padding: 20px;
         background-size: cover;
         padding-top: 30px; //j수정
         margin-bottom: 20px; //j수정
+        
         dt {
             font-size: 2.6rem; //J수정
             line-height: 1.4;

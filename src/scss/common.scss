@@ -140,6 +140,10 @@ button.btn_normal {
 }
 
 //추가 25.04.29
+ul li{
+    list-style-type: none;
+}
+
 ul.bullet-list li {
     display: flex;
 }
@@ -188,17 +192,7 @@ ul li.type-dotg {
         border-radius: 50%;
     }
 }
-.circleline_red {
-    position: relative;
-    width: 26rem;
-    height: 26rem;
-    margin: 10px;
-    border: 20px solid transparent;
-    border-radius: 50%;
-    background-image: linear-gradient(#000, #000), linear-gradient(to top, white 0%, $mainColor 30%, $mainColor 100%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-}
+
 .spacer_top_visual .visual_gradient .h2 {
     position: absolute;
     width: 100%;
@@ -222,7 +216,9 @@ ul li.type-dotg {
     left: 50%;
     height: 16rem;
     transform: translateX(-50%);
+    width: 100%;
     max-width: 1280px;
+    padding: 0 2rem;
     width: 100%;
     color: white;
     & p.subtitle {
@@ -260,10 +256,11 @@ ul li.type-dotg {
 }
 
 .list .fullbg_gray {
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     background-color: $bgBase;
     border-radius: 24px;
-    padding: 10rem 0;
+    padding: 10rem 2rem;
     align-items: center;
 
     &.nopadding {
@@ -401,6 +398,26 @@ ul li.type-dotg {
 .container .box-list-area {
     display: flex;
     justify-content: center;
+    //04.29 추가
+    @media (max-width: 1280px) {
+        & span img.rs70{
+            zoom: .7;
+            padding: 0 2rem;
+        }
+
+        & > img.rs50{
+            width: 50%;
+            padding: 0 2rem;
+        }
+    }
+    & div > img.zoom{
+        width: 100%;
+        padding: 0 2rem;
+    }    
+
+    & li > img.zoom{
+        width: 100%;
+    }
 }
 .list .title_dot {
     font-size: 4rem;
@@ -444,6 +461,8 @@ ul li.type-dotg {
 .container .box-list-area > .list {
     width: 100%;
     max-width: 1280px;
+    padding: 0 2rem;
+    padding:0 2rem;
     margin-top: 7rem;
     word-break: keep-all;
     &.nomargin {
@@ -484,6 +503,7 @@ ul li.type-dotg {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        width: 100%;
         max-width: 1280px;
         align-items: stretch;
         margin: 4rem 0m;
@@ -535,6 +555,9 @@ ul li.type-dotg {
             // IT서비스 > SI/sm
             color: $gray500;
             margin-top: 4rem;
+            @media (max-width: 1280px) {
+                display: none;
+            }
         }
     }
     //최대 넓이 1012용
@@ -601,9 +624,13 @@ ul li.type-dotg {
 .container.privacy {
     width: 100%;
     padding: 0 15%;
+    @media (max-width: 1280px) {
+        padding: 0 4rem;
+        zoom: .3;        
+    } 
 
     .la_tit{
-        font-size: 10rem;
+        font-size: 8rem;
         line-height: 10rem;
         color: $gray700;
         font-family: "Pretendard-Bold";
@@ -613,14 +640,17 @@ ul li.type-dotg {
             position: relative;
             right: -10px;
             bottom: -10px;
-            width: 16px;
-            height: 16px;
+            width: 12px;
+            height: 12px;
             background-color: $mainColor;
             border-radius: 100%;
+            @media (max-width: 1280px) {
+                display: none;      
+            } 
         }
     }
     .b_copyright {        
-        padding-top: 15rem;
+        padding-top: 7rem;
         color: $gray300;
         font-size: 1.4rem;
         text-align: center;

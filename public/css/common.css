@@ -53,7 +53,7 @@ a:visited {
   width: 48px;
   height: 48px;
   cursor: pointer;
-  background: #212529 url("../images/btn_top.png") no-repeat 50% 50%/16px auto;
+  background: #212529 url(/images/btn_top.png) no-repeat 50% 50%/16px auto;
 }
 .floating-menu .btn-floating-top span {
   overflow: hidden;
@@ -113,6 +113,10 @@ button.btn_normal.active {
   background-color: black;
 }
 
+ul li {
+  list-style-type: none;
+}
+
 ul.bullet-list li {
   display: flex;
 }
@@ -158,18 +162,6 @@ ul li.type-dotg::before {
   border-radius: 50%;
 }
 
-.circleline_red {
-  position: relative;
-  width: 26rem;
-  height: 26rem;
-  margin: 10px;
-  border: 20px solid transparent;
-  border-radius: 50%;
-  background-image: linear-gradient(#000, #000), linear-gradient(to top, white 0%, #d2282f 30%, #d2282f 100%);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-
 .spacer_top_visual .visual_gradient .h2 {
   position: absolute;
   width: 100%;
@@ -195,7 +187,9 @@ ul li.type-dotg::before {
   left: 50%;
   height: 16rem;
   transform: translateX(-50%);
+  width: 100%;
   max-width: 1280px;
+  padding: 0 2rem;
   width: 100%;
   color: white;
 }
@@ -234,10 +228,11 @@ ul li.type-dotg::before {
 }
 
 .list .fullbg_gray {
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   background-color: #f2f2f2;
   border-radius: 24px;
-  padding: 10rem 0;
+  padding: 10rem 2rem;
   align-items: center;
 }
 .list .fullbg_gray.nopadding {
@@ -360,7 +355,7 @@ ul li.type-dotg::before {
 
 /* Company_History */
 .fullback.history {
-  background: url("../images/company/bg_history.jpg") left top;
+  background: url("/images/company/bg_history.jpg") left top;
   background-size: cover;
   box-sizing: border-box;
   padding: 10rem;
@@ -378,6 +373,23 @@ ul li.type-dotg::before {
 .container .box-list-area {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 1280px) {
+  .container .box-list-area span img.rs70 {
+    zoom: 0.7;
+    padding: 0 2rem;
+  }
+  .container .box-list-area > img.rs50 {
+    width: 50%;
+    padding: 0 2rem;
+  }
+}
+.container .box-list-area div > img.zoom {
+  width: 100%;
+  padding: 0 2rem;
+}
+.container .box-list-area li > img.zoom {
+  width: 100%;
 }
 
 .list .title_dot {
@@ -422,6 +434,8 @@ ul li.type-dotg::before {
 .container .box-list-area > .list {
   width: 100%;
   max-width: 1280px;
+  padding: 0 2rem;
+  padding: 0 2rem;
   margin-top: 7rem;
   word-break: keep-all;
 }
@@ -465,6 +479,7 @@ ul li.type-dotg::before {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  width: 100%;
   max-width: 1280px;
   align-items: stretch;
   margin: 4rem 0m;
@@ -513,6 +528,11 @@ ul li.type-dotg::before {
   color: #525252;
   margin-top: 4rem;
 }
+@media (max-width: 1280px) {
+  .container .box-list-area > .list .type3 .bottom_txt {
+    display: none;
+  }
+}
 .container .box-list-area > .list .type4 {
   display: flex;
   flex-direction: row;
@@ -560,8 +580,14 @@ ul li.type-dotg::before {
   width: 100%;
   padding: 0 15%;
 }
+@media (max-width: 1280px) {
+  .container.privacy {
+    padding: 0 4rem;
+    zoom: 0.3;
+  }
+}
 .container.privacy .la_tit {
-  font-size: 10rem;
+  font-size: 8rem;
   line-height: 10rem;
   color: #222222;
   font-family: "Pretendard-Bold";
@@ -572,13 +598,18 @@ ul li.type-dotg::before {
   position: relative;
   right: -10px;
   bottom: -10px;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   background-color: #d2282f;
   border-radius: 100%;
 }
+@media (max-width: 1280px) {
+  .container.privacy .la_tit::after {
+    display: none;
+  }
+}
 .container.privacy .b_copyright {
-  padding-top: 15rem;
+  padding-top: 7rem;
   color: #8f8f8f;
   font-size: 1.4rem;
   text-align: center;

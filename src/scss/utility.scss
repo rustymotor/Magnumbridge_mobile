@@ -28,7 +28,7 @@ span.strong {
     font-family: "Pretendard-bold";
     margin-left: 5px;
     word-break: keep-all;
-    display: inline-block;
+    // display: inline-block;
 }
 .flex_center {
     display: flex;
@@ -142,8 +142,11 @@ span.strong {
 .mb-4 {
     margin-bottom: 4rem;
 }
-.mt-200 {
-    margin-top: 20rem;
+.mb-10 {
+    margin-bottom: 10rem !important;
+}
+.mt-20 {
+    margin-top: 20rem !important;
 }
 .ml-3 {
     margin-left: 3rem;
