@@ -180,9 +180,9 @@ section.product_set {
                 }
                 p {
                     margin-bottom: 41px;
-                    @media (max-width: 1280px) {
-                        margin: 2px 56px 0 16px;
-                    }
+                    // @media (max-width: 1280px) {
+                    //     margin: 2px 56px 0 16px;
+                    // }
                 }
                 dl {
                     color: rgba(0, 0, 0, 0.7);
@@ -457,7 +457,7 @@ section.products {
         width: 100%;
         max-width: 1280px;
         ul {
-            display: flex;            
+            display: flex;
             //justify-content: center;
             align-items: center;
             //gap: 100px;
