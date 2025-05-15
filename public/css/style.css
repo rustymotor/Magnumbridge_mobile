@@ -383,13 +383,13 @@ ul li.type-dotg::before {
     width: 50%;
     padding: 0 2rem;
   }
+  .container .box-list-area li > img.zoom {
+    width: 100%;
+  }
 }
 .container .box-list-area div > img.zoom {
   width: 100%;
   padding: 0 2rem;
-}
-.container .box-list-area li > img.zoom {
-  width: 100%;
 }
 
 .list .title_dot {
@@ -1610,8 +1610,7 @@ section.products ul li {
   line-height: 1.6;
 }
 section.products ul li img {
-  max-height: 42rem;
-  border-radius: 20px;
+  max-height: 32rem;
 }
 section.products ul li dl {
   display: flex;
@@ -1639,12 +1638,15 @@ section.products ul li dl dd:before, section.products ul li dl dt:before {
     gap: 10px;
   }
 }
+section.products .generator {
+  width: 100%;
+  max-width: 1280px;
+}
 section.products .generator ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
-  padding: 5rem;
+  padding: 5rem 8rem;
   border-radius: 20px;
   background-color: #f2f2f2;
   font-size: 20px;
@@ -1652,15 +1654,17 @@ section.products .generator ul {
   line-height: 1.6;
 }
 section.products .generator ul dl {
-  width: 49rem;
   margin-top: 0;
+}
+section.products .dto {
+  width: 100%;
+  max-width: 1280px;
 }
 section.products .dto ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
-  padding: 5rem;
+  padding: 5rem 8rem;
   border-radius: 20px;
   background-color: #f2f2f2;
   font-size: 20px;
@@ -1671,11 +1675,14 @@ section.products .dto ul dl {
   width: 49rem;
   margin-top: 0;
 }
+section.products .security {
+  width: 100%;
+  max-width: 1280px;
+}
 section.products .security ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
   padding: 5rem;
   border-radius: 20px;
   background-color: #f2f2f2;
@@ -1687,12 +1694,14 @@ section.products .security ul dl {
   width: 49rem;
   margin-top: 0;
 }
+section.products .repository {
+  width: 100%;
+  max-width: 1280px;
+}
 section.products .repository ul {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 100px;
-  padding: 5rem;
+  padding: 5rem 8rem;
   border-radius: 20px;
   color: white;
   background-color: black;
@@ -1781,7 +1790,7 @@ section.products .repository ul dl dd:before, section.products .repository ul dl
 
 .list .fullbg_gra_gray {
   background: linear-gradient(to bottom, #000000 0%, #000000 15%, #454545 90%);
-  height: 70rem;
+  height: 74rem;
   border-radius: 4rem;
 }
 

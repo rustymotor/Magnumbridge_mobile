@@ -362,8 +362,8 @@ section.products {
             line-height: 1.6;
             img {
                 // width:676px;
-                max-height: 42rem;
-                border-radius: 20px;
+                max-height: 32rem;
+                //border-radius: 20px;
             }
             & dl {
                 display: flex;
@@ -393,31 +393,35 @@ section.products {
         }
     }
     .generator {
+        width: 100%;
+        max-width: 1280px;
         ul {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 100px;
-            padding: 5rem;
+            //gap: 100px;
+            padding: 5rem 8rem;
             border-radius: 20px;
             background-color: common.$bgBase;
             font-size: 20px;
             font-family: "Pretendard-Semibold";
             line-height: 1.6;
             dl {
-                width: 49rem;
+                //width: 49rem;
                 margin-top: 0;
             }
         }
     }
 
     .dto {
+        width: 100%;
+        max-width: 1280px;
         ul {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 100px;
-            padding: 5rem;
+            //gap: 100px;
+            padding: 5rem 8rem;
             border-radius: 20px;
             background-color: common.$bgBase;
             font-size: 20px;
@@ -430,11 +434,13 @@ section.products {
         }
     }
     .security {
+        width: 100%;
+        max-width: 1280px;
         ul {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 100px;
+            //gap: 100px;
             padding: 5rem;
             border-radius: 20px;
             background-color: common.$bgBase;
@@ -448,12 +454,14 @@ section.products {
         }
     }
     .repository {
+        width: 100%;
+        max-width: 1280px;
         ul {
-            display: flex;
-            justify-content: center;
+            display: flex;            
+            //justify-content: center;
             align-items: center;
-            gap: 100px;
-            padding: 5rem;
+            //gap: 100px;
+            padding: 5rem 8rem;
             border-radius: 20px;
             color: white;
             background-color: black;
@@ -542,7 +550,7 @@ section.products {
 
 .list .fullbg_gra_gray {
     background: linear-gradient(to bottom, #000000 0%, #000000 15%, #454545 90%);
-    height: 70rem;
+    height: 74rem;
     border-radius: 4rem;
 }
 
