@@ -1424,14 +1424,14 @@ section.product_set ul.image li:nth-of-type(3) span {
   margin-bottom: 0.4rem;
   color: black;
 }
-section.product_set ul.image li:nth-of-type(3) p {
-  margin-bottom: 41px;
-}
-@media (max-width: 1280px) {
-  section.product_set ul.image li:nth-of-type(3) p {
-    margin: 2px 56px 0 16px;
-  }
-}
+/*section.product_set ul.image li:nth-of-type(3) p {*/
+/*  margin-bottom: 41px;*/
+/*}*/
+/*@media (max-width: 1280px) {*/
+/*  section.product_set ul.image li:nth-of-type(3) p {*/
+/*    margin: 2px 56px 0 16px;*/
+/*  }*/
+/*}*/
 section.product_set ul.image li:nth-of-type(3) dl {
   color: rgba(0, 0, 0, 0.7);
   font-size: 1.6rem;
