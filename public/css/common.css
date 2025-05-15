@@ -383,13 +383,13 @@ ul li.type-dotg::before {
     width: 50%;
     padding: 0 2rem;
   }
+  .container .box-list-area li > img.zoom {
+    width: 100%;
+  }
 }
 .container .box-list-area div > img.zoom {
   width: 100%;
   padding: 0 2rem;
-}
-.container .box-list-area li > img.zoom {
-  width: 100%;
 }
 
 .list .title_dot {
