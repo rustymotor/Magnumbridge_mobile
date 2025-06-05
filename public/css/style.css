@@ -2247,7 +2247,7 @@ section.products .repository ul dl dd:before, section.products .repository ul dl
 }
 .fullbg_gra_gray .position {
   width: 35%;
-  background: url("/images/recruit/text.png") no-repeat right center;
+  background: url("../images/recruit/text.png") no-repeat right center;
   padding: 0;
   background-position-x: 37rem;
   height: 114rem;
