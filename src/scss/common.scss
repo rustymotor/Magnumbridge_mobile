@@ -75,6 +75,7 @@ a:visited {
 
     & .btn-floating-top {
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(85, 85, 85, .8);
         border-radius: 100%;
         display: none;
         width: 48px;
@@ -187,23 +188,26 @@ ul li.type-dotg {
         width: 0.3rem;
         height: 0.3rem;
         top: 1rem;
-
         background-color: $gray500;
         border-radius: 50%;
     }
 }
-ol {
-  line-height: 1.8;
-  margin: 0;
-  /* list-style-type: upper-alpha; */
-  padding-inline-start: 1.5em;
-  list-style-position: inside;
+ol.list_num {
+    line-height: 220%;
+    list-style-type: decimal-leading-zero;
+    margin: 0;
+    padding: 0;
+    // list-style-position: inside;
 }
 
-ol li::marker {
-  color: $mainColor;
-  font-size: 0.9em;
-  font-weight: bold;
+ol.list_num li {
+    margin-left: 25px; 
+    padding-left: 0.6rem;
+    &::marker {
+    color: $mainColorBright;
+    font-size: 0.9em;
+    font-weight: bold;
+    }
 }
 .spacer_top_visual .visual_gradient .h2 {
     position: absolute;

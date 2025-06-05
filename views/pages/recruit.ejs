@@ -4,19 +4,202 @@
         <%- include('../partials/head') %>
     </head>
     <body>
-        <div class="container recrurit">
-            <header><%- include('../partials/header') %></header>
-            <div class="spacer_top_visual">
-                <div class="visual_gradient"></div>
+        <div class="container recruit">
+            <header><%- include('../partials/header', { htmlExt: htmlExt }) %></header>
+            <div class="spacer_top_visual recruit_2">
+                <h1 class="h1">
+                    Recruit
+                    <p class="subtitle">We are talking about trust, creativity, and innovation through technology.</p>
+                </h1>
+                <div class="visual_gradient">
+                    <h2 class="h2">Recruitment</h2>
+                </div>
             </div>
             <main>
                 <!-- 컨텐츠 영역 -->
-                <div>
-                    <div>리크루트 내용</div>
-                </div>
+                <p class="subtxt">창의적이고 협력과 소통이 원활한 인재를 상시 모집합니다.</p>
+
+                <section>
+                    <div>
+                        <!-- <h3 class="h3 tac fc-primary">Permanent recruitment</h3> -->
+                        <div class="flex_center mt-7">
+                            <button class="btn_normal active">개발부문</button>
+                            <button class="btn_normal disabled">기획부문</button>
+                        </div>
+                    </div>
+                    <div class="fullbg_gra_gray mt-4">
+                        <div class="position"></div>
+                        <!--noti 1-->
+                        <div class="notice active" id="notice01">
+                            <div class="topline flex_between">
+                                <h4 class="h4">Front-end 개발 경력사원 모집1</h4>
+                                <div class="flex_center ml-3">
+                                    <span class="btn_prev"><img src="<%= basePath %>images/recruit/btn_prev.png" class="mr-1"
+                                    /></span>
+                                    <span class="btn_next cursor"><img src="<%= basePath %>images/recruit/btn_next_on.png" 
+                                    /></span>
+                                </div>
+                            </div>
+                            <div class="mt-7">
+                                <div class="notice_body">
+                                    <div class="tit_point">담당업무</div>
+                                    <div>
+                                        <ul>
+                                            <li class="type-dot">Front-end ECM 기반 컴포넌트 기능 고도화</li>
+                                            <li class="type-dot">Front-end 컴포넌트 ECM 기반 개발</li>
+                                            <li class="type-dot">고객요구사항 분석 / 설계 / 화면개발</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="notice_body">
+                                    <div class="tit_point">자격요건</div>
+                                    <div>
+                                        <ol class="list_num">
+                                            <li>(전문)대학 관련학과 졸업 이상의학력소지자</li>
+                                            <li>Front-end 개발 5년 이상</li>
+                                            <li>웹 표준규격에 대한 이해 (ECMAScript, HTML5, CSS3)</li>
+                                            <li>순수 Javascript 기반 개발 가능자 (DOM API 활용)</li>
+                                            <li>Cross-browsing 이슈 대응 가능자</li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <div class="notice_body">
+                                    <div class="tit_point">우대사항</div>
+                                    <div>
+                                        <ul>
+                                            <li class="type-dot">웹 에디터 개발 경험자</li>
+                                            <li class="type-dot">성능에 민감한 Javascript 어플리케이션 튜닝 경험자</li>
+                                            <li class="type-dot">
+                                                MS-Office 활용에 능숙하거나 문서 작성/편집 기능에 관심이 많은 분
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="notice_body">
+                                    <div class="tit_point">채용절차</div>
+                                    <div class="step flex_middle">
+                                        <span class="fc-red">01</span><span class="strong fs-20">서류심사</span>
+                                    </div>
+                                    <span class="flex_middle mr-2"
+                                        ><img src="<%= basePath %>images/recruit/arrow.png"
+                                    /></span>
+                                    <div class="step flex_middle">
+                                        <span class="fc-red">02</span><span class="strong fs-20">인터뷰</span>
+                                    </div>
+                                    <span class="flex_middle fc-lgray">※ 일정조율 및 협의진행 가능</span>
+                                </div>
+                                <div class="notice_bottom flex_center mt-2">
+                                    <button type="button" onclick="window.location.href='recruit'">바로 지원하기</button>
+                                    <button class="basic ml-3"type="button" onclick="window.location.href='recruit'">문의하기</button>
+                                </div>
+                            </div>                            
+                        </div>    
+                        <!--noti 2-->
+                        <div class="notice" id="notice02">
+                            <div class="topline flex_between">
+                                <h4 class="h4">SW 개발 부문  경력 사원 모집2</h4>
+                                <div class="flex_center ml-3">
+                                    <span class="btn_prev cursor"><img src="<%= basePath %>images/recruit/btn_prev_on.png" class="mr-1"
+                                    /></span>
+                                    <span class="btn_next"><img src="<%= basePath %>images/recruit/btn_next.png"
+                                    /></span>
+                                </div>
+                            </div>
+                            <div class="mt-7">
+                                <div class="notice_body">
+                                    <div class="tit_point">담당업무</div>
+                                    <div>
+                                        <ul>
+                                            <li class="type-dot">솔루션 설계 / 개발</li>
+                                            <li class="type-dot">고객 요구 사항 분석 및 상세 시스템 설계</li>
+                                            <li class="type-dot">고객사 ITO (운영)</li>
+                                            <li class="type-dot">솔루션 기술지원</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="notice_body">
+                                    <div class="tit_point">자격요건</div>
+                                    <div>
+                                        <ol class="list_num">
+                                            <li>(전문)대학 관련학과 졸업 이상의 학력소지자</li>
+                                            <li>경력 6년 이상</li>
+                                            <li>Java, JavaScript 등 개발 언어에 능숙한 자</li>
+                                            <li>FrontEnd 또는 BackEnd 개발을 위한 framework 사용에 능숙한 자 (Vue, React,  Spring)</li>
+                                            <li>1가지 이상의 DBMS 사용에 능숙한 자</li>
+                                            <li>노코드, 로코드 개발 경험자</li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <div class="notice_body">
+                                    <div class="tit_point">우대사항</div>
+                                    <div>
+                                        <ul>
+                                            <li class="type-dot">공통 및 아키텍트 영역 업무 수행 경험자</li>
+                                            <li class="type-dot">프로젝트 PL / PM  업무 수행 경험자</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="notice_body">
+                                    <div class="tit_point">채용절차</div>
+                                    <div class="step flex_middle">
+                                        <span class="fc-red">01</span><span class="strong fs-20">서류심사</span>
+                                    </div>
+                                    <span class="flex_middle mr-2"
+                                        ><img src="<%= basePath %>images/recruit/arrow.png"
+                                    /></span>
+                                    <div class="step flex_middle">
+                                        <span class="fc-red">02</span><span class="strong fs-20">인터뷰</span>
+                                    </div>
+                                    <span class="flex_middle fc-lgray">※ 일정조율 및 협의진행 가능</span>
+                                </div>
+                            </div>
+                            <div class="notice_bottom flex_center mt-2">
+                                <button type="button" onclick="window.location.href='recruit'">바로 지원하기</button>
+                                <button class="basic ml-3"type="button" onclick="window.location.href='recruit'">문의하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- // 컨텐츠 영역 -->
             </main>
             <footer id="footer"><%- include('../partials/footer') %></footer>
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+        $(document).ready(function () {
+            const $notices = $(".notice");
+
+            // 현재 보여지는 공고의 인덱스를 active 클래스로 파악
+            let currentIndex = $notices.index($(".notice.active"));
+
+            function showNotice(index) {
+                $notices.removeClass("active").hide();
+                $notices.eq(index).addClass("active").show();
+            }
+
+            // 초기화
+            $notices.hide().removeClass("active");
+            $notices.eq(currentIndex).show().addClass("active");
+
+            // 다음 버튼 클릭 (notice01 내부에만 존재)
+            $(".btn_next.cursor").click(function () {
+                currentIndex = (currentIndex + 1) % $notices.length;
+                showNotice(currentIndex);
+            });
+
+            // 이전 버튼 클릭 (notice02 내부에만 존재)
+            $(".btn_prev.cursor").click(function () {
+                currentIndex = (currentIndex - 1 + $notices.length) % $notices.length;
+                showNotice(currentIndex);
+            });
+        });
+        </script>
     </body>
 </html>
