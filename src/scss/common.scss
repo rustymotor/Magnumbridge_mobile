@@ -58,7 +58,7 @@ $pretendard_400: "Pretendard-Regular";
     font-size: 1.4rem;
 }
 a:visited {
-    color: black;
+    color: #666;
 }
 
 // han 작업
@@ -192,7 +192,19 @@ ul li.type-dotg {
         border-radius: 50%;
     }
 }
+ol {
+  line-height: 1.8;
+  margin: 0;
+  /* list-style-type: upper-alpha; */
+  padding-inline-start: 1.5em;
+  list-style-position: inside;
+}
 
+ol li::marker {
+  color: $mainColor;
+  font-size: 0.9em;
+  font-weight: bold;
+}
 .spacer_top_visual .visual_gradient .h2 {
     position: absolute;
     width: 100%;
