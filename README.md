@@ -4,6 +4,7 @@
 -   npm run build를 통해 정적 소스코드를 추출할수 있습니다.
 -   npm run start를 통해 ejs환경으로 템플릿 작업을 할수 있습니다.
 -   배포 https://magnum.i234.me
+-   git tag : static ver 1.0
 
 ## CSS
 
