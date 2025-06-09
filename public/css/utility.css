@@ -31,8 +31,12 @@
   font-size: 1.4rem;
 }
 
-a:visited {
-  color: #666;
+.container .partner a:visited {
+  color: #857ea2;
+}
+
+.container .company a:visited {
+  color: inherit;
 }
 
 .floating-menu {
@@ -594,6 +598,54 @@ ol.list_num li::marker {
   color: #d2282f;
 }
 
+.container .box-list-area table {
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #222222;
+  margin: 1.2rem 0 2.4rem 0;
+  table-layout: fixed;
+  width: 100%;
+}
+.container .box-list-area table thead th {
+  text-align: center;
+  height: 5rem;
+  font-family: "Pretendard-Bold";
+  vertical-align: middle;
+  background-color: #f2f2f2;
+  border-top: 2px solid #444444;
+}
+.container .box-list-area table tbody td {
+  border-bottom: 1px solid #dddddd;
+  padding: 0 10px;
+  vertical-align: middle;
+  height: 5rem;
+  text-align: center;
+}
+.container .box-list-area table tbody tr:hover {
+  background-color: #222222;
+  color: white !important;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.pagination button {
+  margin: 0 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 6px;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+}
+.pagination button.active {
+  background-color: #222222;
+  color: #fff;
+  font-family: "Pretendard-Semibold";
+  border: 1px solid #222222;
+}
+
 .container.privacy {
   width: 100%;
   padding: 0 15%;
@@ -811,6 +863,10 @@ span.strong {
 
 .tac {
   text-align: center;
+}
+
+.ta-left {
+  text-align: left !important;
 }
 
 .mg-0 {

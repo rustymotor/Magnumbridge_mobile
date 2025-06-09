@@ -75,16 +75,16 @@
 /*상시채용 공용폼*/
 
 .fullbg_gra_gray {
-    height: 120rem;
+    // height: 120rem;
     width: 100%;
     display: flex;
     background-color: common.$mainColor;
     & .position {
         width: 35%;
-        background: url("/images/recruit/text.png") no-repeat right center;
+        background: url("/images/recruit/text.png") no-repeat right top;
         padding: 0;
-        background-position-x: 37rem;
-        opacity: .7;
+        // background-position-x: 37rem;
+        opacity: .5;
         @media (max-width: 1280px) {
             width: 0%;
         }
@@ -94,7 +94,7 @@
         background: linear-gradient(to right, white 0%, #e9e9e9 100%);
         border-top: 1px solid #eee;
         border-bottom: 1px solid #eee;
-        padding: 8rem 10rem;
+        padding: 6rem 10rem;
         display: none;
 
         @media (max-width: 1280px) {
@@ -165,9 +165,21 @@
             border: 1px solid #ededed;
             font-family: "Pretendard-Semibold";
             background-color: black;
+            &:hover{
+                    // background-color: common.$mainColor;
+                    box-shadow: 1px 1px 1px 0 rgba(200, 200, 200, 0.4);
+                    transform: translate(1px, 1px);
+                }            
             &.basic {
                 background-color: white;
-                color: black;            }
+                color: black;
+                &:hover{
+                    // background-color: common.$mainColor;
+                    // color: white;
+                    box-shadow: 1px 1px 1px 0 rgba(200, 200, 200, 0.4);
+                    transform: translate(1px, 1px);
+                    }            
+                }
             }
         }
     }
@@ -183,7 +195,7 @@
     color: white;
     & .position {
         width: 35%;
-        background: url("/images/recruit/text.png") no-repeat right center;
+        background: url("/images/recruit/text.png") no-repeat right top;
         padding: 0;
         // background-position-x: 37rem;
         height: 114rem;

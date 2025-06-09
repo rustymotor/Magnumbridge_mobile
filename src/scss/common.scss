@@ -21,7 +21,6 @@ $txt_dark-blue: #575e7c;
 $txt_gray: #8f8f8f;
 
 // 폰트 굵기
-
 $pretendard_400: "Pretendard-Regular";
 
 // 타이틀
@@ -57,11 +56,14 @@ $pretendard_400: "Pretendard-Regular";
     font-family: "Pretendard-SemiBold";
     font-size: 1.4rem;
 }
-a:visited {
-    color: #666;
+.container .partner a:visited {
+    color: #857ea2;
 }
 
-// han 작업
+.container .company a:visited {
+    color: inherit;
+}
+
 .floating-menu {
     display: flex;
     flex-direction: column;
@@ -140,7 +142,6 @@ button.btn_normal {
     }
 }
 
-//추가 25.04.29
 ul li{
     list-style-type: none;
 }
@@ -212,7 +213,7 @@ ol.list_num li {
 .spacer_top_visual .visual_gradient .h2 {
     position: absolute;
     width: 100%;
-    bottom: 5px; //*J수정 52px -> 5rem */
+    bottom: 5px; 
     text-align: center;
     color: black;
 }
@@ -220,15 +221,15 @@ ol.list_num li {
     content: "";
     display: block;
     position: absolute;
-    top: 6rem; //*J수정 8 -> 6 */
+    top: 6rem; 
     left: 49%;
-    width: 5rem; //*J수정 52px -> 5rem */
+    width: 5rem; 
     height: 6px;
     background-color: $mainColor;
 }
 .spacer_top_visual h1 {
     position: absolute;
-    top: 22rem; //*J수정 17.4 -> 20 -> 22 */
+    top: 22rem; 
     left: 50%;
     height: 16rem;
     transform: translateX(-50%);
@@ -285,7 +286,6 @@ ol.list_num li {
 }
 
 /* Customer 로고 스크롤 */
-
 .effect-data {
     transform: translate(0%, 50px);
     opacity: 0;
@@ -414,7 +414,7 @@ ol.list_num li {
 .container .box-list-area {
     display: flex;
     justify-content: center;
-    //04.29 추가
+    
     @media (max-width: 1280px) {
         & span img.rs70{
             zoom: .7;
@@ -622,6 +622,64 @@ ol.list_num li {
         }
     }
 }
+//공통 테이블
+
+.container .box-list-area table {
+    border-collapse: separate;
+    border-spacing: 0; 
+    color:$gray700;   
+    margin: 1.2rem 0 2.4rem 0;
+    table-layout: fixed;
+    width: 100%;  
+
+    thead th {        
+        text-align: center;
+        height: 5rem;
+        font-family: "Pretendard-Bold";
+        vertical-align: middle;
+        background-color: $bgBase;
+        border-top: 2px solid $gray600;
+        
+    }
+
+    tbody td {
+        border-bottom: 1px solid $gray100;
+        padding: 0 10px;
+        vertical-align: middle;
+        height: 5rem;
+        text-align: center;
+        // &:first-child{
+        //     border-right: 1px solid $gray100;
+        // }
+    }
+    tbody tr {  
+        &:hover{
+            // background-color: rgba(231, 234, 235, 0.4);
+            background-color: $gray700;
+            color: white !important;
+        }     
+    }
+}
+//페이지네이션
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    & button {
+        margin: 0 5px;
+        height: 30px;
+        width: 30px;
+        border-radius: 6px;
+        border: 1px solid $gray100;
+        cursor: pointer;
+        &.active {
+        background-color: $gray700;
+        color: #fff;
+        font-family: "Pretendard-Semibold";
+        border: 1px solid $gray700;
+        }
+    }
+}
 
 // 사이트맵, 푸터 IA구조 공통CSS
 @mixin common_menu {
@@ -636,6 +694,7 @@ ol.list_num li {
         }
     }
 }
+
 //개인정보취급방침
 .container.privacy {
     width: 100%;
@@ -694,6 +753,8 @@ ol.list_num li {
         border-radius: 50%;
     }
 }
+
+
 .container.privacy table {
     border-collapse: separate;
     border-spacing: 0;    
