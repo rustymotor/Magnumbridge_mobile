@@ -94,6 +94,51 @@ $pretendard_400: "Pretendard-Regular";
         }
     }
 }
+//버튼 설정
+button.search{
+    border-radius: 8px;
+    padding: 0 2rem;
+    height: 4rem;
+    color: $mainColor;
+    border: 1px solid $mainColor;
+    font-family: "Pretendard-Semibold";
+    background-color: white;
+    &:hover{
+            background-color: $mainColor;
+            color: white;
+    
+            // box-shadow: 1px 1px 1px 0 rgba(200, 200, 200, 0.4);
+            // transform: translate(1px, 1px);
+    }            
+}   
+button.board{
+    border-radius: 8px;
+    padding: 0 2rem;
+    height: 4rem;
+    color: white;
+    font-family: "Pretendard-Semibold";
+    background-color: black;
+    &:hover{
+            background-color: $mainColor;
+            // box-shadow: 1px 1px 1px 0 rgba(200, 200, 200, 0.4);
+            // transform: translate(1px, 1px);
+    }            
+} 
+
+button.normal{
+    border-radius: 8px;
+    padding: 0 2rem;
+    height: 4rem;
+    color: black;
+    border: 1px solid $gray300;
+    font-family: "Pretendard-Semibold";
+    background-color: white;
+    &:hover{
+            border-color: $mainColor;
+            color: $mainColor;
+    }
+
+}
 button.disabled{
     opacity: .6;
     pointer-events: none;
@@ -125,7 +170,7 @@ button.btn_black {
 button.btn_normal {
     background-color: white;
     border: 1px solid $gray200;
-    border-radius: 40px;
+    border-radius: 4rem;
     margin-left: 2rem;
     padding: 1.6rem 3rem;
     min-height: 3.6rem;
@@ -141,7 +186,7 @@ button.btn_normal {
         background-color: black;
     }
 }
-
+//UL OL 설정
 ul li{
     list-style-type: none;
 }
@@ -210,6 +255,64 @@ ol.list_num li {
     font-weight: bold;
     }
 }
+
+// Select/Input 설정 
+select {
+    border-radius: 4px;
+    padding: 0 1rem;
+    height: 4rem;
+    font-size: 16px;
+    color: $gray600;
+    border: 1px solid #ccc;
+    background-color: white;
+    &.full{
+        width: 100%;
+        height: 3.6rem;
+    }
+}
+
+input[type='text'],
+input[type='password'],
+input[type='number'] {
+    border-radius: 4px;
+    padding: 0 1rem;
+    height: 3.6rem;
+    font-size: 16px;
+    color: $gray600;
+    border: 1px solid #ccc;
+    background-color: white;
+    &.full{
+        width: 100%;
+        flex:1;
+    }
+}
+
+input[type='checkbox'],input[type="radio"] {
+    accent-color: $blueblack;  
+    margin-right: 5px;
+}
+
+textarea {
+    border-radius: 4px;
+    padding: 0 1rem;
+    font-size: 16px;
+    color: $gray600;    
+    border: 1px solid #ccc;
+    background-color: white;
+    
+    &.full{
+        width: 100%;
+        max-width: 1034px;
+    }
+
+}
+
+
+input:disabled{
+    background-color: rgba(150, 150, 150, 0.2);
+    color: rgba(120, 120, 120, 0.4);
+}
+
 .spacer_top_visual .visual_gradient .h2 {
     position: absolute;
     width: 100%;
@@ -625,39 +728,87 @@ ol.list_num li {
 //공통 테이블
 
 .container .box-list-area table {
-    border-collapse: separate;
     border-spacing: 0; 
-    color:$gray700;   
-    margin: 1.2rem 0 2.4rem 0;
+    color:$gray700;       
+    border-top: 2px solid $gray600;
+    margin: 1.2rem 0 2.4rem 0;    
+    background-color: white;
     table-layout: fixed;
     width: 100%;  
-
+    
     thead th {        
         text-align: center;
-        height: 5rem;
-        font-family: "Pretendard-Bold";
-        vertical-align: middle;
-        background-color: $bgBase;
-        border-top: 2px solid $gray600;
-        
+        height: 5rem; 
+        vertical-align: middle;       
+        border-bottom: 1px solid $gray600;
+        font-family: "Pretendard-Bold";         
     }
-
+    tbody th {
+        background-color: $bgBase;
+        border-bottom: 1px solid $gray100;
+        text-align: center; 
+        vertical-align: middle;
+    }
     tbody td {
         border-bottom: 1px solid $gray100;
-        padding: 0 10px;
-        vertical-align: middle;
-        height: 5rem;
-        text-align: center;
-        // &:first-child{
-        //     border-right: 1px solid $gray100;
-        // }
+        padding: 0 10px;   
+        padding: 1rem;
+        vertical-align: middle;     
+        height: 5rem;        
+        &.bold:hover{
+            font-family: "Pretendard-Bold";
+        } 
+        &.date{
+            font-size: 14px;  
+        }        
+        & span{            
+            border-radius: 2rem;
+            padding: 6px 12px;
+            font-size: 14px;   
+            color: $gray300;          
+            font-family: "Pretendard-Semibold";
+
+            &.finish{
+                border: 1px dotted $mainColor;                
+                color: $mainColor;
+            }
+            &.ing{
+                border: 1px dotted $gray300; 
+                color: $gray500; 
+            }           
+        }   
+        & a.lock::before{
+            content: "";
+            display: inline-block;
+            position: relative;
+            left: 0;
+            top: 3px;
+            margin-right: 5px;
+            background: url("/images/company/ico_lock.png") left 50%;
+            background-size: 18px 18px;
+            width: 18px;
+            height: 18px;
+        }  
     }
-    tbody tr {  
+    &.list > tbody tr {  
         &:hover{
             // background-color: rgba(231, 234, 235, 0.4);
-            background-color: $gray700;
-            color: white !important;
+            // color: white !important;
+            background-color: $bgBase;
+            
         }     
+    }
+    &.answer {
+        border-top: 2px solid $mainColor;
+        tbody th{
+            background-color: #f8efef;   
+        }         
+        span.date {
+            display: flex;
+            justify-content: flex-end;
+            font-size: 14px;   
+            color: $mainColor;  
+        }
     }
 }
 //페이지네이션

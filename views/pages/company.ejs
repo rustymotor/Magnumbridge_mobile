@@ -20,118 +20,297 @@
                 <p class="subtxt">궁금한 점 있으시면 언제든 문의 게시판에 글 남겨주세요.</p>
                 <section>
                     <div class="box-list-area">
-                        <div class="list mg-0">
-                            <table>
-                                <caption></caption>
-                                <colgroup>
-                                    <col style="width: 10%;">
-                                    <col>
-                                    <col style="width: 15%;">
-                                    <col style="width: 160px;">
-                                    <col style="width: 15%;">
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th scope="col" class="num">번호</th>
-                                        <th scope="col">제목</th>
-                                        <th scope="col" class="dept">문의구분</th>
-                                        <th scope="col" class="period">작성자</th>
-                                        <th scope="col" class="date">등록일</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td class="num">19</td>
-                                    <td class="ta-left"><a href="#">2024년 SK네트웍스서비스(주) 재무상태표</a></td>
-                                    <td class="dept">기타</td>
-                                    <td class="period">홍길동</td>
-                                    <td class="date">2025-04-01</td>
-                                </tr>
-                                <tr>
-                                    <td class="num">18</td>
-                                    <td class="ta-left"><a href="#">외부감사인 선임 공고(25~27년)</a></td>
-                                    <td class="dept">기타</td>
-                                    <td class="period">홍길동</td>
-                                    <td class="date">2025-03-31</td>
-                                </tr>
-                                <tr>
-                                    <td class="num">17</td>
-                                    <td class="ta-left"><a href="#">중간배당 기준일 설정 공고</a></td>
-                                    <td class="dept">기타</td>
-                                    <td class="period">익명</td>
-                                    <td class="date">2024-11-15</td>
-                                </tr>
-                                <tr>
-                                    <td class="num">16</td>
-                                    <td class="ta-left"><a href="#">2023년 SK네트웍스서비스(주) 재무상태표</a></td>
-                                    <td class="dept">Product</td>
-                                    <td class="period">홍길동</td>
-                                    <td class="date">2024-04-12</td>
-                                </tr>
-                                <tr>
-                                    <td class="num">15</td>
-                                    <td class="ta-left"><a href="#">2022년 SK네트웍스서비스(주) 재무상태표</a></td>
-                                    <td class="dept">기타</td>
-                                    <td class="period">익명</td>
-                                    <td class="date">2023-04-03</td>
-                                </tr>
-                                <tr>
-                                    <td class="num">14</td>
-                                    <td class="ta-left"><a href="#">2021년 SK네트웍스서비스(주) 재무상태표</a></td>
-                                    <td class="dept">IT Service</td>
-                                    <td class="period">홍길동</td>
-                                    <td class="date">2022-04-07</td>
-                                </tr>
-                                <tr>
-                                    <td class="num">13</td>
-                                    <td class="ta-left"><a href="#">외부감사인 선임 공고(22~24년)</a></td>
-                                    <td class="dept">기타</td>
-                                    <td class="period">홍길동</td>
-                                    <td class="date">2022-03-14</td>
-                                </tr>
-                                <tr>
-                                    <td class="num">12</td>
-                                    <td class="ta-left"><a href="#">5G+Wi-Fi 6E 차세대 스마트공장 네트워크 모델 및  차세대 스마트공장 전용 통신 네트워크 구축 및 실증</a></td>
-                                    <td class="dept">기타</td>
-                                    <td class="period">홍길동</td>
-                                    <td class="date">2021-11-15</td>
-                                </tr>
-                                <tr>
-                                    <td class="num">11</td>
-                                    <td class="ta-left"><a href="#">2020년 SK네트웍스서비스(주) 재무상태표</a></td>
-                                    <td class="dept">기타</td>
-                                    <td class="period">홍길동</td>
-                                    <td class="date">2021-04-07</td>
-                                </tr>
-                                <tr>
-                                    <td class="num">10</td>
-                                    <td class="ta-left"><a href="#">2019년 SK네트웍스서비스(주) 재무상태표</a></td>
-                                    <td class="dept">기타</td>
-                                    <td class="period">홍길동</td>
-                                    <td class="date">2020-04-06</td>
-                                </tr>
-                                <tr>
-                                    <td class="num">9</td>
-                                    <td class="ta-left"><a href="#">2018년 SK네트웍스서비스(주) 재무상태표</a></td>
-                                    <td class="dept">기타</td>
-                                    <td class="period">홍길동</td>
-                                    <td class="date">2019-03-29</td>
-                                </tr>
-                                <tr>
-                                    <td class="num">8</td>
-                                    <td class="ta-left"><a href="#">외부감사인 선임 공고(19~21년)</a></td>
-                                    <td class="dept">채용</td>
-                                    <td class="period">홍길동</td>
-                                    <td class="date">2019-03-07</td>
-                                </tr>
-                                
-                                </tbody>
-                            </table>
+                        <div class="list mg-0" >
 
-                            <div class="pagination" id="pagination">
-                                <button class="page-btn active" data-page="1">1</button>
-                                <button class="page-btn" data-page="2">2</button></div>
-                            </div>  
+                            <!--게시목록-->
+                            <div class="qnaboard active" id="qnaboard01">
+                                <div class="flex_between">
+                                    <div>
+                                        <select>
+                                            <option>전체</option>
+                                            <option>답변대기</option>
+                                            <option>답변완료</option>
+                                        </select>
+                                        <!-- <select>
+                                            <option>제목 +  내용</option>
+                                            <option>제목</option>
+                                            <option>내용</option>
+                                        </select>
+                                        <button class="search"type="button" onclick="window.location.href='recruit'">검색</button> -->
+                                    </div>
+                                    <div>
+                                        <button class="board write" type="button" onclick="">작성하기</button>
+                                    </div>
+                                </div>
+                                <table class="list">
+                                    <caption></caption>
+                                    <colgroup>
+                                        <col style="width: 10%;">
+                                        <col>
+                                        <col style="width: 10%;">
+                                        <col style="width: 160px;">
+                                        <col style="width: 10%;">
+                                        <col style="width: 10%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="num">번호</th>
+                                            <th scope="col" class="subject">제목</th>
+                                            <th scope="col" class="catagory">문의구분</th>
+                                            <th scope="col" class="period">작성자</th>
+                                            <th scope="col" class="state">처리현황</th>
+                                            <th scope="col" class="date">등록일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="num tac">19</td>
+                                            <td class="ta-left bold"><a href="#">2024년 매그넘브릿지(주) 재무상태표</a></td>
+                                            <td class="dept tac">기타</td>
+                                            <td class="period tac">홍길동</td>
+                                            <td class="state tac"><span>미답변</span></td>
+                                            <td class="date tac">2025-04-01</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num tac">18</td>
+                                            <td class="ta-left bold"><a href="#">외부감사인 선임 공고(25~27년)</a></td>
+                                            <td class="dept tac">기타</td>
+                                            <td class="period tac">홍길동</td>
+                                            <td class="state tac"><span>미답변</span></td>
+                                            <td class="date tac">2025-03-31</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num tac">17</td>
+                                            <td class="ta-left bold"><a href="#">중간배당 기준일 설정 공고</a></td>
+                                            <td class="dept tac">기타</td>
+                                            <td class="period tac">익명</td>
+                                            <td class="state tac"><span>미답변</span></td>
+                                            <td class="date tac">2024-11-15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num tac">16</td>
+                                            <td class="ta-left bold"><a href="#">2023년 매그넘브릿지(주) 재무상태표</a></td>
+                                            <td class="dept tac">Product</td>
+                                            <td class="period tac">홍길동</td>
+                                            <td class="state tac"><span class="ing">답변대기</span></td>
+                                            <td class="date tac">2024-04-12</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num tac">15</td>
+                                            <td class="ta-left bold"><a href="#">2022년 매그넘브릿지(주) 재무상태표</a></td>
+                                            <td class="dept tac">기타</td>
+                                            <td class="period tac">익명</td>
+                                            <td class="state tac"><span class="ing">답변대기</span></td>
+                                            <td class="date tac">2023-04-03</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num tac">14</td>
+                                            <td class="ta-left bold"><a href="#" class="lock" title="비공개글">2021년 매그넘브릿지(주) 재무상태표</a></td>
+                                            <td class="dept tac">IT Service</td>
+                                            <td class="period tac">홍길동</td>
+                                            <td class="state tac"><span class="ing">답변대기</span></td>
+                                            <td class="date tac">2022-04-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num tac">13</td>
+                                            <td class="ta-left bold"><a href="#" class="lock" title="비공개글">외부감사인 선임 공고(22~24년)</a></td>
+                                            <td class="dept tac">기타</td>
+                                            <td class="period tac">홍길동</td>
+                                            <td class="state tac"><span class="ing">답변대기</span></td>
+                                            <td class="date tac">2022-03-14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num tac">12</td>
+                                            <td class="ta-left bold"><a href="#">5G+Wi-Fi 6E 차세대 스마트공장 네트워크 모델 및  차세대 스마트공장 전용 통신 네트워크 구축 및 실증</a></td>
+                                            <td class="dept tac">기타</td>
+                                            <td class="period tac">홍길동</td>
+                                            <td class="state tac"><span class="ing">답변대기</span></td>
+                                            <td class="date tac">2021-11-15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num tac">11</td>
+                                            <td class="ta-left bold"><a href="#">2020년 매그넘브릿지(주) 재무상태표</a></td>
+                                            <td class="dept tac">기타</td>
+                                            <td class="period tac">홍길동</td>
+                                            <td class="state tac"><span class="finish">답변완료</span></td></td>
+                                            <td class="date tac">2021-04-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num tac">10</td>
+                                            <td class="ta-left bold"><a href="#">2019년 매그넘브릿지(주) 재무상태표</a></td>
+                                            <td class="dept tac">기타</td>
+                                            <td class="period tac">홍길동</td>
+                                            <td class="state tac"><span class="finish">답변완료</span></td></td>
+                                            <td class="date tac">2020-04-06</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num tac">9</td>
+                                            <td class="ta-left bold"><a href="#" class="lock" title="비공개글">2018년 매그넘브릿지(주) 재무상태표</a></td>
+                                            <td class="dept tac">기타</td>
+                                            <td class="period tac">홍길동</td>
+                                            <td class="state tac"><span class="finish">답변완료</span></td></td>
+                                            <td class="date tac">2019-03-29</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num tac">8</td>
+                                            <td class="ta-left bold"><a href="#">외부감사인 선임 공고(19~21년)</a></td>
+                                            <td class="dept tac">채용</td>
+                                            <td class="period tac">홍길동</td>
+                                            <td class="state tac"><span class="finish">답변완료</span></td></td>
+                                            <td class="date tac">2019-03-07</td>
+                                        </tr>                                    
+                                    </tbody>
+                                </table>
+
+                                <div class="pagination" id="pagination">
+                                    <button class="page-btn active" data-page="1">1</button>
+                                    <button class="page-btn" data-page="2">2</button>
+                                </div>  
+                            </div>
+                            <!--게시목록 END-->
+
+                            <!--게시상세-->
+                            <div class="qnaboard" id="qnaboard02">                            
+                                <table class="view">
+                                    <caption></caption>
+                                    <colgroup>                                        
+                                        <col style="width: 12%;">
+                                        <col>
+                                        <col style="width: 12%;">
+                                        <col style="width: 21%;">
+                                        <col style="width: 12%;">
+                                        <col style="width: 21%;">
+                                    </colgroup>                                   
+                                    <tbody>
+                                        <tr>
+                                            <th>제목</th>
+                                            <td colspan="5">[제품] 올포프레임 문의합니다</td>
+                                        </tr>
+                                        <tr>
+                                            <th>작성자</th>
+                                            <td>홍길동</td>
+                                            <th>연락처</th>
+                                            <td>010-1234-5678</td>
+                                            <th>이메일</th>
+                                            <td>hong.gd@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th>회사명</th>
+                                            <td>주식회사 매그넘브릿지</td>                                            
+                                            <th>등록일</th>
+                                            <td>2025-06-10</td>
+                                            <th>처리현황</th>
+                                            <td><span class="finish">답변완료</span></td>
+                                        </tr> 
+                                        <tr>
+                                            <th>내용</th>
+                                            <td colspan="5">문의내용<br>
+                                            문의내용<br>
+                                            문의내용<br>
+                                            문의내용
+                                            </td>
+                                        </tr>                                        
+                                    </tbody>
+                                </table>
+
+                                <table class="answer mt-4">
+                                    <caption></caption>
+                                    <colgroup>                                        
+                                        <col style="width: 12%;">
+                                        <col>
+                                    </colgroup>                                   
+                                    <tbody>                                        
+                                        <tr>
+                                            <th>답변</th>
+                                            <td><span class="date">2025.06.10 작성</span>
+                                                문의내용에 대한 답변입니다.<br>
+                                                문의내용<br>
+                                                문의내용<br>
+                                                문의내용
+                                            </td>
+                                        </tr>                                        
+                                    </tbody>
+                                </table>
+
+                                <div class="flex_between">
+                                    <div>
+                                        <button class="normal"type="button" onclick="return false">이전글</button> 
+                                        <button class="normal"type="button" onclick="return false">다음글</button>
+                                    </div>
+                                    <div>
+                                        <button class="board" type="button" onclick="return false">목록으로</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--게시상세 END-->
+
+
+                            <!--글 작성-->
+                            <div class="qnaboard" id="qnaboard03">
+                                
+                                <table class="view">
+                                    <caption></caption>
+                                    <colgroup>                                        
+                                        <col style="width: 15%;">
+                                        <col>
+                                        <col style="width: 15%;">
+                                        <col style="width: 35%;">
+                                    </colgroup>                                   
+                                    <tbody>
+                                        <tr>
+                                            <th>문의유형</th>
+                                            <td>
+                                                <select class="full">
+                                                    <option>전체</option>
+                                                    <option>제품문의</option>
+                                                    <option>견적문의</option>
+                                                    <option>채용문의</option>
+                                                    <option>기타문의</option>
+                                                </select>
+                                            </td>
+                                            <th>공개여부</th>
+                                            <td>
+                                                <div class="flex_between">
+                                                    <div><input type="radio"  checked="checked">공개 </div>
+                                                    <div class="ml-3"><input type="radio">비공개 <input type="password" disabled class="ml-3" placeholder="비밀번호 6자리 입력"></div>
+                                                </div>
+                                            </td>                                            
+                                        </tr>                                        
+                                        <tr>
+                                            <th>작성자</th>
+                                            <td><input type="text"  class="full" value="홍길동"></td>
+                                            <th>연락처</th>
+                                            <td><input type="text"  class="full" value="010-1234-5678"></td>                                            
+                                        </tr>
+                                        <tr>
+                                            <th>회사명</th>
+                                            <td><input type="text"  class="full" value="주식회사 매그넘브릿지"></td>     
+                                            <th>이메일</th>
+                                            <td><input type="text"  class="full" value="hong.gd@gmail.com"></td>    
+                                        </tr>
+                                        <tr> 
+                                            <th>제목</th>
+                                            <td colspan="3"><input type="text" class="full" value="올포프레임 문의합니다"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>내용</th>
+                                            <td colspan="3">
+                                                <textarea class="full" rows = "10" cols = "5"></textarea>
+                                            </td>
+                                        </tr>                                        
+                                    </tbody>
+                                </table>   
+                                <div class="flex_between">
+                                    <div>
+                                        <button class="normal" type="button" onclick="return false">돌아가기</button>
+                                    </div> 
+                                    <div>                                        
+                                        <button class="board complete" type="button" onclick="return false">작성완료</button>
+                                    </div>
+                                </div>
+                                <!--글 작성 END-->
+
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -139,5 +318,54 @@
             </main>
             <footer id="footer"><%- include('../partials/footer') %></footer>
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+$(document).ready(function () {
+    const $qnaboard = $(".qnaboard");
+
+    function showNotice(index) {
+        $qnaboard.removeClass("active").hide();
+        $qnaboard.eq(index).addClass("active").show();
+    }
+
+    // 초기화
+    $qnaboard.hide().removeClass("active");
+    $("#qnaboard01").show().addClass("active");
+
+    // 작성하기 버튼 클릭 시 -> qnaboard03로 이동
+    $(".write").click(function () {
+        showNotice(2); // qnaboard03
+    });
+
+    // 목록으로 버튼 클릭 시 -> qnaboard01로 이동
+    $(".board:contains('목록으로')").click(function () {
+        showNotice(0); // qnaboard01
+    });
+
+    // 제목 클릭 시 -> qnaboard02로 이동
+    $(".ta-left").click(function () {
+        showNotice(1); // qnaboard02
+    });
+
+    // 작성완료 버튼 클릭 시 -> qnaboard01로 이동
+    $(".complete").click(function () {
+        showNotice(0); // qnaboard01
+    });
+
+    // 돌아가기 버튼 클릭 시 -> qnaboard01로 이동
+    $(".normal:contains('돌아가기')").click(function () {
+        showNotice(0); // qnaboard01
+    });
+
+    // 이전글, 다음글 예시 처리 (필요 시 로직 추가)
+    $(".normal:contains('이전글')").click(function () {
+        showNotice(1); // qnaboard02
+    });
+
+    $(".normal:contains('다음글')").click(function () {
+        showNotice(1); // qnaboard02
+    });
+});
+</script>
     </body>
 </html>
