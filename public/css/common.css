@@ -777,7 +777,7 @@ input:disabled {
   margin-top: 20px;
 }
 .pagination button {
-  margin: 0 5px;
+  margin: 0 3px;
   height: 30px;
   width: 30px;
   border-radius: 6px;
@@ -789,6 +789,24 @@ input:disabled {
   color: #fff;
   font-family: "Pretendard-Semibold";
   border: 1px solid #222222;
+}
+.pagination button.first {
+  background: url("/images/company/ico_first.png") no-repeat 50% 50%;
+}
+.pagination button.prev {
+  background: url("/images/company/ico_prev.png") no-repeat 50% 50%;
+  margin-right: 20px;
+}
+.pagination button.next {
+  background: url("/images/company/ico_next.png") no-repeat 50% 50%;
+  margin-left: 20px;
+}
+.pagination button.end {
+  background: url("/images/company/ico_end.png") no-repeat 50% 50%;
+}
+.pagination .disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .container.privacy {

@@ -816,8 +816,8 @@ input:disabled{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    & button {
-        margin: 0 5px;
+    & button{
+        margin: 0 3px;
         height: 30px;
         width: 30px;
         border-radius: 6px;
@@ -829,6 +829,24 @@ input:disabled{
         font-family: "Pretendard-Semibold";
         border: 1px solid $gray700;
         }
+        &.first{
+            background: url("/images/company/ico_first.png") no-repeat 50% 50%;            
+        }
+        &.prev{
+            background: url("/images/company/ico_prev.png") no-repeat 50% 50%;
+            margin-right: 20px;
+        }
+        &.next{
+            background: url("/images/company/ico_next.png") no-repeat 50% 50%;
+            margin-left: 20px;
+        }
+        &.end{
+            background: url("/images/company/ico_end.png") no-repeat 50% 50%;
+        }
+    }
+    & .disabled{
+        opacity: .5;
+        pointer-events: none;
     }
 }
 
