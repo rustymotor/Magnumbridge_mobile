@@ -19,6 +19,103 @@
                 <!-- 컨텐츠 영역 -->
                 <p class="subtxt">창의적이고 협력과 소통이 원활한 인재를 상시 모집합니다.</p>
 
+                <!-- 지원하기 POP-->
+                 <div class="layer_pop" id="application">                    
+                    <button class="btn_layer_close" onclick="closeMap()">
+                        <img src=" <%= basePath %>/images/btn_sitemap_cancel.svg" alt="Layer 닫기" />
+                    </button>
+                    <h1 class="pop_title">지원서 작성</h1> 
+                    <h5 class="h5 fc-red">커머스 앱/웹 프론트 화면 개발</h5>                       
+                    <div class="w900">
+                        <p>기본정보</p> 
+                        <table class="view">
+                            <caption></caption>
+                            <colgroup>    
+                                <col style="width: 15%;">
+                                <col style="width: 35%;">
+                                <col style="width: 15%;">
+                                <col>
+                            </colgroup>                                   
+                            <tbody>
+                                <tr>
+                                    <td>이름</td>                                    
+                                    <td><input type="text"  class="full" value="홍길동"></td>                                            
+                                </tr>                                        
+                                <tr>
+                                    <td>성별</td>
+                                    <td><input type="radio"  checked="checked">남 
+                                        <input type="radio"class="ml-3">여 
+                                    </td>
+                                    <td>생년</td>
+                                    <td><input type="text"  class="full" value="1980"></td>                                            
+                                </tr>
+                                <tr>
+                                    <td>연락처</td>
+                                    <td><input type="text"  class="full" value="010-1234-5678"></td>     
+                                    <td>이메일</td>
+                                    <td><input type="text"  class="full" value="hong.gd@gmail.com"></td>    
+                                </tr>
+                                <tr> 
+                                    <td>병역</td>
+                                    <td  colspan="3" class="flex_center">
+                                        <select class="full">
+                                            <option>선택</option>
+                                            <option>비대상</option>
+                                            <option>군필</option>
+                                            <option>미필</option>
+                                            <option>면제</option>
+                                            <option>복무중</option>                                            
+                                        </select>
+                                        <input type="text"  class="full" placeholder="사유를 입력하세요">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>학교</td>
+                                    <td><input type="text"  class="full" value="대한대학교"></td>     
+                                    <td>학과</td>
+                                    <td><input type="text"  class="full" value="컴퓨터공학"></td>    
+                                </tr>
+                                <tr> 
+                                    <td>경력</td>
+                                    <td  colspan="3" class="flex_center">
+                                        <select class="full">
+                                            <option>선택</option>
+                                            <option>신입</option>
+                                            <option>경력</option>                                            
+                                        </select>
+                                        <input type="text"  class="full" placeholder="N년 N월로 입력하세요">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>비밀번호</td>
+                                    <td>
+                                        <input type="password"  class="full" value="">
+                                    </td>
+                                    <td>비밀번호 확인</td>
+                                    <td>
+                                        <input type="password"  class="full" value="">
+                                    </td>
+                                </tr>
+                                <tr> 
+                                    <td>개인정보 약관</td>
+                                    <td><button class="normal smallbtn" type="button" onclick="openPopup()">동의 필요</button>
+                                        <button class="normal smallbtn disabled" type="button" onclick="">동의 완료</button></td>
+                                    <td>비밀번호</td>
+                                    <td><input type="password" size="12" placeholder="비밀번호 6자리 입력"></td>
+                                </tr>                                          
+                            </tbody>
+                        </table> 
+                    </div>
+                    <div class="radio_wrap">
+                        <input type="radio"  checked="checked">동의 
+                        <input type="radio"class="ml-3">비동의     
+                    </div>
+                    <div class="btn_wrap">
+                        <button class="board w10" type="button" onclick="showAppBoard()">확인</button>
+                    </div>
+                </div>  
+                <!-- 지원하기 POP End-->
+
                 <section>
                     <div>
                         <!-- <h3 class="h3 tac fc-primary">Permanent recruitment</h3> -->

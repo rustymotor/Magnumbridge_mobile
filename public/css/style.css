@@ -100,6 +100,10 @@ button.board {
   font-family: "Pretendard-Semibold";
   background-color: black;
 }
+button.board.w10 {
+  min-width: 12rem;
+  height: 5rem;
+}
 button.board:hover {
   background-color: #d2282f;
 }
@@ -999,9 +1003,9 @@ input:disabled {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 50rem;
+  height: auto;
   border-radius: 20px;
-  padding: 4rem 0 0;
+  padding: 3rem 0;
   background-color: #f7f7f7;
   overflow: hidden;
   text-align: center;
@@ -1013,11 +1017,14 @@ input:disabled {
     width: 96%;
   }
 }
+.layer_pop .w900 {
+  width: 90rem;
+}
 .layer_pop .layer_scroll {
   display: block;
   overflow-y: auto;
   margin: 5rem 3rem 2rem 3rem;
-  height: 34rem;
+  height: 30rem;
   width: 40rem;
   border-radius: 0.8rem;
   background-color: white;
@@ -1037,8 +1044,8 @@ input:disabled {
 }
 .layer_pop .btn_layer_close {
   position: absolute;
-  top: 36px;
-  right: 36px;
+  top: 32px;
+  right: 32px;
   width: 22px;
   height: 22px;
   scale: 0.6;
@@ -1046,7 +1053,8 @@ input:disabled {
 .layer_pop h1.pop_title {
   position: absolute;
   top: 36px;
-  left: 36%;
+  left: 50%;
+  transform: translate(-50%, 0);
   font-size: 2.4rem;
   font-family: "Pretendard-bold";
   color: black;
@@ -2840,23 +2848,56 @@ section.products .repository ul dl dd:before, section.products .repository ul dl
   }
 }
 
+.bg_logo {
+  background: url("/images/company/back_logo.png") no-repeat center center;
+  height: 100%;
+  width: 100%;
+  max-width: 1280px;
+  background-size: contain;
+}
+
 .application {
-  padding: 2rem 6rem;
+  padding: 1rem 6rem;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   width: 70%;
   max-width: 60rem;
-  margin: 5rem auto;
+  margin: 4rem auto;
   align-items: center;
 }
+@media (max-width: 1280px) {
+  .application {
+    margin: 3rem auto;
+  }
+}
 .application label {
-  width: 40%;
+  width: 30%;
+  font-family: "Pretendard-Semibold";
 }
 .application div {
   display: flex;
   padding: 1 9rem;
   gap: 2rem;
   height: 6rem;
+  align-items: center;
+}
+@media (max-width: 1280px) {
+  .application div {
+    height: 5rem;
+  }
+}
+
+.btn_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.4rem;
+}
+
+.radio_wrap {
+  height: 5rem;
+  border-bottom: 1px solid #ccc;
+  margin: 0 2.6rem;
 }
 
 .swiper {

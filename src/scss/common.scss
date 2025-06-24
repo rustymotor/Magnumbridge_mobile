@@ -122,10 +122,14 @@ button.search{
 button.board{
     border-radius: 8px;
     padding: 0 2rem;
-    height: 4rem;
+    height: 4rem;    
     color: white;
     font-family: "Pretendard-Semibold";
     background-color: black;
+    &.w10{
+        min-width: 12rem;
+        height: 5rem;
+    }
     &:hover{
             background-color: $mainColor;
             // box-shadow: 1px 1px 1px 0 rgba(200, 200, 200, 0.4);
@@ -1057,9 +1061,9 @@ input:disabled{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    height: 50rem;
+    height: auto;
     border-radius: 20px;
-    padding: 4rem 0 0;
+    padding: 3rem 0;
     background-color: #f7f7f7;
     overflow: hidden;
     text-align: center;
@@ -1067,13 +1071,17 @@ input:disabled{
     border: 1px solid #aaa;
     @media (max-width: 1280px) {
         width: 96%;    
-    }    
+    }   
+    
+    .w900 {
+        width: 90rem;
+    }
 
     .layer_scroll {
         display: block;
         overflow-y: auto;
         margin: 5rem 3rem 2rem 3rem;
-        height: 34rem; 
+        height: 30rem; 
         width: 40rem;
         border-radius: .8rem;
         background-color: white;
@@ -1092,8 +1100,8 @@ input:disabled{
     }
     .btn_layer_close {
         position: absolute;
-        top: 36px;
-        right: 36px;
+        top: 32px;
+        right: 32px;
         width: 22px;
         height: 22px;
         scale: .6;
@@ -1101,7 +1109,8 @@ input:disabled{
     h1.pop_title {
         position: absolute;
         top: 36px;
-        left: 36%;
+        left: 50%;
+        transform: translate(-50%, 0);
         font-size: 2.4rem; //J수정
         // line-height: 48px;
         font-family: "Pretendard-bold"; //j추가
