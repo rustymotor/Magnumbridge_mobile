@@ -53,7 +53,7 @@ a:visited {
   width: 48px;
   height: 48px;
   cursor: pointer;
-  background: #212529 url("../images/btn_top.png") no-repeat 50% 50%/16px auto;
+  background: #212529 url(/images/btn_top.png) no-repeat 50% 50%/16px auto;
 }
 .floating-menu .btn-floating-top span {
   overflow: hidden;
@@ -355,7 +355,7 @@ ul li.type-dotg::before {
 
 /* Company_History */
 .fullback.history {
-  background: url("../images/company/bg_history.jpg") left top;
+  background: url("/images/company/bg_history.jpg") left top;
   background-size: cover;
   box-sizing: border-box;
   padding: 10rem;
