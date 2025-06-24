@@ -18,6 +18,55 @@
             <main>
                 <!-- 컨텐츠 영역 -->
                 <p class="subtxt">궁금한 점 있으시면 언제든 문의 게시판에 글 남겨주세요.</p>
+                <!-- // Layer Pop 약관 -->                
+                <div class="layer_pop" id="privacy_policy_terms">                    
+                    <button class="btn_layer_close" onclick="closeMap()">
+                        <img src=" <%= basePath %>/images/btn_sitemap_cancel.svg" alt="Layer 닫기" />
+                    </button>
+                    <h1 class="pop_title">개인정보 약관</h1>                        
+                    <div class="layer_scroll">
+                        <div id="layer_div">                            
+                            개인정보 약관내용<br />
+                            개인정보 수집 및 이용 목적<br />
+                            영업 문의 대응 목적으로만 활용하며, 이외 목적으로 사용하지 않습니다.<br /><br />
+                            개인정보 보유 및 이용기간<br />
+                            접수된 개인정보는 원칙적으로 수집 및 이용 목적이 달성되면 지체 없이 파기합니다.<br />
+                            단, 별도 파기 요청이 없을 경우 관련 법령에 의거하여 5년간 보관합니다.<br /><br />
+                            개인정보의 파기 절차<br />
+                            개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다.<br />
+                            개인정보 약관내용<br />
+                            개인정보 수집 및 이용 목적<br />
+                            영업 문의 대응 목적으로만 활용하며, 이외 목적으로 사용하지 않습니다.<br /><br />
+                            개인정보 보유 및 이용기간<br />
+                            접수된 개인정보는 원칙적으로 수집 및 이용 목적이 달성되면 지체 없이 파기합니다.<br />
+                            단, 별도 파기 요청이 없을 경우 관련 법령에 의거하여 5년간 보관합니다.<br /><br />
+                            개인정보의 파기 절차<br />
+                            개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다.<br />
+                        </div>
+                    </div>
+                    <div>
+                        <input type="radio"  checked="checked">동의 
+                        <input type="radio"class="ml-3">비동의     
+                    </div>
+                </div>  
+
+                <!-- // Layer Pop 비밀번호 -->                
+                <div class="alert_pop" id="alert_password">                    
+                    <button class="btn_layer_close" onclick="closeMap2()">
+                        <img src=" <%= basePath %>/images/btn_sitemap_cancel.svg" alt="Layer 닫기" />
+                    </button>
+                    <div class="pop_contents">
+                        <p>비밀번호를 입력하세요</p>      
+                        <div>
+                            <input type="password" size="12" placeholder="비밀번호 6자리 입력">
+                        </div>                        
+                    </div>
+                    <div class="alert_btn">
+                        <button class="normal pop_btn" type="button" onclick="closeMap2()">취소</button>
+                        <button class="board pop_btn" type="button" onclick="closeMap2()">확인</button>
+                    </div>
+                </div> 
+                <!-- // Layer Pop END -->
                 <section>
                     <div class="box-list-area">
                         <div class="list mg-0" >
@@ -25,12 +74,19 @@
                             <!--게시목록-->
                             <div class="qnaboard active" id="qnaboard01">
                                 <div class="flex_between">
-                                    <div>
-                                        <select>
-                                            <option>전체</option>
-                                            <option>답변대기</option>
-                                            <option>답변완료</option>
+                                    <div class="flex_center">                                                    
+                                        <select class="mr-1">
+                                            <option>문의전체</option>
+                                            <option>채용</option>
+                                            <option>제품</option>
                                         </select>
+                                        <select class="mr-2">
+                                            <option>처리 전체</option>
+                                            <option>답변완료</option>
+                                            <option>답변대기</option>
+                                        </select>
+                                        <input type="checkbox">답변완료만 보기
+                                        
                                         <!-- <select>
                                             <option>제목 +  내용</option>
                                             <option>제목</option>
@@ -47,16 +103,14 @@
                                     <colgroup>
                                         <col style="width: 10%;">
                                         <col>
+                                        <col style="width: 13%;">                                        
                                         <col style="width: 10%;">
-                                        <col style="width: 160px;">
-                                        <col style="width: 10%;">
-                                        <col style="width: 10%;">
+                                        <col style="width: 12%;">
                                     </colgroup>
                                     <thead>
                                         <tr>
-                                            <th scope="col" class="num">번호</th>
-                                            <th scope="col" class="subject">제목</th>
                                             <th scope="col" class="catagory">문의구분</th>
+                                            <th scope="col" class="subject">제목</th>                                            
                                             <th scope="col" class="period">작성자</th>
                                             <th scope="col" class="state">처리현황</th>
                                             <th scope="col" class="date">등록일</th>
@@ -64,100 +118,88 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td  class="tac"colspan="6">작성된 글이 없습니다.</td>
+                                            <td  class="tac"colspan="5">작성된 글이 없습니다.</td>
                                         </tr>
                                         <tr>
-                                            <td class="num tac">19</td>
-                                            <td class="ta-left bold"><a href="#">2024년 매그넘브릿지(주) 재무상태표</a></td>
-                                            <td class="dept tac">기타</td>
+                                            <td class="dept tac">채용</td>
+                                            <td class="ta-left bold"><a class="detail">2024년 매그넘브릿지(주) 재무상태표</a></td>
                                             <td class="period tac">홍길동</td>
                                             <td class="state tac"><span>미답변</span></td>
                                             <td class="date tac">2025-04-01</td>
                                         </tr>
                                         <tr>
-                                            <td class="num tac">18</td>
-                                            <td class="ta-left bold"><a href="#">외부감사인 선임 공고(25~27년)</a></td>
-                                            <td class="dept tac">기타</td>
+                                            <td class="dept tac">채용</td>
+                                            <td class="ta-left bold"><a class="detail">외부감사인 선임 공고(25~27년)</a></td>                                            
                                             <td class="period tac">홍길동</td>
                                             <td class="state tac"><span>미답변</span></td>
                                             <td class="date tac">2025-03-31</td>
                                         </tr>
                                         <tr>
-                                            <td class="num tac">17</td>
-                                            <td class="ta-left bold"><a href="#">중간배당 기준일 설정 공고</a></td>
-                                            <td class="dept tac">기타</td>
+                                            <td class="dept tac">제품</td>
+                                            <td class="ta-left bold"><a class="detail">중간배당 기준일 설정 공고</a></td>                                            
                                             <td class="period tac">익명</td>
                                             <td class="state tac"><span>미답변</span></td>
                                             <td class="date tac">2024-11-15</td>
                                         </tr>
                                         <tr>
-                                            <td class="num tac">16</td>
-                                            <td class="ta-left bold"><a href="#">2023년 매그넘브릿지(주) 재무상태표</a></td>
-                                            <td class="dept tac">Product</td>
+                                            <td class="dept tac">제품</td>
+                                            <td class="ta-left bold"><a class="detail">2023년 매그넘브릿지(주) 재무상태표</a></td>                                            
                                             <td class="period tac">홍길동</td>
                                             <td class="state tac"><span class="ing">답변대기</span></td>
                                             <td class="date tac">2024-04-12</td>
                                         </tr>
                                         <tr>
-                                            <td class="num tac">15</td>
-                                            <td class="ta-left bold"><a href="#">2022년 매그넘브릿지(주) 재무상태표</a></td>
-                                            <td class="dept tac">기타</td>
+                                            <td class="dept tac">제품</td>
+                                            <td class="ta-left bold"><a class="detail">2022년 매그넘브릿지(주) 재무상태표</a></td>                                            
                                             <td class="period tac">익명</td>
                                             <td class="state tac"><span class="ing">답변대기</span></td>
                                             <td class="date tac">2023-04-03</td>
                                         </tr>
                                         <tr>
-                                            <td class="num tac">14</td>
-                                            <td class="ta-left bold"><a href="#" class="lock" title="비공개글">2021년 매그넘브릿지(주) 재무상태표</a></td>
-                                            <td class="dept tac">IT Service</td>
+                                            <td class="dept tac">채용</td>
+                                            <td class="ta-left bold"><a class="lock" title="비공개글" onclick="openPopup2()">2021년 매그넘브릿지(주) 재무상태표</a></td>
                                             <td class="period tac">홍길동</td>
                                             <td class="state tac"><span class="ing">답변대기</span></td>
                                             <td class="date tac">2022-04-07</td>
                                         </tr>
                                         <tr>
-                                            <td class="num tac">13</td>
-                                            <td class="ta-left bold"><a href="#" class="lock" title="비공개글">외부감사인 선임 공고(22~24년)</a></td>
-                                            <td class="dept tac">기타</td>
+                                            <td class="dept tac">채용</td>
+                                            <td class="ta-left bold"><a class="lock" title="비공개글" onclick="openPopup2()">외부감사인 선임 공고(22~24년)</a></td>
                                             <td class="period tac">홍길동</td>
                                             <td class="state tac"><span class="ing">답변대기</span></td>
                                             <td class="date tac">2022-03-14</td>
                                         </tr>
                                         <tr>
-                                            <td class="num tac">12</td>
-                                            <td class="ta-left bold"><a href="#">5G+Wi-Fi 6E 차세대 스마트공장 네트워크 모델 및  차세대 스마트공장 전용 통신 네트워크 구축 및 실증</a></td>
-                                            <td class="dept tac">기타</td>
+                                            <td class="dept tac">제품</td>
+                                            <td class="ta-left bold"><a class="detail">5G+Wi-Fi 6E 차세대 스마트공장 네트워크 모델 및  차세대 스마트공장 전용 통신 네트워크 구축 및 실증</a></td>
                                             <td class="period tac">홍길동</td>
                                             <td class="state tac"><span class="ing">답변대기</span></td>
                                             <td class="date tac">2021-11-15</td>
                                         </tr>
                                         <tr>
-                                            <td class="num tac">11</td>
-                                            <td class="ta-left bold"><a href="#">2020년 매그넘브릿지(주) 재무상태표</a></td>
-                                            <td class="dept tac">기타</td>
+                                            <td class="dept tac">제품</td>
+                                            <td class="ta-left bold"><a class="detail">2020년 매그넘브릿지(주) 재무상태표</a></td>
                                             <td class="period tac">홍길동</td>
                                             <td class="state tac"><span class="finish">답변완료</span></td></td>
                                             <td class="date tac">2021-04-07</td>
                                         </tr>
                                         <tr>
-                                            <td class="num tac">10</td>
-                                            <td class="ta-left bold"><a href="#">2019년 매그넘브릿지(주) 재무상태표</a></td>
-                                            <td class="dept tac">기타</td>
+                                            <td class="dept tac">제품</td>
+                                            <td class="ta-left bold"><a class="detail">2019년 매그넘브릿지(주) 재무상태표</a></td>
                                             <td class="period tac">홍길동</td>
                                             <td class="state tac"><span class="finish">답변완료</span></td></td>
                                             <td class="date tac">2020-04-06</td>
                                         </tr>
                                         <tr>
-                                            <td class="num tac">9</td>
-                                            <td class="ta-left bold"><a href="#" class="lock" title="비공개글">2018년 매그넘브릿지(주) 재무상태표</a></td>
-                                            <td class="dept tac">기타</td>
+                                            <td class="dept tac">제품</td>
+                                            <td class="ta-left bold"><a class="lock" title="비공개글" onclick="openPopup2()">2018년 매그넘브릿지(주) 재무상태표</a></td>
                                             <td class="period tac">홍길동</td>
                                             <td class="state tac"><span class="finish">답변완료</span></td></td>
                                             <td class="date tac">2019-03-29</td>
                                         </tr>
                                         <tr>
-                                            <td class="num tac">8</td>
-                                            <td class="ta-left bold"><a href="#">외부감사인 선임 공고(19~21년)</a></td>
                                             <td class="dept tac">채용</td>
+                                            <td class="ta-left bold"><a class="detail">외부감사인 선임 공고(19~21년)</a></td>
                                             <td class="period tac">홍길동</td>
                                             <td class="state tac"><span class="finish">답변완료</span></td></td>
                                             <td class="date tac">2019-03-07</td>
@@ -181,12 +223,12 @@
                                 <table class="view">
                                     <caption></caption>
                                     <colgroup>                                        
-                                        <col style="width: 12%;">
+                                        <col style="width: 15%;">
                                         <col>
-                                        <col style="width: 12%;">
-                                        <col style="width: 21%;">
-                                        <col style="width: 12%;">
-                                        <col style="width: 21%;">
+                                        <col style="width: 15%;">
+                                        <col style="width: 18%;">
+                                        <col style="width: 15%;">
+                                        <col style="width: 18%;">
                                     </colgroup>                                   
                                     <tbody>
                                         <tr>
@@ -195,15 +237,7 @@
                                         </tr>
                                         <tr>
                                             <th>작성자</th>
-                                            <td>홍길동</td>
-                                            <th>연락처</th>
-                                            <td>010-1234-5678</td>
-                                            <th>이메일</th>
-                                            <td>hong.gd@gmail.com</td>
-                                        </tr>
-                                        <tr>
-                                            <th>회사명</th>
-                                            <td>주식회사 매그넘브릿지</td>                                            
+                                            <td>홍길동</td>                                                                                        
                                             <th>등록일</th>
                                             <td>2025-06-10</td>
                                             <th>처리현황</th>
@@ -223,7 +257,7 @@
                                 <table class="answer mt-4">
                                     <caption></caption>
                                     <colgroup>                                        
-                                        <col style="width: 12%;">
+                                        <col style="width: 15%;">
                                         <col>
                                     </colgroup>                                   
                                     <tbody>                                        
@@ -239,13 +273,36 @@
                                     </tbody>
                                 </table>
 
+                                <table class="view mt-4">
+                                    <caption></caption>
+                                    <colgroup>                                        
+                                        <col style="width: 15%;">
+                                        <col>
+                                        <col style="width: 15%;">
+                                        <col style="width: 35%;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>내용</th>
+                                            <td colspan="3">
+                                                <textarea class="full" rows = "10" cols = "5"></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>첨부파일</th>
+                                            <td colspan="3">
+                                                <input type="file"  class="full" value="">
+                                            </td>
+                                        </tr>                                                                            
+                                    </tbody> 
+                                </table>
+
                                 <div class="flex_between">
                                     <div>
-                                        <button class="normal"type="button" onclick="return false">이전글</button> 
-                                        <button class="normal"type="button" onclick="return false">다음글</button>
+                                        <button class="normal" type="button" onclick="return false">돌아가기</button>
                                     </div>
-                                    <div>
-                                        <button class="board" type="button" onclick="return false">목록으로</button>
+                                    <div>                                        
+                                        <button class="board complete" type="button" onclick="return false">추가문의하기</button>
                                     </div>
                                 </div>
                             </div>
@@ -277,10 +334,8 @@
                                             </td>
                                             <th>공개여부</th>
                                             <td>
-                                                <div class="flex_between">
-                                                    <div><input type="radio"  checked="checked">공개 </div>
-                                                    <div class="ml-3"><input type="radio">비공개 <input type="password" disabled class="ml-3" placeholder="비밀번호 6자리 입력"></div>
-                                                </div>
+                                                <input type="radio"  checked="checked">공개 
+                                                <input type="radio"class="ml-3">비공개                                              
                                             </td>                                            
                                         </tr>                                        
                                         <tr>
@@ -304,7 +359,20 @@
                                             <td colspan="3">
                                                 <textarea class="full" rows = "10" cols = "5"></textarea>
                                             </td>
-                                        </tr>                                        
+                                        </tr>
+                                        <tr>
+                                            <th>첨부파일</th>
+                                            <td colspan="3">
+                                                <input type="file"  class="full" value="">
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <th>개인정보 약관</th>
+                                            <td><button class="normal smallbtn" type="button" onclick="openPopup()">동의 필요</button>
+                                                <button class="normal smallbtn disabled" type="button" onclick="">동의 완료</button></td>
+                                            <th>비밀번호</th>
+                                            <td><input type="password" size="12" placeholder="비밀번호 6자리 입력"></td>
+                                        </tr>                                          
                                     </tbody>
                                 </table>   
                                 <div class="flex_between">
@@ -322,57 +390,86 @@
                     </div>
                 </section>
                 <!-- // 컨텐츠 영역 -->
+
+                
             </main>
             <footer id="footer"><%- include('../partials/footer') %></footer>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
-$(document).ready(function () {
-    const $qnaboard = $(".qnaboard");
+        $(document).ready(function () {
+            const $qnaboard = $(".qnaboard");
 
-    function showNotice(index) {
-        $qnaboard.removeClass("active").hide();
-        $qnaboard.eq(index).addClass("active").show();
-    }
+            function showNotice(index) {
+                $qnaboard.removeClass("active").hide();
+                $qnaboard.eq(index).addClass("active").show();
+            }
 
-    // 초기화
-    $qnaboard.hide().removeClass("active");
-    $("#qnaboard01").show().addClass("active");
+            // 초기화
+            $qnaboard.hide().removeClass("active");
+            $("#qnaboard01").show().addClass("active");
 
-    // 작성하기 버튼 클릭 시 -> qnaboard03로 이동
-    $(".write").click(function () {
-        showNotice(2); // qnaboard03
-    });
+            // 작성하기 버튼 클릭 시 -> qnaboard03로 이동
+            $(".write").click(function () {
+                showNotice(2); // qnaboard03
+            });
 
-    // 목록으로 버튼 클릭 시 -> qnaboard01로 이동
-    $(".board:contains('목록으로')").click(function () {
-        showNotice(0); // qnaboard01
-    });
+            // 목록으로 버튼 클릭 시 -> qnaboard01로 이동
+            $(".board:contains('목록으로')").click(function () {
+                showNotice(0); // qnaboard01
+            });
 
-    // 제목 클릭 시 -> qnaboard02로 이동
-    $(".ta-left").click(function () {
-        showNotice(1); // qnaboard02
-    });
+            // 제목 클릭 시 -> qnaboard02로 이동
+            $(".detail").click(function () {
+                showNotice(1); // qnaboard02
+            });
 
-    // 작성완료 버튼 클릭 시 -> qnaboard01로 이동
-    $(".complete").click(function () {
-        showNotice(0); // qnaboard01
-    });
+            // 작성완료 버튼 클릭 시 -> qnaboard01로 이동
+            $(".complete").click(function () {
+                showNotice(0); // qnaboard01
+            });
 
-    // 돌아가기 버튼 클릭 시 -> qnaboard01로 이동
-    $(".normal:contains('돌아가기')").click(function () {
-        showNotice(0); // qnaboard01
-    });
+            // 돌아가기 버튼 클릭 시 -> qnaboard01로 이동
+            $(".normal:contains('돌아가기')").click(function () {
+                showNotice(0); // qnaboard01
+            });
 
-    // 이전글, 다음글 예시 처리 (필요 시 로직 추가)
-    $(".normal:contains('이전글')").click(function () {
-        showNotice(1); // qnaboard02
-    });
+            // 이전글, 다음글 예시 처리 (필요 시 로직 추가)
+            $(".normal:contains('이전글')").click(function () {
+                showNotice(1); // qnaboard02
+            });
 
-    $(".normal:contains('다음글')").click(function () {
-        showNotice(1); // qnaboard02
-    });
-});
-</script>
+            $(".normal:contains('다음글')").click(function () {
+                showNotice(1); // qnaboard02
+            });
+        });
+
+        
+        //비밀번호 입력        
+        function openPopup2() {
+            document.getElementById('alert_password').style.display = 'block';
+        }
+        function closeMap2() {
+            document.getElementById('alert_password').style.display = 'none';
+        }
+        // 초기엔 숨겨두기
+        window.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('alert_password').style.display = 'none';
+        })
+
+        //약관 팝업
+        function openPopup() {
+            document.getElementById('privacy_policy_terms').style.display = 'block';
+        }
+
+        function closeMap() {
+            document.getElementById('privacy_policy_terms').style.display = 'none';
+        }
+
+        // 초기엔 숨겨두기
+        window.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('privacy_policy_terms').style.display = 'none';
+        });
+        </script>
     </body>
 </html>

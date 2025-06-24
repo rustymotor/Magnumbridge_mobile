@@ -152,8 +152,11 @@ span.strong {
 .mt-20 {
     margin-top: 20rem !important;
 }
+.ml-1{
+    margin-left: 1rem;  //추가
+}
 .ml-3 {
-    margin-left: 3rem;
+    margin-left: 3rem !important;
 }
 .ml-10 {
     margin-left: 10rem;
@@ -190,4 +193,12 @@ span.strong {
 }
 .underline {
     text-decoration: underline;
+}
+
+.ellipsis2 { //추가
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }

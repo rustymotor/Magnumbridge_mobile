@@ -94,6 +94,20 @@ button.board {
 button.board:hover {
   background-color: #d2282f;
 }
+button.board.pop_btn {
+  height: 3.2rem;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  margin: 0 0.2rem;
+  min-width: 7.4rem;
+  font-size: 1.4rem;
+  padding: 1px 12px;
+}
+button.board.pop_btn:hover {
+  background-color: #d2282f;
+  border: 1px solid #d2282f;
+}
 
 button.normal {
   border-radius: 8px;
@@ -107,6 +121,28 @@ button.normal {
 button.normal:hover {
   border-color: #d2282f;
   color: #d2282f;
+}
+button.normal.smallbtn {
+  height: 2.6rem;
+  border: 1px solid #d2282f;
+  color: #d2282f;
+  font-size: 1.4rem;
+  padding: 1px 12px;
+}
+button.normal.smallbtn:hover {
+  background-color: #d2282f;
+  color: white;
+}
+button.normal.pop_btn {
+  height: 3.2rem;
+  font-size: 1.4rem;
+  padding: 1px 12px;
+  margin: 0 0.2rem;
+  min-width: 7.4rem;
+}
+button.normal.pop_btn:hover {
+  color: #d2282f;
+  border: 1px solid #d2282f;
 }
 
 button.disabled {
@@ -258,7 +294,12 @@ input[type=number].full {
 
 input[type=checkbox], input[type=radio] {
   accent-color: #0a1324;
-  margin-right: 5px;
+  margin: 0 0.6rem 0 0;
+}
+
+input::placeholder {
+  color: #8f8f8f;
+  font-size: 14px;
 }
 
 textarea {
@@ -720,10 +761,11 @@ input:disabled {
   padding: 0 10px;
   padding: 1rem;
   vertical-align: middle;
-  height: 5rem;
+  min-height: 5rem;
 }
 .container .box-list-area table tbody td.bold:hover {
   font-family: "Pretendard-Bold";
+  cursor: pointer;
 }
 .container .box-list-area table tbody td.date {
   font-size: 14px;
@@ -891,6 +933,101 @@ input:disabled {
 }
 .container.privacy table td:first-child {
   border-right: 1px solid #dddddd;
+}
+
+.alert_pop {
+  position: absolute;
+  z-index: 13;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  border-radius: 20px;
+  padding: 2rem 0 0;
+  background-color: #f7f7f7;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 2px 4px rgba(20, 20, 20, 0.1);
+  border: 1px solid #aaa;
+}
+.alert_pop .pop_contents {
+  display: block;
+  min-width: 22rem;
+  width: auto;
+  margin: 3rem 2rem 1rem 2rem;
+  height: auto;
+}
+.alert_pop .alert_btn {
+  display: block;
+  height: 4rem;
+  margin: 2rem 0;
+}
+.alert_pop .btn_layer_close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  width: 22px;
+  height: 22px;
+  scale: 0.6;
+}
+
+.layer_pop {
+  position: absolute;
+  z-index: 12;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 50rem;
+  border-radius: 20px;
+  padding: 4rem 0 0;
+  background-color: #f7f7f7;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 2px 4px rgba(20, 20, 20, 0.1);
+  border: 1px solid #aaa;
+}
+@media (max-width: 1280px) {
+  .layer_pop {
+    width: 96%;
+  }
+}
+.layer_pop .layer_scroll {
+  display: block;
+  overflow-y: auto;
+  margin: 5rem 3rem 2rem 3rem;
+  height: 34rem;
+  width: 40rem;
+  border-radius: 0.8rem;
+  background-color: white;
+}
+.layer_pop #layer_div {
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  text-align: initial;
+}
+@media (max-width: 1280px) {
+  .layer_pop #layer_div {
+    width: 860px !important;
+  }
+}
+.layer_pop .btn_layer_close {
+  position: absolute;
+  top: 36px;
+  right: 36px;
+  width: 22px;
+  height: 22px;
+  scale: 0.6;
+}
+.layer_pop h1.pop_title {
+  position: absolute;
+  top: 36px;
+  left: 36%;
+  font-size: 2.4rem;
+  font-family: "Pretendard-bold";
+  color: black;
 }
 
 /*# sourceMappingURL=common.css.map */
