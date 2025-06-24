@@ -6,7 +6,7 @@
     <body>
         <div class="container recruit">
             <header><%- include('../partials/header', { htmlExt: htmlExt }) %></header>
-            <div class="spacer_top_visual recruit_2">
+            <div class="spacer_top_visual recruit_3">
                 <h1 class="h1">
                     Recruit
                     <p class="subtitle">We are talking about trust, creativity, and innovation through technology.</p>
@@ -27,17 +27,26 @@
                             <button class="btn_normal disabled">기획부문</button>
                         </div>
                     </div>
-                    <div class="fullbg_gra_black mt-4">
+                    <div class="fullbg_gra_gray mt-4">
                         <div class="position"></div>
                         <!--noti 1-->
-                        <div class="notice">
+                        <div class="notice active" id="notice01">
                             <div class="topline flex_between">
-                                <h4 class="h4">Front-end 개발 경력사원 모집</h4>
+                                <h4 class="h4">Front-end 개발 경력사원 모집1</h4>
                                 <div class="flex_center ml-3">
-                                    <a href="#"
-                                        ><img src="<%= basePath %>images/recruit/btn_prev_off.png" class="mr-1"
-                                    /></a>
-                                    <a href="#"><img src="<%= basePath %>images/recruit/btn_next_on.png" /></a>
+                                    <span class="btn_prev"
+                                        ><img
+                                            src="<%= basePath %>images/recruit/btn_prev.png"
+                                            class="mr-1"
+                                            alt="이전 채용공고"
+                                            title="이전 채용공고"
+                                    /></span>
+                                    <span class="btn_next cursor"
+                                        ><img
+                                            src="<%= basePath %>images/recruit/btn_next_on.png"
+                                            alt="다음 채용공고"
+                                            title="다음 채용공고"
+                                    /></span>
                                 </div>
                             </div>
                             <div class="mt-7">
@@ -91,39 +100,34 @@
                                     </div>
                                     <span class="flex_middle fc-lgray">※ 일정조율 및 협의진행 가능</span>
                                 </div>
-                            </div>
-                            <div class="notice_bottom flex_center mt-2">
-                                <div>
-                                    <a
-                                        href="https://www.jobkorea.co.kr/Recruit/GI_Read/46635797?Oem_Code=C1"
-                                        target="_blank"
-                                        ><img src="<%= basePath %>images/recruit/button_jobkorea.png" class="mr-1"
-                                    /></a>
-                                </div>
-                                <div>
-                                    <a
-                                        href="https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=50230466&view_type=list"
-                                        target="_blank"
-                                        ><img src="<%= basePath %>images/recruit/button_saramin.png" class="mr-1"
-                                    /></a>
-                                </div>
-                                <div>
-                                    <a href="#none"
-                                        ><img src="<%= basePath %>images/recruit/button_jobplanet.png" class="mr-1"
-                                    /></a>
+                                <div class="notice_bottom flex_center mt-2">
+                                    <button type="button" onclick="window.location.href='recruit'">
+                                        바로 지원하기
+                                    </button>
+                                    <button class="basic ml-3" type="button" onclick="window.location.href='recruit'">
+                                        문의하기
+                                    </button>
                                 </div>
                             </div>
                         </div>
-
                         <!--noti 2-->
-                        <div class="notice active">
+                        <div class="notice" id="notice02">
                             <div class="topline flex_between">
-                                <h4 class="h4">SW 개발 부문  경력 사원 모집</h4>
-                                <div>
-                                    <!-- <a href="#"
-                                        ><img src="<%= basePath %>images/recruit/btn_prev_off.png" class="mr-1"
-                                    /></a>
-                                    <a href="#"><img src="<%= basePath %>images/recruit/btn_next_on.png" /></a> -->
+                                <h4 class="h4">SW 개발 부문 경력 사원 모집2</h4>
+                                <div class="flex_center ml-3">
+                                    <span class="btn_prev cursor"
+                                        ><img
+                                            src="<%= basePath %>images/recruit/btn_prev_on.png"
+                                            class="mr-1"
+                                            title="이전 채용공고"
+                                            alt="이전 채용공고"
+                                    /></span>
+                                    <span class="btn_next"
+                                        ><img
+                                            src="<%= basePath %>images/recruit/btn_next.png"
+                                            alt="다음 채용공고"
+                                            title="다음 채용공고"
+                                    /></span>
                                 </div>
                             </div>
                             <div class="mt-7">
@@ -146,7 +150,10 @@
                                             <li>(전문)대학 관련학과 졸업 이상의 학력소지자</li>
                                             <li>경력 6년 이상</li>
                                             <li>Java, JavaScript 등 개발 언어에 능숙한 자</li>
-                                            <li>FrontEnd 또는 BackEnd 개발을 위한 framework 사용에 능숙한 자 (Vue, React,  Spring)</li>
+                                            <li>
+                                                FrontEnd 또는 BackEnd 개발을 위한 framework 사용에 능숙한 자 (Vue,
+                                                React, Spring)
+                                            </li>
                                             <li>1가지 이상의 DBMS 사용에 능숙한 자</li>
                                             <li>노코드, 로코드 개발 경험자</li>
                                         </ol>
@@ -158,7 +165,7 @@
                                     <div>
                                         <ul>
                                             <li class="type-dot">공통 및 아키텍트 영역 업무 수행 경험자</li>
-                                            <li class="type-dot">프로젝트 PL / PM  업무 수행 경험자</li>
+                                            <li class="type-dot">프로젝트 PL / PM 업무 수행 경험자</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -178,25 +185,10 @@
                                 </div>
                             </div>
                             <div class="notice_bottom flex_center mt-2">
-                                <div>
-                                    <a
-                                        href="https://www.jobkorea.co.kr/Recruit/GI_Read/46635797?Oem_Code=C1"
-                                        target="_blank"
-                                        ><img src="<%= basePath %>images/recruit/button_jobkorea.png" class="mr-1"
-                                    /></a>
-                                </div>
-                                <div>
-                                    <a
-                                        href="https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=50230466&view_type=list"
-                                        target="_blank"
-                                        ><img src="<%= basePath %>images/recruit/button_saramin.png" class="mr-1"
-                                    /></a>
-                                </div>
-                                <div>
-                                    <a href="#none"
-                                        ><img src="<%= basePath %>images/recruit/button_jobplanet.png" class="mr-1"
-                                    /></a>
-                                </div>
+                                <button type="button" onclick="window.location.href='recruit'">바로 지원하기</button>
+                                <button class="basic ml-3" type="button" onclick="window.location.href='recruit'">
+                                    문의하기
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -206,5 +198,35 @@
             </main>
             <footer id="footer"><%- include('../partials/footer') %></footer>
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                const $notices = $(".notice");
+
+                // 현재 보여지는 공고의 인덱스를 active 클래스로 파악
+                let currentIndex = $notices.index($(".notice.active"));
+
+                function showNotice(index) {
+                    $notices.removeClass("active").hide();
+                    $notices.eq(index).addClass("active").show();
+                }
+
+                // 초기화
+                $notices.hide().removeClass("active");
+                $notices.eq(currentIndex).show().addClass("active");
+
+                // 다음 버튼 클릭 (notice01 내부에만 존재)
+                $(".btn_next.cursor").click(function () {
+                    currentIndex = (currentIndex + 1) % $notices.length;
+                    showNotice(currentIndex);
+                });
+
+                // 이전 버튼 클릭 (notice02 내부에만 존재)
+                $(".btn_prev.cursor").click(function () {
+                    currentIndex = (currentIndex - 1 + $notices.length) % $notices.length;
+                    showNotice(currentIndex);
+                });
+            });
+        </script>
     </body>
 </html>
