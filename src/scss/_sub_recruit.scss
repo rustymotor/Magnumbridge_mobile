@@ -269,5 +269,24 @@
             }
         }
     }
-
+}
+//지원확인
+.application{
+    padding: 2rem 6rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 70%;
+    max-width: 60rem;
+    margin: 5rem auto;
+    align-items: center;
+    label {
+        width: 40%;        
+    }
+    div {
+        display: flex;
+        padding: 1 9rem;
+        gap: 2rem;
+        height: 6rem;
+    }
+    
 }
