@@ -72,9 +72,7 @@ app.get("/pages/business_2", (req, res) => {
 app.get("/pages/business_3", (req, res) => {
     res.render("pages/business_3", { basePath: "../", htmlExt: "" });
 });
-app.get("/pages/company", (req, res) => {
-    res.render("pages/company", { basePath: "../", htmlExt: "" });
-});
+
 app.get("/pages/company_1", (req, res) => {
     res.render("pages/company_1", { basePath: "../", htmlExt: "" });
 });
@@ -87,6 +85,9 @@ app.get("/pages/company_3", (req, res) => {
 app.get("/pages/company_4", (req, res) => {
     res.render("pages/company_4", { basePath: "../", htmlExt: "" });
 });
+app.get("/pages/company_5", (req, res) => {
+    res.render("pages/company_5", { basePath: "../", htmlExt: "" });
+});
 app.get("/pages/recruit", (req, res) => {
     res.render("pages/recruit", { basePath: "../", htmlExt: "" });
 });
@@ -95,6 +96,9 @@ app.get("/pages/recruit_1", (req, res) => {
 });
 app.get("/pages/recruit_2", (req, res) => {
     res.render("pages/recruit_2", { basePath: "../", htmlExt: "" });
+});
+app.get("/pages/recruit_3", (req, res) => {
+    res.render("pages/recruit_3", { basePath: "../", htmlExt: "" });
 });
 app.get("/pages/privacy_policy", (req, res) => {
     res.render("pages/privacy_policy", { basePath: "../", htmlExt: "" });

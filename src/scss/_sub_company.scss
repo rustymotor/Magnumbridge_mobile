@@ -253,7 +253,12 @@
                 margin-right: 3.4rem;
             }
         }
+    }    
+}
+/* QnA Board 설정 */
+.qnaboard {
+    display: none;
+    &.active{
+        display: block;
     }
-
-    
 }

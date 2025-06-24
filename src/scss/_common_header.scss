@@ -189,7 +189,7 @@ header {
                         color: common.$gray600; //j추가
                         font-family: "Pretendard-Medium"; //j추가
                         margin: 0;
-                        padding-left: 3.4em;
+                        padding-left: 2.4em;
                     }
                     > a.active {
                         color: common.$mainColor;
@@ -355,6 +355,11 @@ main {
         background-size: cover;
     }
 
+    &.company_5 {
+        background: url("/images/visual_top_company_5.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
     &.business_1 {
         background: url("/images/visual_top_business_1.jpg") no-repeat center center;
         background-size: cover;
@@ -378,6 +383,11 @@ main {
     }
     &.recruit_2 {
         background: url("/images/visual_top_recruit_2.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
+    &.recruit_3 {
+        background: url("/images/visual_top_recruit_3.jpg") no-repeat center center;
         background-size: cover;
     }
 }

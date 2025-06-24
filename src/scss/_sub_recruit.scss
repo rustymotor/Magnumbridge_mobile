@@ -75,26 +75,27 @@
 /*상시채용 공용폼*/
 
 .fullbg_gra_gray {
-    height: 120rem;
+    // height: 120rem;
     width: 100%;
     display: flex;
     background-color: common.$mainColor;
     & .position {
         width: 35%;
-        background: url("/images/recruit/text.png") no-repeat right center;
+        background: url("/images/recruit/text.png") no-repeat right top;
         padding: 0;
-        background-position-x: 37rem;
-        height: 114rem;
-        opacity: .7;
+        min-height: 110rem;
+        // background-position-x: 37rem;
+        opacity: .5;
         @media (max-width: 1280px) {
             width: 0%;
         }
     }
     & .notice {
         width: 65%;
-        background: linear-gradient(to right, white 0%, #f8f8f8 100%);
+        background: linear-gradient(to right, white 0%, #e9e9e9 100%);
         border-top: 1px solid #eee;
-        padding: 8rem 10rem;
+        border-bottom: 1px solid #eee;
+        padding: 6rem 10rem;
         display: none;
 
         @media (max-width: 1280px) {
@@ -113,16 +114,26 @@
                 width: 100%;    
             }
         }
+        & .cursor {
+            cursor: pointer;
+        }
+       
         & .notice_body{
             display: flex;
             padding-bottom: 6rem;
-            width: 820px;
+            width: 82rem;
             font-family: 'Pretendard-Medium';
+            @media (max-width: 1280px) {
+                width: 100%;    
+            }
             & .tit_point {
                 width: 8.5rem;
                 margin: 0.5rem 2rem 0 0;
                 text-align: center;
                 line-height: 200%;
+                color: white;
+                padding: 0 16px;
+                word-break: keep-all;
                 height: 3.1rem;
                 background-color: #d2282f;
                 border-radius: 4rem;
@@ -137,23 +148,59 @@
                 margin-right: 3rem;
             }
         }
+        & .notice_bottom{
+            border-top: 1px solid common.$gray500;
+            width: 82rem;
+            padding: 3rem 0;
+            @media (max-width: 1280px) {
+                width: 100%;    
+                & img{
+                    zoom:.95;
+                }
+            }
+            & button{
+            width: 220px;
+            height: 54px;
+            border-radius: 40px;
+            color: #fff;
+            border: 1px solid #ededed;
+            font-family: "Pretendard-Semibold";
+            background-color: black;
+            &:hover{
+                    // background-color: common.$mainColor;
+                    box-shadow: 1px 1px 1px 0 rgba(200, 200, 200, 0.4);
+                    transform: translate(1px, 1px);
+                }            
+            &.basic {
+                background-color: white;
+                color: black;
+                &:hover{
+                    // background-color: common.$mainColor;
+                    // color: white;
+                    box-shadow: 1px 1px 1px 0 rgba(200, 200, 200, 0.4);
+                    transform: translate(1px, 1px);
+                    }            
+                }
+            }
+        }
     }
 
 }
 
 /*상시채용 홈페이지용*/
 .fullbg_gra_black {
-    height: 120rem;
     width: 100%;
     display: flex;
+    align-items: center;
     background-color: common.$mainColor;
+    color: white;
     & .position {
         width: 35%;
-        background: url("/images/recruit/text.png") no-repeat right center;
+        background: url("/images/recruit/text.png") no-repeat right top;
         padding: 0;
-        background-position-x: 37rem;
+        // background-position-x: 37rem;
         height: 114rem;
-        opacity: .7;
+        opacity: .5;
         @media (max-width: 1280px) {
             width: 0%;
         }
@@ -176,7 +223,7 @@
         & .topline{
             border-bottom: 1px solid common.$gray500;
             width: 82rem;
-            padding: 2rem 0 4rem 0;
+            padding: 0 0 4rem 0;
             @media (max-width: 1280px) {
                 width: 100%;    
             }
@@ -184,11 +231,18 @@
         & .notice_body{
             display: flex;
             padding-bottom: 6rem;
+            width: 82rem;
+            @media (max-width: 1280px) {
+                width: 100%; 
+                padding-bottom: 4rem;   
+            }
             & .tit_point {
                 width: 8.5rem;
                 margin: 0.5rem 2rem 0 0;
                 text-align: center;
                 line-height: 200%;
+                padding: 0 16px;
+                word-break: keep-all;
                 height: 3.1rem;
                 background-color: common.$mainColorBright;
                 border-radius: 4rem;
