@@ -69,6 +69,15 @@
   display: block;
 }
 
+.download {
+  background: #fff url(/images/company/ico_download.png) no-repeat 50% 50%/16px auto;
+  margin-right: 0.4rem;
+}
+
+a.down {
+  cursor: pointer;
+}
+
 button.search {
   border-radius: 8px;
   padding: 0 2rem;
@@ -106,6 +115,19 @@ button.board.pop_btn {
 }
 button.board.pop_btn:hover {
   background-color: #d2282f;
+  border: 1px solid #d2282f;
+}
+button.board.red {
+  background-color: #d2282f;
+  border: 1px solid #d2282f;
+  color: white;
+  margin: 0 0.2rem;
+  min-width: 7.4rem;
+  font-size: 1.4rem;
+  padding: 1px 12px;
+}
+button.board.red:hover {
+  background-color: #ff403e;
   border: 1px solid #d2282f;
 }
 

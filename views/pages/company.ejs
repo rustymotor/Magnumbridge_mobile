@@ -244,6 +244,10 @@
                                             <td><span class="finish">답변완료</span></td>
                                         </tr> 
                                         <tr>
+                                            <th>첨부파일</th>
+                                            <td colspan="5"><span class="download"></span><a class="down underline" title="첨부파일 다운로드" onclick="">파일명이 여기에 나옵니다. 다운로드 링크됩니다.</a></td>
+                                        </tr>
+                                        <tr>
                                             <th>내용</th>
                                             <td colspan="5">문의내용<br>
                                             문의내용<br>
@@ -252,7 +256,7 @@
                                             </td>
                                         </tr>                                        
                                     </tbody>
-                                </table>
+                                </table>                                
 
                                 <table class="answer mt-4">
                                     <caption></caption>
@@ -303,6 +307,17 @@
                                     </div>
                                     <div>                                        
                                         <button class="board complete" type="button" onclick="return false">추가문의하기</button>
+                                    </div>
+                                </div>
+                                <br /><br />
+                                <!--수정 삭제 버튼영역 -->
+                                 <div class="flex_between">
+                                    <div>
+                                        <button class="normal" type="button" onclick="return false">돌아가기</button>
+                                    </div>
+                                    <div> 
+                                        <button class="board" type="button" onclick="return false">수정</button>                                       
+                                        <button class="board red" type="button" onclick="return false">삭제</button>
                                     </div>
                                 </div>
                             </div>

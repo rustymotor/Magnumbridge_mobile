@@ -94,6 +94,14 @@ $pretendard_400: "Pretendard-Regular";
         }
     }
 }
+//다운로드 아이콘
+.download{
+    background: #fff url(/images/company/ico_download.png) no-repeat 50% 50% / 16px auto;
+    margin-right: 0.4rem;
+}
+a.down{
+   cursor: pointer;
+}
 //버튼 설정
 button.search{
     border-radius: 8px;
@@ -136,7 +144,20 @@ button.board{
             background-color: $mainColor;
             border: 1px solid $mainColor;
         }
-    }              
+    }   
+    &.red{
+        background-color: $mainColor;
+        border: 1px solid $mainColor;
+        color: white;
+        margin: 0 .2rem;
+        min-width: 7.4rem;
+        font-size: 1.4rem;
+        padding: 1px 12px;    
+        &:hover{
+            background-color: $mainColorBright;
+            border: 1px solid $mainColor;
+        }    
+    }               
 } 
 
 button.normal{
