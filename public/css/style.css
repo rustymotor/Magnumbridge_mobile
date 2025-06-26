@@ -159,6 +159,16 @@ button.normal.smallbtn:hover {
   background-color: #d2282f;
   color: white;
 }
+button.normal.tdbtn {
+  height: 3rem;
+  font-size: 1.4rem;
+  padding: 1px 12px;
+}
+button.normal.tdbtn:hover {
+  background-color: #f2f2f2;
+  border-color: #8f8f8f;
+  color: black;
+}
 button.normal.pop_btn {
   height: 3.2rem;
   font-size: 1.4rem;
@@ -839,6 +849,81 @@ input:disabled {
   color: #d2282f;
 }
 
+.layer_pop table {
+  border-spacing: 0;
+  color: #222222;
+  margin: 1.2rem 0 2.4rem 0;
+  table-layout: fixed;
+  width: 100%;
+  border-top: 1px solid #525252;
+}
+.layer_pop table thead th {
+  text-align: center;
+  height: 5rem;
+  vertical-align: middle;
+  font-family: "Pretendard-Bold";
+}
+.layer_pop table tbody th {
+  background-color: #f2f2f2;
+  vertical-align: middle;
+  border-bottom: 1px solid #dddddd;
+}
+.layer_pop table tbody td {
+  padding: 0.4rem 2rem;
+  vertical-align: middle;
+  text-align: left;
+  min-height: 6rem;
+  height: auto;
+  border-bottom: 1px solid #dddddd;
+}
+.layer_pop table tbody td input, .layer_pop table tbody td select {
+  width: auto;
+  height: 3rem;
+}
+.layer_pop table tbody td input:not(:first-child), .layer_pop table tbody td select:not(:first-child) {
+  margin-left: 0.5rem;
+}
+.layer_pop table tbody td input.url, .layer_pop table tbody td select.url {
+  margin-top: 3px;
+  width: 36rem;
+}
+.layer_pop table tbody td em {
+  display: inline;
+  position: relative;
+  left: 0.6rem;
+  top: 0;
+  color: #575e7c;
+  font-size: 1.3rem;
+}
+.layer_pop table tbody td .filebox input[type=file] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+.layer_pop table tbody td .filebox label {
+  display: inline-block;
+  border-radius: 8px;
+  height: 3rem;
+  font-size: 1.4rem;
+  padding: 1px 12px;
+  color: black;
+  line-height: 2.4rem;
+  border: 1px solid #8f8f8f;
+  font-family: "Pretendard-Semibold";
+  background-color: white;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+.layer_pop table tbody td .filebox .upload-name {
+  display: inline-block;
+  width: 36rem;
+  color: #999999;
+  font-size: 1.4rem;
+}
+
 .pagination {
   display: flex;
   justify-content: center;
@@ -963,7 +1048,7 @@ input:disabled {
 
 .alert_pop {
   position: absolute;
-  z-index: 13;
+  z-index: 6;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -998,8 +1083,8 @@ input:disabled {
 }
 
 .layer_pop {
-  position: absolute;
-  z-index: 12;
+  position: fixed;
+  z-index: 4;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -1019,6 +1104,12 @@ input:disabled {
 }
 .layer_pop .w900 {
   width: 90rem;
+  margin: 2rem 5rem;
+}
+.layer_pop .w900 p {
+  font-family: "Pretendard-bold";
+  font-size: 1.6rem;
+  text-align: left;
 }
 .layer_pop .layer_scroll {
   display: block;
@@ -3356,6 +3447,11 @@ span.strong {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
 }
 
 .flex_middle {

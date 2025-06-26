@@ -187,6 +187,16 @@ button.normal{
             color: white;
         }
     }
+    &.tdbtn{
+        height: 3rem;
+        font-size: 1.4rem;
+        padding: 1px 12px;
+        &:hover{
+            background-color: $bgBase;
+            border-color: $gray300;
+            color: black;
+        }
+    }
     &.pop_btn{
         height: 3.2rem;  
         font-size: 1.4rem;
@@ -878,6 +888,86 @@ input:disabled{
         }
     }
 }
+//POPUP 테이블 (지원서 작성)
+.layer_pop table {
+    border-spacing: 0; 
+    color:$gray700;       
+    margin: 1.2rem 0 2.4rem 0;   
+    table-layout: fixed;
+    width: 100%; 
+    border-top: 1px solid $gray500;
+    
+    thead th {        
+        text-align: center;
+        height: 5rem; 
+        vertical-align: middle;       
+        font-family: "Pretendard-Bold";         
+    }
+    tbody th {
+        background-color: $bgBase;
+        vertical-align: middle;
+        border-bottom: 1px solid $gray100;
+    }
+    tbody td {
+        padding: 0.4rem 2rem; 
+        vertical-align: middle;  
+        text-align: left;   
+        min-height: 6rem;
+        height: auto;
+        border-bottom: 1px solid $gray100; 
+        input, select{
+            width: auto;
+            height: 3rem;
+            &:not(:first-child){
+                margin-left:.5rem;
+            }
+            &.url{
+                margin-top: 3px;
+                width: 36rem;
+            }
+        }        
+        em{
+            display: inline;
+            position: relative;
+            left: .6rem;
+            top: 0;
+            color: $txt_dark-blue;
+            font-size: 1.3rem;
+        } 
+        .filebox {
+            input[type="file"] {
+                position: absolute;
+                width: 0;
+                height: 0;
+                padding: 0;
+                overflow: hidden;
+                border: 0;                
+            }
+            label {  //파일첨부용 버튼
+                display: inline-block;
+                border-radius: 8px;
+                height: 3rem;
+                font-size: 1.4rem;
+                padding: 1px 12px;
+                color: black;
+                line-height: 2.4rem;
+                border: 1px solid $gray300;
+                font-family: "Pretendard-Semibold";
+                background-color: white;
+                cursor: pointer;
+                margin-left: .5rem;
+            }
+            .upload-name {
+                display: inline-block;
+                width: 36rem;
+                color: #999999;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+//파일첨부 커스텀
+
 //페이지네이션
 .pagination {
     display: flex;
@@ -1020,7 +1110,7 @@ input:disabled{
 //비밀번호 입력
 .alert_pop {
     position: absolute;
-    z-index: 13;
+    z-index: 6;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -1054,10 +1144,10 @@ input:disabled{
     }
 }
 
-// 개인정보 약관
+// 개인정보 약관 등
 .layer_pop {
-    position: absolute;
-    z-index: 12;
+    position: fixed;
+    z-index: 4;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -1072,9 +1162,16 @@ input:disabled{
     @media (max-width: 1280px) {
         width: 96%;    
     }   
-    
+   //지원서 작성 POP 
     .w900 {
         width: 90rem;
+        margin: 2rem 5rem;
+        p{
+            font-family: "Pretendard-bold"; //j추가
+            font-size: 1.6rem;
+            text-align: left;
+
+        }
     }
 
     .layer_scroll {
