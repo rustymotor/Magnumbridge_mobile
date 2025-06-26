@@ -146,9 +146,12 @@
                             개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다.<br />
                         </div>
                     </div>
-                    <div>
+                    <div class="radio_wrap">
                         <input type="radio"  checked="checked">동의 
                         <input type="radio"class="ml-3">비동의     
+                    </div>
+                    <div class="btn_wrap">
+                        <button class="board w10" type="button" onclick="closeMap()">확인</button>
                     </div>
                 </div>  
 
@@ -397,7 +400,11 @@
                                         <tr>
                                             <th>첨부파일</th>
                                             <td colspan="3">
-                                                <input type="file"  class="full" value="">
+                                                 <div class="flex filebox">
+                                                    <input class="upload-name" type="text" value="첨부파일" placeholder="첨부파일">
+                                                    <label for="file">파일찾기</label>
+                                                    <input type="file" id="resumeFile">
+                                                </div>
                                             </td>
                                         </tr>                                                                            
                                     </tbody> 
@@ -451,8 +458,10 @@
                                             </td>
                                             <th>공개여부</th>
                                             <td>
-                                                <input type="radio"  checked="checked">공개 
-                                                <input type="radio"class="ml-3">비공개                                              
+                                                <div class="flex">
+                                                    <input type="radio"  checked="checked">공개 
+                                                    <input type="radio"class="ml-3">비공개  
+                                                </div>                                            
                                             </td>                                            
                                         </tr>                                        
                                         <tr>
@@ -480,7 +489,11 @@
                                         <tr>
                                             <th>첨부파일</th>
                                             <td colspan="3">
-                                                <input type="file"  class="full" value="">
+                                                <div class="flex filebox">
+                                                    <input class="upload-name" type="text" placeholder="파일을 첨부해주세요">
+                                                    <label for="file">파일찾기</label>
+                                                    <input type="file" id="file">
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr> 
@@ -662,7 +675,10 @@
             });
         });
 
-        
+        $("#file").on("change", function () {
+                var fileName = $(this).val().split("\\").pop();
+                $(this).siblings(".upload-name").val(fileName);
+            });
         //비밀번호 입력        
         function openPopup2() {
             document.getElementById('alert_password').style.display = 'block';
