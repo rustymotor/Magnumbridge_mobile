@@ -2655,10 +2655,6 @@ section.products .repository ul dl dd:before, section.products .repository ul dl
   display: block;
 }
 
-.recruit main {
-  height: 110vh !important;
-}
-
 /*인재상*/
 .fullbg_black {
   width: 100%;
