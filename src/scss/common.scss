@@ -828,8 +828,6 @@ input:disabled{
     .upload-name {
         display: inline-block;
         width: 36rem;
-        color: #999999;
-        font-size: 1.4rem;
     }
 }
 .container .box-list-area table {
@@ -859,7 +857,10 @@ input:disabled{
         padding: 0 10px;   
         padding: 1rem;
         vertical-align: middle;     
-        min-height: 5rem;  //수정     
+        min-height: 5rem;  //수정  
+        input {
+            height: 3rem;
+        }   
         &.bold:hover{
             font-family: "Pretendard-Bold";
             cursor: pointer;

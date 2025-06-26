@@ -123,10 +123,9 @@
                                             <input
                                                 class="upload-name"
                                                 type="text"
-                                                value="첨부파일"
-                                                placeholder="첨부파일"
+                                                placeholder="파일을 첨부해주세요"
                                             />
-                                            <label for="file">파일찾기</label>
+                                            <label for="resumeFile">파일찾기</label>
                                             <input type="file" id="resumeFile" />
                                             <em>doc, docx 파일로 올려주세요</em>
                                         </div>
@@ -139,15 +138,14 @@
                                             <input
                                                 class="upload-name"
                                                 type="text"
-                                                value="첨부파일"
-                                                placeholder="첨부파일"
+                                                placeholder="파일을 첨부해주세요"
                                             />
-                                            <label for="file">파일찾기</label>
+                                            <label for="portfolioFile">파일찾기</label>
                                             <input type="file" id="portfolioFile" />
                                             <em>doc, docx 파일로 올려주세요</em>
                                         </div>
                                         <div class="flex">
-                                            <input class="url" type="text" placeholder="홈페이지/블로그 주소" />
+                                            <input class="url" type="text" placeholder="홈페이지/블로그 주소 입력" />
                                         </div>
                                     </td>
                                 </tr>
@@ -401,6 +399,36 @@
             function closeMap2() {
                 document.getElementById("privacy_policy_terms").style.display = "none";
             }
+
+            $(document).ready(function () {
+                const $notices = $(".notice");
+
+                // 현재 보여지는 공고의 인덱스를 active 클래스로 파악
+                let currentIndex = $notices.index($(".notice.active"));
+
+                function showNotice(index) {
+                    $notices.removeClass("active").hide();
+                    $notices.eq(index).addClass("active").show();
+                }
+
+                // 초기화
+                $notices.hide().removeClass("active");
+                $notices.eq(currentIndex).show().addClass("active");
+
+                // 다음 버튼 클릭 (notice01 내부에만 존재)
+                $(".btn_next.cursor").click(function () {
+                    currentIndex = (currentIndex + 1) % $notices.length;
+                    showNotice(currentIndex);
+                });
+
+                // 이전 버튼 클릭 (notice02 내부에만 존재)
+                $(".btn_prev.cursor").click(function () {
+                    currentIndex = (currentIndex - 1 + $notices.length) % $notices.length;
+                    showNotice(currentIndex);
+                });
+            });
         </script>
+
+        
     </body>
 </html>

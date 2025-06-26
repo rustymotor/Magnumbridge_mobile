@@ -795,8 +795,6 @@ input:disabled {
 .filebox .upload-name {
   display: inline-block;
   width: 36rem;
-  color: #999999;
-  font-size: 1.4rem;
 }
 
 .container .box-list-area table {
@@ -827,6 +825,9 @@ input:disabled {
   padding: 1rem;
   vertical-align: middle;
   min-height: 5rem;
+}
+.container .box-list-area table tbody td input {
+  height: 3rem;
 }
 .container .box-list-area table tbody td.bold:hover {
   font-family: "Pretendard-Bold";

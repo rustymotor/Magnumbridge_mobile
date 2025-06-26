@@ -110,8 +110,8 @@
                                     <th>이력서</th>
                                     <td>    
                                         <div class="flex filebox">
-                                            <input class="upload-name" type="text" value="첨부파일" placeholder="첨부파일">
-                                            <label for="file">파일찾기</label>
+                                            <input class="upload-name" type="text" placeholder="파일을 첨부해주세요">
+                                            <label for="resumeFile">파일찾기</label>
                                             <input type="file" id="resumeFile">
                                             <em>doc, docx 파일로 올려주세요</em> 
                                         </div>
@@ -121,13 +121,13 @@
                                     <th>포트폴리오</th>
                                     <td>
                                         <div class="flex filebox">
-                                            <input class="upload-name" type="text" value="첨부파일" placeholder="첨부파일">
-                                            <label for="file">파일찾기</label>
+                                            <input class="upload-name" type="text" placeholder="파일을 첨부해주세요">
+                                            <label for="portfolioFile">파일찾기</label>
                                             <input type="file" id="portfolioFile">
                                             <em>doc, docx 파일로 올려주세요</em> 
                                         </div>
                                         <div class="flex">
-                                            <input class="url" type="text" placeholder="홈페이지/블로그 주소">
+                                            <input class="url" type="text" placeholder="홈페이지/블로그 주소 입력">
                                         </div>                                      
                                     </td>
                                 </tr>                               
@@ -262,7 +262,17 @@
             
             // 지원공고 목록 보이기
             document.getElementById("Appboard").style.display = "block";
-        }
+            }
+
+            $("#resumeFile").on("change", function () {
+                var fileName = $(this).val().split("\\").pop();
+                $(this).siblings(".upload-name").val(fileName);
+            });
+
+            $("#portfolioFile").on("change", function () {
+                var fileName = $(this).val().split("\\").pop();
+                $(this).siblings(".upload-name").val(fileName);
+            });
         
           
             function openPopup() {
@@ -273,6 +283,15 @@
             document.getElementById('application').style.display = 'none';
             }
 
+            function openPopup2() {
+                document.getElementById("privacy_policy_terms").style.display = "block";
+            }
+
+            function closeMap2() {
+                document.getElementById("privacy_policy_terms").style.display = "none";
+            }
+
         </script>
+        
     </body>
 </html>
