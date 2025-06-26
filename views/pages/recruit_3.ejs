@@ -19,6 +19,126 @@
                 <!-- 컨텐츠 영역 -->
                 <p class="subtxt">당사의 입사지원을 추천합니다.</p>
 
+                <!-- 지원하기 POP-->
+                <div class="layer_pop" id="application" style="display:none;">                    
+                    <button class="btn_layer_close" onclick="closeMap()">
+                        <img src=" <%= basePath %>/images/btn_sitemap_cancel.svg" alt="Layer 닫기" />
+                    </button>
+                    <h1 class="pop_title">지원서 작성</h1> 
+                    <h5 class="h5 fc-red">커머스 앱/웹 프론트 화면 개발</h5>                       
+                    <div class="w900">
+                        <p>기본정보</p> 
+                        <table>
+                            <caption></caption>
+                            <colgroup>    
+                                <col style="width: 15%;">
+                                <col style="width: 35%;">
+                                <col style="width: 15%;">
+                                <col>
+                            </colgroup>                                   
+                            <tbody>
+                                <tr>
+                                    <th>이름</th>                                    
+                                    <td><input type="text"  class="full" value="홍길동"></td>   
+                                    <th>성별</th>
+                                    <td><div class="flex"><input type="radio"  checked="checked">남 
+                                        <input type="radio"class="ml-3">여 </div>
+                                    </td>                                         
+                                </tr>                                        
+                                <tr>                                    
+                                    <th>생년</th>
+                                    <td><input type="text"  class="full" value="1980"></td>
+                                    <th>연락처</th>
+                                    <td><input type="text"  class="full" value="010-1234-5678"></td>                                             
+                                </tr>
+                                <tr>   
+                                    <th>이메일</th>
+                                    <td><input type="text"  class="full" value="hong.gd@gmail.com"></td> 
+                                    <th>병역</th>
+                                    <td><div class="flex">
+                                            <select>
+                                                <option>선택</option>
+                                                <option>비대상</option>
+                                                <option>군필</option>
+                                                <option>미필</option>
+                                                <option>면제</option>
+                                                <option>복무중</option>                                            
+                                            </select>
+                                            <input type="text" class="full" placeholder="사유를 입력하세요">
+                                        </div>
+                                    </td>   
+                                </tr>                                
+                                <tr>
+                                    <th>학교</th>
+                                    <td><input type="text"  class="full" value="대한대학교"></td>     
+                                    <th>학과</th>
+                                    <td><input type="text"  class="full" value="컴퓨터공학"></td>    
+                                </tr>
+                                <tr> 
+                                    <th>경력</th>
+                                    <td>
+                                        <div class="flex">
+                                            <select>
+                                                <option>선택</option>
+                                                <option>신입</option>
+                                                <option>경력</option>                                            
+                                            </select>
+                                            <input type="text" class="full" placeholder="N년 N월로 입력하세요">
+                                        </div>
+                                    </td>
+                                    <th>개인정보 약관</th>
+                                    <td><button class="normal smallbtn" type="button" onclick="openPopup2()">동의 필요</button>
+                                        <button class="normal smallbtn disabled" type="button" onclick="">동의 완료</button></td>
+                                </tr>
+                                <tr>
+                                    <th>비밀번호</th>
+                                    <td><input type="password" class="full"  placeholder="비밀번호 6자리 입력"></td>
+                                    <th>비밀번호 확인</th>
+                                    <td><input type="password" class="full"  placeholder="비밀번호 6자리 입력"></td>
+                                </tr>                                                                   
+                            </tbody>
+                        </table> 
+                        <p>제출서류</p>
+                        <table>
+                            <caption></caption>
+                            <colgroup>    
+                                <col style="width: 15%;">
+                                <col>
+                            </colgroup>                                   
+                            <tbody>
+                                <tr>
+                                    <th>이력서</th>
+                                    <td>    
+                                        <div class="flex filebox">
+                                            <input class="upload-name" type="text" value="첨부파일" placeholder="첨부파일">
+                                            <label for="file">파일찾기</label>
+                                            <input type="file" id="resumeFile">
+                                            <em>doc, docx 파일로 올려주세요</em> 
+                                        </div>
+                                    </td>                                   
+                                </tr>
+                                <tr>
+                                    <th>포트폴리오</th>
+                                    <td>
+                                        <div class="flex filebox">
+                                            <input class="upload-name" type="text" value="첨부파일" placeholder="첨부파일">
+                                            <label for="file">파일찾기</label>
+                                            <input type="file" id="portfolioFile">
+                                            <em>doc, docx 파일로 올려주세요</em> 
+                                        </div>
+                                        <div class="flex">
+                                            <input class="url" type="text" placeholder="홈페이지/블로그 주소">
+                                        </div>                                      
+                                    </td>
+                                </tr>                               
+                            </tbody>
+                        </table>  
+                    </div>                    
+                    <div class="btn_wrap">
+                        <button class="board w10" type="button" onclick="closeMap()">지원하기</button>
+                    </div>
+                </div>  
+                <!-- 지원하기 POP End-->
                 <section class="box-list-area">
                     <div class="list nomargin" id="Application">                        
                         <div class="fullbg_gray bg_logo">                             
@@ -77,7 +197,7 @@
                                 </tr>
                                 <tr>
                                     <td class="dept tac">FrontEnd</td>
-                                    <td class="ta-left bold"><a class="underline">커머스 앱/웹 프론트 화면 개발</a></td>
+                                    <td class="ta-left bold"><a class="underline"onclick="openPopup()">커머스 앱/웹 프론트 화면 개발</a></td>
                                     <td class="period tac">경력</td>
                                     <td class="state tac"><span class="finish">접수</span></td>
                                     <td class="date tac">2025.05.08</td>
@@ -85,7 +205,7 @@
                                 </tr>
                                 <tr>
                                     <td class="dept tac">APP 개발</td>
-                                    <td class="ta-left bold"><a class="underline">React Native 기반의 크로스 플랫폼 앱 개발</a></td>                                            
+                                    <td class="ta-left bold"><a class="underline"onclick="openPopup()">React Native 기반의 크로스 플랫폼 앱 개발</a></td>                                            
                                     <td class="period tac">경력</td>
                                     <td class="state tac"><span class="finish">접수</span></td>
                                     <td class="date tac">2025.05.08</td>
@@ -143,6 +263,16 @@
             // 지원공고 목록 보이기
             document.getElementById("Appboard").style.display = "block";
         }
+        
+          
+            function openPopup() {
+            document.getElementById('application').style.display = 'block';
+            }
+
+            function closeMap() {
+            document.getElementById('application').style.display = 'none';
+            }
+
         </script>
     </body>
 </html>
