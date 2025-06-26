@@ -386,9 +386,9 @@
                                             <th>첨부파일</th>
                                             <td colspan="3">
                                                 <div class="flex filebox">
-                                                    <input class="upload-name" type="text" value="첨부파일" placeholder="첨부파일">
+                                                    <input class="upload-name" type="text" placeholder="파일을 첨부해주세요">
                                                     <label for="file">파일찾기</label>
-                                                    <input type="file" id="resumeFile">
+                                                    <input type="file" id="file">
                                                 </div>
                                             </td>
                                         </tr>
@@ -470,7 +470,10 @@
             });
         });
 
-        
+        $("#file").on("change", function () {
+                var fileName = $(this).val().split("\\").pop();
+                $(this).siblings(".upload-name").val(fileName);
+            });
         //비밀번호 입력        
         function openPopup2() {
             document.getElementById('alert_password').style.display = 'block';
