@@ -858,7 +858,7 @@ input:disabled{
         padding: 1rem;
         vertical-align: middle;     
         min-height: 5rem;  //수정  
-        input {
+        input, select {
             height: 3rem;
         }   
         &.bold:hover{

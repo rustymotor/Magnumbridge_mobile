@@ -826,7 +826,7 @@ input:disabled {
   vertical-align: middle;
   min-height: 5rem;
 }
-.container .box-list-area table tbody td input {
+.container .box-list-area table tbody td input, .container .box-list-area table tbody td select {
   height: 3rem;
 }
 .container .box-list-area table tbody td.bold:hover {
