@@ -20,134 +20,154 @@
                 <p class="subtxt">창의적이고 협력과 소통이 원활한 인재를 상시 모집합니다.</p>
 
                 <!-- 지원하기 POP-->
-                <div class="layer_pop" id="application" style="display:none;">                    
+                <div class="layer_pop" id="application" style="display: none">
                     <button class="btn_layer_close" onclick="closeMap()">
                         <img src=" <%= basePath %>/images/btn_sitemap_cancel.svg" alt="Layer 닫기" />
                     </button>
-                    <h1 class="pop_title">지원서 작성</h1> 
-                    <h5 class="h5 fc-red">커머스 앱/웹 프론트 화면 개발</h5>                       
+                    <h1 class="pop_title">지원서 작성</h1>
+                    <h5 class="h5 fc-red">커머스 앱/웹 프론트 화면 개발</h5>
                     <div class="w900">
-                        <p>기본정보</p> 
+                        <p>기본정보</p>
                         <table>
                             <caption></caption>
-                            <colgroup>    
-                                <col style="width: 15%;">
-                                <col style="width: 35%;">
-                                <col style="width: 15%;">
-                                <col>
-                            </colgroup>                                   
+                            <colgroup>
+                                <col style="width: 15%" />
+                                <col style="width: 35%" />
+                                <col style="width: 15%" />
+                                <col />
+                            </colgroup>
                             <tbody>
                                 <tr>
-                                    <th>이름</th>                                    
-                                    <td><input type="text"  class="full" value="홍길동"></td>   
+                                    <th>이름</th>
+                                    <td><input type="text" class="full" value="홍길동" /></td>
                                     <th>성별</th>
-                                    <td><div class="flex"><input type="radio"  checked="checked">남 
-                                        <input type="radio"class="ml-3">여 </div>
-                                    </td>                                         
-                                </tr>                                        
-                                <tr>                                    
-                                    <th>생년</th>
-                                    <td><input type="text"  class="full" value="1980"></td>
-                                    <th>연락처</th>
-                                    <td><input type="text"  class="full" value="010-1234-5678"></td>                                             
+                                    <td>
+                                        <div class="flex">
+                                            <input type="radio" checked="checked" />남
+                                            <input type="radio" class="ml-3" />여
+                                        </div>
+                                    </td>
                                 </tr>
-                                <tr>   
+                                <tr>
+                                    <th>생년</th>
+                                    <td><input type="text" class="full" value="1980" /></td>
+                                    <th>연락처</th>
+                                    <td><input type="text" class="full" value="010-1234-5678" /></td>
+                                </tr>
+                                <tr>
                                     <th>이메일</th>
-                                    <td><input type="text"  class="full" value="hong.gd@gmail.com"></td> 
+                                    <td><input type="text" class="full" value="hong.gd@gmail.com" /></td>
                                     <th>병역</th>
-                                    <td><div class="flex">
+                                    <td>
+                                        <div class="flex">
                                             <select>
                                                 <option>선택</option>
                                                 <option>비대상</option>
                                                 <option>군필</option>
                                                 <option>미필</option>
                                                 <option>면제</option>
-                                                <option>복무중</option>                                            
+                                                <option>복무중</option>
                                             </select>
-                                            <input type="text" class="full" placeholder="사유를 입력하세요">
+                                            <input type="text" class="full" placeholder="사유를 입력하세요" />
                                         </div>
-                                    </td>   
-                                </tr>                                
+                                    </td>
+                                </tr>
                                 <tr>
                                     <th>학교</th>
-                                    <td><input type="text"  class="full" value="대한대학교"></td>     
+                                    <td><input type="text" class="full" value="대한대학교" /></td>
                                     <th>학과</th>
-                                    <td><input type="text"  class="full" value="컴퓨터공학"></td>    
+                                    <td><input type="text" class="full" value="컴퓨터공학" /></td>
                                 </tr>
-                                <tr> 
+                                <tr>
                                     <th>경력</th>
                                     <td>
                                         <div class="flex">
                                             <select>
                                                 <option>선택</option>
                                                 <option>신입</option>
-                                                <option>경력</option>                                            
+                                                <option>경력</option>
                                             </select>
-                                            <input type="text" class="full" placeholder="N년 N월로 입력하세요">
+                                            <input type="text" class="full" placeholder="N년 N월로 입력하세요" />
                                         </div>
                                     </td>
                                     <th>개인정보 약관</th>
-                                    <td><button class="normal smallbtn" type="button" onclick="openPopup2()">동의 필요</button>
-                                        <button class="normal smallbtn disabled" type="button" onclick="">동의 완료</button></td>
+                                    <td>
+                                        <button class="normal smallbtn" type="button" onclick="openPopup2()">
+                                            동의 필요
+                                        </button>
+                                        <button class="normal smallbtn disabled" type="button" onclick="">
+                                            동의 완료
+                                        </button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th>비밀번호</th>
-                                    <td><input type="password" class="full"  placeholder="비밀번호 6자리 입력"></td>
+                                    <td><input type="password" class="full" placeholder="비밀번호 6자리 입력" /></td>
                                     <th>비밀번호 확인</th>
-                                    <td><input type="password" class="full"  placeholder="비밀번호 6자리 입력"></td>
-                                </tr>                                                                   
+                                    <td><input type="password" class="full" placeholder="비밀번호 6자리 입력" /></td>
+                                </tr>
                             </tbody>
-                        </table> 
+                        </table>
                         <p>제출서류</p>
                         <table>
                             <caption></caption>
-                            <colgroup>    
-                                <col style="width: 15%;">
-                                <col>
-                            </colgroup>                                   
+                            <colgroup>
+                                <col style="width: 15%" />
+                                <col />
+                            </colgroup>
                             <tbody>
                                 <tr>
                                     <th>이력서</th>
-                                    <td>    
+                                    <td>
                                         <div class="flex filebox">
-                                            <input class="upload-name" type="text" value="첨부파일" placeholder="첨부파일">
+                                            <input
+                                                class="upload-name"
+                                                type="text"
+                                                value="첨부파일"
+                                                placeholder="첨부파일"
+                                            />
                                             <label for="file">파일찾기</label>
-                                            <input type="file" id="resumeFile">
-                                            <em>doc, docx 파일로 올려주세요</em> 
+                                            <input type="file" id="resumeFile" />
+                                            <em>doc, docx 파일로 올려주세요</em>
                                         </div>
-                                    </td>                                   
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th>포트폴리오</th>
                                     <td>
                                         <div class="flex filebox">
-                                            <input class="upload-name" type="text" value="첨부파일" placeholder="첨부파일">
+                                            <input
+                                                class="upload-name"
+                                                type="text"
+                                                value="첨부파일"
+                                                placeholder="첨부파일"
+                                            />
                                             <label for="file">파일찾기</label>
-                                            <input type="file" id="portfolioFile">
-                                            <em>doc, docx 파일로 올려주세요</em> 
+                                            <input type="file" id="portfolioFile" />
+                                            <em>doc, docx 파일로 올려주세요</em>
                                         </div>
                                         <div class="flex">
-                                            <input class="url" type="text" placeholder="홈페이지/블로그 주소">
-                                        </div>                                      
+                                            <input class="url" type="text" placeholder="홈페이지/블로그 주소" />
+                                        </div>
                                     </td>
-                                </tr>                               
+                                </tr>
                             </tbody>
-                        </table>  
-                    </div>                    
+                        </table>
+                    </div>
                     <div class="btn_wrap">
                         <button class="board w10" type="button" onclick="closeMap()">지원하기</button>
                     </div>
-                </div>  
+                </div>
                 <!-- 지원하기 POP End-->
 
-                <!-- // Layer Pop 약관 --> 
-                <div class="layer_pop" id="privacy_policy_terms" style="display: none;">                    
+                <!-- // Layer Pop 약관 -->
+                <div class="layer_pop" id="privacy_policy_terms" style="display: none">
                     <button class="btn_layer_close" onclick="closeMap2()">
                         <img src=" <%= basePath %>/images/btn_sitemap_cancel.svg" alt="Layer 닫기" />
                     </button>
-                    <h1 class="pop_title">개인정보 약관</h1>                        
+                    <h1 class="pop_title">개인정보 약관</h1>
                     <div class="layer_scroll">
-                        <div id="layer_div">                            
+                        <div id="layer_div">
                             개인정보 약관내용<br />
                             개인정보 수집 및 이용 목적<br />
                             영업 문의 대응 목적으로만 활용하며, 이외 목적으로 사용하지 않습니다.<br /><br />
@@ -155,7 +175,8 @@
                             접수된 개인정보는 원칙적으로 수집 및 이용 목적이 달성되면 지체 없이 파기합니다.<br />
                             단, 별도 파기 요청이 없을 경우 관련 법령에 의거하여 5년간 보관합니다.<br /><br />
                             개인정보의 파기 절차<br />
-                            개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다.<br />
+                            개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당
+                            개인정보를 파기합니다.<br />
                             개인정보 약관내용<br />
                             개인정보 수집 및 이용 목적<br />
                             영업 문의 대응 목적으로만 활용하며, 이외 목적으로 사용하지 않습니다.<br /><br />
@@ -163,18 +184,18 @@
                             접수된 개인정보는 원칙적으로 수집 및 이용 목적이 달성되면 지체 없이 파기합니다.<br />
                             단, 별도 파기 요청이 없을 경우 관련 법령에 의거하여 5년간 보관합니다.<br /><br />
                             개인정보의 파기 절차<br />
-                            개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다.<br />
+                            개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당
+                            개인정보를 파기합니다.<br />
                         </div>
                     </div>
                     <div class="radio_wrap">
-                        <input type="radio"  checked="checked">동의 
-                        <input type="radio"class="ml-3">비동의     
+                        <input type="radio" checked="checked" />동의 <input type="radio" class="ml-3" />비동의
                     </div>
                     <div class="btn_wrap">
                         <button class="board w10" type="button" onclick="closeMap2()">확인</button>
                     </div>
-                </div> 
-                <!-- // Layer Pop 약관 END-->  
+                </div>
+                <!-- // Layer Pop 약관 END-->
 
                 <section>
                     <div>
@@ -257,19 +278,9 @@
                                     </div>
                                     <span class="flex_middle fc-lgray">※ 일정조율 및 협의진행 가능</span>
                                 </div>
-<<<<<<< HEAD
-                                <div class="notice_bottom flex_center mt-2">
-                                    <button type="button" onclick="window.location.href='recruit_2'">
-                                        바로 지원하기
-                                    </button>
-                                    <button class="basic ml-3" type="button" onclick="window.location.href='recruit_2'">
-=======
                                 <div class="notice_bottom flex mt-2">
-                                    <button type="button" onclick="openPopup()">
-                                        바로 지원하기
-                                    </button>
+                                    <button type="button" onclick="openPopup()">바로 지원하기</button>
                                     <button class="basic ml-3" type="button" onclick="window.location.href='company_5'">
->>>>>>> han
                                         문의하기
                                     </button>
                                 </div>
@@ -349,15 +360,9 @@
                                     <span class="flex_middle fc-lgray">※ 일정조율 및 협의진행 가능</span>
                                 </div>
                             </div>
-<<<<<<< HEAD
-                            <div class="notice_bottom flex_center mt-2">
-                                <button type="button" onclick="window.location.href='recruit_2'">바로 지원하기</button>
-                                <button class="basic ml-3" type="button" onclick="window.location.href='recruit_2'">
-=======
                             <div class="notice_bottom flex mt-2">
                                 <button type="button" onclick="openPopup()">바로 지원하기</button>
                                 <button class="basic ml-3" type="button" onclick="window.location.href='company_5'">
->>>>>>> han
                                     문의하기
                                 </button>
                             </div>
@@ -371,32 +376,31 @@
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
-            $("#resumeFile").on('change', function () {
-            var fileName = $(this).val().split('\\').pop();
-            $(this).siblings(".upload-name").val(fileName);
+            $("#resumeFile").on("change", function () {
+                var fileName = $(this).val().split("\\").pop();
+                $(this).siblings(".upload-name").val(fileName);
             });
 
-            $("#portfolioFile").on('change', function () {
-            var fileName = $(this).val().split('\\').pop();
-            $(this).siblings(".upload-name").val(fileName);
+            $("#portfolioFile").on("change", function () {
+                var fileName = $(this).val().split("\\").pop();
+                $(this).siblings(".upload-name").val(fileName);
             });
 
             function openPopup() {
-            document.getElementById('application').style.display = 'block';
+                document.getElementById("application").style.display = "block";
             }
 
             function closeMap() {
-            document.getElementById('application').style.display = 'none';
+                document.getElementById("application").style.display = "none";
             }
 
             function openPopup2() {
-            document.getElementById('privacy_policy_terms').style.display = 'block';
+                document.getElementById("privacy_policy_terms").style.display = "block";
             }
 
             function closeMap2() {
-            document.getElementById('privacy_policy_terms').style.display = 'none';
+                document.getElementById("privacy_policy_terms").style.display = "none";
             }
-            
         </script>
     </body>
 </html>
