@@ -802,7 +802,36 @@ input:disabled{
     }
 }
 //공통 테이블
-
+.filebox {
+    input[type="file"] {
+        position: absolute;
+        width: 0;
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 0;                
+    }
+    label {  //파일첨부용 버튼
+        display: inline-block;
+        border-radius: 8px;
+        height: 3rem;
+        font-size: 1.4rem;
+        padding: 1px 12px;
+        color: black;
+        line-height: 2.6rem;
+        border: 1px solid $gray300;
+        font-family: "Pretendard-Semibold";
+        background-color: white;
+        cursor: pointer;
+        margin-left: .5rem;
+    }
+    .upload-name {
+        display: inline-block;
+        width: 36rem;
+        color: #999999;
+        font-size: 1.4rem;
+    }
+}
 .container .box-list-area table {
     border-spacing: 0; 
     color:$gray700;       
@@ -912,8 +941,7 @@ input:disabled{
         padding: 0.4rem 2rem; 
         vertical-align: middle;  
         text-align: left;   
-        min-height: 6rem;
-        height: auto;
+        height: 5rem;
         border-bottom: 1px solid $gray100; 
         input, select{
             width: auto;
@@ -933,37 +961,7 @@ input:disabled{
             top: 0;
             color: $txt_dark-blue;
             font-size: 1.3rem;
-        } 
-        .filebox {
-            input[type="file"] {
-                position: absolute;
-                width: 0;
-                height: 0;
-                padding: 0;
-                overflow: hidden;
-                border: 0;                
-            }
-            label {  //파일첨부용 버튼
-                display: inline-block;
-                border-radius: 8px;
-                height: 3rem;
-                font-size: 1.4rem;
-                padding: 1px 12px;
-                color: black;
-                line-height: 2.4rem;
-                border: 1px solid $gray300;
-                font-family: "Pretendard-Semibold";
-                background-color: white;
-                cursor: pointer;
-                margin-left: .5rem;
-            }
-            .upload-name {
-                display: inline-block;
-                width: 36rem;
-                color: #999999;
-                font-size: 1.4rem;
-            }
-        }
+        }         
     }
 }
 //파일첨부 커스텀
