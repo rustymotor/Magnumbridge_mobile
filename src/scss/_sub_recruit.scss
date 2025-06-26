@@ -262,7 +262,57 @@
                 & img {
                     zoom: 0.95;
                 }
-            }
+            } 
         }
     }
 }
+<<<<<<< HEAD
+=======
+//지원확인
+.bg_logo{
+    background: url("/images/company/back_logo.png") no-repeat center center;
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    background-size: contain;
+    
+}
+
+.application{
+    padding: 1rem 6rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 70%;    
+    max-width: 60rem;
+    margin: 4rem auto;
+    align-items: center;
+    @media (max-width: 1280px) {
+        margin: 3rem auto; 
+    } 
+    label {
+        width: 30%;  
+        font-family: "Pretendard-Semibold";      
+    }
+    div{
+        display: flex;
+        padding: 1 9rem;
+        gap: 2rem;
+        height: 6rem;
+        align-items: center;
+        @media (max-width: 1280px) {
+            height: 5rem;
+        } 
+    }    
+}
+.btn_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.4rem;
+}
+.radio_wrap{
+    height: 5rem;
+    border-bottom: 1px solid #ccc;
+    margin: 0 2.6rem;
+}
+>>>>>>> han
