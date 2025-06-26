@@ -1,9 +1,6 @@
 @use "common";
-.recruit main {
-    height: 110vh !important;
-}
 
- /*인재상*/
+/*인재상*/
 .fullbg_black {
     width: 100%;
     background: linear-gradient(to top, #000000 0%, #000000 15%, #333333 95%);
@@ -15,7 +12,7 @@
         width: 1280px;
         background-position-x: 520px;
         height: 78rem;
-        padding: 15rem 6rem ;
+        padding: 15rem 6rem;
         @media (max-width: 1280px) {
             background-size: 440px;
             height: 64rem;
@@ -57,7 +54,7 @@
         justify-content: space-around;
         & div.circle {
             box-shadow: 0px -4px 2px 3px rgba(0, 0, 0, 0.05);
-            background-image: linear-gradient(to bottom, white 0%,  #f2f2f2 60%, #cccccc 94%);
+            background-image: linear-gradient(to bottom, white 0%, #f2f2f2 60%, #cccccc 94%);
             color: white;
             border-radius: 50%;
             width: 26rem;
@@ -85,7 +82,7 @@
         padding: 0;
         min-height: 110rem;
         // background-position-x: 37rem;
-        opacity: .5;
+        opacity: 0.5;
         @media (max-width: 1280px) {
             width: 0%;
         }
@@ -101,30 +98,30 @@
         @media (max-width: 1280px) {
             width: 100%;
         }
-        &.active{
+        &.active {
             display: flex;
             align-content: flex-start;
-            flex-direction: column;            
+            flex-direction: column;
         }
-        & .topline{
+        & .topline {
             border-bottom: 1px solid common.$gray500;
             width: 82rem;
             padding: 2rem 0 4rem 0;
             @media (max-width: 1280px) {
-                width: 100%;    
+                width: 100%;
             }
         }
         & .cursor {
             cursor: pointer;
         }
-       
-        & .notice_body{
+
+        & .notice_body {
             display: flex;
             padding-bottom: 6rem;
             width: 82rem;
-            font-family: 'Pretendard-Medium';
+            font-family: "Pretendard-Medium";
             @media (max-width: 1280px) {
-                width: 100%;    
+                width: 100%;
             }
             & .tit_point {
                 width: 8.5rem;
@@ -148,43 +145,42 @@
                 margin-right: 3rem;
             }
         }
-        & .notice_bottom{
+        & .notice_bottom {
             border-top: 1px solid common.$gray500;
             width: 82rem;
             padding: 3rem 0;
             @media (max-width: 1280px) {
-                width: 100%;    
-                & img{
-                    zoom:.95;
+                width: 100%;
+                & img {
+                    zoom: 0.95;
                 }
             }
-            & button{
-            width: 220px;
-            height: 54px;
-            border-radius: 40px;
-            color: #fff;
-            border: 1px solid #ededed;
-            font-family: "Pretendard-Semibold";
-            background-color: black;
-            &:hover{
+            & button {
+                width: 220px;
+                height: 54px;
+                border-radius: 40px;
+                color: #fff;
+                border: 1px solid #ededed;
+                font-family: "Pretendard-Semibold";
+                background-color: black;
+                &:hover {
                     // background-color: common.$mainColor;
                     box-shadow: 1px 1px 1px 0 rgba(200, 200, 200, 0.4);
                     transform: translate(1px, 1px);
-                }            
-            &.basic {
-                background-color: white;
-                color: black;
-                &:hover{
-                    // background-color: common.$mainColor;
-                    // color: white;
-                    box-shadow: 1px 1px 1px 0 rgba(200, 200, 200, 0.4);
-                    transform: translate(1px, 1px);
-                    }            
+                }
+                &.basic {
+                    background-color: white;
+                    color: black;
+                    &:hover {
+                        // background-color: common.$mainColor;
+                        // color: white;
+                        box-shadow: 1px 1px 1px 0 rgba(200, 200, 200, 0.4);
+                        transform: translate(1px, 1px);
+                    }
                 }
             }
         }
     }
-
 }
 
 /*상시채용 홈페이지용*/
@@ -200,7 +196,7 @@
         padding: 0;
         // background-position-x: 37rem;
         height: 114rem;
-        opacity: .5;
+        opacity: 0.5;
         @media (max-width: 1280px) {
             width: 0%;
         }
@@ -215,26 +211,26 @@
         @media (max-width: 1280px) {
             width: 100%;
         }
-        &.active{
+        &.active {
             display: flex;
             align-content: flex-start;
-            flex-direction: column;            
+            flex-direction: column;
         }
-        & .topline{
+        & .topline {
             border-bottom: 1px solid common.$gray500;
             width: 82rem;
             padding: 0 0 4rem 0;
             @media (max-width: 1280px) {
-                width: 100%;    
+                width: 100%;
             }
         }
-        & .notice_body{
+        & .notice_body {
             display: flex;
             padding-bottom: 6rem;
             width: 82rem;
             @media (max-width: 1280px) {
-                width: 100%; 
-                padding-bottom: 4rem;   
+                width: 100%;
+                padding-bottom: 4rem;
             }
             & .tit_point {
                 width: 8.5rem;
@@ -257,17 +253,16 @@
                 margin-right: 3rem;
             }
         }
-        & .notice_bottom{
+        & .notice_bottom {
             border-top: 1px solid common.$gray500;
             width: 82rem;
             padding: 6rem 0 0 0;
             @media (max-width: 1280px) {
-                width: 100%;    
-                & img{
-                    zoom:.95;
+                width: 100%;
+                & img {
+                    zoom: 0.95;
                 }
             }
         }
     }
-
 }
