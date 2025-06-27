@@ -151,6 +151,8 @@
             padding: 3rem 0;
             @media (max-width: 1280px) {
                 width: 100%;
+                display: flex;
+                justify-content: center;
                 & img {
                     zoom: 0.95;
                 }

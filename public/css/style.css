@@ -1103,7 +1103,7 @@ input:disabled {
   height: auto;
   border-radius: 20px;
   padding: 3rem 0;
-  background-color: #f9f9f9;
+  background-color: #fafafa;
   overflow: hidden;
   text-align: center;
   box-shadow: 0 2px 2px 4px rgba(20, 20, 20, 0.1);
@@ -1129,6 +1129,7 @@ input:disabled {
   margin: 5rem 3rem 2rem 3rem;
   height: 30rem;
   width: 40rem;
+  border: 1px solid #f2f2f2;
   border-radius: 0.8rem;
   background-color: white;
 }
@@ -2825,6 +2826,8 @@ section.products .repository ul dl dd:before, section.products .repository ul dl
 @media (max-width: 1280px) {
   .fullbg_gra_gray .notice .notice_bottom {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .fullbg_gra_gray .notice .notice_bottom img {
     zoom: 0.95;

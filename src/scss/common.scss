@@ -10,7 +10,7 @@ $gray500: #525252;
 $gray300: #8f8f8f;
 $gray200: #aaaaaa;
 $gray100: #dddddd;
-$gray50: #f9f9f9;
+$gray50: #fafafa;
 
 $blueblack: #0a1324;
 $darkblue: #2e334b;
@@ -1191,6 +1191,7 @@ input:disabled{
         margin: 5rem 3rem 2rem 3rem;
         height: 30rem; 
         width: 40rem;
+        border: 1px solid $bgBase;
         border-radius: .8rem;
         background-color: white;
 
