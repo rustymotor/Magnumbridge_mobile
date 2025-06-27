@@ -153,6 +153,7 @@ button.normal.smallbtn {
   border: 1px solid #d2282f;
   color: #d2282f;
   font-size: 1.4rem;
+  border-radius: 6px;
   padding: 1px 12px;
 }
 button.normal.smallbtn:hover {
@@ -163,6 +164,7 @@ button.normal.tdbtn {
   height: 3rem;
   font-size: 1.4rem;
   padding: 1px 12px;
+  border-radius: 6px;
 }
 button.normal.tdbtn:hover {
   background-color: #f2f2f2;
@@ -788,7 +790,7 @@ input:disabled {
 }
 .filebox label {
   display: inline-block;
-  border-radius: 8px;
+  border-radius: 6px;
   height: 3rem;
   font-size: 1.4rem;
   padding: 1px 12px;

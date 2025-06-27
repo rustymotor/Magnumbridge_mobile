@@ -182,6 +182,7 @@ button.normal{
         border: 1px solid $mainColor;
         color: $mainColor;
         font-size: 1.4rem;
+        border-radius: 6px;
         padding: 1px 12px;
         &:hover{
             background-color: $mainColor;
@@ -192,6 +193,7 @@ button.normal{
         height: 3rem;
         font-size: 1.4rem;
         padding: 1px 12px;
+        border-radius: 6px;
         &:hover{
             background-color: $bgBase;
             border-color: $gray300;
@@ -362,8 +364,9 @@ input[type='number'] {
     background-color: white;
     &.full{
         width: 100%;
-        flex:1;
+        flex:1;        
     }
+    
 }
 
 input[type='checkbox'],input[type="radio"] {
@@ -821,7 +824,7 @@ input:disabled{
     }
     label {  //파일첨부용 버튼
         display: inline-block;
-        border-radius: 8px;
+        border-radius: 6px;
         height: 3rem;
         font-size: 1.4rem;
         padding: 1px 12px;
@@ -866,7 +869,7 @@ input:disabled{
         padding: 1rem;
         vertical-align: middle;     
         min-height: 5rem;  //수정  
-        input, select {
+        input, select{
             height: 3rem;
         }   
         &.bold:hover{
