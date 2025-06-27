@@ -230,6 +230,14 @@ button.btn_normal.active {
   background-color: black;
 }
 
+button.delete {
+  background: #fff url(/images/company/icon_del.png) no-repeat 50% 50%/16px auto;
+  width: 1.6rem;
+  margin-left: 0.6rem;
+  vertical-align: middle;
+  height: 1.6rem;
+}
+
 ul li {
   list-style-type: none;
 }
@@ -903,6 +911,7 @@ input:disabled {
   vertical-align: middle;
   text-align: left;
   height: 5rem;
+  line-height: 2rem;
   border-bottom: 1px solid #dddddd;
 }
 .layer_pop table tbody td input, .layer_pop table tbody td select {
@@ -1092,7 +1101,7 @@ input:disabled {
   height: auto;
   border-radius: 20px;
   padding: 3rem 0;
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
   overflow: hidden;
   text-align: center;
   box-shadow: 0 2px 2px 4px rgba(20, 20, 20, 0.1);
