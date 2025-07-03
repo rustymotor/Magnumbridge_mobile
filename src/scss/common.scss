@@ -350,10 +350,18 @@ select {
         width: 100%;
         height: 3.6rem;
     }
+    &:focus-within{
+        border: 1px solid #777;
+    }
+    &:focus-visible  {
+        outline: none;
+    } 
 }
 
 input[type='text'],
 input[type='password'],
+input[type='email'],
+input[type='search'],
 input[type='number'] {
     border-radius: 4px;
     padding: 0 1rem;
@@ -366,7 +374,17 @@ input[type='number'] {
         width: 100%;
         flex:1;        
     }
-    
+    &:focus-within{
+        border: 1px solid #777;
+    }
+    &:focus-visible  {
+        outline: none;
+    }   
+}
+input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-text-fill-color: black !important;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 input[type='checkbox'],input[type="radio"] {
@@ -391,7 +409,12 @@ textarea {
         width: 100%;
         max-width: 1034px;
     }
-
+    &:focus-within{
+        border: 1px solid #777;
+    }
+    &:focus-visible  {
+        outline: none;
+    } 
 }
 
 
@@ -1011,6 +1034,9 @@ input:disabled{
         &.end{
             background: url("/images/company/ico_end.png") no-repeat 50% 50%;
         }
+        &:hover{
+            border: 1px solid $gray200;
+        }
     }
     & .disabled{
         opacity: .5;
@@ -1120,7 +1146,7 @@ input:disabled{
 
 //비밀번호 입력
 .alert_pop {
-    position: absolute;
+    position: fixed;
     z-index: 6;
     left: 50%;
     top: 50%;
