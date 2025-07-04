@@ -57,9 +57,7 @@ $pretendard_400: "Pretendard-Regular";
     font-family: "Pretendard-SemiBold";
     font-size: 1.4rem;
 }
-.container .partner a:visited {
-    color: #857ea2;
-}
+
 
 .container .company a:visited {
     color: inherit;
@@ -1207,7 +1205,8 @@ input:disabled{
     }   
    //지원서 작성 POP 
     .w900 {
-        width: 90rem;
+        width: 90%;
+        max-width: 90rem;
         margin: 2rem 5rem;
         p{
             font-family: "Pretendard-bold"; //j추가
@@ -1216,7 +1215,10 @@ input:disabled{
 
         }
     }
-
+    .w460{
+        width: 46rem;
+    }
+}
     .layer_scroll {
         display: block;
         overflow-y: auto;
