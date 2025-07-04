@@ -112,6 +112,31 @@
             @media (max-width: 1280px) {
                 width: 100%;
             }
+            em {
+                margin-right: 1rem;
+                font-size: 16px;
+                font-family: "Pretendard-Semibold";
+                vertical-align: middle;
+                padding: 0.6rem 1.2rem;
+                background: white;
+                text-align: center;
+                border-radius: 0.8rem;
+                //계약직
+                &.emp-ct{
+                    border: 2px solid common.$txt_sub;
+                    color: common.$txt_sub;
+                }
+                //프리랜서
+                &.emp-fr{
+                    border: 2px solid common.$txt_olive;
+                    color: common.$txt_olive;
+                }
+                //정직원
+                &.emp-full{
+                    border: 2px solid common.$mainColorBright;
+                    color: common.$mainColorBright;
+                }
+            }
         }
         & .cursor {
             cursor: pointer;
