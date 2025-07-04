@@ -865,6 +865,9 @@ input:disabled {
   text-align: center;
   vertical-align: middle;
 }
+.container .box-list-area table tbody th span {
+  margin-left: 3px;
+}
 .container .box-list-area table tbody td {
   border-bottom: 1px solid #dddddd;
   padding: 0 10px;
@@ -928,7 +931,7 @@ input:disabled {
 .layer_pop table {
   border-spacing: 0;
   color: #222222;
-  margin: 1.2rem 0 2.4rem 0;
+  margin: 0.6rem 0 2.4rem 0;
   table-layout: fixed;
   width: 100%;
   border-top: 1px solid #525252;
@@ -943,6 +946,9 @@ input:disabled {
   background-color: #f2f2f2;
   vertical-align: middle;
   border-bottom: 1px solid #dddddd;
+}
+.layer_pop table tbody th span {
+  margin-left: 3px;
 }
 .layer_pop table tbody td {
   padding: 0.4rem 2rem;

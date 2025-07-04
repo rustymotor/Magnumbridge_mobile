@@ -884,7 +884,10 @@ input:disabled{
         background-color: $bgBase;
         border-bottom: 1px solid $gray100;
         text-align: center; 
-        vertical-align: middle;
+        vertical-align: middle;   
+        span {
+            margin-left: 3px;
+        }                   
     }
     tbody td {
         border-bottom: 1px solid $gray100;
@@ -956,7 +959,7 @@ input:disabled{
 .layer_pop table {
     border-spacing: 0; 
     color:$gray700;       
-    margin: 1.2rem 0 2.4rem 0;   
+    margin: 0.6rem 0 2.4rem 0;   
     table-layout: fixed;
     width: 100%; 
     border-top: 1px solid $gray500;
@@ -971,6 +974,9 @@ input:disabled{
         background-color: $bgBase;
         vertical-align: middle;
         border-bottom: 1px solid $gray100;
+        span {
+            margin-left: 3px;
+        }  
     }
     tbody td {
         padding: 0.4rem 2rem; 

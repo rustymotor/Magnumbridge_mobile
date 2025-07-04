@@ -27,7 +27,10 @@
                     <h1 class="pop_title">지원서 작성</h1>
                     <h5 class="h5 fc-red">커머스 앱/웹 프론트 화면 개발</h5>
                     <div class="w900">
-                        <p>기본정보</p>
+                        <div class="flex_between">                            
+                            <p>기본정보</p>
+                            <span class="fc-red">* 필수입력</span>
+                        </div>
                         <table>
                             <caption></caption>
                             <colgroup>
@@ -38,9 +41,9 @@
                             </colgroup>
                             <tbody>
                                 <tr>
-                                    <th>이름</th>
+                                    <th>이름<span class="fc-red">*</span></th>
                                     <td><input type="text" class="full" value="홍길동" /></td>
-                                    <th>성별</th>
+                                    <th>성별<span class="fc-red">*</span></th>
                                     <td>
                                         <div class="flex">
                                             <input type="radio" checked="checked" />남
@@ -49,15 +52,15 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>생년</th>
-                                    <td><input type="text" class="full" value="1980" /></td>
+                                    <th>생년월<span class="fc-red">*</span></th>
+                                    <td><input type="text" class="full" value="198003" /></td>
                                     <th>연락처</th>
                                     <td><input type="text" class="full" value="010-1234-5678" /></td>
                                 </tr>
                                 <tr>
                                     <th>이메일</th>
                                     <td><input type="text" class="full" value="hong.gd@gmail.com" /></td>
-                                    <th>병역</th>
+                                    <th>병역<span class="fc-red">*</span></th>
                                     <td>
                                         <div class="flex">
                                             <select>
@@ -79,7 +82,7 @@
                                     <td><input type="text" class="full" value="컴퓨터공학" /></td>
                                 </tr>
                                 <tr>
-                                    <th>경력</th>
+                                    <th>경력<span class="fc-red">*</span></th>
                                     <td>
                                         <div class="flex">
                                             <select>
@@ -90,7 +93,7 @@
                                             <input type="text" class="full" placeholder="N년 N월로 입력하세요" />
                                         </div>
                                     </td>
-                                    <th>개인정보 약관</th>
+                                    <th>개인정보 약관<span class="fc-red">*</span></th>
                                     <td>
                                         <button class="normal smallbtn" type="button" onclick="openPopup2()">
                                             동의 필요
@@ -101,9 +104,9 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>비밀번호</th>
+                                    <th>비밀번호<span class="fc-red">*</span></th>
                                     <td><input type="password" class="full" placeholder="비밀번호 6자리 입력" /></td>
-                                    <th>비밀번호 확인</th>
+                                    <th>비밀번호 확인<span class="fc-red">*</span></th>
                                     <td><input type="password" class="full" placeholder="비밀번호 6자리 입력" /></td>
                                 </tr>
                             </tbody>
