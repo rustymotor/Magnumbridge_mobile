@@ -860,6 +860,10 @@ input:disabled{
     .upload-name {
         display: inline-block;
         width: 36rem;
+        @media (max-width: 900px) {
+            width: auto;
+            min-width: 20rem;
+        }        
     }
 }
 .container .box-list-area table {
@@ -870,6 +874,9 @@ input:disabled{
     background-color: white;
     table-layout: fixed;
     width: 100%;  
+    @media (max-width: 1020px) {
+    min-width: 82rem;
+    }
     
     thead th {        
         text-align: center;
@@ -1186,11 +1193,11 @@ input:disabled{
 }
 
 // 개인정보 약관 등
-.layer_pop {
+.layer_pop{
     position: fixed;
     z-index: 4;
     left: 50%;
-    top: 50%;
+    top: 53%;
     transform: translate(-50%, -50%);
     height: auto;
     border-radius: 20px;
@@ -1200,13 +1207,13 @@ input:disabled{
     text-align: center;
     box-shadow: 0 2px 2px 4px rgba(20, 20, 20, 0.1);
     border: 1px solid #aaa;
-    @media (max-width: 1280px) {
-        width: 96%;    
+    @media (max-width: 1020px) {
+        width: 90%;
+        max-width: 90rem;
     }   
    //지원서 작성 POP 
     .w900 {
-        width: 90%;
-        max-width: 90rem;
+        width: 90rem;
         margin: 2rem 5rem;
         p{
             font-family: "Pretendard-bold"; //j추가
@@ -1214,8 +1221,12 @@ input:disabled{
             text-align: left;
 
         }
+        @media (max-width: 1020px) {    
+            margin: 2rem 3rem;
+            width: auto;
+        }
     }
-    .w460{
+    &.w460{
         width: 46rem;
     }
     .layer_scroll {
@@ -1236,9 +1247,7 @@ input:disabled{
         height: auto;
         padding: 2rem;
         text-align: initial;
-        @media (max-width: 1280px) {
-            width: 860px !important;    
-        }       
+              
     }
     .btn_layer_close {
         position: absolute;
