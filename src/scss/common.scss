@@ -170,17 +170,17 @@ button.board_del {
     border-radius: 8px;
     padding: 0 2rem;
     height: 4rem;
-    color: $mainColor;
+    color: white;
     font-family: "Pretendard-Semibold";
-    background-color: transparent;
-    border: 1px solid $mainColor;
+    background-color: $mainColor;
     &.w10 {
         min-width: 12rem;
         height: 5rem;
     }
     &:hover {
-        background-color: $mainColor;
-        color: white;
+        background-color: $mainColorBright;
+        // box-shadow: 1px 1px 1px 0 rgba(200, 200, 200, 0.4);
+        // transform: translate(1px, 1px);
     }
     &.pop_btn {
         height: 3.2rem;
