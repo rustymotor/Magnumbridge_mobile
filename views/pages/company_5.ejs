@@ -17,9 +17,9 @@
             </div>
             <main>
                 <!-- 컨텐츠 영역 -->
-                <p class="subtxt">궁금한 점 있으시면 언제든 문의 게시판에 글 남겨주세요.</p>
+                <p class="subtxt">궁금한 사항이나 의견을 작성해 주시면 빠른 시일 내에 답변 드리겠습니다.</p>
                 <!-- // Layer Pop 약관 -->                
-                <div class="layer_pop" id="privacy_policy_terms">                    
+                <div class="layer_pop w460" id="privacy_policy_terms">                    
                     <button class="btn_layer_close" onclick="closeMap()">
                         <img src=" <%= basePath %>/images/btn_sitemap_cancel.svg" alt="Layer 닫기" />
                     </button>
@@ -248,7 +248,11 @@
                                         </tr> 
                                         <tr>
                                             <th>첨부파일</th>
-                                            <td colspan="5"><span class="download"></span><a class="down underline" title="첨부파일 다운로드" onclick="">파일명이 여기에 나옵니다. 다운로드 링크됩니다.</a></td>
+                                            <td colspan="5"><span class="download"></span>
+                                                <a class="down underline" title="첨부파일 다운로드" onclick="">파일명이 여기에 나옵니다. 다운로드 링크됩니다.</a>
+                                                <!-- 수정화면에서만 노출 -->
+                                                <button class="delete" title="삭제"></button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <th>내용</th>
@@ -280,33 +284,37 @@
                                     </tbody>
                                 </table>
 
-                                <table class="view mt-4">
-                                    <caption></caption>
-                                    <colgroup>                                        
-                                        <col style="width: 15%;">
-                                        <col>
-                                        <col style="width: 15%;">
-                                        <col style="width: 35%;">
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <th>내용</th>
-                                            <td colspan="3">
-                                                <textarea class="full" rows = "10" cols = "5"></textarea>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>첨부파일</th>
-                                            <td colspan="3">
-                                                 <div class="flex filebox">
-                                                    <input class="upload-name" type="text" value="첨부파일" placeholder="첨부파일">
-                                                    <label for="file">파일찾기</label>
-                                                    <input type="file" id="resumeFile">
-                                                </div>
-                                            </td>
-                                        </tr>                                                                            
-                                    </tbody> 
-                                </table>
+
+                                <!-- 추가 문의 시 활성화 -->
+                                <div style="display: block;">
+                                    <table class="view mt-4">
+                                        <caption></caption>
+                                        <colgroup>                                        
+                                            <col style="width: 15%;">
+                                            <col>
+                                            <col style="width: 15%;">
+                                            <col style="width: 35%;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>내용</th>
+                                                <td colspan="3">
+                                                    <textarea class="full" rows = "10" cols = "5"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>첨부파일</th>
+                                                <td colspan="3">
+                                                    <div class="flex filebox">
+                                                        <input class="upload-name" type="text" value="첨부파일" placeholder="첨부파일">
+                                                        <label for="file">파일찾기</label>
+                                                        <input type="file" id="resumeFile">
+                                                    </div>
+                                                </td>
+                                            </tr>                                                                            
+                                        </tbody> 
+                                    </table>
+                                </div>
 
                                 <div class="flex_between">
                                     <div>

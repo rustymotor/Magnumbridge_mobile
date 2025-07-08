@@ -10,6 +10,7 @@ $gray500: #525252;
 $gray300: #8f8f8f;
 $gray200: #aaaaaa;
 $gray100: #dddddd;
+$gray50: #fafafa;
 
 $blueblack: #0a1324;
 $darkblue: #2e334b;
@@ -56,9 +57,7 @@ $pretendard_400: "Pretendard-Regular";
     font-family: "Pretendard-SemiBold";
     font-size: 1.4rem;
 }
-.container .partner a:visited {
-    color: #857ea2;
-}
+
 
 .container .company a:visited {
     color: inherit;
@@ -181,6 +180,7 @@ button.normal{
         border: 1px solid $mainColor;
         color: $mainColor;
         font-size: 1.4rem;
+        border-radius: 6px;
         padding: 1px 12px;
         &:hover{
             background-color: $mainColor;
@@ -191,6 +191,7 @@ button.normal{
         height: 3rem;
         font-size: 1.4rem;
         padding: 1px 12px;
+        border-radius: 6px;
         &:hover{
             background-color: $bgBase;
             border-color: $gray300;
@@ -256,6 +257,13 @@ button.btn_normal {
         border: 1px solid black;
         background-color: black;
     }
+}
+button.delete {
+    background: #fff url(/images/company/icon_del.png) no-repeat 50% 50% / 16px auto;
+    width: 1.6rem;
+    margin-left: .6rem;
+    vertical-align: middle;
+    height: 1.6rem;
 }
 //UL OL 설정
 ul li{
@@ -340,10 +348,18 @@ select {
         width: 100%;
         height: 3.6rem;
     }
+    &:focus-within{
+        border: 1px solid #777;
+    }
+    &:focus-visible  {
+        outline: none;
+    } 
 }
 
 input[type='text'],
 input[type='password'],
+input[type='email'],
+input[type='search'],
 input[type='number'] {
     border-radius: 4px;
     padding: 0 1rem;
@@ -354,8 +370,19 @@ input[type='number'] {
     background-color: white;
     &.full{
         width: 100%;
-        flex:1;
+        flex:1;        
     }
+    &:focus-within{
+        border: 1px solid #777;
+    }
+    &:focus-visible  {
+        outline: none;
+    }   
+}
+input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-text-fill-color: black !important;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 input[type='checkbox'],input[type="radio"] {
@@ -380,7 +407,12 @@ textarea {
         width: 100%;
         max-width: 1034px;
     }
-
+    &:focus-within{
+        border: 1px solid #777;
+    }
+    &:focus-visible  {
+        outline: none;
+    } 
 }
 
 
@@ -813,7 +845,7 @@ input:disabled{
     }
     label {  //파일첨부용 버튼
         display: inline-block;
-        border-radius: 8px;
+        border-radius: 6px;
         height: 3rem;
         font-size: 1.4rem;
         padding: 1px 12px;
@@ -828,6 +860,10 @@ input:disabled{
     .upload-name {
         display: inline-block;
         width: 36rem;
+        @media (max-width: 900px) {
+            width: auto;
+            min-width: 20rem;
+        }        
     }
 }
 .container .box-list-area table {
@@ -838,6 +874,9 @@ input:disabled{
     background-color: white;
     table-layout: fixed;
     width: 100%;  
+    @media (max-width: 1020px) {
+    min-width: 82rem;
+    }
     
     thead th {        
         text-align: center;
@@ -850,7 +889,10 @@ input:disabled{
         background-color: $bgBase;
         border-bottom: 1px solid $gray100;
         text-align: center; 
-        vertical-align: middle;
+        vertical-align: middle;   
+        span {
+            margin-left: 3px;
+        }                   
     }
     tbody td {
         border-bottom: 1px solid $gray100;
@@ -858,7 +900,7 @@ input:disabled{
         padding: 1rem;
         vertical-align: middle;     
         min-height: 5rem;  //수정  
-        input, select {
+        input, select{
             height: 3rem;
         }   
         &.bold:hover{
@@ -922,7 +964,7 @@ input:disabled{
 .layer_pop table {
     border-spacing: 0; 
     color:$gray700;       
-    margin: 1.2rem 0 2.4rem 0;   
+    margin: 0.6rem 0 2.4rem 0;   
     table-layout: fixed;
     width: 100%; 
     border-top: 1px solid $gray500;
@@ -937,12 +979,16 @@ input:disabled{
         background-color: $bgBase;
         vertical-align: middle;
         border-bottom: 1px solid $gray100;
+        span {
+            margin-left: 3px;
+        }  
     }
     tbody td {
         padding: 0.4rem 2rem; 
         vertical-align: middle;  
         text-align: left;   
         height: 5rem;
+        line-height: 2rem;
         border-bottom: 1px solid $gray100; 
         input, select{
             width: auto;
@@ -998,6 +1044,9 @@ input:disabled{
         }
         &.end{
             background: url("/images/company/ico_end.png") no-repeat 50% 50%;
+        }
+        &:hover{
+            border: 1px solid $gray200;
         }
     }
     & .disabled{
@@ -1108,7 +1157,7 @@ input:disabled{
 
 //비밀번호 입력
 .alert_pop {
-    position: absolute;
+    position: fixed;
     z-index: 6;
     left: 50%;
     top: 50%;
@@ -1144,22 +1193,23 @@ input:disabled{
 }
 
 // 개인정보 약관 등
-.layer_pop {
+.layer_pop{
     position: fixed;
     z-index: 4;
     left: 50%;
-    top: 50%;
+    top: 53%;
     transform: translate(-50%, -50%);
     height: auto;
     border-radius: 20px;
     padding: 3rem 0;
-    background-color: #f7f7f7;
+    background-color: $gray50;
     overflow: hidden;
     text-align: center;
     box-shadow: 0 2px 2px 4px rgba(20, 20, 20, 0.1);
     border: 1px solid #aaa;
-    @media (max-width: 1280px) {
-        width: 96%;    
+    @media (max-width: 1020px) {
+        width: 90%;
+        max-width: 90rem;
     }   
    //지원서 작성 POP 
     .w900 {
@@ -1171,14 +1221,21 @@ input:disabled{
             text-align: left;
 
         }
+        @media (max-width: 1020px) {    
+            margin: 2rem 3rem;
+            width: auto;
+        }
     }
-
+    &.w460{
+        width: 46rem;
+    }
     .layer_scroll {
         display: block;
         overflow-y: auto;
         margin: 5rem 3rem 2rem 3rem;
         height: 30rem; 
         width: 40rem;
+        border: 1px solid $bgBase;
         border-radius: .8rem;
         background-color: white;
 
@@ -1190,9 +1247,7 @@ input:disabled{
         height: auto;
         padding: 2rem;
         text-align: initial;
-        @media (max-width: 1280px) {
-            width: 860px !important;    
-        }       
+              
     }
     .btn_layer_close {
         position: absolute;

@@ -92,11 +92,13 @@
         background: linear-gradient(to right, white 0%, #e9e9e9 100%);
         border-top: 1px solid #eee;
         border-bottom: 1px solid #eee;
-        padding: 6rem 10rem;
+        padding: 6rem 0 6rem 10rem;
         display: none;
 
         @media (max-width: 1280px) {
             width: 100%;
+            min-width: 60rem;
+            padding: 2rem 4rem;
         }
         &.active {
             display: flex;
@@ -110,6 +112,31 @@
             @media (max-width: 1280px) {
                 width: 100%;
             }
+            em {
+                margin-right: 1rem;
+                font-size: 16px;
+                font-family: "Pretendard-Semibold";
+                vertical-align: middle;
+                padding: 0.6rem 1.2rem;
+                background: white;
+                text-align: center;
+                border-radius: 0.8rem;
+                //계약직
+                &.emp-ct{
+                    border: 2px solid common.$txt_sub;
+                    color: common.$txt_sub;
+                }
+                //프리랜서
+                &.emp-fr{
+                    border: 2px solid common.$txt_olive;
+                    color: common.$txt_olive;
+                }
+                //정직원
+                &.emp-full{
+                    border: 2px solid common.$mainColorBright;
+                    color: common.$mainColorBright;
+                }
+            }
         }
         & .cursor {
             cursor: pointer;
@@ -118,11 +145,9 @@
         & .notice_body {
             display: flex;
             padding-bottom: 6rem;
-            width: 82rem;
+            flex-wrap: wrap;
             font-family: "Pretendard-Medium";
-            @media (max-width: 1280px) {
-                width: 100%;
-            }
+            
             & .tit_point {
                 width: 8.5rem;
                 margin: 0.5rem 2rem 0 0;
@@ -151,6 +176,8 @@
             padding: 3rem 0;
             @media (max-width: 1280px) {
                 width: 100%;
+                display: flex;
+                justify-content: center;
                 & img {
                     zoom: 0.95;
                 }
