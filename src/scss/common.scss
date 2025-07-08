@@ -58,7 +58,6 @@ $pretendard_400: "Pretendard-Regular";
     font-size: 1.4rem;
 }
 
-
 .container .company a:visited {
     color: inherit;
 }
@@ -76,7 +75,7 @@ $pretendard_400: "Pretendard-Regular";
 
     & .btn-floating-top {
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
-        border: 1px solid rgba(85, 85, 85, .8);
+        border: 1px solid rgba(85, 85, 85, 0.8);
         border-radius: 100%;
         display: none;
         width: 48px;
@@ -94,15 +93,15 @@ $pretendard_400: "Pretendard-Regular";
     }
 }
 //다운로드 아이콘
-.download{
+.download {
     background: #fff url(/images/company/ico_download.png) no-repeat 50% 50% / 16px auto;
     margin-right: 0.4rem;
 }
-a.down{
-   cursor: pointer;
+a.down {
+    cursor: pointer;
 }
 //버튼 설정
-button.search{
+button.search {
     border-radius: 8px;
     padding: 0 2rem;
     height: 4rem;
@@ -110,60 +109,109 @@ button.search{
     border: 1px solid $mainColor;
     font-family: "Pretendard-Semibold";
     background-color: white;
-    &:hover{
-            background-color: $mainColor;
-            color: white;
-    
-            // box-shadow: 1px 1px 1px 0 rgba(200, 200, 200, 0.4);
-            // transform: translate(1px, 1px);
-    }            
-}   
-button.board{
+    &:hover {
+        background-color: $mainColor;
+        color: white;
+
+        // box-shadow: 1px 1px 1px 0 rgba(200, 200, 200, 0.4);
+        // transform: translate(1px, 1px);
+    }
+}
+button.board {
     border-radius: 8px;
     padding: 0 2rem;
-    height: 4rem;    
+    height: 4rem;
     color: white;
     font-family: "Pretendard-Semibold";
     background-color: black;
-    &.w10{
+    &.w10 {
         min-width: 12rem;
         height: 5rem;
     }
-    &:hover{
-            background-color: $mainColor;
-            // box-shadow: 1px 1px 1px 0 rgba(200, 200, 200, 0.4);
-            // transform: translate(1px, 1px);
-    } 
-    &.pop_btn{
+    &:hover {
+        background-color: $mainColor;
+        // box-shadow: 1px 1px 1px 0 rgba(200, 200, 200, 0.4);
+        // transform: translate(1px, 1px);
+    }
+    &.pop_btn {
         height: 3.2rem;
         background-color: black;
         border: 1px solid black;
         color: white;
-        margin: 0 .2rem;
+        margin: 0 0.2rem;
         min-width: 7.4rem;
         font-size: 1.4rem;
         padding: 1px 12px;
-        &:hover{
+        &:hover {
             background-color: $mainColor;
             border: 1px solid $mainColor;
         }
-    }   
-    &.red{
+    }
+    &.red {
         background-color: $mainColor;
         border: 1px solid $mainColor;
         color: white;
-        margin: 0 .2rem;
+        margin: 0 0.2rem;
         min-width: 7.4rem;
         font-size: 1.4rem;
-        padding: 1px 12px;    
-        &:hover{
+        padding: 1px 12px;
+        &:hover {
             background-color: $mainColorBright;
             border: 1px solid $mainColor;
-        }    
-    }               
-} 
+        }
+    }
+}
+.btns_wrap[class*="my_application"] {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+button.board_del {
+    border-radius: 8px;
+    padding: 0 2rem;
+    height: 4rem;
+    color: $mainColor;
+    font-family: "Pretendard-Semibold";
+    background-color: transparent;
+    border: 1px solid $mainColor;
+    &.w10 {
+        min-width: 12rem;
+        height: 5rem;
+    }
+    &:hover {
+        background-color: $mainColor;
+        color: white;
+    }
+    &.pop_btn {
+        height: 3.2rem;
+        background-color: black;
+        border: 1px solid black;
+        color: white;
+        margin: 0 0.2rem;
+        min-width: 7.4rem;
+        font-size: 1.4rem;
+        padding: 1px 12px;
+        &:hover {
+            background-color: $mainColor;
+            border: 1px solid $mainColor;
+        }
+    }
+    &.red {
+        background-color: $mainColor;
+        border: 1px solid $mainColor;
+        color: white;
+        margin: 0 0.2rem;
+        min-width: 7.4rem;
+        font-size: 1.4rem;
+        padding: 1px 12px;
+        &:hover {
+            background-color: $mainColorBright;
+            border: 1px solid $mainColor;
+        }
+    }
+}
 
-button.normal{
+button.normal {
     border-radius: 8px;
     padding: 0 2rem;
     height: 4rem;
@@ -171,48 +219,47 @@ button.normal{
     border: 1px solid $gray300;
     font-family: "Pretendard-Semibold";
     background-color: white;
-    &:hover{
-            border-color: $mainColor;
-            color: $mainColor;
+    &:hover {
+        border-color: $mainColor;
+        color: $mainColor;
     }
-    &.smallbtn{
+    &.smallbtn {
         height: 2.6rem;
         border: 1px solid $mainColor;
         color: $mainColor;
         font-size: 1.4rem;
         border-radius: 6px;
         padding: 1px 12px;
-        &:hover{
+        &:hover {
             background-color: $mainColor;
             color: white;
         }
     }
-    &.tdbtn{
+    &.tdbtn {
         height: 3rem;
         font-size: 1.4rem;
         padding: 1px 12px;
         border-radius: 6px;
-        &:hover{
+        &:hover {
             background-color: $bgBase;
             border-color: $gray300;
             color: black;
         }
     }
-    &.pop_btn{
-        height: 3.2rem;  
+    &.pop_btn {
+        height: 3.2rem;
         font-size: 1.4rem;
         padding: 1px 12px;
-        margin: 0 .2rem;
+        margin: 0 0.2rem;
         min-width: 7.4rem;
-        &:hover{
+        &:hover {
             color: $mainColor;
             border: 1px solid $mainColor;
         }
-    }    
-
+    }
 }
-button.disabled{
-    opacity: .6;
+button.disabled {
+    opacity: 0.6;
     pointer-events: none;
 }
 button.btn_darkgray {
@@ -261,12 +308,12 @@ button.btn_normal {
 button.delete {
     background: #fff url(/images/company/icon_del.png) no-repeat 50% 50% / 16px auto;
     width: 1.6rem;
-    margin-left: .6rem;
+    margin-left: 0.6rem;
     vertical-align: middle;
     height: 1.6rem;
 }
 //UL OL 설정
-ul li{
+ul li {
     list-style-type: none;
 }
 
@@ -275,7 +322,6 @@ ul.bullet-list li {
 }
 
 ul li.type-dot {
-
     position: relative;
     display: block;
     padding-left: 1rem;
@@ -326,16 +372,16 @@ ol.list_num {
 }
 
 ol.list_num li {
-    margin-left: 25px; 
+    margin-left: 25px;
     padding-left: 0.6rem;
     &::marker {
-    color: $mainColorBright;
-    font-size: 0.9em;
-    font-weight: bold;
+        color: $mainColorBright;
+        font-size: 0.9em;
+        font-weight: bold;
     }
 }
 
-// Select/Input 설정 
+// Select/Input 설정
 select {
     border-radius: 4px;
     padding: 0 1rem;
@@ -344,23 +390,23 @@ select {
     color: $gray600;
     border: 1px solid #ccc;
     background-color: white;
-    &.full{
+    &.full {
         width: 100%;
         height: 3.6rem;
     }
-    &:focus-within{
+    &:focus-within {
         border: 1px solid #777;
     }
-    &:focus-visible  {
+    &:focus-visible {
         outline: none;
-    } 
+    }
 }
 
-input[type='text'],
-input[type='password'],
-input[type='email'],
-input[type='search'],
-input[type='number'] {
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="number"] {
     border-radius: 4px;
     padding: 0 1rem;
     height: 3.6rem;
@@ -368,16 +414,16 @@ input[type='number'] {
     color: $gray600;
     border: 1px solid #ccc;
     background-color: white;
-    &.full{
+    &.full {
         width: 100%;
-        flex:1;        
+        flex: 1;
     }
-    &:focus-within{
+    &:focus-within {
         border: 1px solid #777;
     }
-    &:focus-visible  {
+    &:focus-visible {
         outline: none;
-    }   
+    }
 }
 input:-webkit-autofill {
     box-shadow: 0 0 0px 1000px white inset !important;
@@ -385,9 +431,10 @@ input:-webkit-autofill {
     transition: background-color 5000s ease-in-out 0s;
 }
 
-input[type='checkbox'],input[type="radio"] {
-    accent-color: $blueblack;  
-    margin: 0 .6rem 0 0; //수정
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: $blueblack;
+    margin: 0 0.6rem 0 0; //수정
 }
 
 input::placeholder {
@@ -399,24 +446,23 @@ textarea {
     border-radius: 4px;
     padding: 0 1rem;
     font-size: 16px;
-    color: $gray600;    
+    color: $gray600;
     border: 1px solid #ccc;
     background-color: white;
-    
-    &.full{
+
+    &.full {
         width: 100%;
         max-width: 1034px;
     }
-    &:focus-within{
+    &:focus-within {
         border: 1px solid #777;
     }
-    &:focus-visible  {
+    &:focus-visible {
         outline: none;
-    } 
+    }
 }
 
-
-input:disabled{
+input:disabled {
     background-color: rgba(150, 150, 150, 0.2);
     color: rgba(120, 120, 120, 0.4);
 }
@@ -424,7 +470,7 @@ input:disabled{
 .spacer_top_visual .visual_gradient .h2 {
     position: absolute;
     width: 100%;
-    bottom: 5px; 
+    bottom: 5px;
     text-align: center;
     color: black;
 }
@@ -432,15 +478,15 @@ input:disabled{
     content: "";
     display: block;
     position: absolute;
-    top: 6rem; 
+    top: 6rem;
     left: 49%;
-    width: 5rem; 
+    width: 5rem;
     height: 6px;
     background-color: $mainColor;
 }
 .spacer_top_visual h1 {
     position: absolute;
-    top: 22rem; 
+    top: 22rem;
     left: 50%;
     height: 16rem;
     transform: translateX(-50%);
@@ -625,26 +671,25 @@ input:disabled{
 .container .box-list-area {
     display: flex;
     justify-content: center;
-    
+
     @media (max-width: 1280px) {
-        & span img.rs70{
-            zoom: .7;
+        & span img.rs70 {
+            zoom: 0.7;
             padding: 0 2rem;
         }
 
-        & > img.rs50{
+        & > img.rs50 {
             width: 50%;
             padding: 0 2rem;
         }
-        & li > img.zoom{
-        width: 100%;
+        & li > img.zoom {
+            width: 100%;
+        }
     }
-    }
-    & div > img.zoom{
+    & div > img.zoom {
         width: 100%;
         padding: 0 2rem;
-    }    
-    
+    }
 }
 .list .title_dot {
     font-size: 4rem;
@@ -689,7 +734,7 @@ input:disabled{
     width: 100%;
     max-width: 1280px;
     padding: 0 2rem;
-    padding:0 2rem;
+    padding: 0 2rem;
     margin-top: 7rem;
     word-break: keep-all;
     &.nomargin {
@@ -841,9 +886,10 @@ input:disabled{
         height: 0;
         padding: 0;
         overflow: hidden;
-        border: 0;                
+        border: 0;
     }
-    label {  //파일첨부용 버튼
+    label {
+        //파일첨부용 버튼
         display: inline-block;
         border-radius: 6px;
         height: 3rem;
@@ -855,7 +901,7 @@ input:disabled{
         font-family: "Pretendard-Semibold";
         background-color: white;
         cursor: pointer;
-        margin-left: .5rem;
+        margin-left: 0.5rem;
     }
     .upload-name {
         display: inline-block;
@@ -863,70 +909,71 @@ input:disabled{
         @media (max-width: 900px) {
             width: auto;
             min-width: 20rem;
-        }        
+        }
     }
 }
 .container .box-list-area table {
-    border-spacing: 0; 
-    color:$gray700;       
+    border-spacing: 0;
+    color: $gray700;
     border-top: 2px solid $gray600;
-    margin: 1.2rem 0 2.4rem 0;    
+    margin: 1.2rem 0 2.4rem 0;
     background-color: white;
     table-layout: fixed;
-    width: 100%;  
+    width: 100%;
     @media (max-width: 1020px) {
-    min-width: 82rem;
+        min-width: 82rem;
     }
-    
-    thead th {        
+
+    thead th {
         text-align: center;
-        height: 5rem; 
-        vertical-align: middle;       
+        height: 5rem;
+        vertical-align: middle;
         border-bottom: 1px solid $gray600;
-        font-family: "Pretendard-Bold";         
+        font-family: "Pretendard-Bold";
     }
     tbody th {
         background-color: $bgBase;
         border-bottom: 1px solid $gray100;
-        text-align: center; 
-        vertical-align: middle;   
+        text-align: center;
+        vertical-align: middle;
         span {
             margin-left: 3px;
-        }                   
+        }
     }
     tbody td {
         border-bottom: 1px solid $gray100;
-        padding: 0 10px;   
+        padding: 0 10px;
         padding: 1rem;
-        vertical-align: middle;     
-        min-height: 5rem;  //수정  
-        input, select{
+        vertical-align: middle;
+        min-height: 5rem; //수정
+        input,
+        select {
             height: 3rem;
-        }   
-        &.bold:hover{
+        }
+        &.bold:hover {
             font-family: "Pretendard-Bold";
             cursor: pointer;
-        } 
-        &.date{
-            font-size: 14px;  
-        }        
-        & span{            
+        }
+        &.date {
+            font-size: 14px;
+        }
+        & span {
             border-radius: 2rem;
             padding: 6px 12px;
-            font-size: 14px;   
-            color: $gray300;          
+            font-size: 14px;
+            color: $gray300;
             font-family: "Pretendard-Semibold";
 
-            &.finish{
-                border: 1px dotted $mainColor;                
+            &.finish {
+                border: 1px dotted $mainColor;
                 color: $mainColor;
             }
-            &.ing{
-                border: 1px dotted $gray300; 
-                color: $gray500; 
-            }           
-        }   
-        & a.lock::before{
+            &.ing {
+                border: 1px dotted $gray300;
+                color: $gray500;
+            }
+        }
+        & a.lock::before {
             content: "";
             display: inline-block;
             position: relative;
@@ -937,43 +984,42 @@ input:disabled{
             background-size: 18px 18px;
             width: 18px;
             height: 18px;
-        }  
+        }
     }
-    &.list > tbody tr {  
-        &:hover{
+    &.list > tbody tr {
+        &:hover {
             // background-color: rgba(231, 234, 235, 0.4);
             // color: white !important;
             background-color: $bgBase;
-            
-        }     
+        }
     }
     &.answer {
         border-top: 2px solid $mainColor;
-        tbody th{
-            background-color: #f8efef;   
-        }         
+        tbody th {
+            background-color: #f8efef;
+        }
         span.date {
             display: flex;
             justify-content: flex-end;
-            font-size: 14px;   
-            color: $mainColor;  
+            font-size: 14px;
+            color: $mainColor;
         }
     }
 }
 //POPUP 테이블 (지원서 작성)
 .layer_pop table {
-    border-spacing: 0; 
-    color:$gray700;       
-    margin: 0.6rem 0 2.4rem 0;   
+    border-spacing: 0;
+    color: $gray700;
+    margin: 0.6rem 0 2.4rem 0;
     table-layout: fixed;
-    width: 100%; 
+    width: 100%;
     border-top: 1px solid $gray500;
-    
-    thead th {        
+
+    thead th {
         text-align: center;
-        height: 5rem; 
-        vertical-align: middle;       
-        font-family: "Pretendard-Bold";         
+        height: 5rem;
+        vertical-align: middle;
+        font-family: "Pretendard-Bold";
     }
     tbody th {
         background-color: $bgBase;
@@ -981,34 +1027,35 @@ input:disabled{
         border-bottom: 1px solid $gray100;
         span {
             margin-left: 3px;
-        }  
+        }
     }
     tbody td {
-        padding: 0.4rem 2rem; 
-        vertical-align: middle;  
-        text-align: left;   
+        padding: 0.4rem 2rem;
+        vertical-align: middle;
+        text-align: left;
         height: 5rem;
         line-height: 2rem;
-        border-bottom: 1px solid $gray100; 
-        input, select{
+        border-bottom: 1px solid $gray100;
+        input,
+        select {
             width: auto;
             height: 3rem;
-            &:not(:first-child){
-                margin-left:.5rem;
+            &:not(:first-child) {
+                margin-left: 0.5rem;
             }
-            &.url{
+            &.url {
                 margin-top: 3px;
                 width: 36rem;
             }
-        }        
-        em{
+        }
+        em {
             display: inline;
             position: relative;
-            left: .6rem;
+            left: 0.6rem;
             top: 0;
             color: $txt_dark-blue;
             font-size: 1.3rem;
-        }         
+        }
     }
 }
 //파일첨부 커스텀
@@ -1018,7 +1065,7 @@ input:disabled{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    & button{
+    & button {
         margin: 0 3px;
         height: 30px;
         width: 30px;
@@ -1026,31 +1073,31 @@ input:disabled{
         border: 1px solid $gray100;
         cursor: pointer;
         &.active {
-        background-color: $gray700;
-        color: #fff;
-        font-family: "Pretendard-Semibold";
-        border: 1px solid $gray700;
+            background-color: $gray700;
+            color: #fff;
+            font-family: "Pretendard-Semibold";
+            border: 1px solid $gray700;
         }
-        &.first{
-            background: url("/images/company/ico_first.png") no-repeat 50% 50%;            
+        &.first {
+            background: url("/images/company/ico_first.png") no-repeat 50% 50%;
         }
-        &.prev{
+        &.prev {
             background: url("/images/company/ico_prev.png") no-repeat 50% 50%;
             margin-right: 20px;
         }
-        &.next{
+        &.next {
             background: url("/images/company/ico_next.png") no-repeat 50% 50%;
             margin-left: 20px;
         }
-        &.end{
+        &.end {
             background: url("/images/company/ico_end.png") no-repeat 50% 50%;
         }
-        &:hover{
+        &:hover {
             border: 1px solid $gray200;
         }
     }
-    & .disabled{
-        opacity: .5;
+    & .disabled {
+        opacity: 0.5;
         pointer-events: none;
     }
 }
@@ -1075,15 +1122,15 @@ input:disabled{
     padding: 0 15%;
     @media (max-width: 1280px) {
         padding: 0 4rem;
-        zoom: .3;        
-    } 
+        zoom: 0.3;
+    }
 
-    .la_tit{
+    .la_tit {
         font-size: 8rem;
         line-height: 10rem;
         color: $gray700;
         font-family: "Pretendard-Bold";
-        &::after{
+        &::after {
             content: "";
             display: inline-block;
             position: relative;
@@ -1094,11 +1141,11 @@ input:disabled{
             background-color: $mainColor;
             border-radius: 100%;
             @media (max-width: 1280px) {
-                display: none;      
-            } 
+                display: none;
+            }
         }
     }
-    .b_copyright {        
+    .b_copyright {
         padding-top: 7rem;
         color: $gray300;
         font-size: 1.4rem;
@@ -1108,11 +1155,11 @@ input:disabled{
 .container.privacy ul .type-Ladot {
     position: relative;
     display: block;
-    font-size: 1.8rem;    
+    font-size: 1.8rem;
     padding-left: 1rem;
     line-height: 180%;
 
-    &:first-child{
+    &:first-child {
         margin-top: 2rem;
     }
 
@@ -1128,14 +1175,13 @@ input:disabled{
     }
 }
 
-
 .container.privacy table {
     border-collapse: separate;
-    border-spacing: 0;    
+    border-spacing: 0;
     margin: 1.2rem 0 2.4rem 0;
     width: 100%;
     tr {
-        color:$gray700;
+        color: $gray700;
     }
 
     th {
@@ -1143,13 +1189,13 @@ input:disabled{
         text-align: center;
         background-color: $gray700;
         border-right: 1px solid $gray300;
-        color: white;    
+        color: white;
     }
 
     td {
         padding: 6px 20px;
         border-bottom: 1px solid $gray100;
-        &:first-child{
+        &:first-child {
             border-right: 1px solid $gray100;
         }
     }
@@ -1170,15 +1216,15 @@ input:disabled{
     text-align: center;
     box-shadow: 0 2px 2px 4px rgba(20, 20, 20, 0.1);
     border: 1px solid #aaa;
-    .pop_contents{
+    .pop_contents {
         display: block;
         min-width: 22rem;
         width: auto;
         margin: 3rem 2rem 1rem 2rem;
-        height: auto;        
+        height: auto;
     }
-    .alert_btn{
-        display: block;        
+    .alert_btn {
+        display: block;
         height: 4rem;
         margin: 2rem 0;
     }
@@ -1188,12 +1234,12 @@ input:disabled{
         right: 22px;
         width: 22px;
         height: 22px;
-        scale: .6;
+        scale: 0.6;
     }
 }
 
 // 개인정보 약관 등
-.layer_pop{
+.layer_pop {
     position: fixed;
     z-index: 4;
     left: 50%;
@@ -1210,35 +1256,33 @@ input:disabled{
     @media (max-width: 1020px) {
         width: 90%;
         max-width: 90rem;
-    }   
-   //지원서 작성 POP 
+    }
+    //지원서 작성 POP
     .w900 {
         width: 90rem;
         margin: 2rem 5rem;
-        p{
+        p {
             font-family: "Pretendard-bold"; //j추가
             font-size: 1.6rem;
             text-align: left;
-
         }
-        @media (max-width: 1020px) {    
+        @media (max-width: 1020px) {
             margin: 2rem 3rem;
             width: auto;
         }
     }
-    &.w460{
+    &.w460 {
         width: 46rem;
     }
     .layer_scroll {
         display: block;
         overflow-y: auto;
         margin: 5rem 3rem 2rem 3rem;
-        height: 30rem; 
+        height: 30rem;
         width: 40rem;
         border: 1px solid $bgBase;
-        border-radius: .8rem;
+        border-radius: 0.8rem;
         background-color: white;
-
     }
     #layer_div {
         height: auto;
@@ -1247,7 +1291,6 @@ input:disabled{
         height: auto;
         padding: 2rem;
         text-align: initial;
-              
     }
     .btn_layer_close {
         position: absolute;
@@ -1255,7 +1298,7 @@ input:disabled{
         right: 32px;
         width: 22px;
         height: 22px;
-        scale: .6;
+        scale: 0.6;
     }
     h1.pop_title {
         position: absolute;
@@ -1268,4 +1311,3 @@ input:disabled{
         color: black;
     }
 }
-

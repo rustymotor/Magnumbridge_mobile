@@ -123,11 +123,7 @@
                                     <th>이력서</th>
                                     <td>
                                         <div class="flex filebox">
-                                            <input
-                                                class="upload-name"
-                                                type="text"
-                                                placeholder="파일을 첨부해주세요"
-                                            />
+                                            <input class="upload-name" type="text" placeholder="파일을 첨부해주세요" />
                                             <label for="resumeFile">파일찾기</label>
                                             <input type="file" id="resumeFile" />
                                             <em>doc, docx 파일로 올려주세요</em>
@@ -138,11 +134,7 @@
                                     <th>포트폴리오</th>
                                     <td>
                                         <div class="flex filebox">
-                                            <input
-                                                class="upload-name"
-                                                type="text"
-                                                placeholder="파일을 첨부해주세요"
-                                            />
+                                            <input class="upload-name" type="text" placeholder="파일을 첨부해주세요" />
                                             <label for="portfolioFile">파일찾기</label>
                                             <input type="file" id="portfolioFile" />
                                             <em>doc, docx 파일로 올려주세요</em>
@@ -155,8 +147,13 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="btn_wrap">
-                        <button class="board w10" type="button" onclick="closeMap()">지원하기</button>
+                    <div class="btns_wrap my_application">
+                        <div class="btn_wrap">
+                            <button class="board w10" type="button" onclick="closeMap()">지원하기</button>
+                        </div>
+                        <div class="btn_wrap">
+                            <button class="board_del w10" type="button" onclick="closeMap()">삭제하기</button>
+                        </div>
                     </div>
                 </div>
                 <!-- 지원하기 POP End-->
@@ -164,22 +161,12 @@
                     <div class="list nomargin" id="Application">
                         <div class="fullbg_gray bg_logo">
                             <h4 class="h4 tac fc-primary">지원 정보 확인</h4>
-                            <h5 class="h5">
-                                지원 시 작성한 기본 정보를 입력해주세요.
-                            </h5>
+                            <h5 class="h5">지원 시 작성한 기본 정보를 입력해주세요.</h5>
                             <div class="application">
-                                <div>
-                                    <label>이름</label><input type="text"  class="full" value="홍길동">
-                                </div>
-                                <div>
-                                    <label>연락처</label><input type="text"  class="full" value="010-1234-5678"></dd>
-                                </div>
-                                <div>
-                                    <label>이메일</label><input type="text"  class="full" value="abc@naver.com"></dd>
-                                </div>
-                                <div>
-                                    <label>비밀번호</label><input type="text"  class="full" value="******"></dd>
-                                </div>
+                                <div><label>이름</label><input type="text" class="full" value="홍길동" /></div>
+                                <div><label>연락처</label><input type="text" class="full" value="010-1234-5678" /></div>
+                                <div><label>이메일</label><input type="text" class="full" value="abc@naver.com" /></div>
+                                <div><label>비밀번호</label><input type="text" class="full" value="******" /></div>
                             </div>
                             <div class="btn_wrap">
                                 <button class="board w10" type="button" onclick="showAppBoard()">확인</button>
@@ -195,12 +182,12 @@
                         <table class="list">
                             <caption></caption>
                             <colgroup>
-                                <col style="width: 13%;">
-                                <col>
-                                <col style="width: 11%;">
-                                <col style="width: 11%;">
-                                <col style="width: 12%;">
-                                <col style="width: 12%;">
+                                <col style="width: 13%" />
+                                <col />
+                                <col style="width: 11%" />
+                                <col style="width: 11%" />
+                                <col style="width: 12%" />
+                                <col style="width: 12%" />
                             </colgroup>
                             <thead>
                                 <tr>
@@ -214,11 +201,13 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td  class="tac"colspan="6">작성된 글이 없습니다.</td>
+                                    <td class="tac" colspan="6">작성된 글이 없습니다.</td>
                                 </tr>
                                 <tr>
                                     <td class="dept tac">FrontEnd</td>
-                                    <td class="ta-left bold"><a class="underline"onclick="openPopup()">커머스 앱/웹 프론트 화면 개발</a></td>
+                                    <td class="ta-left bold">
+                                        <a class="underline" onclick="openPopup()">커머스 앱/웹 프론트 화면 개발</a>
+                                    </td>
                                     <td class="period tac">경력</td>
                                     <td class="state tac"><span class="finish">접수</span></td>
                                     <td class="date tac">2025.05.08</td>
@@ -226,7 +215,11 @@
                                 </tr>
                                 <tr>
                                     <td class="dept tac">APP 개발</td>
-                                    <td class="ta-left bold"><a class="underline"onclick="openPopup()">React Native 기반의 크로스 플랫폼 앱 개발</a></td>
+                                    <td class="ta-left bold">
+                                        <a class="underline" onclick="openPopup()"
+                                            >React Native 기반의 크로스 플랫폼 앱 개발</a
+                                        >
+                                    </td>
                                     <td class="period tac">경력</td>
                                     <td class="state tac"><span class="finish">접수</span></td>
                                     <td class="date tac">2025.05.08</td>
@@ -236,7 +229,7 @@
                                     <td class="dept tac">SW 개발</td>
                                     <td class="ta-left">솔루션 개발</td>
                                     <td class="period tac">신입</td>
-                                    <td class="state tac">서류검토</td></td>
+                                    <td class="state tac">서류검토</td>
                                     <td class="date tac">2025.05.08</td>
                                     <td class="date tac">2025.05.21</td>
                                 </tr>
@@ -244,7 +237,7 @@
                                     <td class="dept tac">연구원(R&D)</td>
                                     <td class="ta-left">솔루션 설계/개발</td>
                                     <td class="period tac">신입/경력</td>
-                                    <td class="state tac">면접</td></td>
+                                    <td class="state tac">면접</td>
                                     <td class="date tac">2025.05.08</td>
                                     <td class="date tac">2025.05.21</td>
                                 </tr>
@@ -252,7 +245,7 @@
                                     <td class="dept tac">플랫폼 개발</td>
                                     <td class="ta-left">Siemens Low code 솔루션 Mendix 개발</td>
                                     <td class="period tac">신입</td>
-                                    <td class="state tac">불합격</td></td>
+                                    <td class="state tac">불합격</td>
                                     <td class="date tac">2025.05.08</td>
                                     <td class="date tac">2025.05.21</td>
                                 </tr>
@@ -277,12 +270,12 @@
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
-        function showAppBoard() {
-            // 지원정보 영역 숨기기
-            document.getElementById("Application").style.display = "none";
+            function showAppBoard() {
+                // 지원정보 영역 숨기기
+                document.getElementById("Application").style.display = "none";
 
-            // 지원공고 목록 보이기
-            document.getElementById("Appboard").style.display = "block";
+                // 지원공고 목록 보이기
+                document.getElementById("Appboard").style.display = "block";
             }
 
             $("#resumeFile").on("change", function () {
@@ -295,13 +288,12 @@
                 $(this).siblings(".upload-name").val(fileName);
             });
 
-
             function openPopup() {
-            document.getElementById('application').style.display = 'block';
+                document.getElementById("application").style.display = "block";
             }
 
             function closeMap() {
-            document.getElementById('application').style.display = 'none';
+                document.getElementById("application").style.display = "none";
             }
 
             function openPopup2() {
@@ -311,8 +303,6 @@
             function closeMap2() {
                 document.getElementById("privacy_policy_terms").style.display = "none";
             }
-
         </script>
-
     </body>
 </html>

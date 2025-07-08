@@ -131,6 +131,57 @@ button.board.red:hover {
   border: 1px solid #d2282f;
 }
 
+.btns_wrap[class*=my_application] {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button.board_del {
+  border-radius: 8px;
+  padding: 0 2rem;
+  height: 4rem;
+  color: #d2282f;
+  font-family: "Pretendard-Semibold";
+  background-color: transparent;
+  border: 1px solid #d2282f;
+}
+button.board_del.w10 {
+  min-width: 12rem;
+  height: 5rem;
+}
+button.board_del:hover {
+  background-color: #d2282f;
+  color: white;
+}
+button.board_del.pop_btn {
+  height: 3.2rem;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  margin: 0 0.2rem;
+  min-width: 7.4rem;
+  font-size: 1.4rem;
+  padding: 1px 12px;
+}
+button.board_del.pop_btn:hover {
+  background-color: #d2282f;
+  border: 1px solid #d2282f;
+}
+button.board_del.red {
+  background-color: #d2282f;
+  border: 1px solid #d2282f;
+  color: white;
+  margin: 0 0.2rem;
+  min-width: 7.4rem;
+  font-size: 1.4rem;
+  padding: 1px 12px;
+}
+button.board_del.red:hover {
+  background-color: #ff403e;
+  border: 1px solid #d2282f;
+}
+
 button.normal {
   border-radius: 8px;
   padding: 0 2rem;
@@ -364,7 +415,8 @@ input:-webkit-autofill {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-input[type=checkbox], input[type=radio] {
+input[type=checkbox],
+input[type=radio] {
   accent-color: #0a1324;
   margin: 0 0.6rem 0 0;
 }
@@ -882,7 +934,8 @@ input:disabled {
   vertical-align: middle;
   min-height: 5rem;
 }
-.container .box-list-area table tbody td input, .container .box-list-area table tbody td select {
+.container .box-list-area table tbody td input,
+.container .box-list-area table tbody td select {
   height: 3rem;
 }
 .container .box-list-area table tbody td.bold:hover {
@@ -965,14 +1018,17 @@ input:disabled {
   line-height: 2rem;
   border-bottom: 1px solid #dddddd;
 }
-.layer_pop table tbody td input, .layer_pop table tbody td select {
+.layer_pop table tbody td input,
+.layer_pop table tbody td select {
   width: auto;
   height: 3rem;
 }
-.layer_pop table tbody td input:not(:first-child), .layer_pop table tbody td select:not(:first-child) {
+.layer_pop table tbody td input:not(:first-child),
+.layer_pop table tbody td select:not(:first-child) {
   margin-left: 0.5rem;
 }
-.layer_pop table tbody td input.url, .layer_pop table tbody td select.url {
+.layer_pop table tbody td input.url,
+.layer_pop table tbody td select.url {
   margin-top: 3px;
   width: 36rem;
 }
