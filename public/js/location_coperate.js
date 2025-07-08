@@ -48,6 +48,6 @@ document.getElementById("mapContainer").addEventListener("click", function (even
     event.stopPropagation();
 });
 
-function closeMap() {
+function closeMapFooter() {
     document.getElementById("mapContainer").style.display = "none";
 }

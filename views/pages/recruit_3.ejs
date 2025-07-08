@@ -27,7 +27,7 @@
                     <h1 class="pop_title">지원서 작성</h1>
                     <h5 class="h5 fc-red">커머스 앱/웹 프론트 화면 개발</h5>
                     <div class="w900">
-                        <div class="flex_between">                            
+                        <div class="flex_between">
                             <p>기본정보</p>
                             <span class="fc-red">* 필수입력</span>
                         </div>
@@ -161,36 +161,36 @@
                 </div>
                 <!-- 지원하기 POP End-->
                 <section class="box-list-area">
-                    <div class="list nomargin" id="Application">                        
-                        <div class="fullbg_gray bg_logo">                             
+                    <div class="list nomargin" id="Application">
+                        <div class="fullbg_gray bg_logo">
                             <h4 class="h4 tac fc-primary">지원 정보 확인</h4>
                             <h5 class="h5">
                                 지원 시 작성한 기본 정보를 입력해주세요.
                             </h5>
                             <div class="application">
                                 <div>
-                                    <label>이름</label><input type="text"  class="full" value="홍길동">                    
+                                    <label>이름</label><input type="text"  class="full" value="홍길동">
                                 </div>
                                 <div>
-                                    <label>연락처</label><input type="text"  class="full" value="010-1234-5678"></dd>                                
+                                    <label>연락처</label><input type="text"  class="full" value="010-1234-5678"></dd>
                                 </div>
                                 <div>
-                                    <label>이메일</label><input type="text"  class="full" value="abc@naver.com"></dd>                                
+                                    <label>이메일</label><input type="text"  class="full" value="abc@naver.com"></dd>
                                 </div>
                                 <div>
-                                    <label>비밀번호</label><input type="text"  class="full" value="******"></dd>                                
-                                </div>                                 
+                                    <label>비밀번호</label><input type="text"  class="full" value="******"></dd>
+                                </div>
                             </div>
                             <div class="btn_wrap">
                                 <button class="board w10" type="button" onclick="showAppBoard()">확인</button>
-                            </div>                           
+                            </div>
                         </div>
                     </div>
 
                     <!-- 지원공고 목록-->
                     <div class="list nomargin" id="Appboard" style="display: none">
                         <h4 class="h4 tac fc-primary mb-4">지원 공고 목록 조회</h4>
-                        
+
                         총 5건
                         <table class="list">
                             <caption></caption>
@@ -198,14 +198,14 @@
                                 <col style="width: 13%;">
                                 <col>
                                 <col style="width: 11%;">
-                                <col style="width: 11%;">                                        
+                                <col style="width: 11%;">
                                 <col style="width: 12%;">
                                 <col style="width: 12%;">
                             </colgroup>
                             <thead>
                                 <tr>
                                     <th scope="col" class="catagory">직군</th>
-                                    <th scope="col" class="subject">공고명</th>                                            
+                                    <th scope="col" class="subject">공고명</th>
                                     <th scope="col" class="period">경력사항</th>
                                     <th scope="col" class="state">지원상태</th>
                                     <th scope="col" class="date">공고시작일</th>
@@ -226,12 +226,12 @@
                                 </tr>
                                 <tr>
                                     <td class="dept tac">APP 개발</td>
-                                    <td class="ta-left bold"><a class="underline"onclick="openPopup()">React Native 기반의 크로스 플랫폼 앱 개발</a></td>                                            
+                                    <td class="ta-left bold"><a class="underline"onclick="openPopup()">React Native 기반의 크로스 플랫폼 앱 개발</a></td>
                                     <td class="period tac">경력</td>
                                     <td class="state tac"><span class="finish">접수</span></td>
                                     <td class="date tac">2025.05.08</td>
                                     <td class="date tac">2025.05.21</td>
-                                </tr>                                
+                                </tr>
                                 <tr>
                                     <td class="dept tac">SW 개발</td>
                                     <td class="ta-left">솔루션 개발</td>
@@ -247,7 +247,7 @@
                                     <td class="state tac">면접</td></td>
                                     <td class="date tac">2025.05.08</td>
                                     <td class="date tac">2025.05.21</td>
-                                </tr> 
+                                </tr>
                                 <tr>
                                     <td class="dept tac">플랫폼 개발</td>
                                     <td class="ta-left">Siemens Low code 솔루션 Mendix 개발</td>
@@ -255,7 +255,7 @@
                                     <td class="state tac">불합격</td></td>
                                     <td class="date tac">2025.05.08</td>
                                     <td class="date tac">2025.05.21</td>
-                                </tr>    
+                                </tr>
                             </tbody>
                         </table>
 
@@ -266,7 +266,7 @@
                             <button class="page-btn" data-page="2">2</button>
                             <button class="page-btn next"></button>
                             <button class="page-btn end"></button>
-                        </div>  
+                        </div>
                     </div>
                     <!-- 지원공고 목록 END-->
                 </section>
@@ -280,7 +280,7 @@
         function showAppBoard() {
             // 지원정보 영역 숨기기
             document.getElementById("Application").style.display = "none";
-            
+
             // 지원공고 목록 보이기
             document.getElementById("Appboard").style.display = "block";
             }
@@ -294,8 +294,8 @@
                 var fileName = $(this).val().split("\\").pop();
                 $(this).siblings(".upload-name").val(fileName);
             });
-        
-          
+
+
             function openPopup() {
             document.getElementById('application').style.display = 'block';
             }
@@ -313,6 +313,6 @@
             }
 
         </script>
-        
+
     </body>
 </html>
